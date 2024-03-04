@@ -38,43 +38,43 @@ const Navbar = () => {
                             </li>
 
                             <li class="nav-item">
-                            <Link to='/about' class="nav-link">About <i data-feather="chevron-down"></i></Link>
+                            <Link to='/about-us' class="nav-link">About <i data-feather="chevron-down"></i></Link>
                             </li>
 
                             <li class="nav-item">
                             <Link to='/' class="nav-link">Our Services <i data-feather="chevron-down"></i></Link>
                                 <ul class="dropdown_menu">
                                     <li class="nav-item">
-                                    <Link to='/' class="nav-link">Website Development <i data-feather="chevron-right"></i></Link>
+                                    <Link to='/website-development-company' class="nav-link">Website Development <i data-feather="chevron-right"></i></Link>
                                     </li>
                                     <li class="nav-item">
-                                    <Link to='/' class="nav-link">Application Development <i data-feather="chevron-right"></i></Link>
+                                    <Link to='/application-development-company' class="nav-link">Application Development <i data-feather="chevron-right"></i></Link>
                                     </li>
                                     <li class="nav-item">
-                                    <Link to='/' class="nav-link">Digital Marketing <i data-feather="chevron-right"></i></Link>
+                                    <Link to='/digital-marketing-company' class="nav-link">Digital Marketing <i data-feather="chevron-right"></i></Link>
                                     </li>
                                     <li class="nav-item"> 
-                                    <Link to='/' class="nav-link">Ui/UX Designing <i data-feather="chevron-right"></i></Link>
+                                    <Link to='/ui-ux-designing-company' class="nav-link">Ui/UX Designing <i data-feather="chevron-right"></i></Link>
                                     </li>
                                     <li class="nav-item"> 
-                                    <Link to='/' class="nav-link">Graphic Designing<i data-feather="chevron-right"></i></Link>
+                                    <Link to='/graphic-designing-company' class="nav-link">Graphic Designing<i data-feather="chevron-right"></i></Link>
                                     </li>
                                     <li class="nav-item">
-                                    <Link to='/' class="nav-link">Data Science Consulting<i data-feather="chevron-right"></i></Link>
+                                    <Link to='/data-science-consulting' class="nav-link">Data Science Consulting<i data-feather="chevron-right"></i></Link>
                                      </li>
                                 </ul>
                             </li>
 
                             <li class="nav-item">
-                            <Link to='/' class="nav-link">Technologies <i data-feather="chevron-down"></i></Link>
+                            <Link to='/technologies' class="nav-link">Technologies <i data-feather="chevron-down"></i></Link>
                             </li>
 
 
                             <li class="nav-item">
-                            <Link to='/' class="nav-link">Blog <i data-feather="chevron-down"></i></Link>
+                            <Link to='/blog' class="nav-link">Blog <i data-feather="chevron-down"></i></Link>
                             </li>
 
-                            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                            <li class="nav-item"><Link to='/contact-us' class="nav-link">Contact</Link></li>
                         </ul>
                     </div>
 
@@ -107,43 +107,43 @@ const Navbar = () => {
                             </li>
 
                             <li class="nav-item">
-                            <Link to='/about' class="nav-link">About <i data-feather="chevron-down"></i></Link>
+                            <Link to='/about-us' class="nav-link">About <i data-feather="chevron-down"></i></Link>
                             </li>
 
                             <li class="nav-item">
                             <Link to='/' class="nav-link">Our Services <i data-feather="chevron-down"></i></Link>
                                 <ul class="dropdown_menu">
                                     <li class="nav-item">
-                                    <Link to='/' class="nav-link">Website Development <i data-feather="chevron-right"></i></Link>
+                                    <Link to='/website-development-company' class="nav-link">Website Development <i data-feather="chevron-right"></i></Link>
                                     </li>
                                     <li class="nav-item">
-                                    <Link to='/' class="nav-link">Application Development <i data-feather="chevron-right"></i></Link>
+                                    <Link to='/application-development-company' class="nav-link">Application Development <i data-feather="chevron-right"></i></Link>
                                     </li>
                                     <li class="nav-item">
-                                    <Link to='/' class="nav-link">Digital Marketing <i data-feather="chevron-right"></i></Link>
+                                    <Link to='/digital-marketing-company' class="nav-link">Digital Marketing <i data-feather="chevron-right"></i></Link>
                                     </li>
                                     <li class="nav-item"> 
-                                    <Link to='/' class="nav-link">Ui/UX Designing <i data-feather="chevron-right"></i></Link>
+                                    <Link to='/ui-ux-designing-company' class="nav-link">Ui/UX Designing <i data-feather="chevron-right"></i></Link>
                                     </li>
                                     <li class="nav-item"> 
-                                    <Link to='/' class="nav-link">Graphic Designing<i data-feather="chevron-right"></i></Link>
+                                    <Link to='/graphic-designing-company' class="nav-link">Graphic Designing<i data-feather="chevron-right"></i></Link>
                                     </li>
                                     <li class="nav-item">
-                                    <Link to='/' class="nav-link">Data Science Consulting<i data-feather="chevron-right"></i></Link>
+                                    <Link to='/data-science-consulting' class="nav-link">Data Science Consulting<i data-feather="chevron-right"></i></Link>
                                      </li>
                                 </ul>
                             </li>
 
                             <li class="nav-item">
-                            <Link to='/' class="nav-link">Technologies <i data-feather="chevron-down"></i></Link>
+                            <Link to='/technologies' class="nav-link">Technologies <i data-feather="chevron-down"></i></Link>
                             </li>
 
 
                             <li class="nav-item">
-                            <Link to='/' class="nav-link">Blog <i data-feather="chevron-down"></i></Link>
+                            <Link to='/blog' class="nav-link">Blog <i data-feather="chevron-down"></i></Link>
                             </li>
 
-                            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                            <li class="nav-item"><Link to='/contact-us' class="nav-link">Contact</Link></li>
                         </ul>
                     </div>
 
