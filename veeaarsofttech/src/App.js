@@ -12,6 +12,7 @@ import Digital from "./Components/Digital/Digital.js";
 import Uiux from "./Components/UiUxDisign/Uiux.js";
 import Datascience from "./Components/DataScience/Datascience.js";
 import Graphic from "./Components/Graphic/Graphic.js";
+import Ourservices from "./Components/Ourservices/Oursevices.js";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
               exact
             />
             <Route path="/blog" element={<Blog />} exact />
+            <Route path="/our-services" element={<Ourservices />} exact />
             <Route path="/technologies" element={<Technology />} exact />
           </Routes>
         </Router>
