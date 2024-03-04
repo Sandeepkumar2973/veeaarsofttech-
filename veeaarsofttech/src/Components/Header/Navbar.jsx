@@ -17,7 +17,8 @@ const Navbar = () => {
                 <div class="startp-responsive-menu">
                     <div class="logo black-logo">
                         <Link to='/'>
-                                <img src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png" alt="logo"/>
+                                <img src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png" alt="logo"
+                                 style={{width:"80px", height:"auto"}}/>
                             </Link>
                     </div>
                 </div>
@@ -28,7 +29,8 @@ const Navbar = () => {
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <a class="navbar-brand black-logo" Link to='/'>
-                    <img src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png" alt="logo"/></a>
+                    <img src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png" alt="logo" 
+                         style={{width:"80px", height:"auto"}}/></a>
                     {/* <a class="navbar-brand white-logo" href="index.html"><img src="assets/img/white-logo.png" alt="logo"/></a> */}
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -98,7 +100,7 @@ const Navbar = () => {
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <a class="navbar-brand black-logo" Link to='/'>
-                    <img src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png" alt="logo"/></a>
+                    <img src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png"  style={{width:"80px", height:"auto"}} alt="logo"/></a>
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav nav ml-auto">
