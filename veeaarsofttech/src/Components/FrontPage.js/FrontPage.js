@@ -89,10 +89,10 @@ const FrontPage = () => {
   };
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, 
+    slidesToShow: 5, 
     slidesToScroll: 1,
   };
 
@@ -570,353 +570,6 @@ const FrontPage = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
         </div>
-      {/* <div className="container-fluid p-0">
-  <div className="team-slides owl-carousel owl-theme owl-loaded owl-drag">
-    <div className="owl-stage-outer"><div className="owl-stage" style={{transform: 'translate3d(-5173px, 0px, 0px)', transition: 'all 0.25s ease 0s', width: 8623}}><div className="owl-item cloned" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/1.jpg" alt="image" />
-              <img src="assets/img/team-image/1.jpg" alt="image" />
-            </div>
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Josh Buttler</h3>
-                <span>CEO &amp; Founder</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div><div className="owl-item cloned" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/2.jpg" alt="image" />
-            </div>
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Alex Maxwel</h3>
-                <span>Marketing Manager</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div><div className="owl-item cloned" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/3.jpg" alt="image" />
-            </div>
-
-
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Janny Cotller</h3>
-                <span>Web Developer</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div><div className="owl-item cloned" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/4.jpg" alt="image" />
-            </div>
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Jason Statham</h3>
-                <span>UX/UI Designer</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div><div className="owl-item cloned" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/5.jpg" alt="image" />
-            </div>
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Corey Anderson</h3>
-                <span>Project Manager</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div><div className="owl-item" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/1.jpg" alt="image" />
-            </div>
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Josh Buttler</h3>
-                <span>CEO &amp; Founder</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div><div className="owl-item" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/2.jpg" alt="image" />
-            </div>
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Alex Maxwel</h3>
-                <span>Marketing Manager</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div><div className="owl-item" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/3.jpg" alt="image" />
-            </div>
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Janny Cotller</h3>
-                <span>Web Developer</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div><div className="owl-item" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/4.jpg" alt="image" />
-            </div>
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Jason Statham</h3>
-                <span>UX/UI Designer</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div><div className="owl-item" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/5.jpg" alt="image" />
-            </div>
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Corey Anderson</h3>
-                <span>Project Manager</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div><div className="owl-item" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/1.jpg" alt="image" />
-            </div>
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Josh Buttler</h3>
-                <span>CEO &amp; Founder</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div><div className="owl-item" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/2.jpg" alt="image" />
-            </div>
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Alex Maxwel</h3>
-                <span>Marketing Manager</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div><div className="owl-item active" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/3.jpg" alt="image" />
-            </div>
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Janny Cotller</h3>
-                <span>Web Developer</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div><div className="owl-item active" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/4.jpg" alt="image" />
-            </div>
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Jason Statham</h3>
-                <span>UX/UI Designer</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div><div className="owl-item active" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/5.jpg" alt="image" />
-            </div>
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Corey Anderson</h3>
-                <span>Project Manager</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div><div className="owl-item cloned" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/1.jpg" alt="image" />
-            </div>
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Josh Buttler</h3>
-                <span>CEO &amp; Founder</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div><div className="owl-item cloned" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/2.jpg" alt="image" />
-            </div>
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Alex Maxwel</h3>
-                <span>Marketing Manager</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div><div className="owl-item cloned" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/3.jpg" alt="image" />
-            </div>
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Janny Cotller</h3>
-                <span>Web Developer</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div><div className="owl-item cloned" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/4.jpg" alt="image" />
-            </div>
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Jason Statham</h3>
-                <span>UX/UI Designer</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div><div className="owl-item cloned" style={{width: '401.11px', marginRight: 30}}><div className="single-team">
-            <div className="team-image">
-              <img src="assets/img/team-image/5.jpg" alt="image" />
-            </div>
-            <div className="team-content">
-              <div className="team-info">
-                <h3>Corey Anderson</h3>
-                <span>Project Manager</span>
-              </div>
-              <ul>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x={2} y={9} width={4} height={12} /><circle cx={4} cy={4} r={2} /></svg></a></li>
-                <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z" /></svg></a></li>
-              </ul>
-              <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-            </div>
-          </div></div></div></div><div className="owl-nav disabled"><button type="button" role="presentation" className="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" className="owl-next"><span aria-label="Next">›</span></button></div><div className="owl-dots"><button role="button" className="owl-dot"><span /></button><button role="button" className="owl-dot"><span /></button><button role="button" className="owl-dot active"><span /></button><button role="button" className="owl-dot"><span /></button></div></div>
-</div> */}
 
 <OwlCarousel className="owl-theme" {...owlOptions}>
       {teamData.map((member) => (
@@ -1011,9 +664,6 @@ const FrontPage = () => {
 {/* End Fun Facts Area*/}
 
 
-
-
-
 {/* Start Works Area*/}
 <div className="works-area ptb-80 bg-f7fafd">
   <div className="container">
@@ -1027,7 +677,7 @@ const FrontPage = () => {
       <OwlCarousel className="works-slides owl-carousel owl-theme" {...options}>
         {worksData.map(work => (
           <div key={work.id} className="single-works">
-            <img src={work.imgSrc} alt="image" />
+            <img src={work.imgSrc} alt="image" style={{width:"100%", height:"270px"}} />
             <Link to="/" className="icon">
               <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-settings">
                 <circle cx={12} cy={12} r={3} />
@@ -1048,8 +698,6 @@ const FrontPage = () => {
   <div class="shape4"><img src="assets/img/shape4.svg" alt="shape" style={{width:"20px", height:"20px"}}/></div>
 </div>
 {/* End Works Area*/}
-
-
 
 
 {/* Start Pricing Area */}
@@ -1162,13 +810,12 @@ const FrontPage = () => {
           </p>
         </div>
 
-
-<div className='card' style={{width:"70%", margin:"0 auto", padding:"20px", marginBottom:"10px" }}>
+<div className='card' style={{width:"70%", margin:"0 auto", padding:"20px", marginBottom:"10px", background:"aliceblue" }}>
       {selectedReview && (
         <div className="selected-review">
           <div className="container">
-          <image src={selectedReview.imgSrc} />
-            <h3>{selectedReview.name}</h3>
+          <img src={selectedReview.imgSrc}  style={{borderRadius:"80px", width:"100px", height:"auto"}}/>
+            <h3 className='text-center'>{selectedReview.name}</h3>
             <span>{selectedReview.role}</span>
             <p>{selectedReview.review}</p>
             <button className="btn btn-primary" onClick={() => setSelectedReview(null)}>Close</button>
@@ -1184,7 +831,7 @@ const FrontPage = () => {
             {feedbackData.map((feedback, index) => (
               <div key={index} className="single-feedback">
                 <div className="client-img" onClick={() => handleImageClick(index)}>
-                  <img src={feedback.imgSrc} alt={feedback.name} style={{borderRadius:"50px"}}/>
+                  <img src={feedback.imgSrc} alt={feedback.name} style={{borderRadius:"80px", width:"100px", height:"auto"}}/>
                 </div>
                 {/* Display a preview of the review if needed */}
               </div>
@@ -1199,10 +846,10 @@ const FrontPage = () => {
 {/*  Start Ready To Talk Area*/}
 <div class="ready-to-talk">
         <div class="container">
-            <h3>Ready to talk?</h3>
+            <h3 className='text-center'>Ready to talk?</h3>
             <p>Our team is here to answer your question about StartP</p>
-            <a href="contact.html" class="btn btn-primary">Contact Us</a>
-            <span><a href="contact.html">Or, get started now with a free trial</a></span>
+            <Link to='/' class="btn btn-primary">Contact Us</Link>
+            <span><Link to='/'>Or, get started now with a free trial</Link></span>
         </div>
         <div class="shape8 rotateme">
   <img src="assets/img/shape2.svg" alt="shape" style={{width:"20px", height:"20px"}}/></div>
@@ -1220,116 +867,116 @@ const FrontPage = () => {
 {/*   Start Partner Area */}
 <div className="partner-area partner-section">
   <div className="container">
-    <h5>More that 1.5 million businesses and organizations use StartP</h5>
+    <h5 className='text-center'>More that 1.5 million businesses and organizations use StartP</h5>
     <div className="partner-inner">
       <div className="row">
         <div className="col-lg-2 col-md-3 col-6 col-sm-4">
-          <a href="#">
+          <Link to='/'>
             <img src="assets/img/partner-img/partner-1.png" alt="partner" />
             <img src="assets/img/partner-img/partner-hover1.png" alt="partner" />
-          </a>
+          </Link>
         </div>
         <div className="col-lg-2 col-md-3 col-6 col-sm-4">
-          <a href="#">
+          <Link to='/'>
             <img src="assets/img/partner-img/partner-2.png" alt="partner" />
             <img src="assets/img/partner-img/partner-hover2.png" alt="partner" />
-          </a>
+          </Link>
         </div>
         <div className="col-lg-2 col-md-3 col-6 col-sm-4">
-          <a href="#">
+          <Link to='/'>
             <img src="assets/img/partner-img/partner-3.png" alt="partner" />
             <img src="assets/img/partner-img/partner-hover3.png" alt="partner" />
-          </a>
+          </Link>
         </div>
         <div className="col-lg-2 col-md-3 col-6 col-sm-4">
-          <a href="#">
+          <Link to='/'>
             <img src="assets/img/partner-img/partner-4.png" alt="partner" />
             <img src="assets/img/partner-img/partner-hover4.png" alt="partner" />
-          </a>
+          </Link>
         </div>
         <div className="col-lg-2 col-md-3 col-6 col-sm-4">
-          <a href="#">
+          <Link to='/'>
             <img src="assets/img/partner-img/partner-5.png" alt="partner" />
             <img src="assets/img/partner-img/partner-hover5.png" alt="partner" />
-          </a>
+          </Link>
         </div>
         <div className="col-lg-2 col-md-3 col-6 col-sm-4">
-          <a href="#">
+          <Link to='/'>
             <img src="assets/img/partner-img/partner-6.png" alt="partner" />
             <img src="assets/img/partner-img/partner-hover6.png" alt="partner" />
-          </a>
+          </Link>
         </div>
         <div className="col-lg-2 col-md-3 col-6 col-sm-4">
-          <a href="#">
+          <Link to='/'>
             <img src="assets/img/partner-img/partner-7.png" alt="partner" />
             <img src="assets/img/partner-img/partner-hover7.png" alt="partner" />
-          </a>
+          </Link>
         </div>
         <div className="col-lg-2 col-md-3 col-6 col-sm-4">
-          <a href="#">
+          <Link to='/'>
             <img src="assets/img/partner-img/partner-8.png" alt="partner" />
             <img src="assets/img/partner-img/partner-hover8.png" alt="partner" />
-          </a>
+          </Link>
         </div>
         <div className="col-lg-2 col-md-3 col-6 col-sm-4">
-          <a href="#">
+          <Link to='/'>
             <img src="assets/img/partner-img/partner-9.png" alt="partner" />
             <img src="assets/img/partner-img/partner-hover9.png" alt="partner" />
-          </a>
+          </Link>
         </div>
         <div className="col-lg-2 col-md-3 col-6 col-sm-4">
-          <a href="#">
+          <Link to='/'>
             <img src="assets/img/partner-img/partner-10.png" alt="partner" />
             <img src="assets/img/partner-img/partner-hover10.png" alt="partner" />
-          </a>
+          </Link>
         </div>
         <div className="col-lg-2 col-md-3 col-6 col-sm-4">
-          <a href="#">
+          <Link to='/'>
             <img src="assets/img/partner-img/partner-11.png" alt="partner" />
             <img src="assets/img/partner-img/partner-hover11.png" alt="partner" />
-          </a>
+          </Link>
         </div>
         <div className="col-lg-2 col-md-3 col-6 col-sm-4">
-          <a href="#">
+          <Link to='/'>
             <img src="assets/img/partner-img/partner-12.png" alt="partner" />
             <img src="assets/img/partner-img/partner-hover12.png" alt="partner" />
-          </a>
+          </Link>
         </div>
         <div className="col-lg-2 col-md-3 col-6 col-sm-4">
-          <a href="#">
+          <Link to='/'>
             <img src="assets/img/partner-img/partner-13.png" alt="partner" />
             <img src="assets/img/partner-img/partner-hover13.png" alt="partner" />
-          </a>
+          </Link>
         </div>
         <div className="col-lg-2 col-md-3 col-6 col-sm-4">
-          <a href="#">
+          <Link to='/'>
             <img src="assets/img/partner-img/partner-14.png" alt="partner" />
             <img src="assets/img/partner-img/partner-hover14.png" alt="partner" />
-          </a>
+          </Link>
         </div>
         <div className="col-lg-2 col-md-3 col-6 col-sm-4">
-          <a href="#">
+          <Link to='/'>
             <img src="assets/img/partner-img/partner-15.png" alt="partner" />
             <img src="assets/img/partner-img/partner-hover15.png" alt="partner" />
-          </a>
+          </Link>
         </div>
         <div className="col-lg-2 col-md-3 col-6 col-sm-4">
-          <a href="#">
+          <Link to='/'>
             <img src="assets/img/partner-img/partner-16.png" alt="partner" />
             <img src="assets/img/partner-img/partner-hover16.png" alt="partner" />
-          </a>
+          </Link>
         </div>
         <div className="col-lg-2 col-md-3 col-6 col-sm-4">
-          <a href="#">
+          <Link to='/'>
             <img src="assets/img/partner-img/partner-17.png" alt="partner" />
             <img src="assets/img/partner-img/partner-hover17.png" alt="partner" />
-          </a>
+          </Link>
         </div>
         <div className="col-lg-2 col-md-3 col-6 col-sm-4">
-          <a href="#">
+          <Link to='/'>
             <img src="assets/img/partner-img/partner-18.png" alt="partner" />
             <img src="assets/img/partner-img/partner-hover18.png" alt="partner" />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
@@ -1360,36 +1007,39 @@ const FrontPage = () => {
       <div className="col-lg-4 col-md-6">
         <div className="single-blog-post">
           <div className="blog-image">
-            <a href="single-blog.html">
-              <img src="assets/img/blog-image/1.jpg" alt="image" />
-            </a>
+            <Link to='/'>
+              <img src="assets/img/blog-image/1.jpg" alt="image" style={{width:"100%", height:"auto"}}/>
+            </Link>
             <div className="date">
               <i data-feather="calendar" /> March 15, 2019
             </div>
           </div>
           <div className="blog-post-content">
-            <h3><a href="single-blog.html">The security risks of changing package owners</a></h3>
-            <span>by <a href="#">admin</a></span>
+            <h3><Link to='/'>The security risks of changing package owners</Link></h3>
+            <span>by <Link to='/'>admin</Link></span>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-            <a href="#" className="read-more-btn">Read More <i data-feather="arrow-right" /> </a>
+            <a href="#" className="read-more-btn">Read More
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>             </a>
           </div>
         </div>
       </div>
       <div className="col-lg-4 col-md-6">
         <div className="single-blog-post">
           <div className="blog-image">
-            <a href="single-blog.html">
-              <img src="assets/img/blog-image/2.jpg" alt="image" />
-            </a>
+            <Link to='/'>
+              <img src="assets/img/blog-image/2.jpg" alt="image" style={{width:"100%", height:"auto"}}/>
+            </Link>
             <div className="date">
               <i data-feather="calendar" /> March 17, 2019
             </div>
           </div>
           <div className="blog-post-content">
             <h3><a href="single-blog.html">Tips to Protecting Your Business and Family</a></h3>
-            <span>by <a href="#">smith</a></span>
+            <span>by <Link to='/'>smith</Link></span>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-            <a href="#" className="read-more-btn">Read More <i data-feather="arrow-right" /> </a>
+            <Link to='/' className="read-more-btn">Read More 
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+             </Link>
           </div>
         </div>
       </div>
@@ -1397,7 +1047,7 @@ const FrontPage = () => {
         <div className="single-blog-post">
           <div className="blog-image">
             <a href="single-blog.html">
-              <img src="assets/img/blog-image/3.jpg" alt="image" />
+              <img src="assets/img/blog-image/3.jpg" alt="image"  style={{width:"100%", height:"auto"}}/>
             </a>
             <div className="date">
               <i data-feather="calendar" /> March 19, 2019
@@ -1405,9 +1055,11 @@ const FrontPage = () => {
           </div>
           <div className="blog-post-content">
             <h3><a href="single-blog.html">Protect Your Workplace from Cyber Attacks</a></h3>
-            <span>by <a href="#">john</a></span>
+            <span>by <Link to='/'>john</Link></span>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-            <a href="#" className="read-more-btn">Read More <i data-feather="arrow-right" /> </a>
+            <Link to='/' className="read-more-btn">Read More
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+             </Link>
           </div>
         </div>
       </div>
