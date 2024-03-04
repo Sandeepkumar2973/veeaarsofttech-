@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import TeamMemberCard from "./TeamCard";
+import Footer from "../Footer/Footer";
 // import "./TeamCarousel.css";
 
 const About = () => {
@@ -611,6 +612,7 @@ const About = () => {
       </Slider>
 
       {/* nextline */}
+      <Footer />
     </>
   );
 };
