@@ -595,15 +595,13 @@ Navbar CSS
     background-color: transparent;
     -webkit-transition: .3s;
     transition: .3s;
-    padding-top: 15px;
 }
 
 #header.headroom.is-sticky {
     -webkit-box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
     box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
     background-color: #ffffff !important;
-    padding-top: 15px;
-    padding-bottom: 15px;
+
 }
 
 #header.headroom.navbar-style-two {
@@ -1027,8 +1025,11 @@ Navbar CSS
     }
     .startp-responsive-nav .logo {
         position: relative;
-        width: 50%;
+        width: 50px;
         z-index: 999;
+    }
+    img {
+        height: 50px;
     }
     .startp-nav {
         display: none;
