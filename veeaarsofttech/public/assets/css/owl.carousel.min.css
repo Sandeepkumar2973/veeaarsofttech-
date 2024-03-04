@@ -184,7 +184,11 @@
     top: 50%;
     margin-left: -40px;
     margin-top: -40px;
+<<<<<<< HEAD
     background: url(owl.video.play.png) no-repeat;
+=======
+    /* background: url(owl.video.play.png) no-repeat; */
+>>>>>>> a4d12d86cfd1ce48dd1494d78c8e3f585f4a3a1a
     cursor: pointer;
     z-index: 1;
     -webkit-backface-visibility: hidden;
@@ -267,7 +271,11 @@
 .owl-theme .owl-dots .owl-dot {
     display: inline-block;
     zoom: 1;
+<<<<<<< HEAD
     *display: inline;
+=======
+    display: inline;
+>>>>>>> a4d12d86cfd1ce48dd1494d78c8e3f585f4a3a1a
 }
 
 .owl-theme .owl-dots .owl-dot span {
