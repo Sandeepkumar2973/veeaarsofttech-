@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./FrontPage.css"
 import "../../assets/css/dark-color/dark-style.css"
 import "../../assets/css/animate.min.css"
@@ -16,10 +16,98 @@ import { Link } from 'react-router-dom'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Odometer from './Odometer'
+import "owl.carousel";
+import Slider from 'react-slick';
 
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 
 const FrontPage = () => {
+  const [value, setValue] = useState(0);
+  const [selectedReview, setSelectedReview] = useState(null);
+
+
+  const feedbackData = [
+    {
+      name: 'James Anderson',
+      role: 'Web Developer',
+      imgSrc: 'assets/img/client-image/1.jpg',
+      review:
+        'Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    },
+    {
+      name: 'Steven Smith',
+      role: 'Web Developer',
+      imgSrc: 'assets/img/client-image/2.jpg',
+      review:
+        'Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    },
+    {
+      name: 'Steven Lucy',
+      role: 'Web Developer',
+      imgSrc: 'assets/img/client-image/1.jpg',
+      review:
+        'Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    },
+    {
+      name: 'Steven Lucy',
+      role: 'Web Developer',
+      imgSrc: 'assets/img/client-image/2.jpg',
+      review:
+        'Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    },
+    {
+      name: 'Steven Lucy',
+      role: 'Web Developer',
+      imgSrc: 'assets/img/client-image/3.jpg',
+      review:
+        'Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    },
+    {
+      name: 'Steven Lucy',
+      role: 'Web Developer',
+      imgSrc: 'assets/img/client-image/1.jpg',
+      review:
+        'Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    },
+
+    {
+      name: 'Steven Lucy',
+      role: 'Web Developer',
+      imgSrc: 'assets/img/client-image/2.jpg',
+      review:
+        'Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    },
+    // Add more reviews as needed
+  ];
+  
+
+  const handleImageClick = (index) => {
+    setSelectedReview(feedbackData[index]);
+  };
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3, 
+    slidesToScroll: 1,
+  };
+
+
+
+
+  useEffect(() => {
+    // Simulate value changes over time
+    const intervalId = setInterval(() => {
+      setValue((prevValue) => prevValue + 100);
+    }, 2000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
 
   const teamData = [
     { id: 1, name: 'John Doe', position: 'Developer', image: '../../assets/img/team-image/1.jpg' },
@@ -36,7 +124,7 @@ const FrontPage = () => {
   const owlOptions = {
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
     responsive: {
       0: {
         items: 1,
@@ -45,10 +133,58 @@ const FrontPage = () => {
         items: 3,
       },
       1000: {
+        items: 4,
+      },
+    },
+  };
+
+
+  const worksData = [
+    { id: 1, imgSrc: 'assets/img/works-image/1.jpg', 
+    title: 'Incredible infrastructure', 
+    description: 'Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.' 
+  },
+    { id: 2, imgSrc: 'assets/img/works-image/2.jpg', 
+    title: 'Incredible infrastructure', 
+    description: 'Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.' 
+  },
+    { id: 3, imgSrc: 'assets/img/works-image/3.jpg', 
+    title: 'Incredible infrastructure', 
+    description: 'Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.' 
+  },
+    { id: 3, imgSrc: 'assets/img/works-image/4.jpg', 
+    title: 'Incredible infrastructure', 
+    description: 'Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.' 
+  },
+    { id: 3, imgSrc: 'assets/img/works-image/5.jpg', 
+    title: 'Incredible infrastructure', 
+    description: 'Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.' 
+  },
+  ];
+
+  const options = {
+    items: 1,
+    loop: true,
+    margin: 30,
+    nav: false,
+    dots: true,
+    autoplay: true,
+  autoplayTimeout: 2000, // Set the autoplay timeout to 2000 milliseconds (2 seconds)
+  autoplayHoverPause: true, // Pause on hover if needed
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
         items: 3,
       },
     },
   };
+  
+
 
 
     return (
@@ -805,12 +941,8 @@ const FrontPage = () => {
         </div>
       ))}
     </OwlCarousel>
-
-
     </div>
     {/*Start Team Area*/}
-
-
 
 
 {/*Start Fun Facts Area  */}
@@ -821,28 +953,35 @@ const FrontPage = () => {
       <div class="bar" />
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-3 col-6 col-sm-3">
-        <div class="funfact">
-          <h3><span class="odometer" data-count={180}>00</span>K</h3>
+    <div className="row">
+      <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+        <div className="funfact">
+        <h2 style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}
+        ><Odometer initialValue={150}  duration= "4000"  formate="{d}"/></h2>  
           <p>Downloaded</p>
         </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-6 col-sm-3">
-        <div class="funfact">
-          <h3><span class="odometer" data-count={20}>00</span>K</h3>
+      <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+        <div className="funfact">
+        <h2 style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}>
+        <Odometer initialValue={20} duration= "4000"  formate="{d}"/>
+        </h2>
           <p>Feedback</p>
         </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-6 col-sm-3">
-        <div class="funfact">
-          <h3><span class="odometer" data-count={500}>00</span>+</h3>
+      <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+        <div className="funfact">
+        <h2 style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}>
+        <Odometer initialValue={70} duration= "4000"  formate="{d}"/>
+        </h2>
           <p>Workers</p>
         </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-6 col-sm-3">
-        <div class="funfact">
-          <h3><span class="odometer" data-count={70}>00</span>+</h3>
+      <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+        <div className="funfact">
+        <h2 style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}>
+        <Odometer initialValue={500} duration= "4000"  formate="{d}" />
+        </h2>
           <p>Contributors</p>
         </div>
       </div>
@@ -853,11 +992,25 @@ const FrontPage = () => {
       <a href="contact.html" class="btn btn-primary">Contact Us</a>
     </div>
     <div class="map-bg">
-      <img src="assets/img/map.png" alt="map" />
+      {/* <img src="assets/img/map.png" alt="map" /> */}
+      <img className="map-image" src="../../assets/img/map.png" alt="map" 
+        style={{ width: "100%", height: "390px" }}
+      />
     </div>
+    
   </div>
+  <div class="shape8 rotateme">
+  <img src="assets/img/shape2.svg" alt="shape" style={{width:"20px", height:"20px"}}/></div>
+  <div class="shape2 rotateme">
+  <img src="assets/img/shape2.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
+  <div classclassName="shape7">
+  <img src="assets/img/shape4.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
+  <div class="shape4">
+  <img src="assets/img/shape4.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
 </div>
 {/* End Fun Facts Area*/}
+
+
 
 
 
@@ -871,55 +1024,31 @@ const FrontPage = () => {
     </div>
   </div>
   <div className="container-fluid p-0">
-    <div className="works-slides owl-carousel owl-theme">
-      <div className="single-works">
-        <img src="assets/img/works-image/1.jpg" alt="image" />
-        <a href="#" className="icon"><i data-feather="settings" /></a>
-        <div className="works-content">
-          <h3><a href="#">Incredible infrastructure</a></h3>
-          <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-        </div>
-      </div>
-      <div className="single-works">
-        <img src="assets/img/works-image/2.jpg" alt="image" />
-        <a href="#" className="icon"><i data-feather="settings" /></a>
-        <div className="works-content">
-          <h3><a href="#">Incredible infrastructure</a></h3>
-          <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-        </div>
-      </div>
-      <div className="single-works">
-        <img src="assets/img/works-image/3.jpg" alt="image" />
-        <a href="#" className="icon"><i data-feather="settings" /></a>
-        <div className="works-content">
-          <h3><a href="#">Incredible infrastructure</a></h3>
-          <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-        </div>
-      </div>
-      <div className="single-works">
-        <img src="assets/img/works-image/4.jpg" alt="image" />
-        <a href="#" className="icon"><i data-feather="settings" /></a>
-        <div className="works-content">
-          <h3><a href="#">Incredible infrastructure</a></h3>
-          <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-        </div>
-      </div>
-      <div className="single-works">
-        <img src="assets/img/works-image/5.jpg" alt="image" />
-        <a href="#" className="icon"><i data-feather="settings" /></a>
-        <div className="works-content">
-          <h3><a href="#">Incredible infrastructure</a></h3>
-          <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
-        </div>
-      </div>
+      <OwlCarousel className="works-slides owl-carousel owl-theme" {...options}>
+        {worksData.map(work => (
+          <div key={work.id} className="single-works">
+            <img src={work.imgSrc} alt="image" />
+            <Link to="/" className="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="feather feather-settings">
+                <circle cx={12} cy={12} r={3} />
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+              </svg>
+            </Link>
+            <div className="works-content">
+              <h3>{work.title}</h3>
+              <p>{work.description}</p>
+            </div>
+          </div>
+        ))}
+      </OwlCarousel>
     </div>
-  </div>
-  <div className="shape8 rotateme"><img src="assets/img/shape2.svg" alt="shape" /></div>
-  <div className="shape2 rotateme"><img src="assets/img/shape2.svg" alt="shape" /></div>
-  <div className="shape7"><img src="assets/img/shape4.svg" alt="shape" /></div>
-  <div className="shape4"><img src="assets/img/shape4.svg" alt="shape" /></div>
+  <div class="shape8 rotateme"><img src="assets/img/shape2.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
+  <div class="shape2 rotateme"><img src="assets/img/shape2.svg" alt="shape" style={{width:"20px", height:"20px"}}/></div>
+  <div class="shape7"><img src="assets/img/shape4.svg" alt="shape" style={{width:"20px", height:"20px"}}/></div>
+  <div class="shape4"><img src="assets/img/shape4.svg" alt="shape" style={{width:"20px", height:"20px"}}/></div>
 </div>
 {/* End Works Area*/}
+
 
 
 
@@ -1009,10 +1138,14 @@ const FrontPage = () => {
       </div>
     </div>
   </div>
-  <div className="shape8 rotateme"><img src="assets/img/shape2.svg" alt="shape" /></div>
-  <div className="shape2 rotateme"><img src="assets/img/shape2.svg" alt="shape" /></div>
-  <div className="shape7"><img src="assets/img/shape4.svg" alt="shape" /></div>
-  <div className="shape4"><img src="assets/img/shape4.svg" alt="shape" /></div>
+  <div class="shape8 rotateme">
+  <img src="assets/img/shape2.svg" alt="shape" style={{width:"20px", height:"20px"}}/></div>
+  <div class="shape2 rotateme">
+  <img src="assets/img/shape2.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
+  <div classclassName="shape7">
+  <img src="assets/img/shape4.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
+  <div class="shape4">
+  <img src="assets/img/shape4.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
 </div>
 {/* End Pricing Area*/}
 
@@ -1020,141 +1153,45 @@ const FrontPage = () => {
 
 {/* Start Feedback Area*/}
 <div className="feedback-area ptb-80 bg-f7fafd">
-  <div className="container">
-    <div className="section-title">
-      <h2>What users Saying</h2>
-      <div className="bar" />
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div className="container">
+        <div className="section-title">
+          <h2>What users are Saying</h2>
+          <div className="bar" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+
+
+<div className='card' style={{width:"70%", margin:"0 auto", padding:"20px", marginBottom:"10px" }}>
+      {selectedReview && (
+        <div className="selected-review">
+          <div className="container">
+          <image src={selectedReview.imgSrc} />
+            <h3>{selectedReview.name}</h3>
+            <span>{selectedReview.role}</span>
+            <p>{selectedReview.review}</p>
+            <button className="btn btn-primary" onClick={() => setSelectedReview(null)}>Close</button>
+          </div>
+        </div>
+      )}
+      </div>
     </div>
+
+
     <div className="feedback-slides">
-      <div className="client-feedback">
-        <div>
-          <div className="item">
-            <div className="single-feedback">
-              <div className="client-img">
-                <img src="assets/img/client-image/1.jpg" alt="image" />
+          <Slider {...settings}>
+            {feedbackData.map((feedback, index) => (
+              <div key={index} className="single-feedback">
+                <div className="client-img" onClick={() => handleImageClick(index)}>
+                  <img src={feedback.imgSrc} alt={feedback.name} style={{borderRadius:"50px"}}/>
+                </div>
+                {/* Display a preview of the review if needed */}
               </div>
-              <h3>John Lucy</h3>
-              <span>Web Developer</span>
-              <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div className="item">
-            <div className="single-feedback">
-              <div className="client-img">
-                <img src="assets/img/client-image/2.jpg" alt="image" />
-              </div>
-              <h3>John Smith</h3>
-              <span>Web Developer</span>
-              <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div className="item">
-            <div className="single-feedback">
-              <div className="client-img">
-                <img src="assets/img/client-image/3.jpg" alt="image" />
-              </div>
-              <h3>Maxwel Warner</h3>
-              <span>Web Developer</span>
-              <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div className="item">
-            <div className="single-feedback">
-              <div className="client-img">
-                <img src="assets/img/client-image/4.jpg" alt="image" />
-              </div>
-              <h3>Ross Taylor</h3>
-              <span>Web Developer</span>
-              <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div className="item">
-            <div className="single-feedback">
-              <div className="client-img">
-                <img src="assets/img/client-image/5.jpg" alt="image" />
-              </div>
-              <h3>James Anderson</h3>
-              <span>Web Developer</span>
-              <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div className="item">
-            <div className="single-feedback">
-              <div className="client-img">
-                <img src="assets/img/client-image/1.jpg" alt="image" />
-              </div>
-              <h3>Steven Smith</h3>
-              <span>Web Developer</span>
-              <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div className="item">
-            <div className="single-feedback">
-              <div className="client-img">
-                <img src="assets/img/client-image/2.jpg" alt="image" />
-              </div>
-              <h3>Steven Lucy</h3>
-              <span>Web Developer</span>
-              <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div className="item">
-            <div className="single-feedback">
-              <div className="client-img">
-                <img src="assets/img/client-image/3.jpg" alt="image" />
-              </div>
-              <h3>John Terry</h3>
-              <span>Web Developer</span>
-              <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
+            ))}
+          </Slider>
         </div>
       </div>
-      <div className="client-thumbnails">
-        <div>
-          <div className="item">
-            <div className="img-fill"><img src="assets/img/client-image/1.jpg" alt="client" /></div>
-          </div>
-          <div className="item">
-            <div className="img-fill"><img src="assets/img/client-image/2.jpg" alt="client" /></div>
-          </div>
-          <div className="item">
-            <div className="img-fill"><img src="assets/img/client-image/3.jpg" alt="client" /></div>
-          </div>
-          <div className="item">
-            <div className="img-fill"><img src="assets/img/client-image/4.jpg" alt="client" /></div>
-          </div>
-          <div className="item">
-            <div className="img-fill"><img src="assets/img/client-image/5.jpg" alt="client" /></div>
-          </div>
-          <div className="item">
-            <div className="img-fill"><img src="assets/img/client-image/1.jpg" alt="client" /></div>
-          </div>
-          <div className="item">
-            <div className="img-fill"><img src="assets/img/client-image/2.jpg" alt="client" /></div>
-          </div>
-          <div className="item">
-            <div className="img-fill"><img src="assets/img/client-image/3.jpg" alt="client" /></div>
-          </div>
-        </div>
-        <button className="prev-arrow slick-arrow">
-          <i data-feather="arrow-left" />
-        </button>
-        <button className="next-arrow slick-arrow">
-          <i data-feather="arrow-right" />
-        </button>
-      </div>
-    </div>
-  </div>
-  <div className="shape1"><img src="assets/img/shape1.png" alt="shape" /></div>
-  <div className="shape2 rotateme"><img src="assets/img/shape2.svg" alt="shape" /></div>
-  <div className="shape4"><img src="assets/img/shape4.svg" alt="shape" /></div>
-  <div className="shape5"><img src="assets/img/shape5.png" alt="shape" /></div>
-  <div className="shape6 rotateme"><img src="assets/img/shape4.svg" alt="shape" /></div>
-  <div className="shape7"><img src="assets/img/shape4.svg" alt="shape" /></div>
-  <div className="shape8 rotateme"><img src="assets/img/shape2.svg" alt="shape" /></div>
-</div>
 {/*  End Feedback Area*/}
 
 
@@ -1167,6 +1204,14 @@ const FrontPage = () => {
             <a href="contact.html" class="btn btn-primary">Contact Us</a>
             <span><a href="contact.html">Or, get started now with a free trial</a></span>
         </div>
+        <div class="shape8 rotateme">
+  <img src="assets/img/shape2.svg" alt="shape" style={{width:"20px", height:"20px"}}/></div>
+  <div class="shape2 rotateme">
+  <img src="assets/img/shape2.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
+  <div classclassName="shape7">
+  <img src="assets/img/shape4.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
+  <div class="shape4">
+  <img src="assets/img/shape4.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
     </div>
 {/*  End Ready To Talk Area */}
 
@@ -1289,6 +1334,14 @@ const FrontPage = () => {
       </div>
     </div>
   </div>
+  <div class="shape8 rotateme">
+  <img src="assets/img/shape2.svg" alt="shape" style={{width:"20px", height:"20px"}}/></div>
+  <div class="shape2 rotateme">
+  <img src="assets/img/shape2.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
+  <div classclassName="shape7">
+  <img src="assets/img/shape4.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
+  <div class="shape4">
+  <img src="assets/img/shape4.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
 </div>
 {/*  End Partner Area */}
 
@@ -1360,6 +1413,14 @@ const FrontPage = () => {
       </div>
     </div>
   </div>
+  <div class="shape8 rotateme">
+  <img src="assets/img/shape2.svg" alt="shape" style={{width:"20px", height:"20px"}}/></div>
+  <div class="shape2 rotateme">
+  <img src="assets/img/shape2.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
+  <div classclassName="shape7">
+  <img src="assets/img/shape4.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
+  <div class="shape4">
+  <img src="assets/img/shape4.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
 </div>
 {/*  End Blog Area */}
 
