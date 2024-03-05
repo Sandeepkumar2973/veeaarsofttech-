@@ -44,7 +44,7 @@ const Navbar = () => {
                             </li>
 
                             <li class="nav-item">
-                            <Link to='/' class="nav-link">Our Services <i data-feather="chevron-down"></i></Link>
+                            <Link to='/our-services' class="nav-link">Our Services <i data-feather="chevron-down"></i></Link>
                                 <ul class="dropdown_menu">
                                     <li class="nav-item">
                                     <Link to='/website-development-company' class="nav-link">Website Development <i data-feather="chevron-right"></i></Link>
@@ -113,7 +113,7 @@ const Navbar = () => {
                             </li>
 
                             <li class="nav-item">
-                            <Link to='/' class="nav-link">Our Services <i data-feather="chevron-down"></i></Link>
+                            <Link to='/our-services' class="nav-link">Our Services <i data-feather="chevron-down"></i></Link>
                                 <ul class="dropdown_menu">
                                     <li class="nav-item">
                                     <Link to='/website-development-company' class="nav-link">Website Development <i data-feather="chevron-right"></i></Link>
