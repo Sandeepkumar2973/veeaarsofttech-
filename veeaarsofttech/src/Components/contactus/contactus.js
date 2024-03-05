@@ -20,23 +20,23 @@ const Contact = () => {
                     <i data-feather="mail" />
                   </div>
                   <h3>Mail Here</h3>
-                  <p>
+                  {/* <p>
                     <a href="#">
                       <span
                         className="__cf_email__"
                         data-cfemail="ec8d88818582ac9f988d9e989cc28f8381"
                       >
-                        [email&nbsp;protected]
+                        email&nbsp;&nbsp;&nbsp;info@veeaarsofttech.com
                       </span>
                     </a>
-                  </p>
+                  </p> */}
                   <p>
                     <a href="#">
                       <span
                         className="__cf_email__"
                         data-cfemail="4b22252d240b383f2a393f3b65282426"
                       >
-                        [email&nbsp;protected]
+                        email&nbsp;&nbsp;&nbsp;info@veeaarsofttech.com
                       </span>
                     </a>
                   </p>
@@ -49,7 +49,8 @@ const Contact = () => {
                   </div>
                   <h3>Visit Here</h3>
                   <p>
-                    27 Division St, New York, NY 10002, United States of America
+                    3rd Floor Plot no 17 pocket 22 near mega mall rohini sector
+                    24 110085
                   </p>
                 </div>
               </div>
@@ -59,11 +60,12 @@ const Contact = () => {
                     <i data-feather="phone" />
                   </div>
                   <h3>Call Here</h3>
+                  {/* <p>
+                    <a href="#">+91 84484 41698</a>
+                  </p> */}
                   <p>
-                    <a href="#">+123 456 7890</a>
-                  </p>
-                  <p>
-                    <a href="#">+241 452 4526</a>
+                    <a href="#">+91 95996 61378​</a>,&nbsp;&nbsp;
+                    <a href="#">+91 84484 41698</a>
                   </p>
                 </div>
               </div>
@@ -83,7 +85,10 @@ const Contact = () => {
             <div className="section-title">
               <h2>Get In Touch With Us</h2>
               <div className="bar" />
-              <p>Anything On your Mind. We’ll Be Glad To Assist You!</p>
+              <p>
+                Do not hesitate to reach out. Just fill in the contact form here
+                and we’ll be sure to reply as fast as possible.
+              </p>
             </div>
             <div className="row h-100 justify-content-center align-items-center">
               <div className="col-lg-6 col-md-12">

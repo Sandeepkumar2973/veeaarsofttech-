@@ -11,6 +11,7 @@
     "odometer": "^0.4.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-owl-carousel": "^2.3.3",
     "react-router-dom": "^6.22.2",
     "react-scripts": "5.0.1",
     "react-slick": "^0.30.2",
@@ -41,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "source-map-loader": "^5.0.0"
   }
 }
