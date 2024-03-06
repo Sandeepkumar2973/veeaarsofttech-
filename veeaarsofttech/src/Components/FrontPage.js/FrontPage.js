@@ -109,34 +109,7 @@ const FrontPage = () => {
   }, []);
 
 
-  const teamData = [
-    { id: 1, name: 'John Doe', position: 'Developer', image: '../../assets/img/team-image/1.jpg' },
-    { id: 2, name: 'Jane Smith', position: 'Designer', image: '../../assets/img/team-image/2.jpg' },
-    { id: 3, name: 'Jane Smith', position: 'Designer', image: '../../assets/img/team-image/3.jpg' },
-    { id: 4, name: 'geeoj sanithal', position: 'Designer', image: '../../assets/img/team-image/4.jpg' },
-    { id: 5, name: 'Jane Smith', position: 'Designer', image: '../../assets/img/team-image/5.jpg' },
-    { id: 1, name: 'Jane Smith', position: 'Designer', image: '../../assets/img/team-image/1.jpg' },
-    { id: 2, name: 'Jane Smith', position: 'Designer', image: '../../assets/img/team-image/2.jpg' },
-    // Add more team members as needed
-  ];
 
-  // Owl Carousel options
-  const owlOptions = {
-    loop: true,
-    margin: 10,
-    nav: false,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 3,
-      },
-      1000: {
-        items: 4,
-      },
-    },
-  };
 
 
   const worksData = [
@@ -571,29 +544,233 @@ const FrontPage = () => {
             </div>
         </div>
 
-<OwlCarousel className="owl-theme" {...owlOptions}>
-      {teamData.map((member) => (
-        <div key={member.id} className="team-member" style={{background:"#f2f2f2", padding:"30px"}}>
-          {/* <img src={require(`./../../assets/img/team-image/${member.image}`).default} alt={member.name} /> */}
-          <img className='carsole-image' src={member.image}/>
-           <div class="team-content">
-              <div class="team-info">
-              <h6 className='text-center'>{member.name}</h6>
-           <span><p>{member.position}</p></span>
-                        </div>
-                        <ul>
-                            <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
-                            <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a></li>
-                            <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
-                            <li><a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"></path></svg></a></li>
-                        </ul>
-                        <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-                    </div>
-          {/* <h3 className='text-center'>{member.name}</h3> */}
-          {/* <p>{member.position}</p> */}
-        </div>
-      ))}
-    </OwlCarousel>
+        <Slider {...settings} className="team-slides owl-carousel owl-theme">
+          {/* <div className="team-slides owl-carousel owl-theme"> */}
+          <div className="single-team">
+            <div className="team-image">
+              <img src="assets/img/team-image/1.jpg" alt="image" />
+            </div>
+            <div className="team-content">
+              <div className="team-info">
+                <h3>Josh Buttler</h3>
+                <span>CEO &amp; Founder</span>
+              </div>
+              <ul>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="facebook" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="twitter" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="linkedin" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="gitlab" />
+                  </a>
+                </li>
+              </ul>
+              <p>
+                Risus commodo viverra maecenas accumsan lacus vel facilisis quis
+                ipsum.{" "}
+              </p>
+            </div>
+          </div>
+          <div className="single-team">
+            <div className="team-image">
+              <img src="assets/img/team-image/2.jpg" alt="image" />
+            </div>
+            <div className="team-content">
+              <div className="team-info">
+                <h3>Alex Maxwel</h3>
+                <span>Marketing Manager</span>
+              </div>
+              <ul>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="facebook" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="twitter" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="linkedin" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="gitlab" />
+                  </a>
+                </li>
+              </ul>
+              <p>
+                Risus commodo viverra maecenas accumsan lacus vel facilisis quis
+                ipsum.{" "}
+              </p>
+            </div>
+          </div>
+          <div className="single-team">
+            <div className="team-image">
+              <img src="assets/img/team-image/3.jpg" alt="image" />
+            </div>
+            <div className="team-content">
+              <div className="team-info">
+                <h3>Janny Cotller</h3>
+                <span>Web Developer</span>
+              </div>
+              <ul>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="facebook" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="twitter" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="linkedin" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="gitlab" />
+                  </a>
+                </li>
+              </ul>
+              <p>
+                Risus commodo viverra maecenas accumsan lacus vel facilisis quis
+                ipsum.{" "}
+              </p>
+            </div>
+          </div>
+          <div className="single-team">
+            <div className="team-image">
+              <img src="assets/img/team-image/4.jpg" alt="image" />
+            </div>
+            <div className="team-content">
+              <div className="team-info">
+                <h3>Jason Statham</h3>
+                <span>UX/UI Designer</span>
+              </div>
+              <ul>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="facebook" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="twitter" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="linkedin" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="gitlab" />
+                  </a>
+                </li>
+              </ul>
+              <p>
+                Risus commodo viverra maecenas accumsan lacus vel facilisis quis
+                ipsum.{" "}
+              </p>
+            </div>
+          </div>
+          <div className="single-team">
+            <div className="team-image">
+              <img src="assets/img/team-image/5.jpg" alt="image" />
+            </div>
+            <div className="team-content">
+              <div className="team-info">
+                <h3>Corey Anderson</h3>
+                <span>Project Manager</span>
+              </div>
+              <ul>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="facebook" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="twitter" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="linkedin" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="gitlab" />
+                  </a>
+                </li>
+              </ul>
+              <p>
+                Risus commodo viverra maecenas accumsan lacus vel facilisis quis
+                ipsum.{" "}
+              </p>
+            </div>
+          </div>
+          <div className="single-team">
+            <div className="team-image">
+              <img src="assets/img/team-image/1.jpg" alt="image" />
+            </div>
+            <div className="team-content">
+              <div className="team-info">
+                <h3>Josh Buttler</h3>
+                <span>CEO &amp; Founder</span>
+              </div>
+              <ul>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="facebook" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="twitter" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="linkedin" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank">
+                    <i data-feather="gitlab" />
+                  </a>
+                </li>
+              </ul>
+              <p>
+                Risus commodo viverra maecenas accumsan lacus vel facilisis quis
+                ipsum.{" "}
+              </p>
+            </div>
+          </div>
+
+          {/* </div> */}
+        </Slider>
     </div>
     {/*Start Team Area*/}
 
@@ -704,7 +881,7 @@ const FrontPage = () => {
 <div className="pricing-area ptb-80 bg-f9f6f6">
   <div className="container">
     <div className="section-title">
-      <h2>Pricing Plans</h2>
+      <h2 className='text-center'>Pricing Plans</h2>
       <div className="bar" />
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
@@ -712,7 +889,7 @@ const FrontPage = () => {
       <div className="col-lg-4 col-md-6 col-sm-6">
         <div className="pricing-table">
           <div className="pricing-header">
-            <h3>Basic Plan</h3>
+            <h3 className='text-center'>Basic Plan</h3>
           </div>
           <div className="price">
             <span><sup>$</sup>15.00 <span>/Mon</span></span>
@@ -730,14 +907,14 @@ const FrontPage = () => {
             </ul>
           </div>
           <div className="pricing-footer">
-            <a href="#" className="btn btn-primary">Select Plan</a>
+            <Link to="/" className="btn btn-primary">Select Plan</Link>
           </div>
         </div>
       </div>
       <div className="col-lg-4 col-md-6 col-sm-6">
         <div className="pricing-table active-plan">
           <div className="pricing-header">
-            <h3>Advanced Plan</h3>
+            <h3 className='text-center'>Advanced Plan</h3>
           </div>
           <div className="price">
             <span><sup>$</sup>35.00 <span>/Mon</span></span>
@@ -755,14 +932,14 @@ const FrontPage = () => {
             </ul>
           </div>
           <div className="pricing-footer">
-            <a href="#" className="btn btn-primary">Select Plan</a>
+            <Link to="/" className="btn btn-primary">Select Plan</Link>
           </div>
         </div>
       </div>
       <div className="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
         <div className="pricing-table">
           <div className="pricing-header">
-            <h3>Expert Plan</h3>
+            <h3 className='text-center'>Expert Plan</h3>
           </div>
           <div className="price">
             <span><sup>$</sup>65.00 <span>/Mon</span></span>
@@ -780,7 +957,7 @@ const FrontPage = () => {
             </ul>
           </div>
           <div className="pricing-footer">
-            <a href="#" className="btn btn-primary">Select Plan</a>
+            <Link to='/' className="btn btn-primary">Select Plan</Link>
           </div>
         </div>
       </div>
@@ -1075,11 +1252,6 @@ const FrontPage = () => {
   <img src="assets/img/shape4.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
 </div>
 {/*  End Blog Area */}
-
-
-
-
-
 
        </>
     )

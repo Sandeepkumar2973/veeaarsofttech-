@@ -1,141 +1,200 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import {
+  FaFacebook,
+  FaLinkedin,
+  FaInstagramSquare,
+  FaYoutube,
+} from "react-icons/fa";
+// import { FaXYoutube } from "react-icons/fa6";
 
 const Footer = () => {
   return (
     <>
-      <footer className="footer-area bg-f7fafd">
+      <div className="footer-area bg-f7fafd">
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className="single-footer-widget">
                 <div className="logo black-logo">
-                  <a href="index.html">
-                    <img src="assets/img/logo.png" alt="logo" />
-                  </a>
+                  <Link to="/">
+                    <img
+                      src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png"
+                      alt="logo"
+                      style={{ width: "100px", height: "auto", margin: -50 }}
+                    />
+                  </Link>
                 </div>
-                <div className="logo white-logo">
-                  <a href="index.html">
-                    <img src="assets/img/white-logo.png" alt="logo" />
-                  </a>
-                </div>
+                {/* <div className="logo white-logo">
+            <Link to="/">
+            <img src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png" alt="logo" 
+            style={{width:"80px", height:"auto"}}/>
+            </Link>
+          </div> */}
                 <p>
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                  maecenas accumsan lacus vel facilisis.
+                  Veeaar softtech pvt ltd is a leading IT solutions provider
+                  dedicated to delivering cutting-edge technology services and
+                  solutions to businesses worldwide. Established in 2021, our
+                  company has steadily grown to become a trusted partner for
+                  organizations seeking innovative IT solutions.
                 </p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className="single-footer-widget pl-5">
-                <h3>Company</h3>
+                <h3 className="text-center">Company</h3>
                 <ul className="list">
-                  <li>
-                    <a href="about-1.html">About Us</a>
+                  <li class="nav-item">
+                    <Link to="/website-development-company">
+                      Website Development <i data-feather="chevron-right"></i>
+                    </Link>
                   </li>
-                  <li>
-                    <a href="services-1.html">Services</a>
+                  <li class="nav-item">
+                    <Link to="/application-development-company">
+                      Application Development{" "}
+                      <i data-feather="chevron-right"></i>
+                    </Link>
                   </li>
-                  <li>
-                    <a href="features.html">Features</a>
+                  <li class="nav-item">
+                    <Link to="/digital-marketing-company">
+                      Digital Marketing <i data-feather="chevron-right"></i>
+                    </Link>
                   </li>
-                  <li>
-                    <a href="pricing.html">Our Pricing</a>
+                  <li class="nav-item">
+                    <Link to="/ui-ux-designing-company">
+                      Ui/UX Designing <i data-feather="chevron-right"></i>
+                    </Link>
                   </li>
-                  <li>
-                    <a href="blog-1.html">Latest News</a>
+                  <li class="nav-item">
+                    <Link to="/graphic-designing-company">
+                      Graphic Designing<i data-feather="chevron-right"></i>
+                    </Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link to="/data-science-consulting">
+                      Data Science Consulting
+                      <i data-feather="chevron-right"></i>
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className="single-footer-widget">
-                <h3>Support</h3>
+                <h3 className="text-center">Support</h3>
                 <ul className="list">
-                  <li>
-                    <a href="faq.html">FAQ's</a>
+                  <li class="nav-item">
+                    <Link to="/about-us">
+                      About Us <i data-feather="chevron-down"></i>
+                    </Link>
+                  </li>
+
+                  <li class="nav-item">
+                    <Link to="/blog">
+                      Blog <i data-feather="chevron-down"></i>
+                    </Link>
+                  </li>
+
+                  <li class="nav-item">
+                    <Link to="/contact-us">Contact Us</Link>
                   </li>
                   <li>
-                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <Link to="/privacy-policy">Privacy &amp; Policy</Link>
                   </li>
                   <li>
-                    <a href="terms-conditions.html">Terms &amp; Condition</a>
+                    <Link to="/term-conditions">Terms &amp; Condition</Link>
                   </li>
                   <li>
-                    <a href="contact.html">Support Us</a>
-                  </li>
-                  <li>
-                    <a href="contact.html">Contact Us</a>
+                    <Link to="/refund">Refund Policy</Link>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className="single-footer-widget">
-                <h3>Address</h3>
+                <h3 className="text-center">Address</h3>
                 <ul className="footer-contact-info">
                   <li>
-                    <i data-feather="map-pin" /> 27 Division St, New York, NY
-                    10002, USA
+                    <i data-feather="map-pin" /> 3rd Floor Plot no 17 pocket 22
+                    rohini sector 24 New delhi B-80/2 Singh ENC Prem Nagar-III
+                    New delhi 110041
                   </li>
                   <li>
-                    <i data-feather="mail" /> Email:{" "}
-                    <a href="/cdn-cgi/l/email-protection#4c24292020230c3f382d3e383c622f2321">
+                    <i data-feather="mail" /> Email:
+                    <Link to="/">
                       <span
                         className="__cf_email__"
                         data-cfemail="325a575e5e5d724146534046421c515d5f"
                       >
-                        [email&nbsp;protected]
+                        info@veeaarsofttech.com
                       </span>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <i data-feather="phone-call" /> Phone:{" "}
-                    <a href="tel:+ (321) 984 754">+ (321) 984 754</a>
+                    <i data-feather="phone-call" /> Phone:
+                    <Link to="tel:+ (91) 84484 41698">+ (91) 84484 41698 </Link>
+                  </li>
+                  <li>
+                    <i data-feather="phone-call" /> Phone:
+                    <Link to="tel:+ (91) 95996 61378">+ (91) 95996 61378</Link>
                   </li>
                 </ul>
                 <ul className="social-links">
                   <li>
-                    <a href="#" className="facebook" target="_blank">
+                    <Link
+                      to="https://www.facebook.com/people/Veeaarsofttech/61551123982496/"
+                      className="facebook"
+                      target="_blank"
+                    >
                       <i data-feather="facebook" />
-                    </a>
+                      <FaFacebook />
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="twitter" target="_blank">
-                      <i data-feather="twitter" />
-                    </a>
+                    <Link
+                      to="/https://www.youtube.com/@veeaarsoftech"
+                      className="youtube"
+                      target="_blank"
+                    >
+                      <i data-feather="youtube" />
+                      <FaYoutube />
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="instagram" target="_blank">
+                    <Link
+                      to="https://www.instagram.com/veeaarsofttechpvtltd/"
+                      className="instagram"
+                      target="_blank"
+                    >
                       <i data-feather="instagram" />
-                    </a>
+                      <FaInstagramSquare />
+                    </Link>
                   </li>
                   <li>
-                    <a href="#" className="linkedin" target="_blank">
+                    <Link
+                      to="https://www.linkedin.com/company/veeaar-softtech-pvt-ltd/"
+                      className="linkedin"
+                      target="_blank"
+                    >
                       <i data-feather="linkedin" />
-                    </a>
+                      <FaLinkedin />
+                    </Link>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="col-lg-12 col-md-12">
               <div className="copyright-area">
-                <p>
-                  Copyright @ StartP. All Rights Reserved by{" "}
-                  <a href="https://envytheme.com/" target="_blank">
-                    EnvyTheme
-                  </a>
+                <p className="text-center">
+                  <Link to="/" target="_blank">
+                    Copyright @ 2022 All Rights Reserved by VeeAarSoftTech
+                  </Link>
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <img src="assets/img/map.png" className="map" alt="map" />
-        <div className="shape1">
-          <img src="assets/img/shape1.png" alt="shape" />
-        </div>
-        <div className="shape8 rotateme">
-          <img src="assets/img/shape2.svg" alt="shape" />
-        </div>
-      </footer>
+      </div>
     </>
   );
 };

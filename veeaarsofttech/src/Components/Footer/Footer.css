@@ -520,55 +520,7 @@ Auth Area CSS
     border-radius: 50%;
 }
 
-.buy-now-btn {
-    z-index: 9;
-    right: 35px;
-    width: 65px;
-    height: 65px;
-    bottom: 100px;
-    position: fixed;
-    text-align: center;
-    border-radius: 50%;
-    display: inline-block;
-    background-color: #81b441;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    -webkit-animation-name: tada;
-    animation-name: tada;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-}
 
-.buy-now-btn img {
-    left: 0;
-    right: 0;
-    top: 50%;
-    position: absolute;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.buy-now-btn::before {
-    top: 0;
-    left: 0;
-    z-index: -1;
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    position: absolute;
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.2s;
-    background-color: #81b441;
-    -webkit-animation: ripple 1.5s ease-out infinite;
-    animation: ripple 1.5s ease-out infinite;
-}
 
 @-webkit-keyframes ripple {
     from {

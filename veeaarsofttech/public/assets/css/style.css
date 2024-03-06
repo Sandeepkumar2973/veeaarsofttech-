@@ -3362,50 +3362,7 @@ Pricing CSS
     font-weight: 600;
 }
 
-.pricing-box .buy-btn {
-    margin-bottom: 30px;
-}
 
-.pricing-box .buy-btn .btn {
-    -webkit-box-shadow: unset !important;
-    box-shadow: unset !important;
-    -webkit-transform: unset !important;
-    transform: unset !important;
-}
-
-.pricing-box .buy-btn .btn-primary {
-    border-radius: 30px;
-    background: -webkit-gradient(linear, left bottom, right top, from(#a3a3a3), color-stop(#9a9a9a), color-stop(#909090), color-stop(#878787), to(#7e7e7e));
-    background: linear-gradient(to right top, #a3a3a3, #9a9a9a, #909090, #878787, #7e7e7e);
-    text-transform: capitalize;
-    padding: 11px 30px;
-    font-weight: 500;
-}
-
-.pricing-box .buy-btn .btn-primary::after {
-    border-radius: 30px;
-    background: #44ce6f;
-    width: 100%;
-    opacity: 1;
-    visibility: visible;
-}
-
-.pricing-box .buy-btn .btn-primary::before {
-    display: none;
-}
-
-.pricing-box .buy-btn .btn-primary:not(:disabled):not(.disabled).active,
-.pricing-box .buy-btn .btn-primary:not(:disabled):not(.disabled):active,
-.pricing-box .buy-btn .btn-primary .show>.pricing-box .buy-btn .btn-primary.dropdown-toggle {
-    background: -webkit-gradient(linear, left bottom, right top, from(#a3a3a3), color-stop(#9a9a9a), color-stop(#909090), color-stop(#878787), to(#7e7e7e));
-    background: linear-gradient(to right top, #a3a3a3, #9a9a9a, #909090, #878787, #7e7e7e);
-}
-
-.pricing-box .buy-btn .btn-primary:hover::after,
-.pricing-box .buy-btn .btn-primary:focus::after {
-    opacity: 0;
-    visibility: hidden;
-}
 
 .pricing-box .pricing-features {
     margin-bottom: 0;
@@ -5343,22 +5300,7 @@ Shop Details CSS
     border-color: #c679e3;
 }
 
-.products-details form .buy-btn {
-    margin-top: 20px;
-}
 
-.products-details form .buy-btn .btn-primary {
-    background: #c679e3;
-    -webkit-box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-    box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-}
-
-.products-details form .buy-btn .btn-primary::after,
-.products-details form .buy-btn .btn-primary::before {
-    background: #44ce6f;
-    -webkit-box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-    box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-}
 
 .products-details .custom-payment-options {
     margin-top: 20px;
@@ -7706,30 +7648,7 @@ CTA CSS
     font-size: 20px;
 }
 
-.cta-right-content .buy-btn {
-    display: inline-block;
-    padding-left: 35px;
-    position: relative;
-    top: -15px;
-}
 
-.cta-right-content .buy-btn .btn-primary {
-    background: #c679e3;
-    -webkit-box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-    box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
-}
-
-.cta-right-content .buy-btn .btn-primary::after,
-.cta-right-content .buy-btn .btn-primary::before {
-    background: #ffffff;
-    -webkit-box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-    box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
-}
-
-.cta-right-content .buy-btn .btn-primary:hover,
-.cta-right-content .buy-btn .btn-primary:focus {
-    color: #44ce6f;
-}
 
 /*================================================
 Repair Main Banner CSS
@@ -11230,56 +11149,6 @@ Auth Area CSS
 
 .dark-version .slider.round:before {
     border-radius: 50%;
-}
-
-.buy-now-btn {
-    z-index: 9;
-    right: 35px;
-    width: 65px;
-    height: 65px;
-    bottom: 100px;
-    position: fixed;
-    text-align: center;
-    border-radius: 50%;
-    display: inline-block;
-    background-color: #81b441;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    -webkit-animation-name: tada;
-    animation-name: tada;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-}
-
-.buy-now-btn img {
-    left: 0;
-    right: 0;
-    top: 50%;
-    position: absolute;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.buy-now-btn::before {
-    top: 0;
-    left: 0;
-    z-index: -1;
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    position: absolute;
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.2s;
-    background-color: #81b441;
-    -webkit-animation: ripple 1.5s ease-out infinite;
-    animation: ripple 1.5s ease-out infinite;
 }
 
 @-webkit-keyframes ripple {

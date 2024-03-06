@@ -1,231 +1,90 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../Header/Navbar";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-
+import { cardData } from "./contents";
 const Blog = () => {
+  const pageSize = 9;
+  const [currentPage, setCurrentPage] = useState(1);
+  const startIndex = (currentPage - 1) * pageSize;
+  const endIndex = currentPage * pageSize;
+  const currentCardData = cardData.slice(startIndex, endIndex);
+  const totalPages = Math.ceil(cardData.length / pageSize);
+
+  const handlePageChange = (page) => {
+    // showLoader(); // Show loader when changing the page
+    setCurrentPage(page);
+  };
+
   return (
     <>
       <Navbar />
       <div>
         <Header />
-
         {/* Start Blog Area */}
         <div className="blog-area ptb-80">
           <div className="container">
             <div className="row">
-              <div className="col-lg-4 col-md-6">
-                <div className="single-blog-post">
-                  <div className="blog-image">
-                    <a href="single-blog.html">
-                      <img src="assets/img/blog-image/1.jpg" alt="image" />
-                    </a>
-                    <div className="date">
-                      <i data-feather="calendar" /> March 15, 2019
-                    </div>
-                  </div>
-                  <div className="blog-post-content">
-                    <h3>
-                      <a href="single-blog.html">
-                        The security risks of changing package owners
-                      </a>
-                    </h3>
-                    <span>
-                      by <a href="blog-1.html">admin</a>
-                    </span>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Quis ipsum suspendisse ultrices gravida.
-                    </p>
-                    <a href="single-blog.html" className="read-more-btn">
-                      Read More <i data-feather="arrow-right" />{" "}
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="single-blog-post">
-                  <div className="blog-image">
-                    <a href="single-blog.html">
-                      <img src="assets/img/blog-image/2.jpg" alt="image" />
-                    </a>
-                    <div className="date">
-                      <i data-feather="calendar" /> March 17, 2019
-                    </div>
-                  </div>
-                  <div className="blog-post-content">
-                    <h3>
-                      <a href="single-blog.html">
-                        Tips to Protecting Your Business and Family
-                      </a>
-                    </h3>
-                    <span>
-                      by <a href="blog-1.html">smith</a>
-                    </span>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Quis ipsum suspendisse ultrices gravida.
-                    </p>
-                    <a href="single-blog.html" className="read-more-btn">
-                      Read More <i data-feather="arrow-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="single-blog-post">
-                  <div className="blog-image">
-                    <a href="single-blog.html">
-                      <img src="assets/img/blog-image/3.jpg" alt="image" />
-                    </a>
-                    <div className="date">
-                      <i data-feather="calendar" /> March 19, 2019
-                    </div>
-                  </div>
-                  <div className="blog-post-content">
-                    <h3>
-                      <a href="single-blog.html">
-                        Protect Your Workplace from Cyber Attacks
-                      </a>
-                    </h3>
-                    <span>
-                      by <a href="blog-1.html">john</a>
-                    </span>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Quis ipsum suspendisse ultrices gravida.
-                    </p>
-                    <a href="single-blog.html" className="read-more-btn">
-                      Read More <i data-feather="arrow-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="single-blog-post">
-                  <div className="blog-image">
-                    <a href="single-blog.html">
-                      <img src="assets/img/blog-image/4.jpg" alt="image" />
-                    </a>
-                    <div className="date">
-                      <i data-feather="calendar" /> March 15, 2019
-                    </div>
-                  </div>
-                  <div className="blog-post-content">
-                    <h3>
-                      <a href="single-blog.html">
-                        The security risks of changing package owners
-                      </a>
-                    </h3>
-                    <span>
-                      by <a href="blog-1.html">admin</a>
-                    </span>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Quis ipsum suspendisse ultrices gravida.
-                    </p>
-                    <a href="single-blog.html" className="read-more-btn">
-                      Read More <i data-feather="arrow-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="single-blog-post">
-                  <div className="blog-image">
-                    <a href="single-blog.html">
-                      <img src="assets/img/blog-image/5.jpg" alt="image" />
-                    </a>
-                    <div className="date">
-                      <i data-feather="calendar" /> March 17, 2019
-                    </div>
-                  </div>
-                  <div className="blog-post-content">
-                    <h3>
-                      <a href="single-blog.html">
-                        Tips to Protecting Your Business and Family
-                      </a>
-                    </h3>
-                    <span>
-                      by <a href="blog-1.html">smith</a>
-                    </span>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Quis ipsum suspendisse ultrices gravida.
-                    </p>
-                    <a href="single-blog.html" className="read-more-btn">
-                      Read More <i data-feather="arrow-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6">
-                <div className="single-blog-post">
-                  <div className="blog-image">
-                    <a href="single-blog.html">
-                      <img src="assets/img/blog-image/6.jpg" alt="image" />
-                    </a>
-                    <div className="date">
-                      <i data-feather="calendar" /> March 19, 2019
-                    </div>
-                  </div>
-                  <div className="blog-post-content">
-                    <h3>
-                      <a href="single-blog.html">
-                        Protect Your Workplace from Cyber Attacks
-                      </a>
-                    </h3>
-                    <span>
-                      by <a href="blog-1.html">john</a>
-                    </span>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Quis ipsum suspendisse ultrices gravida.
-                    </p>
-                    <a href="single-blog.html" className="read-more-btn">
-                      Read More <i data-feather="arrow-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-12 col-md-12">
-                <div className="pagination-area">
-                  <nav aria-label="Page navigation">
-                    <ul className="pagination justify-content-center">
-                      <li className="page-item">
-                        <a className="page-link" href="blog-1.html">
-                          Prev
+              <div style={{ display: "flex", flexWrap: "wrap" }}>
+                {currentCardData.map((card, index) => (
+                  <div key={index} className="col-lg-4 col-md-4 ">
+                    <div className="single-blog-post m-3">
+                      <div className="blog-image">
+                        <a href="">
+                          <img src={card.imgSrc} alt="Card Image" />
                         </a>
-                      </li>
-                      <li className="page-item active">
-                        <a className="page-link" href="blog-1.html">
-                          1
+                        <div class="date">
+                          <i data-feather="calendar"></i> {card.date}
+                        </div>
+                      </div>
+                      <div className="blog-post-content">
+                        <h3>
+                          <a href="">
+                            Tips to Protecting Your Business and Family
+                            <h5>{card.title}</h5>
+                          </a>
+                        </h3>
+                        <span>
+                          by <a href="blog-1.html">smith</a>
+                        </span>
+                        <p>{card.text}</p>
+
+                        <a href="single-blog.html" className="read-more-btn">
+                          Read More <i data-feather="arrow-right" />
                         </a>
-                      </li>
-                      <li className="page-item">
-                        <a className="page-link" href="blog-1.html">
-                          2
-                        </a>
-                      </li>
-                      <li className="page-item">
-                        <a className="page-link" href="blog-1.html">
-                          3
-                        </a>
-                      </li>
-                      <li className="page-item">
-                        <a className="page-link" href="blog-1.html">
-                          Next
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="pagination justify-content-center">
+                <button
+                  className="pagination-btn"
+                  disabled={currentPage === 1}
+                  onClick={() => handlePageChange(currentPage - 1)}
+                >
+                  Previous
+                </button>
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                  (page) => (
+                    <button
+                      key={page}
+                      className={`pagination-btn ${
+                        page === currentPage ? "active" : ""
+                      }`}
+                      onClick={() => handlePageChange(page)}
+                    >
+                      {page}
+                    </button>
+                  )
+                )}
+                <button
+                  className="pagination-btn"
+                  disabled={currentPage === totalPages}
+                  onClick={() => handlePageChange(currentPage + 1)}
+                >
+                  Next
+                </button>
               </div>
             </div>
           </div>
