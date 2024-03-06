@@ -7,7 +7,9 @@ function Digital() {
   return (
     <div>
       <Navbar />
-      <Header />
+      <div className="header-container">
+      <p className="text-data">DIGITAL MARKETING/ VEEAARSOFTTECH</p>
+      </div>
       <Footer />
     </div>
   );

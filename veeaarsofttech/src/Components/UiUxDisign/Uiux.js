@@ -7,7 +7,9 @@ function Uiux() {
   return (
     <div>
       <Navbar />
-      <Header />
+      <div className="header-container">
+      <p className="text-data">UI/UX DESIGNING  / VEEAARSOFTTECH</p>
+      </div>
       <Footer />
     </div>
   );

@@ -21,6 +21,7 @@ const Blog = () => {
       <Navbar />
       <div>
         <Header />
+
         {/* Start Blog Area */}
         <div className="blog-area ptb-80">
           <div className="container">

@@ -7,7 +7,9 @@ function Website() {
   return (
     <div>
       <Navbar />
-      <Header />
+      <div className="header-container">
+      <p className="text-data">WEBSITE DEVELOPEMNT / VEEAARSOFTTECH</p>
+      </div>
       <Footer />
     </div>
   );

@@ -7,7 +7,11 @@ function Graphic() {
   return (
     <div>
       <Navbar />
-      <Header />
+      
+      <div className="header-container">
+      <p className="text-data">GRAPHICS DESIGNING / VEEAARSOFTTECH</p>
+      </div>
+
       <Footer />
     </div>
   );

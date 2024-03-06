@@ -7,8 +7,12 @@ function Aplication() {
   return (
     <div>
       <Navbar />
-      <Header />
-      <Footer />
+
+      <div className="header-container">
+      <p className="text-data">APP DEVELOPMENT / VEEAARSOFTTECH</p>
+      </div>
+      
+       <Footer />
     </div>
   );
 }
