@@ -8,8 +8,9 @@ const Blog = () => {
     <>
       <Navbar />
       <div>
-        <Header />
-
+      <div className="header-container">
+      <p className="text-data">OUR BLOG / VEEAARSOFTTECH</p>
+      </div>
         {/* Start Blog Area */}
         <div className="blog-area ptb-80">
           <div className="container">

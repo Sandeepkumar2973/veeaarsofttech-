@@ -1,0 +1,55 @@
+
+
+
+.header-container {
+    background-image: url(./../../assets/img/bannerforall.jpg);
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    color: #fff; 
+    margin-top: 120px;
+}
+.text-data{
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    font-size: 36px;
+    text-align: left;
+}
+
+
+.icon-png {
+    width: 100px;
+    height: auto;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Add a smooth transition for the zoom effect */
+    color: black;
+}
+
+.icon-png:hover {
+    transform: scale(1.2)  rotate(360deg); /* Adjust the scale factor based on your preference for zoom level */
+}
+
+.heading{
+    font-size: 30px;   
+    padding: 20px; 
+}
+
+
+@media (max-width: 768px) {
+    .header-container {
+        height: auto;
+        text-align: center;
+        padding: 30px;
+        margin-top: 110px;
+    }
+
+    .text-data {
+        text-align: left; 
+        font-size: 13px;
+    }
+
+}

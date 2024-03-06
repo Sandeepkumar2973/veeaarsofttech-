@@ -9,7 +9,9 @@ const Contact = () => {
     <>
       <Navbar />
       <div>
-        <Header />
+      <div className="header-container">
+      <p className="text-data">CONTAACT US / VEEAARSOFTTECH</p>
+      </div>
         {/* Start Contact Info Area */}
         <div className="contact-info-area ptb-80">
           <div className="container">

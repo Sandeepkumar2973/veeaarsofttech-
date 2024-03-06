@@ -7,7 +7,9 @@ function Ourservices() {
   return (
     <div>
       <Navbar />
-      <Header />
+      <div className="header-container">
+      <p className="text-data">OUR SERVICES / VEEAARSOFTTECH</p>
+      </div>
       <Footer />
     </div>
   );

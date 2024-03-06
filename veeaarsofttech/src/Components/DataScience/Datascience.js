@@ -7,7 +7,9 @@ function Datascience() {
   return (
     <div>
       <Navbar />
-      <Header />
+      <div className="header-container">
+      <p className="text-data">DATA SCIENCE / VEEAARSOFTTECH</p>
+      </div>
       <Footer />
     </div>
   );
