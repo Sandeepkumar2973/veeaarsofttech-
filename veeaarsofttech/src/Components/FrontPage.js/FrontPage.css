@@ -2,6 +2,24 @@
 Main Banner CSS
 =================================================*/
 
+
+@media (max-width: 768px) {
+    .main-banner .hero-content h1 {
+        font-size: 19px;
+        font-weight: 500;
+        margin-bottom: 6px;
+    }
+    .main-banner .hero-content p {
+        margin-bottom: 17px;
+        font-size: 12px;
+    }
+    .get-stated-btn {
+        text-align: center;
+        height: 30px;
+    }
+
+}
+
 .main-banner {
     position: relative;
     height: 910px;

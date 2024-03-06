@@ -104,6 +104,20 @@ const FrontPage = () => {
     speed: 500,
     slidesToShow: 6, 
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024, // Adjust the breakpoint based on your design needs
+        settings: {
+          slidesToShow: 3, // Show 3 slides on tablets
+        }
+      },
+      {
+        breakpoint: 768, // Adjust the breakpoint based on your design needs
+        settings: {
+          slidesToShow: 3, // Show 1 slide on mobile devices
+        }
+      }
+    ]
   };
 
       //this is for teams
@@ -111,8 +125,22 @@ const FrontPage = () => {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 4, 
+        slidesToShow: 4,
         slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024, // Adjust the breakpoint based on your design needs
+            settings: {
+              slidesToShow: 3, // Show 3 slides on tablets
+            }
+          },
+          {
+            breakpoint: 768, // Adjust the breakpoint based on your design needs
+            settings: {
+              slidesToShow: 1, // Show 1 slide on mobile devices
+            }
+          }
+        ]
       };
 
   ////////////////
@@ -427,27 +455,27 @@ const FrontPage = () => {
        
       },
       {
-        icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>),
+        icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>),
         title: 'Email Notifications',
         content: 'Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.',
       },
       {
-        icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>),
+        icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-grid"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>),
         title: 'Simple Dashboard',
         content: 'Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.',
       },
       {
-        icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>),
+        icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>),
         title: 'Information Retrieval',
         content: 'Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.',
       },
       {
-        icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mouse-pointer"><path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"></path><path d="M13 13l6 6"></path></svg>),
+        icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-mouse-pointer"><path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"></path><path d="M13 13l6 6"></path></svg>),
         title: 'Drag and Drop Functionality',
         content: 'Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.',
       },
       {
-        icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>),
+        icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>),
         title: 'Deadline Reminders',
         content: 'Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.',
       },
@@ -630,6 +658,27 @@ const blogPosts = [
   },
 ];
 
+const settingdddsess = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024, // Adjust the breakpoint based on your design needs
+      settings: {
+        slidesToShow: 3, // Show 3 slides on tablets
+      }
+    },
+    {
+      breakpoint: 768, // Adjust the breakpoint based on your design needs
+      settings: {
+        slidesToShow: 2, // Show 1 slide on mobile devices
+      }
+    }
+  ]
+};
 
 
 
@@ -1096,7 +1145,7 @@ const blogPosts = [
       <div className="bar" />
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
-    <Slider {...settingsss} className="row">
+    <Slider {...settingdddsess} className="row">
       {blogPosts.map((post) => (
         <div key={post.id} className="col-lg-4 col-md-6">
           <div className="single-blog-post" style={{ padding: '0 5px' }}>

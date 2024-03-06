@@ -21,7 +21,7 @@ const Footer = () => {
                     <img
                       src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png"
                       alt="logo"
-                      style={{ width: "100px", height: "auto", margin: -50 }}
+                      style={{ width: "100px", height: "auto" }}
                     />
                   </Link>
                 </div>

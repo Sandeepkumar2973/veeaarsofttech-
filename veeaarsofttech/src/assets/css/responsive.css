@@ -29,10 +29,10 @@
         margin: 0 3px;
     }
     .main-banner {
-        height: 100%;
+        height: 100vh;
         padding-top: 150px;
-        padding-bottom: 80px;
-        background-position: center;
+        padding-bottom: 156px;
+        margin-bottom: 30px;
     }
     .main-banner .hero-content {
         margin-bottom: 45px;
@@ -161,6 +161,7 @@
     .services-content .box {
         margin-top: 20px;
         padding: 14px 10px;
+        text-align: center;
     }
     .services-right-image {
         text-align: center;
@@ -175,6 +176,8 @@
     }
     .services-right-image.single-right-image img.bg-image {
         display: none;
+        width: 200px;
+        height: auto;
     }
     .services-left-image {
         text-align: center;
