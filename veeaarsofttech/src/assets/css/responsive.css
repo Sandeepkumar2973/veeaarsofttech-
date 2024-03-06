@@ -47,7 +47,7 @@
         text-align: center;
     }
     .main-banner .banner-image img {
-        display: none;
+        display:"block";
         position: relative;
     }
     .main-banner .banner-image img:last-child {

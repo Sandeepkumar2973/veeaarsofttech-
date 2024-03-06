@@ -1,0 +1,43 @@
+/* YourComponent.css */
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .fadeInUp {
+    animation-name: fadeInUp;
+  }
+  
+  .zoomIn {
+    animation-name: zoomIn;
+  }
+  
+  .zoomOnHover {
+    transition: transform 0.3s ease;
+  }
+  
+  .zoomOnHover:hover {
+    transform: scale(1.2); /* Adjust the scale factor based on your preference */
+  }
+  

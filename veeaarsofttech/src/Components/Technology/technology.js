@@ -2,9 +2,6 @@ import React from "react";
 import "./Technology.css";
 import Navbar from "../Header/Navbar";
 import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCode, faDatabase, faServer } from '@fortawesome/free-solid-svg-icons';
 
 function Technology() {
   return (

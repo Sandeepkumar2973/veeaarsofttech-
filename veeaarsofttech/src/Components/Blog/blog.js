@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Header/Navbar";
 import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import { cardData } from "./contents";
 const Blog = () => {
   const pageSize = 9;
@@ -20,7 +19,9 @@ const Blog = () => {
     <>
       <Navbar />
       <div>
-        <Header />
+        <div className="header-container">
+          <p className="text-data">blogs / VEEAARSOFTTECH</p>
+        </div>
 
         {/* Start Blog Area */}
         <div className="blog-area ptb-80">

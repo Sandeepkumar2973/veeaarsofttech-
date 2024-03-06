@@ -11273,9 +11273,20 @@ Terms & Conditions Area CSS
     position: relative;
     z-index: auto;
 }
-.main-banner .hero-content h1 {
+/* .main-banner .hero-content h1 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 20px;
+} */
+
+
+/* .main-banner .banner-image {
+    text-align: center;
 }
+.main-banner .banner-image {
+    position: relative;
+} */
+
+
+
 }
