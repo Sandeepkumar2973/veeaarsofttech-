@@ -8,7 +8,7 @@ function Technology() {
     <>
       <Navbar />
       <div className="header-container">
-        <p className="text-data">WE USE THIS TECHNOLOGIES / VEEAARSOFTTECH</p>
+        <p className="text-data">WE USE THIS TECHNOLOGIES</p>
       </div>
       <h2 className=" heading text-center">Technologies We Use</h2>
       <div className="container technology ">

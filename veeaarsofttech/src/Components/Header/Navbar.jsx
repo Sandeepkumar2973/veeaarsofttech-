@@ -12,11 +12,6 @@ const Navbar = () => {
 
     return (
         <div>
-         {/* <!-- Start Preloader Area --> */}
-    {/* <div class="preloader">
-        <div class="spinner"></div>
-    </div> */}
-    {/* <!-- End Preloader Area --> */}
 
     <header id="header" class="headroom">
         <div class="startp-responsive-nav">
@@ -38,6 +33,8 @@ const Navbar = () => {
                     <a class="navbar-brand black-logo" Link to='/'>
                     <img src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png" alt="logo" 
                          style={{width:"80px", height:"auto"}}/></a>
+                    {/* <a class="navbar-brand white-logo" href="index.html"><img src="assets/img/white-logo.png" alt="logo"/></a> */}
+
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav nav ml-auto">
                             <li class="nav-item">

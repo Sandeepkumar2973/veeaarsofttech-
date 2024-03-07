@@ -59,7 +59,7 @@ const Contact = () => {
       <Navbar />
       <div>
         <div className="header-container">
-          <p className="text-data">CONTAACT US</p>
+          <p className="text-data">CONTACT US</p>
         </div>
         {/* Start Contact Info Area */}
         <div className="contact-info-area ptb-80">
