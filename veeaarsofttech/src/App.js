@@ -16,6 +16,7 @@ import Privacy from "./Components/Privacy/Privacy.js";
 import Refund from "./Components/Refund/Refund.js";
 import Terms from "./Components/Term&/Terms.js";
 import { LoaderProvider, useLoader } from "./Components/Loder/LoderContecxt.js";
+import Loader from "./Components/Loder/Loder.js";
 
 function App() {
   const { loading, showLoader, hideLoader } = useLoader();
@@ -34,7 +35,7 @@ function App() {
     <div className="App">
       <>
         {loading ? (
-          "Loading..."
+          <Loader/>
         ) : (
           <>
             <Router>
