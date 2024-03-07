@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Navbar from "../Header/Navbar";
@@ -10,9 +10,15 @@ import { MdAddIcCall } from "react-icons/md";
 
 const Contact = () => {
   const form = useRef();
+  const [isButtonDisabled, setButtonDisabled] = useState(false);
+  const [countdown, setCountdown] = useState(10);
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    if (isButtonDisabled) {
+      return; 
+    }
 
     emailjs
       .sendForm(
@@ -23,7 +29,9 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          form.current.reset();
+          setButtonDisabled(true);
+          startCountdown();
         },
         (error) => {
           console.log(error.text);
@@ -31,12 +39,27 @@ const Contact = () => {
       );
   };
 
+  const startCountdown = () => {
+    const intervalId = setInterval(() => {
+      setCountdown((prevCountdown) => {
+        if (prevCountdown === 0) {
+          clearInterval(intervalId);
+          setTimeout(() => {
+            setButtonDisabled(false);
+            setCountdown(10);
+          }, 10000);
+        }
+        return prevCountdown - 1;
+      });
+    }, 1000);
+  };
+
   return (
     <>
       <Navbar />
       <div>
         <div className="header-container">
-          <p className="text-data">CONTAACT US / VEEAARSOFTTECH</p>
+          <p className="text-data">CONTAACT US</p>
         </div>
         {/* Start Contact Info Area */}
         <div className="contact-info-area ptb-80">
@@ -127,9 +150,10 @@ const Contact = () => {
             <div className="row h-100 justify-content-center align-items-center">
               <div className="col-lg-6 col-md-12">
                 <img
-                  src="./../../assets/img/uiux1.png"
+                  src="./../../assets/img/uiux1.png" 
                   alt="image"
-                  className="zoomOnHover"
+                  className="wow fadeInUp zoomOnHover"
+                  style={{padding:"20px"}}
                 />
               </div>
               <div className="col-lg-6 col-md-12">
@@ -208,9 +232,9 @@ const Contact = () => {
                       </div>
                     </div>
                     <div className="col-lg-12 col-md-12">
-                      <button type="submit" className="btn btn-primary">
-                        Send Message
-                      </button>
+                       <button type="submit" disabled={isButtonDisabled} className="btn btn-primary">
+                           {isButtonDisabled ? `Sending... (${countdown})` : 'Send Email'}
+                         </button>
                       <div id="msgSubmit" className="h3 text-center hidden" />
                       <div className="clearfix" />
                     </div>
