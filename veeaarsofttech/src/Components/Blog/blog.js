@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../Header/Navbar";
 import Footer from "../Footer/Footer";
 import { cardData } from "./contents";
+import { Link } from "react-router-dom";
 const Blog = () => {
   const pageSize = 9;
   const [currentPage, setCurrentPage] = useState(1);
@@ -30,30 +31,25 @@ const Blog = () => {
               <div style={{ display: "flex", flexWrap: "wrap" }}>
                 {currentCardData.map((card, index) => (
                   <div key={index} className="col-lg-4 col-md-4 ">
-                    <div className="single-blog-post m-3">
-                      <div className="blog-image">
-                        <a href="">
+                    <Link to={card.urlto}>
+                      <div className="single-blog-post m-3">
+                        <div className="blog-image">
                           <img src={card.imgSrc} alt="Card Image" />
-                        </a>
-                        <div class="date">
-                          <i data-feather="calendar"></i> {card.date}
+                          <div class="date">
+                            <i data-feather="calendar"></i> {card.date}
+                          </div>
+                        </div>
+                        <div className="blog-post-content">
+                          <h3 className="read-more-btn">{card.title}</h3>
+
+                          <p>{card.text}</p>
+
+                          <p className="read-more-btn">
+                            Read More <i data-feather="arrow-right" />
+                          </p>
                         </div>
                       </div>
-                      <div className="blog-post-content">
-                        <h3>
-                          <a href="">
-                            Tips to Protecting Your Business and Family
-                            <h5>{card.title}</h5>
-                          </a>
-                        </h3>
-
-                        <p>{card.text}</p>
-
-                        <a href="" className="read-more-btn">
-                          Read More <i data-feather="arrow-right" />
-                        </a>
-                      </div>
-                    </div>
+                    </Link>
                   </div>
                 ))}
               </div>
