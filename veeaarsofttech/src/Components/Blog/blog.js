@@ -46,12 +46,10 @@ const Blog = () => {
                             <h5>{card.title}</h5>
                           </a>
                         </h3>
-                        <span>
-                          by <a href="blog-1.html">smith</a>
-                        </span>
+
                         <p>{card.text}</p>
 
-                        <a href="single-blog.html" className="read-more-btn">
+                        <a href="" className="read-more-btn">
                           Read More <i data-feather="arrow-right" />
                         </a>
                       </div>
