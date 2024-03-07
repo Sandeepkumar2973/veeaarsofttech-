@@ -551,6 +551,7 @@ const pricingPlans = [
       '24x7 Great Support',
       'Data Security and Backups',
       'Monthly Reports and Analytics',
+      '',
     ],
   },
   {
@@ -565,6 +566,7 @@ const pricingPlans = [
       '24x7 Great Support',
       'Data Security and Backups',
       'Monthly Reports and Analytics',
+      '',
     ],
   },
   {
@@ -579,6 +581,7 @@ const pricingPlans = [
       '24x7 Great Support',
       'Data Security and Backups',
       'Monthly Reports and Analytics',
+      '',
     ],
   },
 ];
@@ -1021,11 +1024,11 @@ const settingdddsess = {
               <span><sup>$</sup>{plan.price.toFixed(2)} <span>/Mon</span></span>
             </div>
             <div className="pricing-features">
-              <ul>
+              <div>
                 {plan.features.map((feature, i) => (
-                  <li key={i} className={i < 6 ? 'active' : ''}>{feature}</li>
+                  <p key={i} className={i < 6 ? 'active' : ''}>{feature}</p>
                 ))}
-              </ul>
+              </div>
             </div>
             <div className="pricing-footer">
               <Link to='/' className="btn btn-primary">Select Plan</Link>
