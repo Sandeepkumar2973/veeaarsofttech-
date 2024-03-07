@@ -28,21 +28,34 @@ function Website() {
       </div>
       <div className="col-lg-6 services-details-image animated fadeInUp zoomIn">
     <img src="./../../assets/img/web-development.jpg" className="wow fadeInUp zoomOnHover" alt="image" />
-    
-</div>
+    </div>
+
+    <div className="col-lg-12 services-details">
+      <h3>Benefits of developing a good website?</h3>
+          <ul>
+            <li><strong>Global Reach:</strong>Extend your reach to a worldwide audience, transcending geographical boundaries.</li>
+            <li><strong>Enhanced Credibility:</strong>Establish trust and credibility with a professionally designed website.</li>
+            <li><strong>Improved Visibility:</strong>Optimize for search engines to boost your online discoverability.
+Engaging User</li>
+            <li><strong>Experience: </strong>Captivate visitors with compelling content and user-friendly design.</li>
+            <li><strong>Lead Generation:</strong>Capture valuable leads through strategic forms and calls-to-action.</li>
+            <li><strong>Effective Brand Promotion:</strong>Consistent design and messaging reinforce your brand identity.</li>
+            <li><strong>Informed Decision-Making:</strong>Analyze user behavior data to drive continuous improvements.</li>
+            <li><strong>Mobile Compatibility:</strong>Ensure your site functions seamlessly on all devices, catering to mobile users.</li>
+            <li><strong>Cost-Effective Marketing:</strong>Reduce marketing costs compared to traditional methods with an online presence.</li>
+            <li><strong>Competitive Advantage:</strong>Stay ahead in the digital landscape and outshine competitors.</li>
+          </ul>
+      </div>
 
     </div>
     <div className="separate" />
     <div className="row align-items-center">
       <div className="col-lg-6 services-details-image animated fadeInUp zoomIn">
-        <img src="./../../assets/img/web-development1.png" className="wow fadeInUp zoomOnHover" alt="image" />
+        <img src="./../../assets/img/web-development1.png" className="wow fadeInUp zoomOnHover" alt="image" style={{width:"100%", height:"auto"}}/>
       </div>
+
       <div className="col-lg-6 services-details">
         <div className="services-details-desc">
-        <h3>Benefits of developing a good website?</h3>
-          <ul>
-            <li></li>
-          </ul>
           <div className="services-details-accordion">
       <ul className="accordion">
         <li className="accordion-item">
