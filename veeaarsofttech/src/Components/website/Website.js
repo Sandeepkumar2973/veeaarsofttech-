@@ -15,8 +15,73 @@ function Website() {
     <div>
       <Navbar />
       <div className="header-container">
-      <p className="text-data">WEBSITE DEVELOPEMNT / VEEAARSOFTTECH</p>
+      <p className="text-data">WEBSITE DEVELOPMENT / VEEAARSOFTTECH</p>
       </div>
+<div className="services-details-area ptb-80">
+  <div className="container">
+    <div className="row align-items-center">
+      <div className="col-lg-6 services-details">
+        <div className="services-details-desc">
+          <h3>Website Development Company in Delhi</h3>
+          <p>Welcome to our <strong>Website Development Company in Delhi</strong>, where innovation meets excellence. As industry leaders, we specialize in crafting cutting-edge websites that not only look stunning but also deliver exceptional user experiences. Our dedicated team of experts thrives on turning your digital vision into reality. With a customer-centric approach, we take pride in exceeding your expectations and helping your business thrive in the online world. Explore our services and let us be your trusted partner in building a strong online presence.</p>
+        </div>
+      </div>
+      <div className="col-lg-6 services-details-image animated fadeInUp zoomIn">
+    <img src="./../../assets/img/web-development.jpg" className="wow fadeInUp zoomOnHover" alt="image" />
+    
+</div>
+
+    </div>
+    <div className="separate" />
+    <div className="row align-items-center">
+      <div className="col-lg-6 services-details-image animated fadeInUp zoomIn">
+        <img src="./../../assets/img/web-development1.png" className="wow fadeInUp zoomOnHover" alt="image" />
+      </div>
+      <div className="col-lg-6 services-details">
+        <div className="services-details-desc">
+        <h3>Benefits of developing a good website?</h3>
+          <ul>
+            <li></li>
+          </ul>
+          <div className="services-details-accordion">
+      <ul className="accordion">
+        <li className="accordion-item">
+          <a
+            className={`accordion-title ${activeIndex === 0 ? 'active' : ''}`}
+            onClick={() => handleAccordionToggle(0)}
+          >
+            <i className="flaticon-plus" />
+            Which material types can you work with?
+          </a>
+          <div className={`accordion-content ${activeIndex === 0 ? 'show' : 'collapse'}`}>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+              suspendisse ultrices gravida.
+            </p>
+          </div>
+        </li>
+        <li className="accordion-item">
+          <a
+            className={`accordion-title ${activeIndex === 1 ? 'active' : ''}`}
+            onClick={() => handleAccordionToggle(1)}
+          >
+            <i className="flaticon-plus" />
+            Another question?
+          </a>
+          <div className={`accordion-content ${activeIndex === 1 ? 'show' : 'collapse'}`}>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+            </p>
+          </div>
+        </li>
+        {/* Add more accordion items as needed */}
+      </ul>
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <div className="services-details-area ptb-80">
   <div className="container">
     <div className="row align-items-center">

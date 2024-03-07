@@ -25,12 +25,6 @@ const Footer = () => {
                     />
                   </Link>
                 </div>
-                {/* <div className="logo white-logo">
-            <Link to="/">
-            <img src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png" alt="logo" 
-            style={{width:"80px", height:"auto"}}/>
-            </Link>
-          </div> */}
                 <p>
                   Veeaar softtech pvt ltd is a leading IT solutions provider
                   dedicated to delivering cutting-edge technology services and
