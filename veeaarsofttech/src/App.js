@@ -26,6 +26,8 @@ import Blog6 from "./Components/Blog/blog6.js";
 import Blog7 from "./Components/Blog/blog7.js";
 import Blog8 from "./Components/Blog/blog8.js";
 import Blog9 from "./Components/Blog/blog9.js";
+import Blog10 from "./Components/Blog/blog10.js";
+import Blog11 from "./Components/Blog/blog11.js";
 
 function App() {
   const { loading, showLoader, hideLoader } = useLoader();
@@ -114,10 +116,11 @@ function App() {
                   exact
                 />
                 <Route
-                  path="/Design Delights: The Best Graphic Design Blogs in Delhi"
+                  path="/the-best-graphic-design-blogs-in-delhi"
                   element={<Blog6 />}
                   exact
                 />
+                <Route path="/hello-world" element={<Blog8 />} exact />
                 <Route
                   path="/digital-marketing-services-in-delhi-ncr"
                   element={<Blog7 />}
@@ -125,17 +128,17 @@ function App() {
                 />
                 <Route
                   path="/best-website-development-company-blog"
-                  element={<Blog8 />}
+                  element={<Blog9 />}
                   exact
                 />
                 <Route
                   path="/best-digital-marketing-company-in-delhi-blog"
-                  element={<Blog9 />}
+                  element={<Blog10 />}
                   exact
                 />
                 <Route
-                  path="/best-app-development-company-in-delhi-bloggit"
-                  element={<Blog9 />}
+                  path="/best-app-development-company-in-delhi-blog"
+                  element={<Blog11 />}
                   exact
                 />
               </Routes>
