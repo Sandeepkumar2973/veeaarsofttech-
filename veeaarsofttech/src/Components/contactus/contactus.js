@@ -38,9 +38,6 @@ const Contact = () => {
         <div className="header-container">
           <p className="text-data">CONTAACT US / VEEAARSOFTTECH</p>
         </div>
-        <div className="header-container">
-          <p className="text-data">CONTACT US / VEEAARSOFTTECH</p>
-        </div>
         {/* Start Contact Info Area */}
         <div className="contact-info-area ptb-80">
           <div className="container">
