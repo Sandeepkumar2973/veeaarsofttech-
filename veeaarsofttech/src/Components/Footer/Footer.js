@@ -42,7 +42,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className="single-footer-widget pl-5">
-                <h3 className="text-center">Company</h3>
+                <h3 className="">Company</h3>
                 <ul className="list">
                   <li class="nav-item">
                     <Link to="/website-development-company">
@@ -81,7 +81,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className="single-footer-widget">
-                <h3 className="text-center">Support</h3>
+                <h3 className="">Support</h3>
                 <ul className="list">
                   <li class="nav-item">
                     <Link to="/about-us">
@@ -112,7 +112,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className="single-footer-widget">
-                <h3 className="text-center">Address</h3>
+                <h3 className="">Address</h3>
                 <ul className="footer-contact-info">
                   <li>
                     <i data-feather="map-pin" /> 3rd Floor Plot no 17 pocket 22
@@ -185,7 +185,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-12 col-md-12">
               <div className="copyright-area">
-                <p className="text-center">
+                <p className="">
                   <Link to="/" target="_blank">
                     Copyright @ 2022 All Rights Reserved by VeeAarSoftTech
                   </Link>
