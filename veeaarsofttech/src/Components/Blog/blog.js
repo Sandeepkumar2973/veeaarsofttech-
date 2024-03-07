@@ -85,6 +85,8 @@ const Blog = () => {
             </div>
           </div>
         </div>
+        <div>
+        </div>
         {/* End Blog Area */}
       </div>
       <Footer />

@@ -1,0 +1,6 @@
+.sphere_anmtn.aunty-anim {
+    position: absolute;
+    top: 50%;
+    right: -200px;
+    transform: translateY(-50%);
+}

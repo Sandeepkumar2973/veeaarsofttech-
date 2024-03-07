@@ -969,7 +969,7 @@ Navbar CSS
     background-color: #0e314c !important;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 768px) {
     #header {
         padding-top: 15px;
         padding-bottom: 15px;
