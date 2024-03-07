@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../Header/Navbar";
 import Footer from "../Footer/Footer";
 import { cardData } from "./contents";
+import "./blog.css"
+
+
 const Blog = () => {
   const pageSize = 9;
   const [currentPage, setCurrentPage] = useState(1);
@@ -88,6 +91,8 @@ const Blog = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div>
         </div>
         {/* End Blog Area */}
       </div>

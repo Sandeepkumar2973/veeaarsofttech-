@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import "./Navbar.css"
 
 const Navbar = () => {
+    const [collapsed, setCollapsed] = useState(true);
+
+  const toggleNavbar = () => {
+    setCollapsed(!collapsed);
+  };
+
+
     return (
         <div>
          {/* <!-- Start Preloader Area --> */}
@@ -31,8 +38,6 @@ const Navbar = () => {
                     <a class="navbar-brand black-logo" Link to='/'>
                     <img src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png" alt="logo" 
                          style={{width:"80px", height:"auto"}}/></a>
-                    {/* <a class="navbar-brand white-logo" href="index.html"><img src="assets/img/white-logo.png" alt="logo"/></a> */}
-
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav nav ml-auto">
                             <li class="nav-item">
