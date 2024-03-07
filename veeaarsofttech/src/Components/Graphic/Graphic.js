@@ -17,7 +17,7 @@ function Graphic() {
       <Navbar />
       
       <div className="header-container">
-      <p className="text-data">GRAPHICS DESIGNING / VEEAARSOFTTECH</p>
+      <p className="text-data">GRAPHICS DESIGNING COMPANY</p>
       </div>
 
       <div className="container">
@@ -30,13 +30,13 @@ function Graphic() {
           </p>
         </div>
       </div>
-      <div className="col-lg-6 services-details-image animated fadeInUp zoomIn" style={{marginTop:"20px", marginBottom:"20px"}}>
-    <img src="./../../assets/img/graphic1.jpg" className="wow fadeInUp zoomOnHover" alt="image" />
+      <div className="col-lg-6 services-details-image animated fadeInUp zoomIn" style={{marginTop:"20px", marginBottom:"20px", padding:"15px"}}>
+    <img src="./../../assets/img/graphic1.jpg" className="wow fadeInUp zoomOnHover" alt="image" style={{padding:"15px"}}/>
 </div>
     </div>
     <div className="separate" />
-    <div className="row align-items-center">
-      <div className="col-lg-12 services-details-image animated fadeInUp zoomIn" style={{marginTop:"10px"}}>
+    <div className="row align-items-center" style={{ display: 'flex', justifyContent: 'center' }}>
+      <div className="col-lg-12 services-details-image animated fadeInUp zoomIn" style={{marginTop:"20px", padding:"15px"}}>
         <img src="./../../assets/img/graphic2.jpg" className="wow fadeInUp zoomOnHover" alt="image" />
       </div>
       <div className="col-lg-12 services-details">

@@ -17,7 +17,7 @@ function Uiux() {
     <div>
       <Navbar />
       <div className="header-container">
-      <p className="text-data">UI/UX DESIGNING  / VEEAARSOFTTECH</p>
+      <p className="text-data">UI/UX DESIGNING COMPANY</p>
       </div>
 
       <div className="container">
@@ -38,7 +38,7 @@ function Uiux() {
         </div>
       </div>
       <div className="col-lg-6 services-details-image animated fadeInUp zoomIn">
-      <img src="./../../assets/img/uiux1.png" className="wow fadeInUp zoomOnHover" alt="image" />
+      <img src="./../../assets/img/uiux1.png" className="wow fadeInUp zoomOnHover" alt="image" style={{padding:"15px"}}/>
     </div>
     </div>
     <div className="col-lg-12 services-details">
@@ -50,8 +50,8 @@ function Uiux() {
 
 </p>
     </div>
-    <div className="col-lg-12 services-details">
-    <img src="./../../assets/img/web-development1.png" />
+    <div className="col-lg-12 services-details" style={{ display: 'flex', justifyContent: 'center' }}>
+    <img src="./../../assets/img/web-development1.png" className="wow fadeInUp zoomOnHover"/>
     </div>
   </div>
 </div>

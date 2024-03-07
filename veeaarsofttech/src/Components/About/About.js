@@ -234,7 +234,7 @@ const About = ({ initialValue }) => {
         <Navbar />
       </div>
       <div className="header-container">
-        <p className="text-data">ABOUT US / VEEAARSOFTTECH</p>
+        <p className="text-data">ABOUT US</p>
       </div>
       {/* nextline */}
       <div className="about-area ptb-80">

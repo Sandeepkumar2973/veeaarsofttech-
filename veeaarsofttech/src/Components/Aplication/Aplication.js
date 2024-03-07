@@ -18,7 +18,7 @@ function Aplication() {
       <Navbar />
 
       <div className="header-container">
-      <p className="text-data">APP DEVELOPMENT / VEEAARSOFTTECH</p>
+      <p className="text-data">APP DEVELOPMENT COMPANY</p>
       </div>
 
       <div className="services-details-area ptb-80">
@@ -36,7 +36,7 @@ function Aplication() {
         </div>
       </div>
       <div className="col-lg-6 services-details-image animated fadeInUp zoomIn">
-    <img src="./../../assets/img/appdevelopemnt1.jpg" className="wow fadeInUp zoomOnHover" alt="image" />
+    <img src="./../../assets/img/appdevelopemnt1.jpg" className="wow fadeInUp zoomOnHover" alt="image" style={{padding:"15px"}} />
 </div>
 
 <div className="col-lg-12 services-details">

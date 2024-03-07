@@ -20,7 +20,7 @@ const Blog = () => {
       <Navbar />
       <div>
         <div className="header-container">
-          <p className="text-data">blogs / VEEAARSOFTTECH</p>
+          <p className="text-data">Blogs</p>
         </div>
 
         {/* Start Blog Area */}

@@ -1023,7 +1023,7 @@ const settingdddsess = {
             <div className="price">
               <span><sup>$</sup>{plan.price.toFixed(2)} <span>/Mon</span></span>
             </div>
-            <div className="pricing-features">
+            <div className="pricing-features" style={{cursor:"pointer"}}>
               <div>
                 {plan.features.map((feature, i) => (
                   <p key={i} className={i < 6 ? 'active' : ''}>{feature}</p>

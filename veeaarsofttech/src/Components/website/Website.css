@@ -27,6 +27,8 @@
   
   .fadeInUp {
     animation-name: fadeInUp;
+    border-radius: 30% 70% 70% 30% / 15% 48% 52% 85% ;
+
   }
   
   .zoomIn {

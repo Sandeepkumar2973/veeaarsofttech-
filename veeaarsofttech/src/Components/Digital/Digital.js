@@ -17,7 +17,7 @@ function Digital() {
     <div>
       <Navbar />
       <div className="header-container">
-      <p className="text-data">DIGITAL MARKETING/ VEEAARSOFTTECH</p>
+      <p className="text-data">DIGITAL MARKETING COMPANY</p>
       </div>
       <div className="services-details-area ptb-80">
   <div className="container">
@@ -32,7 +32,7 @@ function Digital() {
         </div>
       </div>
       <div className="col-lg-6 services-details-image animated fadeInUp zoomIn">
-    <img src="./../../assets/img/deigitalmarketing.png" className="wow fadeInUp zoomOnHover" alt="image" />
+    <img src="./../../assets/img/deigitalmarketing.png" className="wow fadeInUp zoomOnHover" alt="image"  style={{padding:"15px"}}/>
 </div>
     </div>
 
@@ -75,8 +75,8 @@ function Digital() {
     <p style={{textAlign:"left"}}>As Delhi continues to evolve as a digital hub, the role of digital marketing companies will only become more prominent. With advancements in technology, changes in consumer behavior, and shifts in market dynamics, digital marketing companies in Delhi will need to stay ahead of the curve, adapting their strategies and embracing innovation to meet the evolving needs of their clients. By leveraging the power of digital marketing, businesses in Delhi can unlock new opportunities for growth, expand their reach, and stay competitive in an increasingly digital world.</p>
     </div>
 
-    <div className="col-lg-12 services-details">
-    <img src="./../../assets/img/digitalmarketing2.jpg" />
+    <div className="col-lg-12 services-details" style={{ display: 'flex', justifyContent: 'center' }}>
+    <img src="./../../assets/img/digitalmarketing2.jpg" className="wow fadeInUp zoomOnHover"/>
     </div>
 
     <div className="col-lg-12 services-details">

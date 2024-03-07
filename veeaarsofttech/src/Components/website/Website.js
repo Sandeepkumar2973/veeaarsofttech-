@@ -20,7 +20,7 @@ function Website() {
     <div>
       <Navbar />
       <div className="header-container">
-      <p className="text-data">WEBSITE DEVELOPMENT / VEEAARSOFTTECH</p>
+      <p className="text-data">WEBSITE DEVELOPMENT COMPANY</p>
       </div>
 <div className="services-details-area ptb-80">
   <div className="container">
@@ -32,9 +32,8 @@ function Website() {
         </div>
       </div>
       <div className="col-lg-6 services-details-image animated fadeInUp zoomIn">
-    <img src="./../../assets/img/web-development.jpg" className="wow fadeInUp zoomOnHover" alt="image" />
+    <img src="./../../assets/img/web-development.jpg" className="wow fadeInUp zoomOnHover" alt="image" style={{padding:"15px"}}/>
     </div>
-
     <div className="col-lg-12 services-details">
       <div className="heading"><span className="arrow-icon"><MdCollectionsBookmark /></span>Benefits of developing a good website?</div>
           <ul typeof="">
@@ -52,8 +51,8 @@ Engaging User</li>
           </ul>
       </div>
     </div>
-    <div className="col-lg-12 services-details">
-    <img src="./../../assets/img/web-development1.png" />
+    <div className="col-lg-12 services-details"  style={{ display: 'flex', justifyContent: 'center' }}>
+    <img src="./../../assets/img/web-development1.png"  className="wow fadeInUp zoomOnHover" style={{justifyContent:"center"}}/>
     </div>
     <div className="col-lg-12 services-details">
     <div className="heading">
