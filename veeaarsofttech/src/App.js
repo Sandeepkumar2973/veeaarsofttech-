@@ -134,7 +134,7 @@ function App() {
                   exact
                 />
                 <Route
-                  path="/best-app-development-company-in-delhi-blog"
+                  path="/best-app-development-company-in-delhi-bloggit"
                   element={<Blog9 />}
                   exact
                 />
