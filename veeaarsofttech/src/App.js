@@ -17,6 +17,15 @@ import Refund from "./Components/Refund/Refund.js";
 import Terms from "./Components/Term&/Terms.js";
 import { LoaderProvider, useLoader } from "./Components/Loder/LoderContecxt.js";
 import Loader from "./Components/Loder/Loder.js";
+import Blog1 from "./Components/Blog/blog1.js";
+import Blog2 from "./Components/Blog/blog2.js";
+import Blog3 from "./Components/Blog/blog3.js";
+import Blog4 from "./Components/Blog/blog4.js";
+import Blog5 from "./Components/Blog/blog5.js";
+import Blog6 from "./Components/Blog/blog6.js";
+import Blog7 from "./Components/Blog/blog7.js";
+import Blog8 from "./Components/Blog/blog8.js";
+import Blog9 from "./Components/Blog/blog9.js";
 
 function App() {
   const { loading, showLoader, hideLoader } = useLoader();
@@ -73,12 +82,62 @@ function App() {
                   element={<Graphic />}
                   exact
                 />
-                <Route path="/blog" element={<Blog />} exact />
                 <Route path="/privacy-policy" element={<Privacy />} exact />
                 <Route path="/refund" element={<Refund />} exact />
                 <Route path="/term-conditions" element={<Terms />} exact />
                 <Route path="/our-services" element={<Ourservices />} exact />
                 <Route path="/technologies" element={<Technology />} exact />
+                <Route path="/blog" element={<Blog />} exact />
+                <Route
+                  path="/what-to-look-for-when-hiring-a-website-development-company-in-india"
+                  element={<Blog1 />}
+                  exact
+                />
+                <Route
+                  path="/from-delhi-to-global-digital-marketing-strategies-for-international-reach"
+                  element={<Blog2 />}
+                  exact
+                />
+                <Route
+                  path="/expert-tips-for-ppc-advertising-in-delhi"
+                  element={<Blog3 />}
+                  exact
+                />
+                <Route
+                  path="/how-to-set-clear-expectations-when-working-with-a-website-development-company"
+                  element={<Blog4 />}
+                  exact
+                />
+                <Route
+                  path="/top-5-qualities-of-a-successful-mobile-app-development-company"
+                  element={<Blog5 />}
+                  exact
+                />
+                <Route
+                  path="/Design Delights: The Best Graphic Design Blogs in Delhi"
+                  element={<Blog6 />}
+                  exact
+                />
+                <Route
+                  path="/digital-marketing-services-in-delhi-ncr"
+                  element={<Blog7 />}
+                  exact
+                />
+                <Route
+                  path="/best-website-development-company-blog"
+                  element={<Blog8 />}
+                  exact
+                />
+                <Route
+                  path="/best-digital-marketing-company-in-delhi-blog"
+                  element={<Blog9 />}
+                  exact
+                />
+                <Route
+                  path="/best-app-development-company-in-delhi-blog"
+                  element={<Blog9 />}
+                  exact
+                />
               </Routes>
             </Router>
           </>
