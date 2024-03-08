@@ -38,7 +38,7 @@ function Uiux() {
         </div>
       </div>
       <div className="col-lg-6 services-details-image animated fadeInUp zoomIn">
-      <img src="./../../assets/img/uiux1.png" className="wow fadeInUp zoomOnHover" alt="image" style={{padding:"15px"}}/>
+      <img src="./../../assets/img/uiux.gif" className="wow fadeInUp zoomOnHover" alt="image" style={{padding:"15px"}}/>
     </div>
     </div>
     <div className="col-lg-12 services-details">
