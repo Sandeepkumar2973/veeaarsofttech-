@@ -1,6 +1,13 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import "./Navbar.css"
+import { MdEmail } from "react-icons/md";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { SiFacebook } from "react-icons/si";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
+
 
 const Navbar = () => {
     const [collapsed, setCollapsed] = useState(true);
@@ -12,7 +19,6 @@ const Navbar = () => {
 
     return (
         <div>
-
     <header id="header" class="headroom">
         <div class="startp-responsive-nav">
             <div class="container">
@@ -20,7 +26,7 @@ const Navbar = () => {
                     <div class="logo black-logo">
                         <Link to='/'>
                                 <img src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png" alt="logo"
-                                 style={{width:"80px", height:"auto"}}/>
+                                 style={{width:"100px", height:"auto"}}/>
                             </Link>
                     </div>
                 </div>

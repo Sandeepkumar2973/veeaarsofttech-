@@ -73,16 +73,6 @@ const Contact = () => {
                     </i>
                   </div>
                   <h3>Mail Here</h3>
-                  {/* <p>
-                    <a href="#">
-                      <span
-                        className="__cf_email__"
-                        data-cfemail="ec8d88818582ac9f988d9e989cc28f8381"
-                      >
-                        email&nbsp;&nbsp;&nbsp;info@veeaarsofttech.com
-                      </span>
-                    </a>
-                  </p> */}
                   <p>
                     <Link to="">
                       <span

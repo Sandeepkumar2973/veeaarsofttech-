@@ -37,7 +37,7 @@ function Graphic() {
     <div className="separate" />
     <div className="row align-items-center" style={{ display: 'flex', justifyContent: 'center' }}>
       <div className="col-lg-12 services-details-image animated fadeInUp zoomIn" style={{marginTop:"20px", padding:"15px"}}>
-        <img src="./../../assets/img/graphic2.jpg" className="wow fadeInUp zoomOnHover" alt="image" />
+        <img src="./../../assets/img/graphic-design-post.png" className="wow  zoomOnHover" alt="image" />
       </div>
       <div className="col-lg-12 services-details">
       <div className="heading"><span className="arrow-icon"><MdCollectionsBookmark /></span>Key Aspects of graphic design include:</div>

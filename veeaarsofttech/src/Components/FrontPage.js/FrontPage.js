@@ -287,26 +287,26 @@ const FrontPage = () => {
       icon: 'server',
       bgColor: '',
       title: 'Zero Configuration',
-      description: 'Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.'
+      description: 'Zero Configuration in IT companies refers to the seamless setup and operation of systems without manual intervention. This approach automates network, server, and application configurations, reducing complexities and ensuring efficient workflows. IT professionals benefit from simplified deployments, saving time and resources. Zero Configuration fosters agility, enhancing adaptability to dynamic business needs. This innovative concept streamlines processes, mitigates errors, and improves overall IT infrastructure reliability, making it a pivotal element in modern IT management.'
     },
     {
       icon: 'code',
       bgColor: 'bg-f78acb',
       title: 'Code Security',
-      description: 'Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.'
+      description: 'Code security is paramount for an IT company to safeguard sensitive information and ensure the integrity of software systems. Robust measures, such as regular code reviews, vulnerability assessments, and adherence to secure coding practices, are imperative. Implementing encryption, access controls, and threat monitoring further fortify defenses against cyber threats. Continuous training for developers on the latest security protocols is crucial, fostering a culture of vigilance. Proactive measures, like penetration testing and timely patching, enhance resilience. Ultimately, prioritizing code security safeguards against breaches, upholds client trust, and preserves the reputation of the IT company in an increasingly interconnected digital landscape.'
     },
     {
       icon: 'users',
       bgColor: 'bg-c679e3',
       title: 'Team Management',
-      description: 'Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.'
+      description: 'Effective team management in an IT company is crucial for project success. Leaders must foster open communication, encourage collaboration, and allocate tasks based on individual strengths. Regular team meetings promote alignment with project goals, and acknowledging achievements boosts morale. Embracing a flexible approach to accommodate diverse working styles enhances productivity. Continuous skill development and creating a positive work culture contribute to a motivated and cohesive team. Ultimately, a well-managed team ensures efficient project delivery, client satisfaction, and long-term success in the dynamic IT industry.'
     },
     {
       icon: 'git-branch',
       bgColor: 'bg-eb6b3d',
       title: 'Access Controlled',
-      description: 'Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.'
-    }
+      description: 'Access control in an IT company is crucial for safeguarding sensitive data and maintaining cybersecurity. Implementing robust access control measures ensures that only authorized personnel can access confidential information, reducing the risk of data breaches. This involves using authentication protocols, encryption, and permissions to restrict and monitor user access. Regular audits and updates to access control policies enhance overall system security, fostering a secure IT environment. Effective access control is a cornerstone in protecting valuable assets and maintaining the integrity of IT systems, contributing to the overall success and reliability of the company.'
+    },
   ];
 
   //////////////
@@ -349,10 +349,6 @@ const FrontPage = () => {
       text: 'File storage'
     },
     {
-      icon: 'trending-up',
-      text: 'Forex trading'
-    },
-    {
       icon: 'folder',
       text: 'File backups'
     },
@@ -364,10 +360,6 @@ const FrontPage = () => {
       icon: 'mail',
       text: 'Email servers'
     },
-    {
-      icon: 'cloud',
-      text: 'Hybrid cloud'
-    }
   ];
 
 //this is for  Hosting Services
@@ -451,33 +443,33 @@ const FrontPage = () => {
           </svg>
         ),
         title: 'Incredible Infrastructure',
-        content: 'Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.',
+        content: 'Incredible infrastructure defines a leading IT company, intertwining cutting-edge technology with robust systems. State-of-the-art data centers, high-speed networks, and scalable cloud solutions form the backbone, ensuring seamless operations. The company commitment to security fortifies against cyber threats, while innovative hardware and software empower clients globally. With a focus on reliability, adaptability, and efficiency, this IT powerhouse continually evolves its infrastructure, staying ahead in the dynamic tech landscape. It epitomizes a digital ecosystem where excellence meets ingenuity, propelling businesses into a future marked by unparalleled connectivity and technological prowess.',
        
       },
       {
         icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>),
         title: 'Email Notifications',
-        content: 'Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.',
+        content: 'Email notifications in an IT company serve as crucial communication tools, alerting users about system updates, security patches, and service interruptions. These notifications streamline workflow, keeping employees informed about project milestones, deadlines, and meeting schedules. Additionally, they enhance cybersecurity by promptly addressing potential threats. Through personalized email alerts, IT professionals can stay abreast of software releases, bug fixes, and network maintenance, ensuring seamless operations. Efficient email notification systems foster collaboration, providing real-time information on support tickets, server statuses, and software deployment. Ultimately, they contribute to a well-orchestrated and responsive IT environment.',
       },
       {
         icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-grid"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>),
         title: 'Simple Dashboard',
-        content: 'Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.',
+        content: 'A simple dashboard for an IT company serves as a centralized interface, providing real-time insights into key metrics and operations. It streamlines data visualization, displaying project statuses, resource utilization, and financial metrics in an easily understandable format. User-friendly and customizable, the dashboard enhances decision-making by offering a comprehensive overview of IT activities, fostering efficiency and transparency. With features like task tracking, team collaboration tools, and system health monitoring, it empowers management to make informed decisions swiftly. The simplicity of the dashboard ensures accessibility for all stakeholders, promoting seamless communication and alignment within the IT company',
       },
       {
         icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-info"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="8"></line></svg>),
         title: 'Information Retrieval',
-        content: 'Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.',
+        content: 'Information Retrieval in IT companies involves the systematic process of obtaining relevant data from vast repositories. Utilizing advanced search algorithms and databases, IT professionals extract valuable information to enhance decision-making and optimize business processes. Effective information retrieval ensures quick access to crucial data, promoting efficiency and innovation within the company. Implementing robust retrieval systems is imperative for IT firms to stay competitive in the dynamic technology landscape, fostering a culture of informed decision-making and strategic planning.',
       },
       {
         icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-mouse-pointer"><path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"></path><path d="M13 13l6 6"></path></svg>),
         title: 'Drag and Drop Functionality',
-        content: 'Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.',
+        content: 'In the dynamic landscape of IT companies, drag-and-drop functionality has emerged as a pivotal tool for seamless user interaction. This intuitive method streamlines processes, enhancing efficiency and reducing learning curves. Integrating drag-and-drop features into software interfaces empowers users to effortlessly manipulate data, fostering a more engaging and user-friendly experience. This functionality is particularly beneficial in design applications, project management tools, and collaborative platforms, where simplicity and accessibility are paramount. IT companies continually leverage this innovation to elevate user satisfaction, improve workflow, and stay at the forefront of technological advancements.',
       },
       {
         icon: (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>),
         title: 'Deadline Reminders',
-        content: 'Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.',
+        content: 'Deadline reminders are crucial for IT companies to ensure timely project completion and deliverables. These reminders, often integrated into project management systems, help teams stay organized and focused. Meeting deadlines is paramount in the fast-paced tech industry, fostering client satisfaction and maintaining a competitive edge. Automated alerts, calendars, and collaboration tools play key roles in keeping teams informed and on track. Timely completion not only enhances the company reputation but also promotes efficient workflow, allowing for smoother transitions between projects and fostering a culture of accountability and productivity.',
       },
     ];
 
@@ -486,52 +478,133 @@ const FrontPage = () => {
 //this is for  section our team
 const teamData = [
   {
-    name: 'Josh Buttler',
+    name: 'Chandan Singh',
     role: 'CEO & Founder',
-    image: 'assets/img/team-image/1.jpg',
-    des:"Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
-    twitter:[<FaXTwitter /> ],
-    instagrm:[<FaSquareInstagram />],
-    Linkdien:[<CiLinkedin  />],
-    facebook:[ <FaFacebookSquare />],
+    image: 'assets/img/team-image/chandansingh.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/> </Link>],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to="https://www.facebook.com/chandansingh4you"><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>],
   },
   {
-    name: 'Alex Maxwel',
-    role: 'Marketing Manager',
+    name: 'Kudan Sign',
+    role: ' Manager',
     image: 'assets/img/team-image/2.jpg',
-    des:"Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
-    twitter:[<FaXTwitter /> ],
-    instagrm:[<FaSquareInstagram />],
-    Linkdien:[<CiLinkedin  />],
-    facebook:[ <FaFacebookSquare />],  },
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[<Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link> ], 
+   },
   {
-    name: 'Janny Cotller',
-    role: 'Web Developer',
+    name: 'Punit',
+    role: 'HR',
     image: 'assets/img/team-image/3.jpg',
-    des:"Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
-    twitter:[<FaXTwitter /> ],
-    instagrm:[<FaSquareInstagram />],
-    Linkdien:[<CiLinkedin  />],
-    facebook:[ <FaFacebookSquare />],  },
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>],
+    },
   {
-    name: 'Jason Statham',
-    role: 'UX/UI Designer',
+    name: 'Samim',
+    role: 'CA',
     image: 'assets/img/team-image/4.jpg',
-    des:"Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
-    twitter:[<FaXTwitter /> ],
-    instagrm:[<FaSquareInstagram />],
-    Linkdien:[<CiLinkedin  />],
-    facebook:[ <FaFacebookSquare />],  
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[<Link to=""> <FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>],  
   },
   {
-    name: 'Corey Anderson',
-    role: 'Project Manager',
+    name: 'Aarti',
+    role: 'IT HEAD',
     image: 'assets/img/team-image/5.jpg',
-    des:"Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
-    twitter:[<FaXTwitter /> ],
-    instagrm:[<FaSquareInstagram />],
-    Linkdien:[<CiLinkedin  />],
-    facebook:[ <FaFacebookSquare />],  },
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+   {
+    name: 'Manish',
+    role: 'Angular Developer',
+    image: 'assets/img/team-image/5.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+   {
+    name: 'Sandeep Kumar',
+    role: 'MERN Developer',
+    image: 'assets/img/team-image/5.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+   {
+    name: 'Lalit Kumar',
+    role: 'React Developer',
+    image: 'assets/img/team-image/5.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+   {
+    name: 'Kavita',
+    role: 'UI/UX',
+    image: 'assets/img/team-image/5.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+   {
+    name: 'Vishal',
+    role: 'Graphic/Video Editor',
+    image: 'assets/img/team-image/vishal.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+   {
+    name: 'Subham',
+    role: 'Digital Marketing',
+    image: 'assets/img/team-image/subham.jpeg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+   {
+    name: 'Megha',
+    role: 'Wordpress Developer',
+    image: 'assets/img/team-image/5.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+   {
+    name: 'Poonam',
+    role: 'Accountent',
+    image: 'assets/img/team-image/5.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+   {
+    name: 'Rakesh',
+    role: 'WordPress Developer',
+    image: 'assets/img/team-image/5.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+
+   
 ];
 
 
@@ -695,9 +768,9 @@ const settingdddsess = {
         <div className="row h-100 justify-content-center align-items-center">
           <div className="col-lg-5">
             <div className="hero-content">
-              <h1 className='text-center'>Secure IT Solutions for a more secure environment</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-              <div className="get-stated-btn"><Link to='/' className="btn btn-primary">Get Started</Link></div>
+              <h1 className='text-center'>TRUST OUR BEST IT SOLUTION FOR YOUR BUSINESS</h1>
+              <p style={{color:"black"}}>Veeaar Softtech pvt ltd is an IT service provider that holds expertise in website development services, digital marketing services, web designing and application development services along with cloud computing and other IT services and solutions. We work with an unparalleled swiftness to stand up to our client’s requirements and deliver what is expected out of us.</p>
+              <div className="get-stated-btn"><Link to='/about-us' className="btn btn-primary">ABOUT US</Link></div>
             </div>
           </div>
          <div className="col-lg-6 offset-lg-1">
@@ -741,7 +814,7 @@ const settingdddsess = {
               </svg>
             </div>
             <h3>{feature.title}</h3>
-            <p>{feature.description}</p>
+            <p>{feature.description.slice(0,150)}...</p>
           </div>
         </div>
       ))}
@@ -767,7 +840,8 @@ const settingdddsess = {
         <div className="section-title">
           <h2 style={{textAlign:"left"}}>Cloud Hosting Services</h2>
           <div className="bar" />
-          <p style={{textAlign:"left"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p style={{textAlign:"left"}}>
+Cloud hosting services revolutionize IT by providing scalable and flexible infrastructure solutions. These services, offered by IT companies, enable users to store, manage, and access data and applications remotely. Utilizing virtualization, cloud hosting optimizes resource utilization, enhancing efficiency and reducing costs.</p>
         </div>
         <div className="row">
       {servicesData.map((service, index) => (
@@ -823,9 +897,9 @@ const settingdddsess = {
       
       <div className="col-lg-6 col-md-12 services-content">
       <div className="section-title">
-        <h2>Design & Development</h2>
+        <h2>WHAT KIND OF SERVICES WE ARE OFFERING</h2>
         <div className="bar" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Cloud hosting services revolutionize IT by providing scalable and flexible infrastructure solutions. These services, offered by IT companies, enable users to store, manage, and access data and applications remotely. Utilizing virtualization, cloud hosting optimizes resource utilization, enhancing efficiency and reducing costs. </p>
       </div>
       <div className="row">
         {servicescollection.map((service, index) => (
@@ -850,7 +924,7 @@ const settingdddsess = {
             <div className="section-title">
                 <h2>Our Features</h2>
                 <div className="bar"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Our IT company boasts a myriad of cutting-edge features, defining our prowess in the tech realm. Robust cybersecurity measures ensure client data integrity. Agile development methodologies expedite project delivery, fostering innovation. Scalable cloud solutions optimize resource utilization.</p>
             </div>
 
             <div className="row">
@@ -859,7 +933,7 @@ const settingdddsess = {
           <div className="single-features">
             <div className="icon">{feature.icon}</div>
             <h3>{feature.title}</h3>
-            <p>{feature.content}</p>
+            <p>{feature.content.slice(0,140)}...</p>
           </div>
         </div>
       ))}
@@ -874,14 +948,14 @@ const settingdddsess = {
             <div className="section-title">
                 <h2 className='text-center'>Our Awesome Team</h2>
                 <div className="bar"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p className='text-center'>VeeaarSoftTech, an IT company, boasts an awesome team dedicated to innovation and excellence. Comprising skilled professionals across diverse domains, our collaborative spirit propels us to deliver cutting-edge solutions. With a commitment to client satisfaction, VeeaarSoftTech thrives on teamwork, fostering creativity and adaptability. Our dynamic workforce, fueled by passion and expertise.</p>
             </div>
             <Slider {...settingsss} className="team-slides owl-carousel owl-theme" >
       {teamData.map((member, index) => (
         <div key={index} className="single-team" >
         <div className='card' style={{border:"none", marginRight:'10px', marginLeft:'10px'}}>
           <div className="team-image" >
-            <img src={member.image} alt={member.name} />
+            <img src={member.image} alt={member.name} style={{width:"30px", height:"auto"}}/>
           </div>
           <div className="team-content">
             <div className="team-info">
@@ -913,33 +987,33 @@ const settingdddsess = {
     <div className="row">
       <div className="col-lg-3 col-md-3 col-6 col-sm-3">
         <div className="funfact">
-        <h2 style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}
-        ><Odometer initialValue={150}  duration= "4000"  formate="{d}"/></h2>  
-          <p>Downloaded</p>
+        <h2 className='text-center' style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}
+        ><Odometer initialValue={550}  duration= "4000"  formate="{d}"/></h2>  
+          <p className='text-center'>Project</p>
         </div>
       </div>
       <div className="col-lg-3 col-md-3 col-6 col-sm-3">
         <div className="funfact">
-        <h2 style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}>
+        <h2 className='text-center' style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}>
         <Odometer initialValue={20} duration= "4000"  formate="{d}"/>
         </h2>
-          <p>Feedback</p>
+          <p className='text-center'>Feedback</p>
         </div>
       </div>
       <div className="col-lg-3 col-md-3 col-6 col-sm-3">
         <div className="funfact">
-        <h2 style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}>
+        <h2 className='text-center' style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}>
         <Odometer initialValue={70} duration= "4000"  formate="{d}"/>
         </h2>
-          <p>Workers</p>
+          <p className='text-center'>Workers</p>
         </div>
       </div>
       <div className="col-lg-3 col-md-3 col-6 col-sm-3">
         <div className="funfact">
-        <h2 style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}>
+        <h2 className='text-center' style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}>
         <Odometer initialValue={500} duration= "4000"  formate="{d}" />
         </h2>
-          <p>Contributors</p>
+          <p className='text-center'>Contributors</p>
         </div>
       </div>
     </div>
@@ -949,7 +1023,6 @@ const settingdddsess = {
       <a href="contact.html" className="btn btn-primary">Contact Us</a>
     </div>
     <div className="map-bg">
-      {/* <img src="assets/img/map.png" alt="map" /> */}
       <img className="map-image" src="../../assets/img/map.png" alt="map" 
         style={{ width: "100%", height: "390px" }}
       />

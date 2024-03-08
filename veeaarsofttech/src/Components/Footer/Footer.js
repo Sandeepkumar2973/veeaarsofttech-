@@ -179,9 +179,9 @@ const Footer = () => {
             </div>
             <div className="col-lg-12 col-md-12">
               <div className="copyright-area">
-                <p className="">
+                <p className="text-center">
                   <Link to="/" target="_blank">
-                    Copyright @ 2022 All Rights Reserved by VeeAarSoftTech
+                    Copyright @ 2022 All Rights Reserved by <strong>VeeAarSoftTech</strong> Pvt. Ltd.
                   </Link>
                 </p>
               </div>
