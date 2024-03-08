@@ -103,59 +103,137 @@ const About = ({ initialValue }) => {
     },
   ];
 
-  //this is for  section our team
-  const teamData = [
-    {
-      name: "Josh Buttler",
-      role: "CEO & Founder",
-      image: "assets/img/team-image/1.jpg",
-      des: "Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
-      twitter: [<FaXTwitter />],
-      instagrm: [<FaSquareInstagram />],
-      Linkdien: [<CiLinkedin />],
-      facebook: [<FaFacebookSquare />],
+ //this is for  section our team
+const teamData = [
+  {
+    name: 'Chandan Singh',
+    role: 'CEO & Founder',
+    image: 'assets/img/team-image/1.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/> </Link>],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to="https://www.facebook.com/chandansingh4you"><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>],
+  },
+  {
+    name: 'Kudan Sign',
+    role: ' Manager',
+    image: 'assets/img/team-image/2.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[<Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link> ], 
+   },
+  {
+    name: 'Punit',
+    role: 'HR',
+    image: 'assets/img/team-image/3.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>],
     },
-    {
-      name: "Alex Maxwel",
-      role: "Marketing Manager",
-      image: "assets/img/team-image/2.jpg",
-      des: "Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
-      twitter: [<FaXTwitter />],
-      instagrm: [<FaSquareInstagram />],
-      Linkdien: [<CiLinkedin />],
-      facebook: [<FaFacebookSquare />],
-    },
-    {
-      name: "Janny Cotller",
-      role: "Web Developer",
-      image: "assets/img/team-image/3.jpg",
-      des: "Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
-      twitter: [<FaXTwitter />],
-      instagrm: [<FaSquareInstagram />],
-      Linkdien: [<CiLinkedin />],
-      facebook: [<FaFacebookSquare />],
-    },
-    {
-      name: "Jason Statham",
-      role: "UX/UI Designer",
-      image: "assets/img/team-image/4.jpg",
-      des: "Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
-      twitter: [<FaXTwitter />],
-      instagrm: [<FaSquareInstagram />],
-      Linkdien: [<CiLinkedin />],
-      facebook: [<FaFacebookSquare />],
-    },
-    {
-      name: "Corey Anderson",
-      role: "Project Manager",
-      image: "assets/img/team-image/5.jpg",
-      des: "Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
-      twitter: [<FaXTwitter />],
-      instagrm: [<FaSquareInstagram />],
-      Linkdien: [<CiLinkedin />],
-      facebook: [<FaFacebookSquare />],
-    },
-  ];
+  {
+    name: 'Samim',
+    role: 'CA',
+    image: 'assets/img/team-image/4.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[<Link to=""> <FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>],  
+  },
+  {
+    name: 'Aarti',
+    role: 'IT HEAD',
+    image: 'assets/img/team-image/5.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+   {
+    name: 'Manish',
+    role: 'Angular Developer',
+    image: 'assets/img/team-image/5.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+   {
+    name: 'Sandeep Kumar',
+    role: 'MERN Developer',
+    image: 'assets/img/team-image/5.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+   {
+    name: 'Lalit Kumar',
+    role: 'React Developer',
+    image: 'assets/img/team-image/5.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+   {
+    name: 'Kavita',
+    role: 'UI/UX',
+    image: 'assets/img/team-image/5.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+   {
+    name: 'Vishal',
+    role: 'Graphic/Video Editor',
+    image: 'assets/img/team-image/vishal.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+   {
+    name: 'Subham',
+    role: 'Digital Marketing',
+    image: 'assets/img/team-image/subham.jpeg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+   {
+    name: 'Megha',
+    role: 'Wordpress Developer',
+    image: 'assets/img/team-image/5.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+   {
+    name: 'Poonam',
+    role: 'Accountent',
+    image: 'assets/img/team-image/5.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+   {
+    name: 'Rakesh',
+    role: 'WordPress Developer',
+    image: 'assets/img/team-image/5.jpg',
+    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
+    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
+    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
+    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
+   },
+
+   
+];
 
   //this is for feedback
   const feedbackData = [
@@ -334,24 +412,16 @@ const About = ({ initialValue }) => {
             <div className="col-lg-6 col-md-12">
               <div className="ml-about-content">
                 <span className="sub-title text-center">About Us</span>
-                <h2 className="text-center">
-                  Engaging New Audiences Through Smart Approach
-                </h2>
+                <h1 className="text-center">
+                Inspiring Tech Needs For Business
+                </h1>
                 <div className="bar" />
-                <p className="text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <p className="text-left">
+                Veeaar Softtech pvt ltd is an IT service provider that holds expertise in website development services, digital marketing services, web designing and application development services along with cloud computing and other IT services and solutions. We work with an unparalleled swiftness to stand up to our client’s requirements and deliver what is expected out of us.
                 </p>
-                <p className="text-center">
-                  Nullam quis ante. Etiam sit amet orci eget eros faucibus
-                  tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec
-                  sodales sagittis magna. Sed consequat, leo eget bibendum
-                  sodales, augue velit cursus nunc.Donec vitae sapien ut libero
-                  venenatis faucibus tempus.
-                </p>
-                <a href="contact.html" className="btn btn-secondary">
-                  Discover More
-                </a>
+                <Link to="/contact-us" className="btn btn-secondary">
+                  CONTACT US
+                </Link>
               </div>
             </div>
           </div>
@@ -360,14 +430,13 @@ const About = ({ initialValue }) => {
 
       <div className="container">
         <div className="about-inner-area">
-          <div className="row">
+        <div className="rows-top"  style={{padding:"50px"}}>
+          <div className="row" style={{marginTop:"30px"}}>
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="about-text">
                 <h3>Our History</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In
-                  sagittis eg esta ante, sed viverra nunc tinci dunt nec elei
-                  fend et tiram.
+                Veeaar Softtech, a pioneering IT company, boasts a rich history of innovation, excellence, and client success in software development and technology solutions.
                 </p>
               </div>
             </div>
@@ -375,9 +444,7 @@ const About = ({ initialValue }) => {
               <div className="about-text">
                 <h3>Our Mission</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In
-                  sagittis eg esta ante, sed viverra nunc tinci dunt nec elei
-                  fend et tiram.
+                "Empowering businesses with innovative solutions, Veeaar Softtech is dedicated to delivering cutting-edge IT services for sustained growth and success."
                 </p>
               </div>
             </div>
@@ -385,12 +452,11 @@ const About = ({ initialValue }) => {
               <div className="about-text">
                 <h3>Who we are</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In
-                  sagittis eg esta ante, sed viverra nunc tinci dunt nec elei
-                  fend et tiram.
+                Veeaar SoftTech is a dynamic IT company, delivering innovative solutions and cutting-edge technology to empower businesses worldwide.
                 </p>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -402,8 +468,7 @@ const About = ({ initialValue }) => {
             <h2 className="text-center">Our Awesome Team</h2>
             <div className="bar"></div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            VeeaarSoftTech, an IT company, boasts an awesome team dedicated to innovation and excellence. Comprising skilled professionals across diverse domains, our collaborative spirit propels us to deliver cutting-edge solutions. With a commitment to client satisfaction, VeeaarSoftTech thrives on teamwork, fostering creativity and adaptability. Our dynamic workforce, fueled by passion and expertise.
             </p>
           </div>
           <Slider
@@ -451,8 +516,7 @@ const About = ({ initialValue }) => {
             <h2 className="text-center">What users are Saying</h2>
             <div className="bar" />
             <p className="text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            "Impressed with Veeaar Softtech's innovative solutions! They truly understand client needs and deliver top-notch IT services. Highly recommended!"
             </p>
           </div>
 
@@ -484,9 +548,9 @@ const About = ({ initialValue }) => {
                       height: "auto",
                     }}
                   />
-                  <h3 className="text-center">{selectedReview.name}</h3>
+                  <h3 >{selectedReview.name}</h3>
                   <span>{selectedReview.role}</span>
-                  <p>{selectedReview.review}</p>
+                  <p >{selectedReview.review}</p>
                   <button
                     className="btn btn-primary"
                     onClick={() => setSelectedReview(null)}
@@ -527,121 +591,66 @@ const About = ({ initialValue }) => {
 
       {/*Start Fun Facts Area  */}
       <div className="funfacts-area ptb-80">
-        <div className="container">
-          <div className="section-title">
-            <h2 className="text-center">
-              We always try to understand users expectation
-            </h2>
-            <div className="bar" />
-            <p className="text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div className="row">
-            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-              <div className="funfact">
-                <h2
-                  style={{
-                    color: "#44ce6f",
-                    fontSize: "35px",
-                    marginBottom: "7px",
-                  }}
-                >
-                  <Odometer initialValue={150} duration="4000" formate="{d}" />
-                </h2>
-                <p>Downloaded</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-              <div className="funfact">
-                <h2
-                  style={{
-                    color: "#44ce6f",
-                    fontSize: "35px",
-                    marginBottom: "7px",
-                  }}
-                >
-                  <Odometer initialValue={20} duration="4000" formate="{d}" />
-                </h2>
-                <p>Feedback</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-              <div className="funfact">
-                <h2
-                  style={{
-                    color: "#44ce6f",
-                    fontSize: "35px",
-                    marginBottom: "7px",
-                  }}
-                >
-                  <Odometer initialValue={70} duration="4000" formate="{d}" />
-                </h2>
-                <p>Workers</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-              <div className="funfact">
-                <h2
-                  style={{
-                    color: "#44ce6f",
-                    fontSize: "35px",
-                    marginBottom: "7px",
-                  }}
-                >
-                  <Odometer initialValue={500} duration="4000" formate="{d}" />
-                </h2>
-                <p>Contributors</p>
-              </div>
-            </div>
-          </div>
-          <div className="contact-cta-box">
-            <h3>Have any question about us?</h3>
-            <p>Don't hesitate to contact us</p>
-            <a href="contact.html" className="btn btn-primary">
-              Contact Us
-            </a>
-          </div>
-          <div className="map-bg">
-            {/* <img src="assets/img/map.png" alt="map" /> */}
-            <img
-              className="map-image"
-              src="../../assets/img/map.png"
-              alt="map"
-              style={{ width: "100%", height: "390px" }}
-            />
-          </div>
-        </div>
-        <div className="shape8 rotateme">
-          <img
-            src="assets/img/shape2.svg"
-            alt="shape"
-            style={{ width: "20px", height: "20px" }}
-          />
-        </div>
-        <div className="shape2 rotateme">
-          <img
-            src="assets/img/shape2.svg"
-            alt="shape"
-            style={{ width: "20px", height: "20px" }}
-          />
-        </div>
-        <div classclassName="shape7">
-          <img
-            src="assets/img/shape4.svg"
-            alt="shape"
-            style={{ width: "20px", height: "20px" }}
-          />
-        </div>
-        <div className="shape4">
-          <img
-            src="assets/img/shape4.svg"
-            alt="shape"
-            style={{ width: "20px", height: "20px" }}
-          />
+  <div className="container">
+    <div className="section-title">
+      <h2>We always try to understand users expectation</h2>
+      <div className="bar" />
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div className="row">
+      <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+        <div className="funfact">
+        <h2 className='text-center' style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}
+        ><Odometer initialValue={550}  duration= "4000"  formate="{d}"/></h2>  
+          <p className='text-center'>Project</p>
         </div>
       </div>
+      <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+        <div className="funfact">
+        <h2 className='text-center' style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}>
+        <Odometer initialValue={20} duration= "4000"  formate="{d}"/>
+        </h2>
+          <p className='text-center'>Feedback</p>
+        </div>
+      </div>
+      <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+        <div className="funfact">
+        <h2 className='text-center' style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}>
+        <Odometer initialValue={70} duration= "4000"  formate="{d}"/>
+        </h2>
+          <p className='text-center'>Workers</p>
+        </div>
+      </div>
+      <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+        <div className="funfact">
+        <h2 className='text-center' style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}>
+        <Odometer initialValue={500} duration= "4000"  formate="{d}" />
+        </h2>
+          <p className='text-center'>Contributors</p>
+        </div>
+      </div>
+    </div>
+    <div className="contact-cta-box">
+      <h3>Have any question about us?</h3>
+      <p>Don't hesitate to contact us</p>
+      <Link to="/contact-us" className="btn btn-primary">Contact Us</Link>
+    </div>
+    <div className="map-bg">
+      <img className="map-image" src="../../assets/img/map.png" alt="map" 
+        style={{ width: "100%", height: "390px" }}
+      />
+    </div>
+    
+  </div>
+  <div className="shape8 rotateme">
+  <img src="assets/img/shape2.svg" alt="shape" style={{width:"20px", height:"20px"}}/></div>
+  <div className="shape2 rotateme">
+  <img src="assets/img/shape2.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
+  <div classclassName="shape7">
+  <img src="assets/img/shape4.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
+  <div className="shape4">
+  <img src="assets/img/shape4.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
+</div>
       {/* End Fun Facts Area*/}
 
       {/*   Start Partner Area */}

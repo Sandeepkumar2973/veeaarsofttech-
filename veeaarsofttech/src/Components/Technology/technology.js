@@ -12,7 +12,7 @@ function Technology() {
       </div>
       <h2 className=" heading text-center">Technologies We Use</h2>
       <div className="container technology ">
-        <div className="row">
+        <div className="row" style={{textAlign:"center"}}>
           <div className="col-3">
             <img src="/Icons/html.png" className="icon-png" />
           </div>
@@ -27,7 +27,7 @@ function Technology() {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row" style={{textAlign:"center"}}>
           <div className="col-3">
             <img src="/Icons/figma.png" className="icon-png" />
           </div>
@@ -42,7 +42,7 @@ function Technology() {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row" style={{textAlign:"center"}}>
           <div className="col-3">
             <img src="/Icons/jquery.png" className="icon-png" />
           </div>
@@ -57,7 +57,7 @@ function Technology() {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row" style={{textAlign:"center"}}>
           <div className="col-3">
             <img src="/Icons/nodejs.png" className="icon-png" />
           </div>
@@ -72,7 +72,7 @@ function Technology() {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row" style={{textAlign:"center"}}>
           <div className="col-3">
             <img src="/Icons/redux.png" className="icon-png" />
           </div>
@@ -87,7 +87,7 @@ function Technology() {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row" style={{textAlign:"center"}}>
           <div className="col-3">
             <img src="/Icons/wordpress.png" className="icon-png" />
           </div>
