@@ -110,8 +110,8 @@ const Contact = () => {
                     <a href="#">+91 84484 41698</a>
                   </p> */}
                   <p>
-                    <a href="#">+91 95996 61378​</a>,&nbsp;&nbsp;
-                    <a href="#">+91 84484 41698</a>
+                    <Link t="/">+91 95996 61378​</Link>,&nbsp;&nbsp;
+                    <Link to="/">+91 84484 41698</Link>
                   </p>
                 </div>
               </div>
@@ -139,10 +139,10 @@ const Contact = () => {
             <div className="row h-100 justify-content-center align-items-center">
               <div className="col-lg-6 col-md-12">
                 <img
-                  src="./../../assets/img/uiux1.png"
+                  src="./../../assets/img/contact.png"
                   alt="image"
                   className="wow fadeInUp zoomOnHover"
-                  style={{ padding: "20px" }}
+                  style={{ padding: "10px" }}
                 />
               </div>
               <div className="col-lg-6 col-md-12">

@@ -38,20 +38,20 @@ const Navbar = () => {
               </button>
                     <Link Class="navbar-brand black-logo" Link to='/'>
                     <img src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png" alt="logo" 
-                         style={{width:"80px", height:"auto"}}/></Link>
+                         style={{width:"100px", height:"auto"}}/></Link>
 
                     <div Class={`collapse navbar-collapse mean-menu ${collapsed ? 'show' : 'hide'}`}
                      id="navbarSupportedContent">
-                        <ul Class="navbar-nav nav ml-auto">
-                            <li Class="nav-item">
-                            <Link to='/' Class="nav-link active">Home <i data-feather="chevron-down"></i></Link>
-                            </li>
+                        <div Class="navbar-nav nav ml-auto">
+                            <span Class="nav-item">
+                            <Link to='/' Class="nav-link active">Home</Link>
+                            </span>
 
-                            <li Class="nav-item">
+                            <span Class="nav-item">
                             <Link to='/about-us' Class="nav-link">About <i data-feather="chevron-down"></i></Link>
-                            </li>
+                            </span>
 
-                            <li Class="nav-item">
+                            <span Class="nav-item">
                             <Link to='/our-services' Class="nav-link">Our Services <i data-feather="chevron-down"></i></Link>
                                 <ul Class="dropdown_menu">
                                     <li Class="nav-item">
@@ -73,22 +73,22 @@ const Navbar = () => {
                                     <Link to='/data-science-consulting' Class="nav-link">Data Science Consulting<i data-feather="chevron-right"></i></Link>
                                      </li>
                                 </ul>
-                            </li>
+                            </span>
 
-                            <li Class="nav-item">
+                            <span Class="nav-item">
                             <Link to='/technologies' Class="nav-link">Technologies <i data-feather="chevron-down"></i></Link>
-                            </li>
+                            </span>
 
 
-                            <li Class="nav-item">
+                            <span Class="nav-item">
                             <Link to='/blog' Class="nav-link">Blog <i data-feather="chevron-down"></i></Link>
-                            </li>
+                            </span>
 
-                            <li Class="nav-item"><Link to='/contact-us' Class="nav-link">Contact</Link></li>
+                            <span Class="nav-item"><Link to='/contact-us' Class="nav-link">Contact</Link></span>
                             <li Class="others-option">
                         <Link to='/' Class="btn btn-primary">OUR PACKAGES</Link>
                     </li>
-                        </ul>
+                        </div>
                     </div>                    
                 </nav>
             </div>
