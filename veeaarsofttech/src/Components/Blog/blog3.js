@@ -2,16 +2,9 @@ import React, { useState } from "react";
 import Navbar from "../Header/Navbar";
 import Footer from "../Footer/Footer";
 // import "./Blog3.css";
-import { FaArrowAltCircleRight } from "react-icons/fa";
 import { MdCollectionsBookmark } from "react-icons/md";
-import { CgWebsite } from "react-icons/cg";
 
 function Blog3() {
-  const [activeIndex, setActiveIndex] = useState(null);
-
-  const handleAccordionToggle = (index) => {
-    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
-  };
 
   return (
     <div>

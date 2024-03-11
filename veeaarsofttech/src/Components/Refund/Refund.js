@@ -2,25 +2,28 @@ import React from "react";
 import Navbar from "../Header/Navbar";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import { Link } from "react-router-dom";
 
 function Refund() {
   return (
     <div>
       <Navbar />
       <div className="header-container">
-      <p className="text-data">Refund</p>
-      </div>      <div>
-        {/* Start Terms & Conditions Area */}
+        <p className="text-data">Refund</p>
+      </div>{" "}
+      <div>
         <div className="terms-conditions-area ptb-80">
           <div className="container">
             <div className="terms-conditions-content">
-              <h1 className="text-center" style={{marginTop:"10px"}}>Overview</h1>
+              <h1 className="text-center" style={{ marginTop: "10px" }}>
+                Overview
+              </h1>
               <p className="text-center">
                 We may collect personal identification information from Users in
                 a variety of ways, including, but not limited to, when Users
                 visit our site, subscribe to the newsletter, fill out a form,
                 and in connection with other activities, services, features or
-                resources we make <a href="#">available</a> on our Site. Users
+                resources we make <Link to="/">available</Link> on our Site. Users
                 may be asked for, as appropriate, name, email address, mailing
                 address, phone number, company name. We will collect personal{" "}
                 <strong>identification</strong> information from Users only if
@@ -29,7 +32,9 @@ function Refund() {
                 except that it may prevent them from engaging in certain Site
                 related activities.
               </p>
-              <h3 className="text-center">General permission to use and access and use limitations</h3>
+              <h3 className="text-center">
+                General permission to use and access and use limitations
+              </h3>
               <p className="text-center">
                 This site is provided by <strong>StartP</strong>.{" "}
                 <strong>StartP</strong> collects information in several ways
@@ -73,9 +78,9 @@ function Refund() {
                   card details on the website.Your account will be charged once
                   the order is completed. To register for a PayPal account,
                   visit the website{" "}
-                  <a href="#" target="_blank">
+                  <Link to="/" target="_blank">
                     paypal.com.
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <h5 className="text-center">Linking to this Site</h5>
@@ -122,16 +127,17 @@ function Refund() {
                   card details on the website.Your account will be charged once
                   the order is completed. To register for a PayPal account,
                   visit the website{" "}
-                  <a href="#" target="_blank">
+                  <Link to="/" target="_blank">
                     paypal.com.
-                  </a>
+                  </Link>
                 </li>
               </ol>
-              <p className="text-center">Last updated: June 30, 2021 at 24:00 pm</p>
+              <p className="text-center">
+                Last updated: June 30, 2021 at 24:00 pm
+              </p>
             </div>
           </div>
         </div>
-        {/* End Terms & Conditions Area */}
       </div>
       <Footer />
     </div>

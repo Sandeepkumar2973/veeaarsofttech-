@@ -6,7 +6,6 @@ import {
   FaInstagramSquare,
   FaYoutube,
 } from "react-icons/fa";
-// import { FaXYoutube } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -144,14 +143,14 @@ const Footer = () => {
                       <FaFacebook />
                     </Link>
                   </li>
-                  <li>
+                  <li style={{ color: "red" }}>
                     <Link
                       to="/https://www.youtube.com/@veeaarsoftech"
                       className="youtube"
                       target="_blank"
                     >
                       <i data-feather="youtube" />
-                      <FaYoutube />
+                      <FaYoutube style={{ color: "red" }} />
                     </Link>
                   </li>
                   <li>
@@ -161,7 +160,7 @@ const Footer = () => {
                       target="_blank"
                     >
                       <i data-feather="instagram" />
-                      <FaInstagramSquare />
+                      <FaInstagramSquare style={{ color: "#ff0076" }} />
                     </Link>
                   </li>
                   <li>
@@ -181,7 +180,8 @@ const Footer = () => {
               <div className="copyright-area">
                 <p className="text-center">
                   <Link to="/" target="_blank">
-                    Copyright @ 2022 All Rights Reserved by <strong>VeeAarSoftTech</strong> Pvt. Ltd.
+                    Copyright @ 2022 All Rights Reserved by{" "}
+                    <strong>VeeAarSoftTech</strong> Pvt. Ltd.
                   </Link>
                 </p>
               </div>

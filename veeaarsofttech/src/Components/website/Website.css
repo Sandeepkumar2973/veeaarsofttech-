@@ -27,8 +27,11 @@
   
   .fadeInUp {
     animation-name: fadeInUp;
-    /* border-radius: 30% 70% 70% 30% / 15% 48% 52% 85% ; */
+    width: 50%;
 
+  }
+  .fadding{
+    width: 50%;
   }
   
   .zoomIn {
@@ -40,7 +43,7 @@
   }
   
   .zoomOnHover:hover {
-    transform: scale(1.2); /* Adjust the scale factor based on your preference */
+    transform: scale(1.2); 
   }
   
 
@@ -96,5 +99,10 @@
       p{
         text-align: center;
       }
+
+      .fadeInUp {
+        animation-name: fadeInUp;
+        width: 100%;
+    }
 
   }

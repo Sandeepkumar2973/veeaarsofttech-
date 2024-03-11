@@ -2,16 +2,16 @@ import React from "react";
 import Navbar from "../Header/Navbar";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import { Link } from 'react-router-dom';
 
 function Privacy() {
   return (
     <div>
       <Navbar />
       <div className="header-container">
-      <p className="text-data">Privacy Policy</p>
+        <p className="text-data">Privacy Policy</p>
       </div>
       <div>
-        {/* Start Privacy Policy Area */}
         <div className="privacy-policy-area ptb-80">
           <div className="container">
             <div className="privacy-policy-content">
@@ -74,9 +74,9 @@ function Privacy() {
                   card details on the website.Your account will be charged once
                   the order is completed. To register for a PayPal account,
                   visit the website{" "}
-                  <a href="#" target="_blank">
+                  <Link to="/" target="_blank">
                     paypal.com.
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <h4>Linking to this Site</h4>
@@ -123,16 +123,15 @@ function Privacy() {
                   card details on the website.Your account will be charged once
                   the order is completed. To register for a PayPal account,
                   visit the website{" "}
-                  <a href="#" target="_blank">
+                  <Link to="#" target="_blank">
                     paypal.com.
-                  </a>
+                  </Link>
                 </li>
               </ol>
               <p>Last updated: June 30, 2021 at 24:00 pm</p>
             </div>
           </div>
         </div>
-        {/* End Privacy Policy Area */}
       </div>
 
       <Footer />

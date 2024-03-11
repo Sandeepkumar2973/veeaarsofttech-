@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./aboutus.css";
 import Navbar from "../Header/Navbar";
-// import OwlCarousel from "react-owl-carousel";
-// import { Facebook, Twitter, Linkedin, Gitlab } from "react-feather";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -96,7 +94,6 @@ const About = ({ initialValue }) => {
   ];
 
   ////////////////
-
 
   return (
     <>
@@ -204,12 +201,16 @@ const About = ({ initialValue }) => {
             <div className="col-lg-6 col-md-12">
               <div className="ml-about-content">
                 <span className="sub-title text-left">About Us</span>
-                <h1 className="text-left">
-                Inspiring Tech Needs For Business
-                </h1>
+                <h1 className="text-left">Inspiring Tech Needs For Business</h1>
                 <div className="bar" />
                 <p className="text-left">
-                Veeaar Softtech pvt ltd is an IT service provider that holds expertise in website development services, digital marketing services, web designing and application development services along with cloud computing and other IT services and solutions. We work with an unparalleled swiftness to stand up to our client’s requirements and deliver what is expected out of us.
+                  Veeaar Softtech pvt ltd is an IT service provider that holds
+                  expertise in website development services, digital marketing
+                  services, web designing and application development services
+                  along with cloud computing and other IT services and
+                  solutions. We work with an unparalleled swiftness to stand up
+                  to our client’s requirements and deliver what is expected out
+                  of us.
                 </p>
                 <Link to="/contact-us" className="btn btn-secondary">
                   CONTACT US
@@ -222,101 +223,158 @@ const About = ({ initialValue }) => {
 
       <div className="container">
         <div className="about-inner-area">
-        <div className="rows-top"  style={{padding:"50px"}}>
-          <div className="row" style={{marginTop:"30px"}}>
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="about-text">
-                <h3>Our History</h3>
-                <p>
-                Veeaar Softtech, a pioneering IT company, boasts a rich history of innovation, excellence, and client success in software development and technology solutions.
-                </p>
+          <div className="rows-top" style={{ paddingTop: "40px" }}>
+            <div className="row" style={{ marginTop: "30px" }}>
+              <div className="col-lg-4 col-md-6 col-sm-6">
+                <div className="about-text">
+                  <h3 style={{ textAlign: "left" }}>Our History</h3>
+                  <p style={{ textAlign: "left" }}>
+                    Veeaar Softtech, a pioneering IT company, boasts a rich
+                    history of innovation, excellence, and client success in
+                    software development and technology solutions.
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 col-sm-6">
+                <div className="about-text">
+                  <h3 style={{ textAlign: "left" }}>Our Mission</h3>
+                  <p style={{ textAlign: "left" }}>
+                    "Empowering businesses with innovative solutions, Veeaar
+                    Softtech is dedicated to delivering cutting-edge IT services
+                    for sustained growth and success."
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
+                <div className="about-text">
+                  <h3 style={{ textAlign: "left" }}>Who we are</h3>
+                  <p style={{ textAlign: "left" }}>
+                    Veeaar SoftTech is a dynamic IT company, delivering
+                    innovative solutions and cutting-edge technology to empower
+                    businesses worldwide.
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="about-text">
-                <h3>Our Mission</h3>
-                <p>
-                "Empowering businesses with innovative solutions, Veeaar Softtech is dedicated to delivering cutting-edge IT services for sustained growth and success."
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
-              <div className="about-text">
-                <h3>Who we are</h3>
-                <p>
-                Veeaar SoftTech is a dynamic IT company, delivering innovative solutions and cutting-edge technology to empower businesses worldwide.
-                </p>
-              </div>
-            </div>
-          </div>
           </div>
         </div>
       </div>
 
       {/*Start Fun Facts Area  */}
       <div className="funfacts-area ptb-80">
-  <div className="container">
-    <div className="section-title">
-      <h2>We always try to understand users expectation</h2>
-      <div className="bar" />
-       </div>
-    <div className="row">
-      <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-        <div className="funfact">
-        <h2 className='text-center' style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}
-        ><Odometer initialValue={550}  duration= "4000"  formate="{d}"/></h2>  
-          <p className='text-center'>Project</p>
+        <div className="container">
+          <div className="section-title">
+            <h2>We always try to understand users expectation</h2>
+            <div className="bar" />
+          </div>
+          <div className="row">
+            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+              <div className="funfact">
+                <h2
+                  className="text-center"
+                  style={{
+                    color: "#44ce6f",
+                    fontSize: "35px",
+                    marginBottom: "7px",
+                  }}
+                >
+                  <Odometer initialValue={550} duration="4000" formate="{d}" />
+                </h2>
+                <p className="text-center">Project</p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+              <div className="funfact">
+                <h2
+                  className="text-center"
+                  style={{
+                    color: "#44ce6f",
+                    fontSize: "35px",
+                    marginBottom: "7px",
+                  }}
+                >
+                  <Odometer initialValue={20} duration="4000" formate="{d}" />
+                </h2>
+                <p className="text-center">Feedback</p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+              <div className="funfact">
+                <h2
+                  className="text-center"
+                  style={{
+                    color: "#44ce6f",
+                    fontSize: "35px",
+                    marginBottom: "7px",
+                  }}
+                >
+                  <Odometer initialValue={70} duration="4000" formate="{d}" />
+                </h2>
+                <p className="text-center">Workers</p>
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+              <div className="funfact">
+                <h2
+                  className="text-center"
+                  style={{
+                    color: "#44ce6f",
+                    fontSize: "35px",
+                    marginBottom: "7px",
+                  }}
+                >
+                  <Odometer initialValue={500} duration="4000" formate="{d}" />
+                </h2>
+                <p className="text-center">Contributors</p>
+              </div>
+            </div>
+          </div>
+          <div className="contact-cta-box">
+            <h3>Have any question about us?</h3>
+            <p>Don't hesitate to contact us</p>
+            <Link to="/contact-us" className="btn btn-primary">
+              Contact Us
+            </Link>
+          </div>
+          <div className="map-bg">
+            <img
+              className="map-image"
+              src="../../assets/img/map.png"
+              alt="map"
+              style={{ width: "100%", height: "390px" }}
+            />
+          </div>
+        </div>
+        <div className="shape8 rotateme">
+          <img
+            src="assets/img/shape2.svg"
+            alt="shape"
+            style={{ width: "20px", height: "20px" }}
+          />
+        </div>
+        <div className="shape2 rotateme">
+          <img
+            src="assets/img/shape2.svg"
+            alt="shape"
+            style={{ width: "20px", height: "20px" }}
+          />
+        </div>
+        <div classclassName="shape7">
+          <img
+            src="assets/img/shape4.svg"
+            alt="shape"
+            style={{ width: "20px", height: "20px" }}
+          />
+        </div>
+        <div className="shape4">
+          <img
+            src="assets/img/shape4.svg"
+            alt="shape"
+            style={{ width: "20px", height: "20px" }}
+          />
         </div>
       </div>
-      <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-        <div className="funfact">
-        <h2 className='text-center' style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}>
-        <Odometer initialValue={20} duration= "4000"  formate="{d}"/>
-        </h2>
-          <p className='text-center'>Feedback</p>
-        </div>
-      </div>
-      <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-        <div className="funfact">
-        <h2 className='text-center' style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}>
-        <Odometer initialValue={70} duration= "4000"  formate="{d}"/>
-        </h2>
-          <p className='text-center'>Workers</p>
-        </div>
-      </div>
-      <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-        <div className="funfact">
-        <h2 className='text-center' style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}>
-        <Odometer initialValue={500} duration= "4000"  formate="{d}" />
-        </h2>
-          <p className='text-center'>Contributors</p>
-        </div>
-      </div>
-    </div>
-    <div className="contact-cta-box">
-      <h3>Have any question about us?</h3>
-      <p>Don't hesitate to contact us</p>
-      <Link to="/contact-us" className="btn btn-primary">Contact Us</Link>
-    </div>
-    <div className="map-bg">
-      <img className="map-image" src="../../assets/img/map.png" alt="map" 
-        style={{ width: "100%", height: "390px" }}
-      />
-    </div>
-    
-  </div>
-  <div className="shape8 rotateme">
-  <img src="assets/img/shape2.svg" alt="shape" style={{width:"20px", height:"20px"}}/></div>
-  <div className="shape2 rotateme">
-  <img src="assets/img/shape2.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
-  <div classclassName="shape7">
-  <img src="assets/img/shape4.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
-  <div className="shape4">
-  <img src="assets/img/shape4.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
-</div>
-      {/* End Fun Facts Area*/}
 
-      {/*   Start Partner Area */}
       <div className="partner-area partner-section">
         <div className="container">
           <h5 className="text-center">
@@ -331,13 +389,13 @@ const About = ({ initialValue }) => {
                 <div key={index}>
                   <div
                     className="single-ml-partner"
-                    style={{ marginBottom: "20px", padding:"10px" }}
+                    style={{ marginBottom: "20px", padding: "10px" }}
                   >
                     <Link to="/">
                       <img
                         src={partner.imgSrc}
                         alt="image"
-                        style={{ width: "20px", height: "20px"  }}
+                        style={{ width: "20px", height: "20px" }}
                       />
                       <img
                         src={partner.hoverImgSrc}
@@ -365,8 +423,7 @@ const About = ({ initialValue }) => {
           ))}
         </div>
       </div>
-      {/*  End Partner Area */}
-      <Footer />
+    <Footer />
     </>
   );
 };
