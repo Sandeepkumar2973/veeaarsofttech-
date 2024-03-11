@@ -3,6 +3,7 @@ import Navbar from "../Header/Navbar";
 import Footer from "../Footer/Footer";
 import { cardData } from "./contents";
 import { Link } from "react-router-dom";
+import "./blog.css"
 const Blog = () => {
   const pageSize = 9;
   const [currentPage, setCurrentPage] = useState(1);
@@ -55,7 +56,7 @@ const Blog = () => {
               </div>
               <div className="pagination justify-content-center">
                 <button
-                  className="pagination-btn"
+                  className=" button-8"
                   disabled={currentPage === 1}
                   onClick={() => handlePageChange(currentPage - 1)}
                 >
@@ -75,7 +76,7 @@ const Blog = () => {
                   )
                 )}
                 <button
-                  className="pagination-btn"
+                  className="button-8"
                   disabled={currentPage === totalPages}
                   onClick={() => handlePageChange(currentPage + 1)}
                 >

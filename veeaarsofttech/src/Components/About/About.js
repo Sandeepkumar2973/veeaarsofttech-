@@ -7,18 +7,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import { Link } from "react-router-dom";
-// import "./TeamCarousel.css";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaSquareInstagram } from "react-icons/fa6";
-import { CiLinkedin } from "react-icons/ci";
-import { FaFacebookSquare } from "react-icons/fa";
 import Odometer from "./../FrontPage.js/Odometer";
 
 const About = ({ initialValue }) => {
-  const [value, setValue] = useState(0);
-  const [selectedReview, setSelectedReview] = useState(null);
   const settings = {
     dots: true,
     infinite: true,
@@ -103,208 +95,8 @@ const About = ({ initialValue }) => {
     },
   ];
 
- //this is for  section our team
-const teamData = [
-  {
-    name: 'Chandan Singh',
-    role: 'CEO & Founder',
-    image: 'assets/img/team-image/1.jpg',
-    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/> </Link>],
-    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
-    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
-    facebook:[ <Link to="https://www.facebook.com/chandansingh4you"><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>],
-  },
-  {
-    name: 'Kudan Sign',
-    role: ' Manager',
-    image: 'assets/img/team-image/2.jpg',
-    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
-    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
-    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
-    facebook:[<Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link> ], 
-   },
-  {
-    name: 'Punit',
-    role: 'HR',
-    image: 'assets/img/team-image/3.jpg',
-    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
-    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
-    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
-    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>],
-    },
-  {
-    name: 'Samim',
-    role: 'CA',
-    image: 'assets/img/team-image/4.jpg',
-    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
-    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
-    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
-    facebook:[<Link to=""> <FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>],  
-  },
-  {
-    name: 'Aarti',
-    role: 'IT HEAD',
-    image: 'assets/img/team-image/5.jpg',
-    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
-    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
-    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
-    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
-   },
-   {
-    name: 'Manish',
-    role: 'Angular Developer',
-    image: 'assets/img/team-image/5.jpg',
-    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
-    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
-    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
-    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
-   },
-   {
-    name: 'Sandeep Kumar',
-    role: 'MERN Developer',
-    image: 'assets/img/team-image/5.jpg',
-    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
-    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
-    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
-    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
-   },
-   {
-    name: 'Lalit Kumar',
-    role: 'React Developer',
-    image: 'assets/img/team-image/5.jpg',
-    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
-    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
-    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
-    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
-   },
-   {
-    name: 'Kavita',
-    role: 'UI/UX',
-    image: 'assets/img/team-image/5.jpg',
-    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
-    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
-    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
-    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
-   },
-   {
-    name: 'Vishal',
-    role: 'Graphic/Video Editor',
-    image: 'assets/img/team-image/vishal.jpg',
-    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
-    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
-    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
-    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
-   },
-   {
-    name: 'Subham',
-    role: 'Digital Marketing',
-    image: 'assets/img/team-image/subham.jpeg',
-    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
-    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
-    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
-    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
-   },
-   {
-    name: 'Megha',
-    role: 'Wordpress Developer',
-    image: 'assets/img/team-image/5.jpg',
-    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
-    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
-    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
-    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
-   },
-   {
-    name: 'Poonam',
-    role: 'Accountent',
-    image: 'assets/img/team-image/5.jpg',
-    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
-    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
-    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
-    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
-   },
-   {
-    name: 'Rakesh',
-    role: 'WordPress Developer',
-    image: 'assets/img/team-image/5.jpg',
-    twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
-    instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
-    Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
-    facebook:[ <Link to=""><FaFacebookSquare style={{color:"skyblue", fontSize:"20px"}}/></Link>], 
-   },
-
-   
-];
-
-  //this is for feedback
-  const feedbackData = [
-    {
-      name: "James Anderson",
-      role: "Web Developer",
-      imgSrc: "assets/img/client-image/1.jpg",
-      review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      name: "Steven Smith",
-      role: "Web Developer",
-      imgSrc: "assets/img/client-image/2.jpg",
-      review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      name: "Steven Lucy",
-      role: "Web Developer",
-      imgSrc: "assets/img/client-image/1.jpg",
-      review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      name: "Steven Lucy",
-      role: "Web Developer",
-      imgSrc: "assets/img/client-image/2.jpg",
-      review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      name: "Steven Lucy",
-      role: "Web Developer",
-      imgSrc: "assets/img/client-image/3.jpg",
-      review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      name: "Steven Lucy",
-      role: "Web Developer",
-      imgSrc: "assets/img/client-image/1.jpg",
-      review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-
-    {
-      name: "Steven Lucy",
-      role: "Web Developer",
-      imgSrc: "assets/img/client-image/2.jpg",
-      review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    // Add more reviews as needed
-  ];
-
   ////////////////
 
-  //this is for feedback open new popup
-  const handleImageClick = (index) => {
-    setSelectedReview(feedbackData[index]);
-  };
-
-  //this is for teams
-  const settingsss = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-  };
 
   return (
     <>
@@ -461,142 +253,13 @@ const teamData = [
         </div>
       </div>
 
-      {/*Start Team Area*/}
-      <div className="team-area ptb-80 bg-f9f6f6">
-        <div className="container">
-          <div className="section-title">
-            <h2 className="text-center">Our Awesome Team</h2>
-            <div className="bar"></div>
-            <p>
-            VeeaarSoftTech, an IT company, boasts an awesome team dedicated to innovation and excellence. Comprising skilled professionals across diverse domains, our collaborative spirit propels us to deliver cutting-edge solutions. With a commitment to client satisfaction, VeeaarSoftTech thrives on teamwork, fostering creativity and adaptability. Our dynamic workforce, fueled by passion and expertise.
-            </p>
-          </div>
-          <Slider
-            {...settingsss}
-            className="team-slides owl-carousel owl-theme"
-          >
-            {teamData.map((member, index) => (
-              <div key={index} className="single-team">
-                <div
-                  className="card"
-                  style={{
-                    border: "none",
-                    marginRight: "10px",
-                    marginLeft: "10px",
-                  }}
-                >
-                  <div className="team-image">
-                    <img src={member.image} alt={member.name} />
-                  </div>
-                  <div className="team-content">
-                    <div className="team-info">
-                      <h3 className="text-center" style={{ fontSize: "12px" }}>
-                        {member.name}
-                      </h3>
-                      <span>{member.role}</span>
-                    </div>
-                    <span style={{ padding: "5px" }}>{member.twitter}</span>
-                    <span style={{ padding: "5px" }}>{member.instagrm}</span>
-                    <span style={{ padding: "5px" }}>{member.facebook}</span>
-                    <span style={{ padding: "5px" }}>{member.Linkdien}</span>
-                    <p>{member.des}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </div>
-      {/*Start Team Area*/}
-
-      {/* Start Feedback Area*/}
-      <div className="feedback-area ptb-80 bg-f7fafd">
-        <div className="container">
-          <div className="section-title">
-            <h2 className="text-center">What users are Saying</h2>
-            <div className="bar" />
-            <p className="text-center">
-            "Impressed with Veeaar Softtech's innovative solutions! They truly understand client needs and deliver top-notch IT services. Highly recommended!"
-            </p>
-          </div>
-
-          <div
-            className="card"
-            style={{
-              width: "90%",
-              margin: "0 auto",
-              padding: "20px",
-              marginBottom: "10px",
-              background: "aliceblue",
-            }}
-          >
-            <marquee>
-              <strong>
-                <h6 style={{ color: "green" }}>
-                  Click on User Image for Read Users Review
-                </h6>
-              </strong>
-            </marquee>
-            {selectedReview && (
-              <div className="selected-review">
-                <div className="container">
-                  <img
-                    src={selectedReview.imgSrc}
-                    style={{
-                      borderRadius: "80px",
-                      width: "100px",
-                      height: "auto",
-                    }}
-                  />
-                  <h3 >{selectedReview.name}</h3>
-                  <span>{selectedReview.role}</span>
-                  <p >{selectedReview.review}</p>
-                  <button
-                    className="btn btn-primary"
-                    onClick={() => setSelectedReview(null)}
-                  >
-                    Close
-                  </button>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        <div className="feedback-slides">
-          <Slider {...settings}>
-            {feedbackData.map((feedback, index) => (
-              <div key={index} className="single-feedback">
-                <div
-                  className="client-img"
-                  onClick={() => handleImageClick(index)}
-                >
-                  <img
-                    src={feedback.imgSrc}
-                    alt={feedback.name}
-                    style={{
-                      borderRadius: "80px",
-                      width: "100px",
-                      height: "auto",
-                    }}
-                  />
-                </div>
-                {/* Display a preview of the review if needed */}
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </div>
-      {/*  End Feedback Area*/}
-
       {/*Start Fun Facts Area  */}
       <div className="funfacts-area ptb-80">
   <div className="container">
     <div className="section-title">
       <h2>We always try to understand users expectation</h2>
       <div className="bar" />
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
+       </div>
     <div className="row">
       <div className="col-lg-3 col-md-3 col-6 col-sm-3">
         <div className="funfact">
@@ -668,13 +331,13 @@ const teamData = [
                 <div key={index}>
                   <div
                     className="single-ml-partner"
-                    style={{ marginBottom: "20px" }}
+                    style={{ marginBottom: "20px", padding:"10px" }}
                   >
                     <Link to="/">
                       <img
                         src={partner.imgSrc}
                         alt="image"
-                        style={{ width: "20px", height: "20px" }}
+                        style={{ width: "20px", height: "20px"  }}
                       />
                       <img
                         src={partner.hoverImgSrc}

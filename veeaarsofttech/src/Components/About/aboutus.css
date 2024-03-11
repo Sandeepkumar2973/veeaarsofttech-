@@ -102,6 +102,7 @@ body {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -441,6 +442,7 @@ label {
     font-size: 28px;
     font-weight: 600;
     text-align: center;
+    margin-top: 15px;
 }
 
 .section-title p {
@@ -1047,7 +1049,6 @@ Main Banner CSS
 
 .main-banner {
     position: relative;
-    height: 910px;
     z-index: 1;
     background: transparent url(../../assets/img/banner-bg1.jpg) right top no-repeat;
 }
@@ -1056,6 +1057,7 @@ Main Banner CSS
     font-size: 45px;
     font-weight: 500;
     margin-bottom: 20px;
+    line-height: 40px;
 }
 
 .main-banner .hero-content p {
@@ -1868,6 +1870,9 @@ Services CSS
 .services-content .section-title .bar {
     margin-left: 0;
     margin-right: 0;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .services-content .section-title p {
@@ -1875,8 +1880,9 @@ Services CSS
 }
 
 .services-content .row {
-    margin-left: -8px;
-    margin-right: -8px;
+    /* margin-left: -8px; */
+    /* margin-right: -8px; */
+    padding: 6px;
 }
 
 .services-content .row .col-lg-6 {
@@ -1963,7 +1969,7 @@ Services CSS
     text-align: center;
     margin: 0 auto;
     top: -52px;
-    width: 100%;
+    width: 85%;
     height: auto;
 }
 
@@ -10890,10 +10896,13 @@ Privacy Policy Area CSS
 
 .privacy-policy-content h4 {
     margin-bottom: 12px;
+    padding-top: 15px;
+    padding-bottom:10px;
 }
 
 .privacy-policy-content h4:not(:first-child) {
     margin-top: 25px;
+    text-align: center;
 }
 
 .privacy-policy-content h3 {

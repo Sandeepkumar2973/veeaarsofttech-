@@ -33,7 +33,7 @@ function Uiux() {
       <div className="col-lg-6 services-details">
         <div className="services-details-desc">
           <h2> <span className="arrow-icon"><CgWebsite /></span>UI/UX Designing</h2>
-          <p>
+          <p style={{textAlign:"center"}}>
           UI/UX design is a multidisciplinary approach to creating digital products and applications that prioritize both the User Interface (UI) and User Experience (UX) aspects of design. It involves crafting a seamless and enjoyable interaction between users and digital interfaces while considering the overall user journey and satisfaction.</p>
         </div>
       </div>

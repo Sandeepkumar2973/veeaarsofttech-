@@ -480,7 +480,7 @@ const teamData = [
   {
     name: 'Chandan Singh',
     role: 'CEO & Founder',
-    image: 'assets/img/team-image/chandansingh.jpg',
+    image: 'assets/img/team-image/1.jpg',
     twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/> </Link>],
     instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
     Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
@@ -561,7 +561,7 @@ const teamData = [
    {
     name: 'Vishal',
     role: 'Graphic/Video Editor',
-    image: 'assets/img/team-image/vishal.jpg',
+    image: 'assets/img/team-image/1.jpg',
     twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
     instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
     Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],
@@ -570,7 +570,7 @@ const teamData = [
    {
     name: 'Subham',
     role: 'Digital Marketing',
-    image: 'assets/img/team-image/subham.jpeg',
+    image: 'assets/img/team-image/1.jpg',
     twitter:[<Link to=""><FaXTwitter style={{color:"blue", fontSize:"20px"}}/></Link> ],
     instagrm:[<Link to=""><FaSquareInstagram style={{color:"pink", fontSize:"20px"}}/></Link>],
     Linkdien:[<Link to=""><CiLinkedin  style={{color:"blue", fontSize:"20px"}}/></Link>],

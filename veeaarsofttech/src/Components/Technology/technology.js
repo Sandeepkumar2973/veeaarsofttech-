@@ -35,7 +35,7 @@ function Technology() {
             <img src="/Icons/flutter.png" className="icon-png" />
           </div>
           <div className="col-3">
-            <img src="/Icons/ios.png" className="icon-png" />
+          <img src="/Icons/wordpress.png" className="icon-png" />
           </div>
           <div className="col-3">
             <img src="/Icons/java.png" className="icon-png" />
@@ -89,7 +89,6 @@ function Technology() {
 
         <div className="row" style={{textAlign:"center"}}>
           <div className="col-3">
-            <img src="/Icons/wordpress.png" className="icon-png" />
           </div>
           <div className="col-3"></div>
           <div className="col-3"></div>
