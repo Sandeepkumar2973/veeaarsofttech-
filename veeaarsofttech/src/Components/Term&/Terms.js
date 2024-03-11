@@ -2,24 +2,27 @@ import React from "react";
 import Navbar from "../Header/Navbar";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import { Link } from "react-router-dom";
 
 function Terms() {
   return (
     <div>
       <Navbar />
-      <Header />
-      <div>
+      <div className="header-container">
+      <p className="text-data">Terms & Conditions</p>
+      </div>
+            <div>
         {/* Start Terms & Conditions Area */}
         <div className="terms-conditions-area ptb-80">
           <div className="container">
             <div className="terms-conditions-content">
-              <h4>Overview</h4>
-              <p>
+              <h1 className="text-center" style={{marginTop:"13px"}}>Overview</h1>
+              <p className="text-center">
                 We may collect personal identification information from Users in
                 a variety of ways, including, but not limited to, when Users
                 visit our site, subscribe to the newsletter, fill out a form,
                 and in connection with other activities, services, features or
-                resources we make <a href="#">available</a> on our Site. Users
+                resources we make <Link to="/">available </Link> on our Site. Users
                 may be asked for, as appropriate, name, email address, mailing
                 address, phone number, company name. We will collect personal{" "}
                 <strong>identification</strong> information from Users only if
@@ -28,7 +31,7 @@ function Terms() {
                 except that it may prevent them from engaging in certain Site
                 related activities.
               </p>
-              <h4>General permission to use and access and use limitations</h4>
+              <h2 className="text-center">General permission to use and access and use limitations</h2>
               <p>
                 This site is provided by <strong>StartP</strong>.{" "}
                 <strong>StartP</strong> collects information in several ways
@@ -50,7 +53,7 @@ function Terms() {
                 <strong>5.</strong> See the delivery FAQs for details on
                 shipping methods, costs and delivery times
               </p>
-              <h4>Confidential information</h4>
+              <h3 className="text-center">Confidential information</h3>
               <p>
                 <strong>StartP</strong> accepts the following payment methods:
               </p>
@@ -72,12 +75,12 @@ function Terms() {
                   card details on the website.Your account will be charged once
                   the order is completed. To register for a PayPal account,
                   visit the website{" "}
-                  <a href="#" target="_blank">
+                  <Link to="/" target="_blank">
                     paypal.com.
-                  </a>
+                  </Link>
                 </li>
               </ul>
-              <h4>Linking to this Site</h4>
+              <h4 className="text-center">Linking to this Site</h4>
               <p>
                 Items returned within 14 days of their original shipment date in
                 same as new condition will be eligible for a full refund or
@@ -86,7 +89,7 @@ function Terms() {
                 making returns and shipping/handling fees of original purchase
                 is non-refundable.
               </p>
-              <h4>Intellectual property</h4>
+              <h4 className="text-center">Intellectual property</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 eget euismod erat, sit amet vulputate enim. Etiam enim tellus,
@@ -98,7 +101,7 @@ function Terms() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 eget euismod erat, sit amet vulputate enim. Etiam enim tellus.
               </p>
-              <h4>Security and storage</h4>
+              <h4 className="text-center">Security and storage</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 eget euismod erat, sit amet vulputate enim. Etiam enim tellus.
@@ -121,12 +124,12 @@ function Terms() {
                   card details on the website.Your account will be charged once
                   the order is completed. To register for a PayPal account,
                   visit the website{" "}
-                  <a href="#" target="_blank">
+                  <Link to="#" target="_blank">
                     paypal.com.
-                  </a>
+                  </Link>
                 </li>
               </ol>
-              <p>Last updated: June 30, 2021 at 24:00 pm</p>
+              <p className="text-center">Last updated: June 30, 2021 at 24:00 pm</p>
             </div>
           </div>
         </div>

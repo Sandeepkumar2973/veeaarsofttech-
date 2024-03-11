@@ -7,14 +7,15 @@ function Refund() {
   return (
     <div>
       <Navbar />
-      <Header />
-      <div>
+      <div className="header-container">
+      <p className="text-data">Refund</p>
+      </div>      <div>
         {/* Start Terms & Conditions Area */}
         <div className="terms-conditions-area ptb-80">
           <div className="container">
             <div className="terms-conditions-content">
-              <h4>Overview</h4>
-              <p>
+              <h1 className="text-center" style={{marginTop:"10px"}}>Overview</h1>
+              <p className="text-center">
                 We may collect personal identification information from Users in
                 a variety of ways, including, but not limited to, when Users
                 visit our site, subscribe to the newsletter, fill out a form,
@@ -28,13 +29,13 @@ function Refund() {
                 except that it may prevent them from engaging in certain Site
                 related activities.
               </p>
-              <h4>General permission to use and access and use limitations</h4>
-              <p>
+              <h3 className="text-center">General permission to use and access and use limitations</h3>
+              <p className="text-center">
                 This site is provided by <strong>StartP</strong>.{" "}
                 <strong>StartP</strong> collects information in several ways
                 from different parts of this site.
               </p>
-              <p>
+              <p className="text-center">
                 <strong>1.</strong> Complimentary ground shipping within 1 to 7
                 business days
                 <br />
@@ -50,7 +51,7 @@ function Refund() {
                 <strong>5.</strong> See the delivery FAQs for details on
                 shipping methods, costs and delivery times
               </p>
-              <h4>Confidential information</h4>
+              <h4 className="text-center">Confidential information</h4>
               <p>
                 <strong>StartP</strong> accepts the following payment methods:
               </p>
@@ -77,8 +78,8 @@ function Refund() {
                   </a>
                 </li>
               </ul>
-              <h4>Linking to this Site</h4>
-              <p>
+              <h5 className="text-center">Linking to this Site</h5>
+              <p className="text-center">
                 Items returned within 14 days of their original shipment date in
                 same as new condition will be eligible for a full refund or
                 store credit. Refunds will be charged back form of payment used
@@ -86,20 +87,20 @@ function Refund() {
                 making returns and shipping/handling fees of original purchase
                 is non-refundable.
               </p>
-              <h4>Intellectual property</h4>
-              <p>
+              <h4 className="text-center">Intellectual property</h4>
+              <p className="text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 eget euismod erat, sit amet vulputate enim. Etiam enim tellus,
                 maximus vel augue sed, pharetra hendrerit orci. Vivamus sed
                 massa in nibh imperdiet mattis quis sed augue. Pellentesque erat
                 metus, vestibulum nec nisl.
               </p>
-              <p>
+              <p className="text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 eget euismod erat, sit amet vulputate enim. Etiam enim tellus.
               </p>
               <h4>Security and storage</h4>
-              <p>
+              <p className="text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 eget euismod erat, sit amet vulputate enim. Etiam enim tellus.
               </p>
@@ -126,7 +127,7 @@ function Refund() {
                   </a>
                 </li>
               </ol>
-              <p>Last updated: June 30, 2021 at 24:00 pm</p>
+              <p className="text-center">Last updated: June 30, 2021 at 24:00 pm</p>
             </div>
           </div>
         </div>

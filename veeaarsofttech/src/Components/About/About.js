@@ -7,18 +7,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import { Link } from "react-router-dom";
-// import "./TeamCarousel.css";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaSquareInstagram } from "react-icons/fa6";
-import { CiLinkedin } from "react-icons/ci";
-import { FaFacebookSquare } from "react-icons/fa";
 import Odometer from "./../FrontPage.js/Odometer";
 
 const About = ({ initialValue }) => {
-  const [value, setValue] = useState(0);
-  const [selectedReview, setSelectedReview] = useState(null);
   const settings = {
     dots: true,
     infinite: true,
@@ -103,130 +95,8 @@ const About = ({ initialValue }) => {
     },
   ];
 
-  //this is for  section our team
-  const teamData = [
-    {
-      name: "Josh Buttler",
-      role: "CEO & Founder",
-      image: "assets/img/team-image/1.jpg",
-      des: "Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
-      twitter: [<FaXTwitter />],
-      instagrm: [<FaSquareInstagram />],
-      Linkdien: [<CiLinkedin />],
-      facebook: [<FaFacebookSquare />],
-    },
-    {
-      name: "Alex Maxwel",
-      role: "Marketing Manager",
-      image: "assets/img/team-image/2.jpg",
-      des: "Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
-      twitter: [<FaXTwitter />],
-      instagrm: [<FaSquareInstagram />],
-      Linkdien: [<CiLinkedin />],
-      facebook: [<FaFacebookSquare />],
-    },
-    {
-      name: "Janny Cotller",
-      role: "Web Developer",
-      image: "assets/img/team-image/3.jpg",
-      des: "Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
-      twitter: [<FaXTwitter />],
-      instagrm: [<FaSquareInstagram />],
-      Linkdien: [<CiLinkedin />],
-      facebook: [<FaFacebookSquare />],
-    },
-    {
-      name: "Jason Statham",
-      role: "UX/UI Designer",
-      image: "assets/img/team-image/4.jpg",
-      des: "Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
-      twitter: [<FaXTwitter />],
-      instagrm: [<FaSquareInstagram />],
-      Linkdien: [<CiLinkedin />],
-      facebook: [<FaFacebookSquare />],
-    },
-    {
-      name: "Corey Anderson",
-      role: "Project Manager",
-      image: "assets/img/team-image/5.jpg",
-      des: "Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.",
-      twitter: [<FaXTwitter />],
-      instagrm: [<FaSquareInstagram />],
-      Linkdien: [<CiLinkedin />],
-      facebook: [<FaFacebookSquare />],
-    },
-  ];
-
-  //this is for feedback
-  const feedbackData = [
-    {
-      name: "James Anderson",
-      role: "Web Developer",
-      imgSrc: "assets/img/client-image/1.jpg",
-      review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      name: "Steven Smith",
-      role: "Web Developer",
-      imgSrc: "assets/img/client-image/2.jpg",
-      review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      name: "Steven Lucy",
-      role: "Web Developer",
-      imgSrc: "assets/img/client-image/1.jpg",
-      review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      name: "Steven Lucy",
-      role: "Web Developer",
-      imgSrc: "assets/img/client-image/2.jpg",
-      review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      name: "Steven Lucy",
-      role: "Web Developer",
-      imgSrc: "assets/img/client-image/3.jpg",
-      review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      name: "Steven Lucy",
-      role: "Web Developer",
-      imgSrc: "assets/img/client-image/1.jpg",
-      review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-
-    {
-      name: "Steven Lucy",
-      role: "Web Developer",
-      imgSrc: "assets/img/client-image/2.jpg",
-      review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    // Add more reviews as needed
-  ];
-
   ////////////////
 
-  //this is for feedback open new popup
-  const handleImageClick = (index) => {
-    setSelectedReview(feedbackData[index]);
-  };
-
-  //this is for teams
-  const settingsss = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-  };
 
   return (
     <>
@@ -334,24 +204,16 @@ const About = ({ initialValue }) => {
             <div className="col-lg-6 col-md-12">
               <div className="ml-about-content">
                 <span className="sub-title text-center">About Us</span>
-                <h2 className="text-center">
-                  Engaging New Audiences Through Smart Approach
-                </h2>
+                <h1 className="text-center">
+                Inspiring Tech Needs For Business
+                </h1>
                 <div className="bar" />
-                <p className="text-center">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <p className="text-left">
+                Veeaar Softtech pvt ltd is an IT service provider that holds expertise in website development services, digital marketing services, web designing and application development services along with cloud computing and other IT services and solutions. We work with an unparalleled swiftness to stand up to our client’s requirements and deliver what is expected out of us.
                 </p>
-                <p className="text-center">
-                  Nullam quis ante. Etiam sit amet orci eget eros faucibus
-                  tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec
-                  sodales sagittis magna. Sed consequat, leo eget bibendum
-                  sodales, augue velit cursus nunc.Donec vitae sapien ut libero
-                  venenatis faucibus tempus.
-                </p>
-                <a href="contact.html" className="btn btn-secondary">
-                  Discover More
-                </a>
+                <Link to="/contact-us" className="btn btn-secondary">
+                  CONTACT US
+                </Link>
               </div>
             </div>
           </div>
@@ -360,14 +222,13 @@ const About = ({ initialValue }) => {
 
       <div className="container">
         <div className="about-inner-area">
-          <div className="row">
+        <div className="rows-top"  style={{padding:"50px"}}>
+          <div className="row" style={{marginTop:"30px"}}>
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="about-text">
                 <h3>Our History</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In
-                  sagittis eg esta ante, sed viverra nunc tinci dunt nec elei
-                  fend et tiram.
+                Veeaar Softtech, a pioneering IT company, boasts a rich history of innovation, excellence, and client success in software development and technology solutions.
                 </p>
               </div>
             </div>
@@ -375,9 +236,7 @@ const About = ({ initialValue }) => {
               <div className="about-text">
                 <h3>Our Mission</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In
-                  sagittis eg esta ante, sed viverra nunc tinci dunt nec elei
-                  fend et tiram.
+                "Empowering businesses with innovative solutions, Veeaar Softtech is dedicated to delivering cutting-edge IT services for sustained growth and success."
                 </p>
               </div>
             </div>
@@ -385,263 +244,76 @@ const About = ({ initialValue }) => {
               <div className="about-text">
                 <h3>Who we are</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, con se ctetur adipiscing elit. In
-                  sagittis eg esta ante, sed viverra nunc tinci dunt nec elei
-                  fend et tiram.
+                Veeaar SoftTech is a dynamic IT company, delivering innovative solutions and cutting-edge technology to empower businesses worldwide.
                 </p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/*Start Team Area*/}
-      <div className="team-area ptb-80 bg-f9f6f6">
-        <div className="container">
-          <div className="section-title">
-            <h2 className="text-center">Our Awesome Team</h2>
-            <div className="bar"></div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <Slider
-            {...settingsss}
-            className="team-slides owl-carousel owl-theme"
-          >
-            {teamData.map((member, index) => (
-              <div key={index} className="single-team">
-                <div
-                  className="card"
-                  style={{
-                    border: "none",
-                    marginRight: "10px",
-                    marginLeft: "10px",
-                  }}
-                >
-                  <div className="team-image">
-                    <img src={member.image} alt={member.name} />
-                  </div>
-                  <div className="team-content">
-                    <div className="team-info">
-                      <h3 className="text-center" style={{ fontSize: "12px" }}>
-                        {member.name}
-                      </h3>
-                      <span>{member.role}</span>
-                    </div>
-                    <span style={{ padding: "5px" }}>{member.twitter}</span>
-                    <span style={{ padding: "5px" }}>{member.instagrm}</span>
-                    <span style={{ padding: "5px" }}>{member.facebook}</span>
-                    <span style={{ padding: "5px" }}>{member.Linkdien}</span>
-                    <p>{member.des}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </div>
-      {/*Start Team Area*/}
-
-      {/* Start Feedback Area*/}
-      <div className="feedback-area ptb-80 bg-f7fafd">
-        <div className="container">
-          <div className="section-title">
-            <h2 className="text-center">What users are Saying</h2>
-            <div className="bar" />
-            <p className="text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-
-          <div
-            className="card"
-            style={{
-              width: "90%",
-              margin: "0 auto",
-              padding: "20px",
-              marginBottom: "10px",
-              background: "aliceblue",
-            }}
-          >
-            <marquee>
-              <strong>
-                <h6 style={{ color: "green" }}>
-                  Click on User Image for Read Users Review
-                </h6>
-              </strong>
-            </marquee>
-            {selectedReview && (
-              <div className="selected-review">
-                <div className="container">
-                  <img
-                    src={selectedReview.imgSrc}
-                    style={{
-                      borderRadius: "80px",
-                      width: "100px",
-                      height: "auto",
-                    }}
-                  />
-                  <h3 className="text-center">{selectedReview.name}</h3>
-                  <span>{selectedReview.role}</span>
-                  <p>{selectedReview.review}</p>
-                  <button
-                    className="btn btn-primary"
-                    onClick={() => setSelectedReview(null)}
-                  >
-                    Close
-                  </button>
-                </div>
-              </div>
-            )}
           </div>
         </div>
-
-        <div className="feedback-slides">
-          <Slider {...settings}>
-            {feedbackData.map((feedback, index) => (
-              <div key={index} className="single-feedback">
-                <div
-                  className="client-img"
-                  onClick={() => handleImageClick(index)}
-                >
-                  <img
-                    src={feedback.imgSrc}
-                    alt={feedback.name}
-                    style={{
-                      borderRadius: "80px",
-                      width: "100px",
-                      height: "auto",
-                    }}
-                  />
-                </div>
-                {/* Display a preview of the review if needed */}
-              </div>
-            ))}
-          </Slider>
-        </div>
       </div>
-      {/*  End Feedback Area*/}
 
       {/*Start Fun Facts Area  */}
       <div className="funfacts-area ptb-80">
-        <div className="container">
-          <div className="section-title">
-            <h2 className="text-center">
-              We always try to understand users expectation
-            </h2>
-            <div className="bar" />
-            <p className="text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div className="row">
-            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-              <div className="funfact">
-                <h2
-                  style={{
-                    color: "#44ce6f",
-                    fontSize: "35px",
-                    marginBottom: "7px",
-                  }}
-                >
-                  <Odometer initialValue={150} duration="4000" formate="{d}" />
-                </h2>
-                <p>Downloaded</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-              <div className="funfact">
-                <h2
-                  style={{
-                    color: "#44ce6f",
-                    fontSize: "35px",
-                    marginBottom: "7px",
-                  }}
-                >
-                  <Odometer initialValue={20} duration="4000" formate="{d}" />
-                </h2>
-                <p>Feedback</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-              <div className="funfact">
-                <h2
-                  style={{
-                    color: "#44ce6f",
-                    fontSize: "35px",
-                    marginBottom: "7px",
-                  }}
-                >
-                  <Odometer initialValue={70} duration="4000" formate="{d}" />
-                </h2>
-                <p>Workers</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-              <div className="funfact">
-                <h2
-                  style={{
-                    color: "#44ce6f",
-                    fontSize: "35px",
-                    marginBottom: "7px",
-                  }}
-                >
-                  <Odometer initialValue={500} duration="4000" formate="{d}" />
-                </h2>
-                <p>Contributors</p>
-              </div>
-            </div>
-          </div>
-          <div className="contact-cta-box">
-            <h3>Have any question about us?</h3>
-            <p>Don't hesitate to contact us</p>
-            <a href="contact.html" className="btn btn-primary">
-              Contact Us
-            </a>
-          </div>
-          <div className="map-bg">
-            {/* <img src="assets/img/map.png" alt="map" /> */}
-            <img
-              className="map-image"
-              src="../../assets/img/map.png"
-              alt="map"
-              style={{ width: "100%", height: "390px" }}
-            />
-          </div>
-        </div>
-        <div className="shape8 rotateme">
-          <img
-            src="assets/img/shape2.svg"
-            alt="shape"
-            style={{ width: "20px", height: "20px" }}
-          />
-        </div>
-        <div className="shape2 rotateme">
-          <img
-            src="assets/img/shape2.svg"
-            alt="shape"
-            style={{ width: "20px", height: "20px" }}
-          />
-        </div>
-        <div classclassName="shape7">
-          <img
-            src="assets/img/shape4.svg"
-            alt="shape"
-            style={{ width: "20px", height: "20px" }}
-          />
-        </div>
-        <div className="shape4">
-          <img
-            src="assets/img/shape4.svg"
-            alt="shape"
-            style={{ width: "20px", height: "20px" }}
-          />
+  <div className="container">
+    <div className="section-title">
+      <h2>We always try to understand users expectation</h2>
+      <div className="bar" />
+       </div>
+    <div className="row">
+      <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+        <div className="funfact">
+        <h2 className='text-center' style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}
+        ><Odometer initialValue={550}  duration= "4000"  formate="{d}"/></h2>  
+          <p className='text-center'>Project</p>
         </div>
       </div>
+      <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+        <div className="funfact">
+        <h2 className='text-center' style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}>
+        <Odometer initialValue={20} duration= "4000"  formate="{d}"/>
+        </h2>
+          <p className='text-center'>Feedback</p>
+        </div>
+      </div>
+      <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+        <div className="funfact">
+        <h2 className='text-center' style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}>
+        <Odometer initialValue={70} duration= "4000"  formate="{d}"/>
+        </h2>
+          <p className='text-center'>Workers</p>
+        </div>
+      </div>
+      <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+        <div className="funfact">
+        <h2 className='text-center' style={{color:"#44ce6f", fontSize:"35px", marginBottom: "7px"}}>
+        <Odometer initialValue={500} duration= "4000"  formate="{d}" />
+        </h2>
+          <p className='text-center'>Contributors</p>
+        </div>
+      </div>
+    </div>
+    <div className="contact-cta-box">
+      <h3>Have any question about us?</h3>
+      <p>Don't hesitate to contact us</p>
+      <Link to="/contact-us" className="btn btn-primary">Contact Us</Link>
+    </div>
+    <div className="map-bg">
+      <img className="map-image" src="../../assets/img/map.png" alt="map" 
+        style={{ width: "100%", height: "390px" }}
+      />
+    </div>
+    
+  </div>
+  <div className="shape8 rotateme">
+  <img src="assets/img/shape2.svg" alt="shape" style={{width:"20px", height:"20px"}}/></div>
+  <div className="shape2 rotateme">
+  <img src="assets/img/shape2.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
+  <div classclassName="shape7">
+  <img src="assets/img/shape4.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
+  <div className="shape4">
+  <img src="assets/img/shape4.svg" alt="shape"  style={{width:"20px", height:"20px"}}/></div>
+</div>
       {/* End Fun Facts Area*/}
 
       {/*   Start Partner Area */}
@@ -659,13 +331,13 @@ const About = ({ initialValue }) => {
                 <div key={index}>
                   <div
                     className="single-ml-partner"
-                    style={{ marginBottom: "20px" }}
+                    style={{ marginBottom: "20px", padding:"10px" }}
                   >
                     <Link to="/">
                       <img
                         src={partner.imgSrc}
                         alt="image"
-                        style={{ width: "20px", height: "20px" }}
+                        style={{ width: "20px", height: "20px"  }}
                       />
                       <img
                         src={partner.hoverImgSrc}

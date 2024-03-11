@@ -7,13 +7,15 @@ function Privacy() {
   return (
     <div>
       <Navbar />
-      <Header />
+      <div className="header-container">
+      <p className="text-data">Privacy Policy</p>
+      </div>
       <div>
         {/* Start Privacy Policy Area */}
         <div className="privacy-policy-area ptb-80">
           <div className="container">
             <div className="privacy-policy-content">
-              <h4>Intellectual property indemnity</h4>
+              <h4 className="text-center">Intellectual property indemnity</h4>
               <p>
                 We may collect personal identification information from Users in
                 a variety of ways, including, but not limited to, when Users

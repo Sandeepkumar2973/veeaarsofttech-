@@ -64,6 +64,9 @@ function Aplication() {
      <p>App development can be categorized into several types, including native app development (specific to a particular platform), cross-platform development (compatible with multiple platforms), and web app development (accessible through web browsers). It plays a crucial role in the modern digital landscape, offering businesses and individuals the ability to connect with audiences, offer services, and deliver content through mobile and digital channels.
     </p>
     <div className="col-lg-12 services-details">
+    <img src="./../../assets/img/appdevelopemnt1.jpg" className="wow fadeInUp zoomOnHover" alt="image" style={{padding:"15px"}} />
+    </div>
+    <div className="col-lg-12 services-details">
     <div className="heading" style={{textAlign:"center"}}>
     <span className="arrow-icon"><MdCollectionsBookmark /></span>We Serve the Best Work
      </div>

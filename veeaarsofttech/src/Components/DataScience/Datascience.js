@@ -104,7 +104,7 @@ function Datascience() {
             Another question?
           </a>
           <div className={`accordion-content ${activeIndex === 1 ? 'show' : 'collapse'}`}>
-            <p>
+            <p className="text-center">
               If You Have any Question for this information then Fill the Form mention on Contact us page.
               <Link to='/contact-us'><strong>Contact Us</strong></Link>
             </p>

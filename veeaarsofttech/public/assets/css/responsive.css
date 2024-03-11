@@ -45,6 +45,7 @@
     }
     .main-banner .banner-image {
         text-align: center;
+        display: none;
     }
     .main-banner .banner-image img {
         display: none;
