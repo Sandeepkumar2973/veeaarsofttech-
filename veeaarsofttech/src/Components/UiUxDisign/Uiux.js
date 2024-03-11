@@ -43,15 +43,15 @@ function Uiux() {
     </div>
     <div className="col-lg-12 services-details">
     <div className="heading">
-    <span className="arrow-icon"><MdCollectionsBookmark /></span>We Serve the Best Work
+    <div className="arrow-icon text-center"><MdCollectionsBookmark />We Serve the Best Work</div>
      </div>
-     <p style={{textAlign:"center"}}>At our <strong>UI/UX Design Company in Delhi</strong>, we take pride in serving excellence in every aspect of user interface and user experience design. With a dedicated team of skilled professionals, we are committed to delivering the very best in UI/UX design. From intuitive interfaces to seamless user journeys, our experts craft digital experiences that stand out in the modern digital landscape. Explore our portfolio and experience the pinnacle of UI/UX design expertise right here in Delhi
+     <p style={{textAlign:"left"}}>At our <strong>UI/UX Design Company in Delhi</strong>, we take pride in serving excellence in every aspect of user interface and user experience design. With a dedicated team of skilled professionals, we are committed to delivering the very best in UI/UX design. From intuitive interfaces to seamless user journeys, our experts craft digital experiences that stand out in the modern digital landscape. Explore our portfolio and experience the pinnacle of UI/UX design expertise right here in Delhi
 
 
 </p>
     </div>
     <div className="col-lg-12 services-details" style={{ display: 'flex', justifyContent: 'center' }}>
-    <img src="./../../assets/img/web-development1.png" className="wow fadeInUp zoomOnHover"/>
+    <img src="./../../assets/img/web-development1.png" className=""/>
     </div>
   </div>
 </div>

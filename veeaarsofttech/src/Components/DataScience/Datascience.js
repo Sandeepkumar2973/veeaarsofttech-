@@ -119,9 +119,9 @@ function Datascience() {
       </div>
       <div className="col-lg-12 services-details">
     <div className="heading">
-    <span className="arrow-icon"><MdCollectionsBookmark /></span>We Serve the Best Work
+    <div className="arrow-icon text-center"><MdCollectionsBookmark />We Serve the Best Work</div>
      </div>
-     <p style={{textAlign:"center"}}>At our Data Science Company in Delhi, we are dedicated to delivering nothing short of excellence in the world of graphic design. With a team of talented and passionate professionals, we take pride in offering the very best in visual communication. From captivating logos to stunning branding materials, we bring creativity to life with a blend of colors, typography, and imagery that stands out in the digital realm. Explore our portfolio and experience the pinnacle of Data science is a multidisciplinary field that combines techniques from mathematics, statistics, computer science, and domain-specific knowledge to extract valuable insights and knowledge from data. It involves the collection, cleaning, analysis, and interpretation of data to solve complex problems and make informed decisions expertise right here in Delhi.
+     <p style={{textAlign:"left"}}>At our Data Science Company in Delhi, we are dedicated to delivering nothing short of excellence in the world of graphic design. With a team of talented and passionate professionals, we take pride in offering the very best in visual communication. From captivating logos to stunning branding materials, we bring creativity to life with a blend of colors, typography, and imagery that stands out in the digital realm. Explore our portfolio and experience the pinnacle of Data science is a multidisciplinary field that combines techniques from mathematics, statistics, computer science, and domain-specific knowledge to extract valuable insights and knowledge from data. It involves the collection, cleaning, analysis, and interpretation of data to solve complex problems and make informed decisions expertise right here in Delhi.
 </p>
     </div>
     </div>

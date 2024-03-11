@@ -27,8 +27,8 @@ function Digital() {
         <div className="heading">
     <span className="arrow-icon"><MdCollectionsBookmark /></span>Digital Marketing Company in Delhi
      </div>
-          <p style={{textAlign:"center"}}>Digital marketing is the art and science of promoting products, services, or brands through digital channels and technologies. It encompasses a wide range of online strategies and tactics aimed at reaching and engaging target audiences on the internet.</p>
-          <p style={{textAlign:"center"}}> Digital marketing leverages platforms such as websites, search engines, social media, email, content marketing, and online advertising to connect with customers and prospects.</p>
+          <p style={{textAlign:"left", color:"black"}}>Digital marketing is the art and science of promoting products, services, or brands through digital channels and technologies. It encompasses a wide range of online strategies and tactics aimed at reaching and engaging target audiences on the internet.</p>
+          <p style={{textAlign:"left", color:"black"}}> Digital marketing leverages platforms such as websites, search engines, social media, email, content marketing, and online advertising to connect with customers and prospects.</p>
         </div>
       </div>
       <div className="col-lg-6 services-details-image animated fadeInUp zoomIn">
@@ -37,7 +37,7 @@ function Digital() {
     </div>
 
     <div className="col-lg-12 services-details">
-      <p>Empower your digital presence with Delhi’s premier digital marketing company. We are a dynamic team of experts dedicated to enhancing your online success through strategic digital campaigns, SEO mastery, social media expertise, and more. As your trusted partner, we propel your brand to new heights in the ever-evolving digital landscape. Join hands with us to embark on a journey of digital triumph. Contact our <strong>Digital Marketing Company in Delhi today.</strong></p>
+      <p style={{textAlign:"left", color:"black"}}>Empower your digital presence with Delhi’s premier digital marketing company. We are a dynamic team of experts dedicated to enhancing your online success through strategic digital campaigns, SEO mastery, social media expertise, and more. As your trusted partner, we propel your brand to new heights in the ever-evolving digital landscape. Join hands with us to embark on a journey of digital triumph. Contact our <strong>Digital Marketing Company in Delhi today.</strong></p>
     </div>
 
     <div className="col-lg-12 services-details">
@@ -72,20 +72,20 @@ function Digital() {
       <div className="heading">
     <span className="arrow-icon"><MdCollectionsBookmark /></span>The Future of Digital Marketing in Delhi
     </div>
-    <p style={{textAlign:"left"}}>As Delhi continues to evolve as a digital hub, the role of digital marketing companies will only become more prominent. With advancements in technology, changes in consumer behavior, and shifts in market dynamics, digital marketing companies in Delhi will need to stay ahead of the curve, adapting their strategies and embracing innovation to meet the evolving needs of their clients. By leveraging the power of digital marketing, businesses in Delhi can unlock new opportunities for growth, expand their reach, and stay competitive in an increasingly digital world.</p>
+    <p style={{textAlign:"left", color:"black"}}>As Delhi continues to evolve as a digital hub, the role of digital marketing companies will only become more prominent. With advancements in technology, changes in consumer behavior, and shifts in market dynamics, digital marketing companies in Delhi will need to stay ahead of the curve, adapting their strategies and embracing innovation to meet the evolving needs of their clients. By leveraging the power of digital marketing, businesses in Delhi can unlock new opportunities for growth, expand their reach, and stay competitive in an increasingly digital world.</p>
     </div>
 
     <div className="col-lg-12 services-details" style={{ display: 'flex', justifyContent: 'center' }}>
-    <img src="./../../assets/img/digitalmarketing2.jpg" className="wow fadeInUp zoomOnHover"/>
+    <img src="./../../assets/img/digitalmarketing2.jpg" className=""/>
     </div>
 
     <div className="col-lg-12 services-details">
       <div className="heading">
     <span className="arrow-icon"><MdCollectionsBookmark /></span>The Significance of Selecting the Correct Digital Marketing Company
     </div>
-    <p style={{textAlign:"left"}}>For businesses in Delhi seeking to harness the power of digital marketing, choosing the right digital marketing company is crucial. With so many options available, it’s essential to conduct thorough research, evaluate past performance, and assess the company’s capabilities before making a decision.</p>
-    <p style={{textAlign:"left"}}>The right digital marketing company will align with the goals and values of your business, offering tailored solutions that drive tangible results. They will have a deep understanding of the Delhi market and its nuances, allowing them to craft strategies that resonate with the local audience and drive success.</p>
-    <p style={{textAlign:"left"}}>Additionally, the best digital marketing companies in Delhi will prioritize transparency, communication, and collaboration, keeping you informed every step of the way and working closely with you to achieve your objectives. They will provide regular updates and reports on campaign performance, allowing you to track progress and measure success accurately.</p>
+    <p style={{textAlign:"left", color:"black"}}>For businesses in Delhi seeking to harness the power of digital marketing, choosing the right digital marketing company is crucial. With so many options available, it’s essential to conduct thorough research, evaluate past performance, and assess the company’s capabilities before making a decision.</p>
+    <p style={{textAlign:"left", color:"black"}}>The right digital marketing company will align with the goals and values of your business, offering tailored solutions that drive tangible results. They will have a deep understanding of the Delhi market and its nuances, allowing them to craft strategies that resonate with the local audience and drive success.</p>
+    <p style={{textAlign:"left", color:"black"}}>Additionally, the best digital marketing companies in Delhi will prioritize transparency, communication, and collaboration, keeping you informed every step of the way and working closely with you to achieve your objectives. They will provide regular updates and reports on campaign performance, allowing you to track progress and measure success accurately.</p>
     </div>
 
 
@@ -117,16 +117,16 @@ function Digital() {
         With the internet breaking down geographical barriers, digital marketing enables companies to reach customers on a global scale. Through international SEO, multilingual content marketing, and targeted advertising, businesses can expand their reach beyond local markets and tap into new opportunities around the world. This opens up a world of possibilities for companies looking to expand their business internationally and enter new markets with confidence.
         </li>
 
-        <p className="text-center">Digital marketing offers several advantages, including precise targeting, cost-effectiveness, real-time performance tracking, and the ability to adapt campaigns quickly. It has become an essential component of modern marketing strategies, helping businesses reach and engage their audience in the digital era.
+        <p style={{textAlign:"left", color:"black"}}>Digital marketing offers several advantages, including precise targeting, cost-effectiveness, real-time performance tracking, and the ability to adapt campaigns quickly. It has become an essential component of modern marketing strategies, helping businesses reach and engage their audience in the digital era.
          </p>
       </ul>
     </div>
 
     <div className="col-lg-12 services-details">
     <div className="heading">
-    <span className="arrow-icon"><MdCollectionsBookmark /></span>We Serve the Best Work
+    <div className="arrow-icon text-center"><MdCollectionsBookmark />We Serve the Best Work</div>
      </div>
-     <p style={{textAlign:"center"}}>At our <strong>Digital Marketing Company in Delhi</strong>, we are committed to serving you the best in web development. Our team of skilled professionals brings your digital vision to life, crafting websites that stand out in design, functionality, and user experience. Explore our portfolio and experience the pinnacle of web development excellence in the heart of Delhi.
+     <p style={{textAlign:"left", color:"black"}}>At our <strong>Digital Marketing Company in Delhi</strong>, we are committed to serving you the best in web development. Our team of skilled professionals brings your digital vision to life, crafting websites that stand out in design, functionality, and user experience. Explore our portfolio and experience the pinnacle of web development excellence in the heart of Delhi.
 </p>
     </div>
 
