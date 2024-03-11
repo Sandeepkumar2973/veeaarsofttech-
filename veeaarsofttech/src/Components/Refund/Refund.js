@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../Header/Navbar";
 import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import { Link } from "react-router-dom";
 
 function Refund() {
@@ -12,6 +11,7 @@ function Refund() {
         <p className="text-data">Refund</p>
       </div>{" "}
       <div>
+        {/* Start Terms & Conditions Area */}
         <div className="terms-conditions-area ptb-80">
           <div className="container">
             <div className="terms-conditions-content">

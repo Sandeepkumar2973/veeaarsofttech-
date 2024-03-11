@@ -165,11 +165,11 @@ function Graphic() {
         </div>
         <div
             className="col-lg-12 services-details-image animated fadeInUp zoomIn"
-            style={{ marginTop: "20px", padding: "15px" }}
+            style={{ display: "flex", justifyContent: "center" }}
           >
             <img
               src="./../../assets/img/graphic-design-02.png"
-              className=""
+              className="fadding"
               alt="image"
             />
           </div>

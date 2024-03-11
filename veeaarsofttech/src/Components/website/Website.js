@@ -7,7 +7,6 @@ import { MdCollectionsBookmark } from "react-icons/md";
 import { CgWebsite } from "react-icons/cg";
 
 function Website() {
-
   return (
     <div>
       <Navbar />
@@ -161,7 +160,7 @@ function Website() {
             style={{ display: "flex", justifyContent: "center" }}
           >
             <img
-              src="./../../assets/img/WEBSITE.png"
+              src="./../../assets/img/website1.png"
               className="fadding"
               style={{ justifyContent: "center" }}
             />

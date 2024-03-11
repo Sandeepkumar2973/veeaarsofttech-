@@ -1149,6 +1149,7 @@ Main Banner CSS
     z-index: 1;
     top: -35px;
     height: auto;
+    display: none;
 }
 
 .main-banner .banner-image img:nth-child(10) {
@@ -2013,6 +2014,7 @@ Services CSS
     top: -134px;
     z-index: 1;
     height: auto;
+    width: 110px;
 }
 
 .services-right-image img:nth-child(9) {
@@ -2140,6 +2142,7 @@ Services CSS
     top: -175px;
     z-index: 2;
     height: auto;
+    width: 90px;
 }
 
 .services-left-image img.bg-image {

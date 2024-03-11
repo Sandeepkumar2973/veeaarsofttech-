@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../Header/Navbar";
 import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import { Link } from 'react-router-dom';
 
 function Privacy() {
@@ -21,7 +20,7 @@ function Privacy() {
                 a variety of ways, including, but not limited to, when Users
                 visit our site, subscribe to the newsletter, fill out a form,
                 and in connection with other activities, services, features or
-                resources we make <a href="#">available</a> on our Site. Users
+                resources we make <Link to="#">available</Link> on our Site. Users
                 may be asked for, as appropriate, name, email address, mailing
                 address, phone number, company name. We will collect personal{" "}
                 <strong>identification</strong> information from Users only if

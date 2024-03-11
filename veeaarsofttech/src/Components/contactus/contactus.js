@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import Navbar from "../Header/Navbar";
 import emailjs from "@emailjs/browser";
 import { Link } from "react-router-dom";
@@ -17,7 +16,7 @@ const Contact = () => {
     e.preventDefault();
 
     if (isButtonDisabled) {
-      return; 
+      return;
     }
 
     emailjs
@@ -140,10 +139,10 @@ const Contact = () => {
             <div className="row h-100 justify-content-center align-items-center">
               <div className="col-lg-6 col-md-12">
                 <img
-                  src="./../../assets/img/uiux1.png" 
+                  src="./../../assets/img/uiux1.png"
                   alt="image"
                   className="wow fadeInUp zoomOnHover"
-                  style={{padding:"20px"}}
+                  style={{ padding: "20px" }}
                 />
               </div>
               <div className="col-lg-6 col-md-12">
@@ -222,9 +221,15 @@ const Contact = () => {
                       </div>
                     </div>
                     <div className="col-lg-12 col-md-12">
-                       <button type="submit" disabled={isButtonDisabled} className="btn btn-primary">
-                           {isButtonDisabled ? `Sending... (${countdown})` : 'Send Email'}
-                         </button>
+                      <button
+                        type="submit"
+                        disabled={isButtonDisabled}
+                        className="btn btn-primary"
+                      >
+                        {isButtonDisabled
+                          ? `Sending... (${countdown})`
+                          : "Send Email"}
+                      </button>
                       <div id="msgSubmit" className="h3 text-center hidden" />
                       <div className="clearfix" />
                     </div>

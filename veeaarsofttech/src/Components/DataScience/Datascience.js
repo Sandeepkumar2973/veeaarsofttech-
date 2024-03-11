@@ -60,7 +60,7 @@ function Datascience() {
           >
             <img
               src="./../../assets/img/data-science--02.png"
-              className=""
+              className="fadding"
               alt="image"
             />
           </div>
