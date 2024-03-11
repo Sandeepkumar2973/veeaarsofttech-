@@ -37,7 +37,7 @@ function Graphic() {
     <div className="separate" />
     <div className="row align-items-center" style={{ display: 'flex', justifyContent: 'center' }}>
       <div className="col-lg-12 services-details-image animated fadeInUp zoomIn" style={{marginTop:"20px", padding:"15px"}}>
-        <img src="./../../assets/img/graphic-design-post.png" className="wow  zoomOnHover" alt="image" />
+        <img src="./../../assets/img/graphic-design-post.png" className="" alt="image" />
       </div>
       <div className="col-lg-12 services-details">
       <div className="heading"><span className="arrow-icon"><MdCollectionsBookmark /></span>Key Aspects of graphic design include:</div>
@@ -62,9 +62,9 @@ function Graphic() {
     </div>
     <div className="col-lg-12 services-details">
     <div className="heading">
-    <span className="arrow-icon"><MdCollectionsBookmark /></span>We Serve the Best Work
+    <div className="arrow-icon text-center"><MdCollectionsBookmark />We Serve the Best Work</div>
      </div>
-     <p style={{textAlign:"center"}}>At our Graphic Designing Company in Delhi, we are dedicated to delivering nothing short of excellence in the world of graphic design. With a team of talented and passionate professionals, we take pride in offering the very best in visual communication. From captivating logos to stunning branding materials, we bring creativity to life with a blend of colors, typography, and imagery that stands out in the digital realm. Explore our portfolio and experience the pinnacle of graphic design expertise right here in Delhi.
+     <p style={{textAlign:"left"}}>At our Graphic Designing Company in Delhi, we are dedicated to delivering nothing short of excellence in the world of graphic design. With a team of talented and passionate professionals, we take pride in offering the very best in visual communication. From captivating logos to stunning branding materials, we bring creativity to life with a blend of colors, typography, and imagery that stands out in the digital realm. Explore our portfolio and experience the pinnacle of graphic design expertise right here in Delhi.
 </p>
     </div>
   </div>
