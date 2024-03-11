@@ -28,7 +28,7 @@ function Website() {
       <div className="col-lg-6 services-details">
         <div className="services-details-desc">
           <h2> <span className="arrow-icon"><CgWebsite /></span>Website Development Company in Delhi</h2>
-          <p>Welcome to our <strong>Website Development Company in Delhi</strong>, where innovation meets excellence. As industry leaders, we specialize in crafting cutting-edge websites that not only look stunning but also deliver exceptional user experiences. Our dedicated team of experts thrives on turning your digital vision into reality. With a customer-centric approach, we take pride in exceeding your expectations and helping your business thrive in the online world. Explore our services and let us be your trusted partner in building a strong online presence.</p>
+          <p style={{color:"black"}}>Welcome to our <strong>Website Development Company in Delhi</strong>, where innovation meets excellence. As industry leaders, we specialize in crafting cutting-edge websites that not only look stunning but also deliver exceptional user experiences. Our dedicated team of experts thrives on turning your digital vision into reality. With a customer-centric approach, we take pride in exceeding your expectations and helping your business thrive in the online world. Explore our services and let us be your trusted partner in building a strong online presence.</p>
         </div>
       </div>
       <div className="col-lg-6 services-details-image animated fadeInUp zoomIn">
@@ -58,14 +58,14 @@ Engaging User</li>
     <div className="heading">
     <span className="arrow-icon" style={{textAlign:"left"}}><MdCollectionsBookmark /></span>The Evolution of Website Development in Delhi
     </div>
-    <p style={{textAlign:"left"}}>As technology continues to advance at a rapid pace, the role of websites has evolved from mere online brochures to powerful marketing tools and digital storefronts. In Delhi, where businesses operate in a competitive and dynamic environment, having a professional and user-friendly website is essential for attracting customers, driving conversions, and staying ahead of the competition.</p>
-    <p style={{textAlign:"left"}}>Website development companies in Delhi are at the forefront of this digital revolution, helping businesses design, develop, and maintain websites that are not only visually appealing but also functional, responsive, and optimized for performance. These companies leverage the latest technologies, design trends, and best practices to create websites that meet the unique needs and objectives of their clients, setting them apart in the crowded digital landscape.</p>
+    <p style={{textAlign:"left", color:"black"}}>As technology continues to advance at a rapid pace, the role of websites has evolved from mere online brochures to powerful marketing tools and digital storefronts. In Delhi, where businesses operate in a competitive and dynamic environment, having a professional and user-friendly website is essential for attracting customers, driving conversions, and staying ahead of the competition.</p>
+    <p style={{textAlign:"left", color:"black"}}>Website development companies in Delhi are at the forefront of this digital revolution, helping businesses design, develop, and maintain websites that are not only visually appealing but also functional, responsive, and optimized for performance. These companies leverage the latest technologies, design trends, and best practices to create websites that meet the unique needs and objectives of their clients, setting them apart in the crowded digital landscape.</p>
     </div>
     <div className="col-lg-12 services-details">
       <div className="heading">
     <span className="arrow-icon"><MdCollectionsBookmark /></span>The Role of Website Development Companies
     </div>
-      <p className="" style={{textAlign:"left"}}><strong>Website development companies in Delhi</strong> play a multifaceted role in helping businesses establish a strong online presence and achieve their digital goals. From initial consultation to final launch and beyond, these companies guide their clients through every step of the website development process, ensuring a seamless and successful outcome.</p>
+      <p className="" style={{textAlign:"left", color:"black"}}><strong>Website development companies in Delhi</strong> play a multifaceted role in helping businesses establish a strong online presence and achieve their digital goals. From initial consultation to final launch and beyond, these companies guide their clients through every step of the website development process, ensuring a seamless and successful outcome.</p>
       <ul typeof="">
         <li><strong><span className="arrow-icon"><FaArrowAltCircleRight /></span>Design and Development: </strong>
         Armed with a solid plan, website development companies in Delhi set to work designing and developing the website. They create wireframes, mockups, and prototypes to visualize the layout and functionality of the site, ensuring a user-friendly experience across devices and screen sizes. Using cutting-edge technologies such as HTML, CSS, JavaScript, and CMS platforms like WordPress and Drupal, they bring the design to life, incorporating interactive elements, multimedia content, and e-commerce functionality as needed.
@@ -82,13 +82,15 @@ Engaging User</li>
     <div className="heading">
     <span className="arrow-icon"><MdCollectionsBookmark /></span>Choosing the Right Website Development Company
      </div>
-     <p>With so many website development companies in Delhi to choose from, finding the right partner for your business can seem like a daunting task. However, by considering factors such as experience, expertise, portfolio, pricing, and client testimonials, you can narrow down your options and find a website development company that aligns with your goals and values.</p>
+     <p style={{color:"black"}}>With so many website development companies in Delhi to choose from, finding the right partner for your business can seem like a daunting task. However, by considering factors such as experience, expertise, portfolio, pricing, and client testimonials, you can narrow down your options and find a website development company that aligns with your goals and values.</p>
     </div>
+    <img src="./../../assets/img/web-development1.png"  className="" style={{justifyContent:"center"}}/>
+
     <div className="col-lg-12 services-details">
     <div className="heading">
-    <span className="arrow-icon"><MdCollectionsBookmark /></span>We Serve the Best Work
+    <div className="arrow-icon text-center"><MdCollectionsBookmark />We Serve the Best Work</div>
      </div>
-     <p style={{textAlign:"center"}}>As a leading <strong>website development company in Delhi</strong>, we are committed to serving you the best in web development. Our team of skilled professionals brings your digital vision to life, crafting websites that stand out in design, functionality, and user experience. Explore our portfolio and experience the pinnacle of web development excellence in the heart of Delhi.
+     <p style={{textAlign:"left", color:"black"}}>As a leading <strong>website development company in Delhi</strong>, we are committed to serving you the best in web development. Our team of skilled professionals brings your digital vision to life, crafting websites that stand out in design, functionality, and user experience. Explore our portfolio and experience the pinnacle of web development excellence in the heart of Delhi.
 </p>
     </div>
   </div>
