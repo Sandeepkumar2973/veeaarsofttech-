@@ -10,7 +10,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 
 const Navbar = () => {
-    const [collapsed, setCollapsed] = useState(true);
+    const [collapsed, setCollapsed] = useState(false);
 
   const toggleNavbar = () => {
     setCollapsed(!collapsed);
@@ -19,11 +19,11 @@ const Navbar = () => {
 
     return (
         <div>
-    <header id="header" class="headroom">
-        <div class="startp-responsive-nav">
-            <div class="container">
-                <div class="startp-responsive-menu">
-                    <div class="logo black-logo">
+    <header id="header" Class="headroom">
+        <div Class="startp-responsive-nav">
+            <div Class="container">
+                <div Class="startp-responsive-menu">
+                    <div Class="logo black-logo">
                         <Link to='/'>
                                 <img src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png" alt="logo"
                                  style={{width:"100px", height:"auto"}}/>
@@ -33,144 +33,149 @@ const Navbar = () => {
             </div>
         </div>
 
-        <div class="startp-nav">
-            <div class="container">
-                <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand black-logo" Link to='/'>
+        <div Class="startp-nav">
+            <div Class="container">
+                <nav Class="navbar navbar-expand-md navbar-light">
+                <button
+                Class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                onClick={toggleNavbar}
+              >
+                <span Class="navbar-toggler-icon"></span>
+              </button>
+                    <a Class="navbar-brand black-logo" Link to='/'>
                     <img src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png" alt="logo" 
                          style={{width:"80px", height:"auto"}}/></a>
-                    {/* <a class="navbar-brand white-logo" href="index.html"><img src="assets/img/white-logo.png" alt="logo"/></a> */}
 
-                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                        <ul class="navbar-nav nav ml-auto">
-                            <li class="nav-item">
-                            <Link to='/' class="nav-link active">Home <i data-feather="chevron-down"></i></Link>
+                    <div Class={`collapse navbar-collapse mean-menu ${collapsed ? 'show' : 'hide'}`}
+                     id="navbarSupportedContent">
+                        <ul Class="navbar-nav nav ml-auto">
+                            <li Class="nav-item">
+                            <Link to='/' Class="nav-link active">Home <i data-feather="chevron-down"></i></Link>
                             </li>
 
-                            <li class="nav-item">
-                            <Link to='/about-us' class="nav-link">About <i data-feather="chevron-down"></i></Link>
+                            <li Class="nav-item">
+                            <Link to='/about-us' Class="nav-link">About <i data-feather="chevron-down"></i></Link>
                             </li>
 
-                            <li class="nav-item">
-                            <Link to='/our-services' class="nav-link">Our Services <i data-feather="chevron-down"></i></Link>
-                                <ul class="dropdown_menu">
-                                    <li class="nav-item">
-                                    <Link to='/website-development-company' class="nav-link">Website Development <i data-feather="chevron-right"></i></Link>
+                            <li Class="nav-item">
+                            <Link to='/our-services' Class="nav-link">Our Services <i data-feather="chevron-down"></i></Link>
+                                <ul Class="dropdown_menu">
+                                    <li Class="nav-item">
+                                    <Link to='/website-development-company' Class="nav-link">Website Development <i data-feather="chevron-right"></i></Link>
                                     </li>
-                                    <li class="nav-item">
-                                    <Link to='/application-development-company' class="nav-link">Application Development <i data-feather="chevron-right"></i></Link>
+                                    <li Class="nav-item">
+                                    <Link to='/application-development-company' Class="nav-link">Application Development <i data-feather="chevron-right"></i></Link>
                                     </li>
-                                    <li class="nav-item">
-                                    <Link to='/digital-marketing-company' class="nav-link">Digital Marketing <i data-feather="chevron-right"></i></Link>
+                                    <li Class="nav-item">
+                                    <Link to='/digital-marketing-company' Class="nav-link">Digital Marketing <i data-feather="chevron-right"></i></Link>
                                     </li>
-                                    <li class="nav-item"> 
-                                    <Link to='/ui-ux-designing-company' class="nav-link">Ui/UX Designing <i data-feather="chevron-right"></i></Link>
+                                    <li Class="nav-item"> 
+                                    <Link to='/ui-ux-designing-company' Class="nav-link">Ui/UX Designing <i data-feather="chevron-right"></i></Link>
                                     </li>
-                                    <li class="nav-item"> 
-                                    <Link to='/graphic-designing-company' class="nav-link">Graphic Designing<i data-feather="chevron-right"></i></Link>
+                                    <li Class="nav-item"> 
+                                    <Link to='/graphic-designing-company' Class="nav-link">Graphic Designing<i data-feather="chevron-right"></i></Link>
                                     </li>
-                                    <li class="nav-item">
-                                    <Link to='/data-science-consulting' class="nav-link">Data Science Consulting<i data-feather="chevron-right"></i></Link>
+                                    <li Class="nav-item">
+                                    <Link to='/data-science-consulting' Class="nav-link">Data Science Consulting<i data-feather="chevron-right"></i></Link>
                                      </li>
                                 </ul>
                             </li>
 
-                            <li class="nav-item">
-                            <Link to='/technologies' class="nav-link">Technologies <i data-feather="chevron-down"></i></Link>
+                            <li Class="nav-item">
+                            <Link to='/technologies' Class="nav-link">Technologies <i data-feather="chevron-down"></i></Link>
                             </li>
 
 
-                            <li class="nav-item">
-                            <Link to='/blog' class="nav-link">Blog <i data-feather="chevron-down"></i></Link>
+                            <li Class="nav-item">
+                            <Link to='/blog' Class="nav-link">Blog <i data-feather="chevron-down"></i></Link>
                             </li>
 
-                            <li class="nav-item"><Link to='/contact-us' class="nav-link">Contact</Link></li>
+                            <li Class="nav-item"><Link to='/contact-us' Class="nav-link">Contact</Link></li>
                         </ul>
                     </div>
 
-                    <div class="others-option">
-                        <Link to='/' class="btn btn-primary">OUR PACKAGES</Link>
+                    <div Class="others-option">
+                        <Link to='/' Class="btn btn-primary">OUR PACKAGES</Link>
                     </div>
                 </nav>
             </div>
         </div>
 
-        <div class="others-option-for-responsive">
-            <div class="container">
-                <div class="dot-menu">
-                    <div class="inner">
-                        <div class="circle circle-one"></div>
-                        <div class="circle circle-two"></div>
-                        <div class="circle circle-three"></div>
+        <div Class="others-option-for-responsive">
+            <div Class="container">
+                <div Class="dot-menu">
+                    <div Class="inner">
+                        <div Class="circle circle-one"></div>
+                        <div Class="circle circle-two"></div>
+                        <div Class="circle circle-three"></div>
                     </div>
                 </div>
-                <div class="startp-nav">
-            <div class="container">
-                <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand black-logo" Link to='/'>
+                <div Class="startp-nav">
+            <div Class="container">
+                <nav Class="navbar navbar-expand-md navbar-light">
+                    <a Class="navbar-brand black-logo" Link to='/'>
                     <img src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png"  style={{width:"80px", height:"auto"}} alt="logo"/></a>
 
-                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                        <ul class="navbar-nav nav ml-auto">
-                            <li class="nav-item">
-                            <Link to='/' class="nav-link active">Home <i data-feather="chevron-down"></i></Link>
+                    <div Class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul Class="navbar-nav nav ml-auto">
+                            <li Class="nav-item">
+                            <Link to='/' Class="nav-link active">Home <i data-feather="chevron-down"></i></Link>
                             </li>
 
-                            <li class="nav-item">
-                            <Link to='/about-us' class="nav-link">About <i data-feather="chevron-down"></i></Link>
+                            <li Class="nav-item">
+                            <Link to='/about-us' Class="nav-link">About <i data-feather="chevron-down"></i></Link>
                             </li>
 
-                            <li class="nav-item">
-                            <Link to='/our-services' class="nav-link">Our Services <i data-feather="chevron-down"></i></Link>
-                                <ul class="dropdown_menu">
-                                    <li class="nav-item">
-                                    <Link to='/website-development-company' class="nav-link">Website Development <i data-feather="chevron-right"></i></Link>
+                            <li Class="nav-item">
+                            <Link to='/our-services' Class="nav-link">Our Services <i data-feather="chevron-down"></i></Link>
+                                <ul Class="dropdown_menu">
+                                    <li Class="nav-item">
+                                    <Link to='/website-development-company' Class="nav-link">Website Development <i data-feather="chevron-right"></i></Link>
                                     </li>
-                                    <li class="nav-item">
-                                    <Link to='/application-development-company' class="nav-link">Application Development <i data-feather="chevron-right"></i></Link>
+                                    <li Class="nav-item">
+                                    <Link to='/application-development-company' Class="nav-link">Application Development <i data-feather="chevron-right"></i></Link>
                                     </li>
-                                    <li class="nav-item">
-                                    <Link to='/digital-marketing-company' class="nav-link">Digital Marketing <i data-feather="chevron-right"></i></Link>
+                                    <li Class="nav-item">
+                                    <Link to='/digital-marketing-company' Class="nav-link">Digital Marketing <i data-feather="chevron-right"></i></Link>
                                     </li>
-                                    <li class="nav-item"> 
-                                    <Link to='/ui-ux-designing-company' class="nav-link">Ui/UX Designing <i data-feather="chevron-right"></i></Link>
+                                    <li Class="nav-item"> 
+                                    <Link to='/ui-ux-designing-company' Class="nav-link">Ui/UX Designing <i data-feather="chevron-right"></i></Link>
                                     </li>
-                                    <li class="nav-item"> 
-                                    <Link to='/graphic-designing-company' class="nav-link">Graphic Designing<i data-feather="chevron-right"></i></Link>
+                                    <li Class="nav-item"> 
+                                    <Link to='/graphic-designing-company' Class="nav-link">Graphic Designing<i data-feather="chevron-right"></i></Link>
                                     </li>
-                                    <li class="nav-item">
-                                    <Link to='/data-science-consulting' class="nav-link">Data Science Consulting<i data-feather="chevron-right"></i></Link>
+                                    <li Class="nav-item">
+                                    <Link to='/data-science-consulting' Class="nav-link">Data Science Consulting<i data-feather="chevron-right"></i></Link>
                                      </li>
                                 </ul>
                             </li>
 
-                            <li class="nav-item">
-                            <Link to='/technologies' class="nav-link">Technologies <i data-feather="chevron-down"></i></Link>
+                            <li Class="nav-item">
+                            <Link to='/technologies' Class="nav-link">Technologies <i data-feather="chevron-down"></i></Link>
                             </li>
 
 
-                            <li class="nav-item">
-                            <Link to='/blog' class="nav-link">Blog <i data-feather="chevron-down"></i></Link>
+                            <li Class="nav-item">
+                            <Link to='/blog' Class="nav-link">Blog <i data-feather="chevron-down"></i></Link>
                             </li>
 
-                            <li class="nav-item"><Link to='/contact-us' class="nav-link">Contact</Link></li>
+                            <li Class="nav-item"><Link to='/contact-us' Class="nav-link">Contact</Link></li>
                         </ul>
                     </div>
 
-                    <div class="others-option">
-                        <Link to='/' class="btn btn-primary">OUR PACKAGES</Link>
+                    <div Class="others-option">
+                        <Link to='/' Class="btn btn-primary">OUR PACKAGES</Link>
                     </div>
                 </nav>
             </div>
         </div>
 
-                <div class="container">
-                    <div class="option-inner">
-                        <div class="others-option">
-                            <a href="contact.html" class="btn btn-light">Support</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </header>

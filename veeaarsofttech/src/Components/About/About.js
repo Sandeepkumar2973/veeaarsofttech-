@@ -203,8 +203,8 @@ const About = ({ initialValue }) => {
             </div>
             <div className="col-lg-6 col-md-12">
               <div className="ml-about-content">
-                <span className="sub-title text-center">About Us</span>
-                <h1 className="text-center">
+                <span className="sub-title text-left">About Us</span>
+                <h1 className="text-left">
                 Inspiring Tech Needs For Business
                 </h1>
                 <div className="bar" />
