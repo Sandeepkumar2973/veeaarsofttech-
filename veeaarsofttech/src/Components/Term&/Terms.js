@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../Header/Navbar";
 import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import { Link } from "react-router-dom";
 
 function Terms() {
@@ -9,29 +8,33 @@ function Terms() {
     <div>
       <Navbar />
       <div className="header-container">
-      <p className="text-data">Terms & Conditions</p>
+        <p className="text-data">Terms & Conditions</p>
       </div>
-            <div>
+      <div>
         {/* Start Terms & Conditions Area */}
         <div className="terms-conditions-area ptb-80">
           <div className="container">
             <div className="terms-conditions-content">
-              <h1 className="text-center" style={{marginTop:"13px"}}>Overview</h1>
+              <h1 className="text-center" style={{ marginTop: "13px" }}>
+                Overview
+              </h1>
               <p className="text-center">
                 We may collect personal identification information from Users in
                 a variety of ways, including, but not limited to, when Users
                 visit our site, subscribe to the newsletter, fill out a form,
                 and in connection with other activities, services, features or
-                resources we make <Link to="/">available </Link> on our Site. Users
-                may be asked for, as appropriate, name, email address, mailing
-                address, phone number, company name. We will collect personal{" "}
-                <strong>identification</strong> information from Users only if
-                they voluntarily consent such information to us. Users can
-                always refuse to supply personally identification information,
-                except that it may prevent them from engaging in certain Site
-                related activities.
+                resources we make <Link to="/">available </Link> on our Site.
+                Users may be asked for, as appropriate, name, email address,
+                mailing address, phone number, company name. We will collect
+                personal <strong>identification</strong> information from Users
+                only if they voluntarily consent such information to us. Users
+                can always refuse to supply personally identification
+                information, except that it may prevent them from engaging in
+                certain Site related activities.
               </p>
-              <h2 className="text-center">General permission to use and access and use limitations</h2>
+              <h2 className="text-center">
+                General permission to use and access and use limitations
+              </h2>
               <p>
                 This site is provided by <strong>StartP</strong>.{" "}
                 <strong>StartP</strong> collects information in several ways
@@ -129,7 +132,9 @@ function Terms() {
                   </Link>
                 </li>
               </ol>
-              <p className="text-center">Last updated: June 30, 2021 at 24:00 pm</p>
+              <p className="text-center">
+                Last updated: June 30, 2021 at 24:00 pm
+              </p>
             </div>
           </div>
         </div>

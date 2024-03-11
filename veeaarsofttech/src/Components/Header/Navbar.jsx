@@ -85,13 +85,11 @@ const Navbar = () => {
                             </li>
 
                             <li Class="nav-item"><Link to='/contact-us' Class="nav-link">Contact</Link></li>
-                            <li><div Class="others-option">
+                            <li Class="others-option">
                         <Link to='/' Class="btn btn-primary">OUR PACKAGES</Link>
-                    </div></li>
+                    </li>
                         </ul>
-                    </div>
-
-                    
+                    </div>                    
                 </nav>
             </div>
         </div>        

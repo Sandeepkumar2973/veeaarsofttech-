@@ -1,20 +1,22 @@
 import React from "react";
 import Navbar from "../Header/Navbar";
 import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 
 function Refund() {
   return (
     <div>
       <Navbar />
       <div className="header-container">
-      <p className="text-data">Refund</p>
-      </div>      <div>
+        <p className="text-data">Refund</p>
+      </div>{" "}
+      <div>
         {/* Start Terms & Conditions Area */}
         <div className="terms-conditions-area ptb-80">
           <div className="container">
             <div className="terms-conditions-content">
-              <h1 className="text-center" style={{marginTop:"10px"}}>Overview</h1>
+              <h1 className="text-center" style={{ marginTop: "10px" }}>
+                Overview
+              </h1>
               <p className="text-center">
                 We may collect personal identification information from Users in
                 a variety of ways, including, but not limited to, when Users
@@ -29,7 +31,9 @@ function Refund() {
                 except that it may prevent them from engaging in certain Site
                 related activities.
               </p>
-              <h3 className="text-center">General permission to use and access and use limitations</h3>
+              <h3 className="text-center">
+                General permission to use and access and use limitations
+              </h3>
               <p className="text-center">
                 This site is provided by <strong>StartP</strong>.{" "}
                 <strong>StartP</strong> collects information in several ways
@@ -127,7 +131,9 @@ function Refund() {
                   </a>
                 </li>
               </ol>
-              <p className="text-center">Last updated: June 30, 2021 at 24:00 pm</p>
+              <p className="text-center">
+                Last updated: June 30, 2021 at 24:00 pm
+              </p>
             </div>
           </div>
         </div>

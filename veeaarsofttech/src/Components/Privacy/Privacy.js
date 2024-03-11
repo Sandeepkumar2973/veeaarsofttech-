@@ -1,14 +1,13 @@
 import React from "react";
 import Navbar from "../Header/Navbar";
 import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 
 function Privacy() {
   return (
     <div>
       <Navbar />
       <div className="header-container">
-      <p className="text-data">Privacy Policy</p>
+        <p className="text-data">Privacy Policy</p>
       </div>
       <div>
         {/* Start Privacy Policy Area */}
