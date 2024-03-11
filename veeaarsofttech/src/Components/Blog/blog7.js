@@ -368,32 +368,60 @@ function Blog7() {
           </div>
 
           <div className="col-lg-12 services-details">
-            <p style={{ textAlign: "left" }}>
-              In the vibrant landscape of Delhi’s digital realm,{" "}
-              <b>VeeaarSoftTech</b>
-              stands tall as the unrivaled leader in digital marketing services.
-              Renowned for its innovative strategies, local expertise, and a
-              proven track record of delivering exceptional results, this
-              company is the go-to partner for businesses aspiring to elevate
-              their online presence in the dynamic market of Delhi.{" "}
-              <b>Digital marketing company in Delhi.</b>
-            </p>
-          </div>
-
-          <div className="col-lg-12 services-details">
             <div className="heading">
               <span className="arrow-icon">
                 <MdCollectionsBookmark />
               </span>
-              We Serve the Best Work
+              Why VeeaarSoftTech?
             </div>
-            <p style={{ textAlign: "center" }}>
-              At our <strong>Blog7 Marketing Company in Delhi</strong>, we are
-              committed to serving you the best in web development. Our team of
-              skilled professionals brings your Blog7 vision to life, crafting
-              websites that stand out in design, functionality, and user
-              experience. Explore our portfolio and experience the pinnacle of
-              web development excellence in the heart of Delhi.
+            <h5>Local Insight, Global Impact:</h5>
+            <p style={{ textAlign: "left" }}>
+              VeeaarSoftTech understands Delhi’s unique market dynamics,
+              cultural nuances, and diverse consumer behaviors. This local
+              insight allows us to craft digital marketing strategies that
+              resonate with the city’s diverse audience while ensuring a global
+              impact for businesses aiming to reach new heights.
+            </p>
+            <h5>Innovative Strategies for Success:</h5>
+            <p style={{ textAlign: "left" }}>
+              At VeeaarSoftTech, innovation is at the heart of our approach. We
+              don’t just follow trends; we set them. Our team of digital
+              marketing experts stays ahead of the curve, leveraging
+              cutting-edge technologies and creative solutions to ensure that
+              our clients stand out in the competitive landscape of Delhi.
+            </p>
+            <h5>Proven Track Record:</h5>
+            <p style={{ textAlign: "left" }}>
+              The success stories of businesses partnering with this company are
+              etched into Delhi’s digital narrative. Our portfolio showcases a
+              series of triumphs, from enhanced brand visibility to increased
+              engagement and measurable ROI. With a proven track record, we
+              stand as a testament to our commitment to excellence.
+            </p>
+            <h5>Comprehensive Digital Services:</h5>
+            <p style={{ textAlign: "left" }}>
+              This company offers a comprehensive suite of digital marketing
+              services tailored to meet the unique needs of businesses in Delhi.
+              From strategic SEO and compelling content marketing to engaging
+              social media campaigns and targeted PPC advertising, we cover the
+              entire spectrum of digital strategies for maximum impact.
+            </p>
+            <h5>Client-Centric Approach:</h5>
+            <p style={{ textAlign: "left" }}>
+              We believe in partnerships, not just projects. Our client-centric
+              approach ensures that every business we work with becomes an
+              integral part of the digital success story. Transparent
+              communication, collaborative engagement, and a commitment to
+              exceeding expectations define our relationship with our clients.
+            </p>
+            <h5>Local and Global Reach:</h5>
+            <p style={{ textAlign: "left" }}>
+              While our roots are deeply embedded in the local ethos of Delhi,
+              our vision extends globally. We help businesses not only connect
+              with their local audience but also expand their reach beyond
+              borders. <b>VeeaarSoftTech</b> is the bridge that connects the
+              local charm of Delhi with the global possibilities of the digital
+              world.
             </p>
           </div>
 
