@@ -193,6 +193,7 @@ function Ourservices() {
         "Data science consulting involves providing expert advice, guidance, and solutions related to data science and analytics to help businesses and organizations make informed decisions and extract value from their data.",
     },
   ];
+  
   return (
     <div>
       <Navbar />
