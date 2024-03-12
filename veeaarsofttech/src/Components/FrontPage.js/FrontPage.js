@@ -119,7 +119,7 @@ const FrontPage = () => {
 
   //this is for teams
   const settingsss = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -158,35 +158,35 @@ const FrontPage = () => {
   const worksData = [
     {
       id: 1,
-      imgSrc: "assets/img/works-image/1.jpg",
+      imgSrc: "./../../assets/img/works-image/Ananta.jpeg",
       title: "Incredible infrastructure",
       description:
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
     },
     {
       id: 2,
-      imgSrc: "assets/img/works-image/2.jpg",
+            imgSrc: "./../../assets/img/works-image/csf.jpeg",
       title: "Incredible infrastructure",
       description:
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
     },
     {
       id: 3,
-      imgSrc: "assets/img/works-image/3.jpg",
+      imgSrc: "./../../assets/img/works-image/cynrotix.jpeg",
       title: "Incredible infrastructure",
       description:
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
     },
     {
-      id: 3,
-      imgSrc: "assets/img/works-image/4.jpg",
+      id: 4,
+      imgSrc: "./../../assets/img/works-image/esport.jpeg",
       title: "Incredible infrastructure",
       description:
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
     },
     {
-      id: 3,
-      imgSrc: "assets/img/works-image/5.jpg",
+      id: 5,
+      imgSrc: "./../../assets/img/works-image/sanandsons.jpeg",
       title: "Incredible infrastructure",
       description:
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
@@ -357,37 +357,59 @@ const FrontPage = () => {
         return null;
     }
   };
-  //this is for boxes-area
-  const featureData = [
-    {
-      icon: "server",
-      bgColor: "",
-      title: "Zero Configuration",
-      description:
-        "Zero Configuration in IT companies refers to the seamless setup and operation of systems without manual intervention. This approach automates network, server, and application configurations, reducing complexities and ensuring efficient workflows. IT professionals benefit from simplified deployments, saving time and resources. Zero Configuration fosters agility, enhancing adaptability to dynamic business needs. This innovative concept streamlines processes, mitigates errors, and improves overall IT infrastructure reliability, making it a pivotal element in modern IT management.",
-    },
-    {
-      icon: "code",
-      bgColor: "bg-f78acb",
-      title: "Code Security",
-      description:
-        "Code security is paramount for an IT company to safeguard sensitive information and ensure the integrity of software systems. Robust measures, such as regular code reviews, vulnerability assessments, and adherence to secure coding practices, are imperative. Implementing encryption, access controls, and threat monitoring further fortify defenses against cyber threats. Continuous training for developers on the latest security protocols is crucial, fostering a culture of vigilance. Proactive measures, like penetration testing and timely patching, enhance resilience. Ultimately, prioritizing code security safeguards against breaches, upholds client trust, and preserves the reputation of the IT company in an increasingly interconnected digital landscape.",
-    },
-    {
-      icon: "users",
-      bgColor: "bg-c679e3",
-      title: "Team Management",
-      description:
-        "Effective team management in an IT company is crucial for project success. Leaders must foster open communication, encourage collaboration, and allocate tasks based on individual strengths. Regular team meetings promote alignment with project goals, and acknowledging achievements boosts morale. Embracing a flexible approach to accommodate diverse working styles enhances productivity. Continuous skill development and creating a positive work culture contribute to a motivated and cohesive team. Ultimately, a well-managed team ensures efficient project delivery, client satisfaction, and long-term success in the dynamic IT industry.",
-    },
-    {
-      icon: "git-branch",
-      bgColor: "bg-eb6b3d",
-      title: "Access Controlled",
-      description:
-        "Access control in an IT company is crucial for safeguarding sensitive data and maintaining cybersecurity. Implementing robust access control measures ensures that only authorized personnel can access confidential information, reducing the risk of data breaches. This involves using authentication protocols, encryption, and permissions to restrict and monitor user access. Regular audits and updates to access control policies enhance overall system security, fostering a secure IT environment. Effective access control is a cornerstone in protecting valuable assets and maintaining the integrity of IT systems, contributing to the overall success and reliability of the company.",
-    },
-  ];
+  
+  
+    //this is for boxes-area
+    const featureData = [
+      {
+        icon: "server",
+        bgColor: "",
+        navi: "/website-development-company",
+        title: "Website Development",
+        description:
+          "Website development is the process of creating and designing a website, encompassing tasks like coding, layout design, content creation, and functionality implementation.",
+      },
+      {
+        icon: "code",
+        navi: "/application-development-company",
+        bgColor: "bg-f78acb",
+        title: "Aplication Development",
+        description:
+          "App development involves the creation of software applications for mobile devices like smartphones and tablets. This process includes coding, design, and implementation of features",
+      },
+      {
+        navi: "/digital-marketing-company",
+        icon: "users",
+        bgColor: "bg-c679e3",
+        title: "Digital Marketing",
+        description:
+          "Digital marketing is a broad term that encompasses all marketing efforts that use electronic devices or the internet. Businesses leverage digital channels such as search engines, social media,",
+      },
+      {
+        navi: "/ui-ux-designing-company",
+        icon: "git-branch",
+        bgColor: "bg-eb6b3d",
+        title: "UI/UX Designing",
+        description:
+          "UI/UX design focuses on creating user interfaces and experiences that are intuitive, engaging, and visually appealing for digital products like websites, mobile apps, and software applications.",
+      },
+      {
+        navi: "/graphic-designing-company",
+        icon: "git-branch",
+        bgColor: "bg-eb6b3d",
+        title: "Graphic Designing",
+        description:
+          "UI/UX design focuses on creating user interfaces and experiences that are intuitive, engaging, and visually appealing for digital products like websites, mobile apps, and software applications.",
+      },
+      {
+        navi: "/data-science-consulting",
+        icon: "git-branch",
+        bgColor: "bg-eb6b3d",
+        title: "Data Science Consulting",
+        description:
+          "Data science consulting involves providing expert advice, guidance, and solutions related to data science and analytics to help businesses and organizations make informed decisions and extract value from their data.",
+      },
+    ];
 
   //////////////
 
@@ -635,7 +657,7 @@ const FrontPage = () => {
       svgPath: "M16 18 22 12 16 6M8 6 2 12 8 18",
     },
     {
-      title: "iOS apps development",
+      title: "Data Science",
       icon: "smartphone",
       svgPath: "M5 2 19 2 19 22 5 22 5 2zM12 18 12 18",
     },
@@ -646,13 +668,13 @@ const FrontPage = () => {
         "M12 19l7-7 3 3-7 7-3-3z M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z M2 2l7.586 7.586 M11 11c0-2.209 1.791-4 4-4",
     },
     {
-      title: "E-commerce development",
+      title: "Digital Marketing",
       icon: "shopping-cart",
       svgPath:
         "M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6",
     },
     {
-      title: "Print ready design",
+      title: "Graphic Designing",
       icon: "check-circle",
       svgPath: "M22 11.08V12a10 10 0 1 1-5.93-9.14 M22 4 12 14.01 9 11.01",
     },
@@ -1335,7 +1357,7 @@ const FrontPage = () => {
               <div className="row h-100 justify-content-center align-items-center">
                 <div className="col-lg-5">
                   <div className="hero-content">
-                    <h1 className="text-center">
+                    <h1 className="text-left">
                       TRUST OUR BEST IT SOLUTION FOR YOUR BUSINESS
                     </h1>
                     <p style={{ color: "black" }}>
@@ -1387,32 +1409,39 @@ const FrontPage = () => {
       {/*end this is section our main banner*/}
 
       {/*start this is section our Boxes Area*/}
-      <div className="boxes-area">
+      <div className="boxes-area mt-5">
         <div className="container">
-          <div className="row">
+          <div className="row m-4">
             {featureData.map((feature, index) => (
-              <div key={index} className="col-lg-3 col-md-6 col-sm-6">
-                <div className={`single-box ${feature.bgColor}`}>
-                  <div className="icon">
-                    <i data-feather={feature.icon} />
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      className={`feather feather-${feature.icon}`}
-                    >
-                      {getSvgPath(feature.icon)}
-                    </svg>
+              <div
+                key={index}
+                className="col-lg-3 col-sm-6"
+                style={{ width: 350, height: 350 }}
+              >
+                <Link to={feature.navi}>
+                  <div className={`single-box ${feature.bgColor}`}>
+                    <div className="icon">
+                      <i data-feather={feature.icon} />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        className={`feather feather-${feature.icon}`}
+                      >
+                        {getSvgPath(feature.icon)}
+                      </svg>
+                    </div>
+                    <h3>{feature.title}</h3>
+                    <p>{feature.description.slice(0, 100)}</p>
+                    <h5>Read More......</h5>
                   </div>
-                  <h3>{feature.title}</h3>
-                  <p>{feature.description.slice(0, 150)}...</p>
-                </div>
+                </Link>
               </div>
             ))}
           </div>
@@ -1630,12 +1659,7 @@ const FrontPage = () => {
                 <h2>WHAT KIND OF SERVICES WE ARE OFFERING</h2>
                 <div className="bar" />
                 <p>
-                  Cloud hosting services revolutionize IT by providing scalable
-                  and flexible infrastructure solutions. These services, offered
-                  by IT companies, enable users to store, manage, and access
-                  data and applications remotely. Utilizing virtualization,
-                  cloud hosting optimizes resource utilization, enhancing
-                  efficiency and reducing costs.{" "}
+                We provide a diverse range of services tailored to meet your needs, including consulting, software development, digital marketing, content creation, and strategic planning. Explore our comprehensive solutions for success.{" "}
                 </p>
               </div>
               <div className="row">
@@ -1916,8 +1940,8 @@ const FrontPage = () => {
                   </svg>
                 </Link>
                 <div className="works-content">
-                  <h3>{work.title}</h3>
-                  <p>{work.description}</p>
+                  <h1 style={{color:"white"}}>{work.title}</h1>
+                  {/* <p>{work.description}</p> */}
                 </div>
               </div>
             ))}
@@ -2022,9 +2046,10 @@ const FrontPage = () => {
               padding: "20px",
               marginBottom: "10px",
               background: "aliceblue",
+              textAlign:"center",
             }}
           >
-            <marquee>
+            <marquee style={{height:"16px"}}>
               <strong>
                 <h6 style={{ color: "green" }}>
                   Click on User Image for Read Users Review
