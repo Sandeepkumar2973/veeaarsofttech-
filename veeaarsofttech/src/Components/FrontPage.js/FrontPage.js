@@ -2008,6 +2008,7 @@ const FrontPage = () => {
               marginBottom: "10px",
               background: "aliceblue",
               textAlign:"center",
+             
             }}
           >
             <marquee style={{height:"16px"}}>
@@ -2018,7 +2019,7 @@ const FrontPage = () => {
               </strong>
             </marquee>
             {selectedReview && (
-              <div className="selected-review">
+              <div className="selected-review" style={{ cursor:"pointer"}}>
                 <div className="container">
                   <img
                     src={selectedReview.imgSrc}
@@ -2026,6 +2027,7 @@ const FrontPage = () => {
                       borderRadius: "80px",
                       width: "100px",
                       height: "auto",
+                      cursor:"pointer",
                     }}
                   />
                   <h3 className="text-center">{selectedReview.name}</h3>

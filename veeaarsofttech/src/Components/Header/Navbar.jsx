@@ -13,14 +13,14 @@ const Navbar = () => {
     const [collapsed, setCollapsed] = useState(false);
 
     const toggleNavbar = () => {
-      setCollapsed(!collapsed); // Assuming you have a state variable 'collapsed' and a function 'setCollapsed' to update its value
+      setCollapsed(!collapsed); 
     };
     
 
 
     return (
         <div>
-    <header id="header" Class="headroom">      
+    <header id="header" Class="headroom">
         <div Class="startp-nav">
             <div Class="container">
                 <nav Class="navbar navbar-expand-md navbar-light">
@@ -40,7 +40,7 @@ const Navbar = () => {
                     <img src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png" alt="logo" 
                          style={{width:"100px", height:"auto"}}/></Link>
 
-                    <div Class={`collapse navbar-collapse mean-menu ${collapsed ? 'show' : 'hide'}`}
+                    <div Class={`collapse navbar-collapse mean-menu ${collapsed ? 'show' : ''}`}
                      id="navbarSupportedContent">
                         <div Class="navbar-nav nav ml-auto">
                             <span Class="nav-item">
