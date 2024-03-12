@@ -10,21 +10,24 @@ import {
 const Footer = () => {
   return (
     <>
-      <div className="footer-area bg-f7fafd">
+      <div className="footer-area bg-f7fafd mt-2">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3 col-md-6 col-sm-6">
+            <div className="">
+              <Link to="/">
+                <img
+                  src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png"
+                  alt="logo"
+                  style={{ width: "100px", height: "auto" }}
+                />
+              </Link>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="single-footer-widget">
-                <div className="logo black-logo">
-                  <Link to="/">
-                    <img
-                      src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png"
-                      alt="logo"
-                      style={{ width: "100px", height: "auto" }}
-                    />
-                  </Link>
-                </div>
-                <p>
+                <p
+                  className="pt-3"
+                  style={{ color: "#6084a4", paddingRight: 50 }}
+                >
                   Veeaar softtech pvt ltd is a leading IT solutions provider
                   dedicated to delivering cutting-edge technology services and
                   solutions to businesses worldwide. Established in 2021, our
@@ -72,7 +75,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-sm-6">
+            <div className="col-lg-2 col-md-6 col-sm-6">
               <div className="single-footer-widget">
                 <h3 className="">Support</h3>
                 <ul className="list">
@@ -106,7 +109,7 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className="single-footer-widget">
                 <h3 className="">Address</h3>
-                <ul className="footer-contact-info">
+                <ul className="list" style={{ color: "#6084a4" }}>
                   <li>
                     <i data-feather="map-pin" /> 3rd Floor Plot no 17 pocket 22
                     rohini sector 24 New delhi B-80/2 Singh ENC Prem Nagar-III
@@ -176,7 +179,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-12 col-md-12">
+            <div className="col-lg-12 col-md-12 mt-2">
               <div className="copyright-area">
                 <p className="text-center">
                   <Link to="/" target="_blank">
