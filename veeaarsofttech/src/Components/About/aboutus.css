@@ -635,7 +635,7 @@ Navbar CSS
 }
 
 .startp-nav nav {
-    padding: 0;
+    /* padding: 0; */
 }
 
 .startp-nav nav ul {
@@ -646,6 +646,7 @@ Navbar CSS
 
 .startp-nav nav .navbar-nav .nav-item {
     position: relative;
+    margin-top: 10px;
 }
 
 .startp-nav nav .navbar-nav .nav-item a {

@@ -160,7 +160,7 @@ function Website() {
             style={{ display: "flex", justifyContent: "center" }}
           >
             <img
-              src="./../../assets/img/website1.png"
+              src="./../../assets/img/websitee.png"
               className="fadding"
               style={{ justifyContent: "center" }}
             />
