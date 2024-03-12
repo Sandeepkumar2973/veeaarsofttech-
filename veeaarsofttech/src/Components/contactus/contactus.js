@@ -122,7 +122,7 @@ const Contact = () => {
 
         {/* <!-- Map --> */}
         <div id="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45326.805635336634!2d-74.2196370186449!3d41.213491375130594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2dfa9c79e079f%3A0xfb7cbf231a6fe59e!2sDater%20Mountain%20Nature%20Park!5e0!3m2!1sen!2sbd!4v1615638499527!5m2!1sen!2sbd" />
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13994.39627372625!2d77.08165424156012!3d28.73152562574949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d06b62e642587%3A0x55c0d57bfc11ad38!2sPocket%2017%2C%20Sector-24%2C%20Rohini%2C%20Delhi%2C%20110085!5e0!3m2!1sen!2sin!4v1710160572288!5m2!1sen!2sin" />
         </div>
 
         {/* Start Contact Area */}
