@@ -130,7 +130,7 @@ Main Banner CSS
     animation-name: MOVE-BG;
 }
 .section-title p {
-    max-width: 520px;
+    max-width: 100%;
     margin: 0 auto;
 }
 

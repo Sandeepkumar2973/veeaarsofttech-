@@ -33,56 +33,33 @@ const FrontPage = () => {
   //this is for feedback
   const feedbackData = [
     {
-      name: "James Anderson",
+      name: "Manish Singh",
       role: "Web Developer",
       imgSrc: "assets/img/client-image/1.jpg",
       review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Vee aar softtech pvt ltd  Software's marketing automation platform has transformed the way we engage with our audience. The level of personalization and the insights it provides have led to a substantial increase in our conversion rates. Their team's responsiveness and expertise have been invaluable.",
     },
     {
-      name: "Steven Smith",
+      name: "Jushpreet Singh",
       role: "Web Developer",
       imgSrc: "assets/img/client-image/2.jpg",
       review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Working with Veeaar softtech pvt ltd has been a game-changer for our company. Their cutting-edge products and exceptional support have streamlined our operations and boosted our productivity. I highly recommend them to any business looking for top-tier software solutions.",
     },
     {
-      name: "Steven Lucy",
+      name: "Jitendra Kumar",
       role: "Web Developer",
       imgSrc: "assets/img/client-image/1.jpg",
       review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Vee aar softtech pvt ltd has been our trusted partner for years. Their expertise in customizing solutions to fit our specific needs is unparalleled. Their software has significantly improved our efficiency and allowed us to stay ahead in a competitive market",
     },
     {
-      name: "Steven Lucy",
+      name: "Ravi Singh",
       role: "Web Developer",
       imgSrc: "assets/img/client-image/2.jpg",
       review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Choosing Vee aar softtech pvt ltd was one of the best decisions we made. Their financial management software has not only saved us time but also optimized our financial processes. The return on investment has been exceptional, and we continue to be impressed with their constant innovation.",
     },
-    {
-      name: "Steven Lucy",
-      role: "Web Developer",
-      imgSrc: "assets/img/client-image/3.jpg",
-      review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    {
-      name: "Steven Lucy",
-      role: "Web Developer",
-      imgSrc: "assets/img/client-image/1.jpg",
-      review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-
-    {
-      name: "Steven Lucy",
-      role: "Web Developer",
-      imgSrc: "assets/img/client-image/2.jpg",
-      review:
-        "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
-    // Add more reviews as needed
   ];
 
   ////////////////
@@ -159,35 +136,42 @@ const FrontPage = () => {
     {
       id: 1,
       imgSrc: "./../../assets/img/works-image/Ananta.jpeg",
-      title: "Incredible infrastructure",
+      title: "ANANTA",
       description:
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
     },
     {
       id: 2,
             imgSrc: "./../../assets/img/works-image/csf.jpeg",
-      title: "Incredible infrastructure",
+      title: "CSF",
       description:
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
     },
     {
       id: 3,
       imgSrc: "./../../assets/img/works-image/cynrotix.jpeg",
-      title: "Incredible infrastructure",
+      title: "CYNROTIX",
       description:
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
     },
     {
       id: 4,
       imgSrc: "./../../assets/img/works-image/esport.jpeg",
-      title: "Incredible infrastructure",
+      title: "ESPORT",
       description:
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
     },
     {
       id: 5,
       imgSrc: "./../../assets/img/works-image/sanandsons.jpeg",
-      title: "Incredible infrastructure",
+      title: "SANANDSONS",
+      description:
+        "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
+    },
+    {
+      id: 6,
+      imgSrc: "./../../assets/img/works-image/neeve.png",
+      title: "NEEVE",
       description:
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
     },
@@ -198,13 +182,13 @@ const FrontPage = () => {
   //this is for react Works
   const options = {
     items: 1,
-    loop: true,
+    loop: false,
     margin: 30,
     nav: false,
     dots: true,
     autoplay: true,
-    autoplayTimeout: 2000, // Set the autoplay timeout to 2000 milliseconds (2 seconds)
-    autoplayHoverPause: true, // Pause on hover if needed
+    autoplayTimeout: 3000, 
+    autoplayHoverPause: true, 
     responsive: {
       0: {
         items: 1,
@@ -1271,57 +1255,33 @@ const FrontPage = () => {
       id: 1,
       image: "assets/img/blog-image/1.jpg",
       date: "March 15, 2019",
-      title: "The security risks of changing package owners",
+      title: "What to Look for When Hiring a Website Development Company in India ",
       author: "admin",
-      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
+      des: "In today’s digital age, a professionally designed and functional website is the cornerstone of a successful online presence for businesses of all sizes and industries. As businesses increasingly recognize the importance of having a strong online presence, the demand for website development services has surged, leading to the proliferation of.",
     },
     {
       id: 2,
       image: "assets/img/blog-image/2.jpg",
       date: "March 17, 2019",
-      title: "Tips to Protecting Your Business and Family",
+      title: " From Delhi To Global: Digital Marketing Strategies For International Reach",
       author: "smith",
-      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
+      des: "In today’s interconnected world, businesses are no longer confined by geographical boundaries. Whether you’re a startup in Delhi or an established company, expanding your reach globally requires a well-crafted digital marketing strategy. Let’s explore expert tips to take your brand from Delhi to the global stage.",
     },
     {
       id: 3,
       image: "assets/img/blog-image/3.jpg",
       date: "March 19, 2019",
-      title: "Protect Your Workplace from Cyber Attacks",
+      title: "Expert Tips For PPC Advertising In Delhi",
       author: "john",
-      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
+      des: "In the competitive landscape of digital marketing, Pay-Per-Click (PPC) advertising has emerged as a powerful tool to drive targeted traffic and generate leads for businesses. In a bustling metropolis like Delhi, where businesses are constantly vying for attention.",
     },
     {
       id: 4,
       image: "assets/img/blog-image/3.jpg",
       date: "March 19, 2019",
-      title: "Protect Your Workplace from Cyber Attacks",
+      title: "What to Look for When Hiring a Website Development Company in India",
       author: "john",
-      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
-    },
-    {
-      id: 5,
-      image: "assets/img/blog-image/3.jpg",
-      date: "March 19, 2019",
-      title: "Protect Your Workplace from Cyber Attacks",
-      author: "john",
-      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
-    },
-    {
-      id: 6,
-      image: "assets/img/blog-image/3.jpg",
-      date: "March 19, 2019",
-      title: "Protect Your Workplace from Cyber Attacks",
-      author: "john",
-      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
-    },
-    {
-      id: 7,
-      image: "assets/img/blog-image/3.jpg",
-      date: "March 19, 2019",
-      title: "Protect Your Workplace from Cyber Attacks",
-      author: "john",
-      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.",
+      des: "In today’s digital age, a professionally designed and functional website is the cornerstone of a successful online presence for businesses of all sizes and industries. As businesses increasingly recognize the importance of having a strong online presence, the demand for website development services has surged, leading to the proliferation .",
     },
   ];
 
@@ -1696,7 +1656,7 @@ const FrontPage = () => {
           <div className="section-title">
             <h2>Our Features</h2>
             <div className="bar"></div>
-            <p>
+            <p className="text-center">
               Our IT company boasts a myriad of cutting-edge features, defining
               our prowess in the tech realm. Robust cybersecurity measures
               ensure client data integrity. Agile development methodologies
@@ -1784,9 +1744,8 @@ const FrontPage = () => {
           <div className="section-title">
             <h2>We always try to understand users expectation</h2>
             <div className="bar" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p className="text-center">
+            We continually strive to comprehend the expectations of our users, valuing their needs and desires. Through active listening and engagement, we enhance our understanding to deliver optimal experiences.
             </p>
           </div>
           <div className="row">
@@ -1800,7 +1759,8 @@ const FrontPage = () => {
                     marginBottom: "7px",
                   }}
                 >
-                  <Odometer initialValue={550} duration="4000" formate="{d}" />
+                500+
+                  {/* <Odometer initialValue={550} duration="4000" formate="{d}" /> */}
                 </h2>
                 <p className="text-center">Project</p>
               </div>
@@ -1815,7 +1775,8 @@ const FrontPage = () => {
                     marginBottom: "7px",
                   }}
                 >
-                  <Odometer initialValue={20} duration="4000" formate="{d}" />
+                50+
+                  {/* <Odometer initialValue={20} duration="4000" formate="{d}" /> */}
                 </h2>
                 <p className="text-center">Feedback</p>
               </div>
@@ -1830,7 +1791,8 @@ const FrontPage = () => {
                     marginBottom: "7px",
                   }}
                 >
-                  <Odometer initialValue={70} duration="4000" formate="{d}" />
+                50+
+                  {/* <Odometer initialValue={70} duration="4000" formate="{d}" /> */}
                 </h2>
                 <p className="text-center">Workers</p>
               </div>
@@ -1845,7 +1807,8 @@ const FrontPage = () => {
                     marginBottom: "7px",
                   }}
                 >
-                  <Odometer initialValue={500} duration="4000" formate="{d}" />
+                  {/* <Odometer initialValue={500} duration="4000" formate="{d}" /> */}
+                  200+
                 </h2>
                 <p className="text-center">Contributors</p>
               </div>
@@ -1854,9 +1817,9 @@ const FrontPage = () => {
           <div className="contact-cta-box">
             <h3>Have any question about us?</h3>
             <p>Don't hesitate to contact us</p>
-            <a href="contact.html" className="btn btn-primary">
+            <Link to="/contact-us" className="btn btn-primary">
               Contact Us
-            </a>
+            </Link>
           </div>
           <div className="map-bg">
             <img
@@ -1904,9 +1867,8 @@ const FrontPage = () => {
           <div className="section-title">
             <h2>Our Recent Works</h2>
             <div className="bar" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p className="text-center">
+            "Explore our latest achievements in web and digital marketing, showcasing innovative strategies, impactful campaigns, and successful collaborations. Elevate your online presence with our cutting-edge solutions and results-driven approach."
             </p>
           </div>
         </div>
@@ -1920,7 +1882,7 @@ const FrontPage = () => {
                 <img
                   src={work.imgSrc}
                   alt="image"
-                  style={{ width: "100%", height: "270px" }}
+                  style={{ width: "100%", height: "270px", padding:"10px" }}
                 />
                 <Link to="/" className="icon">
                   <svg
@@ -1963,7 +1925,7 @@ const FrontPage = () => {
       {/* End Works Area*/}
 
       {/* Start Pricing Area */}
-      <div className="pricing-area ptb-80 bg-f9f6f6">
+      {/* <div className="pricing-area ptb-80 bg-f9f6f6">
         <div className="container">
           <div className="section-title">
             <h2 className="text-center">Pricing Plans</h2>
@@ -2023,7 +1985,7 @@ const FrontPage = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
       {/* End Pricing Area*/}
 
       {/* Start Feedback Area*/}
@@ -2033,8 +1995,7 @@ const FrontPage = () => {
             <h2 className="text-center">What users are Saying</h2>
             <div className="bar" />
             <p className="text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Users commend the web and digital marketing expertise, praising its impact on visibility, lead generation, and brand recognition. Positive feedback emphasizes increased online presence, conversion rates, and business growth.
             </p>
           </div>
 
@@ -2068,7 +2029,7 @@ const FrontPage = () => {
                     }}
                   />
                   <h3 className="text-center">{selectedReview.name}</h3>
-                  <span>{selectedReview.role}</span>
+                  {/* <span>{selectedReview.role}</span> */}
                   <p>{selectedReview.review}</p>
                   <button
                     className="btn btn-primary"
@@ -2113,90 +2074,27 @@ const FrontPage = () => {
         <div className="container">
           <h3 className="text-center">Ready to talk?</h3>
           <p className="text-center">
-            Our team is here to answer your question about StartP
+            Our team is here to answer your question about Your StartUP
           </p>
-          <Link to="/" className="btn btn-primary">
+          <Link to="/contact-us" className="btn btn-primary">
             Contact Us
           </Link>
           <span>
-            <Link to="/">Or, get started now with a free trial</Link>
+            <Link to="/contact-us">Or, get started now with a free trial</Link>
           </span>
         </div>
-        <div>
-          {shapesData.map((shape, index) => (
-            <div key={index} className={shape.className}>
-              <img
-                className="shape_img"
-                src={shape.imgSrc}
-                alt={shape.alt}
-                style={{ width: "20px", height: "20px" }}
-              />
-            </div>
-          ))}
-        </div>
       </div>
-      {/*  End Ready To Talk Area */}
-
-      {/*   Start Partner Area */}
-      <div className="partner-area partner-section">
-        <div className="container">
-          <h5 className="text-center">
-            More that 1.5 million businesses and organizations use StartP
-          </h5>
-          <div className="partner-inner">
-            <Slider
-              {...settings}
-              className="partner-slides owl-carousel owl-theme"
-            >
-              {partnerLogos.map((partner, index) => (
-                <div key={index}>
-                  <div
-                    className="single-ml-partner"
-                    style={{ marginBottom: "20px" }}
-                  >
-                    <Link to="/">
-                      <img
-                        src={partner.imgSrc}
-                        alt="image"
-                        style={{ width: "20px", height: "20px" }}
-                      />
-                      <img
-                        src={partner.hoverImgSrc}
-                        alt="image"
-                        style={{ width: "20px", height: "20px" }}
-                      />
-                    </Link>
-                  </div>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </div>
-
-        <div>
-          {shapesData.map((shape, index) => (
-            <div key={index} className={shape.className}>
-              <img
-                className="shape_img"
-                src={shape.imgSrc}
-                alt={shape.alt}
-                style={{ width: "20px", height: "20px" }}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
+     
       {/*  End Partner Area */}
 
       {/*  Start Blog Area */}
       <div className="blog-area ptb-80">
         <div className="container">
           <div className="section-title">
-            <h2>The News from Our Blog</h2>
+            <h2>Our Blog</h2>
             <div className="bar" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p className="text-center">
+            "Explore the dynamic world of web and digital marketing on our blog. Unlock insights, trends, and strategies that empower your online presence and drive success in the digital landscape."
             </p>
           </div>
           <Slider {...settingdddsess} className="row">
@@ -2204,7 +2102,7 @@ const FrontPage = () => {
               <div key={post.id} className="col-lg-4 col-md-6">
                 <div className="single-blog-post" style={{ padding: "0 5px" }}>
                   <div className="blog-image">
-                    <Link to="/">
+                    <Link to="/blog">
                       <img
                         src={post.image}
                         alt="image"
@@ -2217,14 +2115,11 @@ const FrontPage = () => {
                   </div>
                   <div className="blog-post-content">
                     <h3>
-                      <Link to="/">{post.title.slice(0, 30)}</Link>
+                      <Link to="/">{post.title.slice(0, 25)}</Link>
                     </h3>
-                    <span>
-                      by <Link to="/">{post.author}</Link>
-                    </span>
-                    <p>{post.des.slice(0, 50)}</p>
+                    <p>{post.des.slice(0, 30)}</p>
                     <Link
-                      to="/google"
+                      to="/blog"
                       target="_blank"
                       className="read-more-btn"
                     >

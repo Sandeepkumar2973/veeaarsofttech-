@@ -446,7 +446,7 @@ label {
 }
 
 .section-title p {
-    max-width: 520px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -3985,7 +3985,7 @@ Ready To Talk CSS
     text-align: center;
     position: relative;
     padding-top: 80px;
-    padding-bottom: 160px;
+    padding-bottom: 20px;
     background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%);
 }
 
@@ -10690,7 +10690,7 @@ Footer CSS
 =================================================*/
 
 .footer-area {
-    padding-top: 80px;
+    padding-top: 10px;
     position: relative;
     z-index: 1;
 }
@@ -10840,7 +10840,7 @@ Footer CSS
 }
 
 .copyright-area {
-    margin-top: 80px;
+    margin-top: 10px;
     border-top: 1px solid #d8ebfd;
     text-align: center;
     padding-top: 25px;
