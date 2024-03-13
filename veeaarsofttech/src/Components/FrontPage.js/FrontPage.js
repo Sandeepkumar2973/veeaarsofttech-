@@ -206,21 +206,6 @@ const FrontPage = () => {
 
   ////////////////
 
-  //this is for partners
-  const logos = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    margin: 30,
-    autoplayTimeout: 2000,
-    autoplayHoverPause: true,
-    autoplay: true,
-  };
-
-  ////////////////
-
   //this is for main-banner animation image
   const getWowAnimation = (index) => {
     const animations = [
@@ -1514,7 +1499,7 @@ const FrontPage = () => {
                   <div className="blog-image">
                     <Link to="/blog">
                       <img
-                        src={post.image}
+                        src={post.imgSrc}
                         alt="image"
                         style={{ width: "100%", height: "auto" }}
                       />
@@ -1525,9 +1510,9 @@ const FrontPage = () => {
                   </div>
                   <div className="blog-post-content">
                     <h3>
-                      <Link to="/">{post.title}</Link>
+                      <Link to="/">{post.title.slice(0, 30)}</Link>
                     </h3>
-                    <p>{post.des}</p>
+                    <p>{post.text.slice(0, 100)}...</p>
                     <Link to="/blog" target="_blank" className="read-more-btn">
                       Read More
                       <svg
