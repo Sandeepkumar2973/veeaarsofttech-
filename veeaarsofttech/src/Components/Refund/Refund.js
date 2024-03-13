@@ -32,15 +32,15 @@ function Refund() {
                 except that it may prevent them from engaging in certain Site
                 related activities.
               </p>
-              <h3 className="text-center">
+              <h3 className="text-left">
                 General permission to use and access and use limitations
               </h3>
-              <p className="text-center">
+              <p className="text-left">
                 This site is provided by <strong>StartP</strong>.{" "}
                 <strong>StartP</strong> collects information in several ways
                 from different parts of this site.
               </p>
-              <p className="text-center">
+              <p className="text-left">
                 <strong>1.</strong> Complimentary ground shipping within 1 to 7
                 business days
                 <br />
@@ -56,7 +56,7 @@ function Refund() {
                 <strong>5.</strong> See the delivery FAQs for details on
                 shipping methods, costs and delivery times
               </p>
-              <h4 className="text-center">Confidential information</h4>
+              <h4 className="text-left">Confidential information</h4>
               <p>
                 <strong>StartP</strong> accepts the following payment methods:
               </p>
@@ -83,31 +83,14 @@ function Refund() {
                   </Link>
                 </li>
               </ul>
-              <h5 className="text-center">Linking to this Site</h5>
-              <p className="text-center">
+              <h5 className="text-left">Linking to this Site</h5>
+              <p className="text-left">
                 Items returned within 14 days of their original shipment date in
                 same as new condition will be eligible for a full refund or
                 store credit. Refunds will be charged back form of payment used
                 for purchase. Customer is responsible for shipping charges when
                 making returns and shipping/handling fees of original purchase
                 is non-refundable.
-              </p>
-              <h4 className="text-center">Intellectual property</h4>
-              <p className="text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                eget euismod erat, sit amet vulputate enim. Etiam enim tellus,
-                maximus vel augue sed, pharetra hendrerit orci. Vivamus sed
-                massa in nibh imperdiet mattis quis sed augue. Pellentesque erat
-                metus, vestibulum nec nisl.
-              </p>
-              <p className="text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                eget euismod erat, sit amet vulputate enim. Etiam enim tellus.
-              </p>
-              <h4>Security and storage</h4>
-              <p className="text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                eget euismod erat, sit amet vulputate enim. Etiam enim tellus.
               </p>
               <ol>
                 <li>
