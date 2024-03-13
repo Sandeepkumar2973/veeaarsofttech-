@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import "./Navbar.css"
 import { MdEmail } from "react-icons/md";
@@ -15,6 +15,21 @@ const Navbar = () => {
     const toggleNavbar = () => {
       setCollapsed(!collapsed); 
     };
+    
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    
+        const handleRouteChange = () => {
+          window.scrollTo(0, 0);
+        };
+    
+        window.addEventListener('popstate', handleRouteChange);
+    
+        return () => {
+          window.removeEventListener('popstate', handleRouteChange);
+        };
+      }, []);
     
 
 

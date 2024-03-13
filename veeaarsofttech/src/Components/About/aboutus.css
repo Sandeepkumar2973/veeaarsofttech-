@@ -1055,7 +1055,7 @@ Main Banner CSS
 }
 
 .main-banner .hero-content h1 {
-    font-size: 45px;
+    font-size: 30px;
     font-weight: 500;
     margin-bottom: 20px;
     line-height: 40px;
@@ -1587,6 +1587,8 @@ Boxes CSS
     box-shadow: 0 0 10px rgba(72, 69, 224, 0.1);
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    margin-bottom: 5px;
+
 }
 
 .single-box .icon {
@@ -11198,7 +11200,7 @@ Terms & Conditions Area CSS
 
 .hide-image{
     display: none;
-    width: 400px;
+    width: 300px;
     margin: 0 auto;
 }
 
@@ -11291,6 +11293,20 @@ Terms & Conditions Area CSS
 }
 .hide-image{
     display: flex;
+}
+
+.single-box {
+    border: 1px dashed #cdf1d8;
+    padding: 30px 20px;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(72, 69, 224, 0.1);
+    transition: 0.5s;
+}
+.boxes-area{
+    margin-top: 130px;
 }
 
 
