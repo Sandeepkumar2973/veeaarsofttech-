@@ -67,15 +67,15 @@ const FrontPage = () => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024, // Adjust the breakpoint based on your design needs
+        breakpoint: 1024, 
         settings: {
-          slidesToShow: 3, // Show 3 slides on tablets
+          slidesToShow: 3, 
         },
       },
       {
-        breakpoint: 768, // Adjust the breakpoint based on your design needs
+        breakpoint: 768, 
         settings: {
-          slidesToShow: 3, // Show 1 slide on mobile devices
+          slidesToShow: 3, 
         },
       },
     ],
@@ -90,15 +90,15 @@ const FrontPage = () => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024, // Adjust the breakpoint based on your design needs
+        breakpoint: 1024, 
         settings: {
-          slidesToShow: 3, // Show 3 slides on tablets
+          slidesToShow: 3, 
         },
       },
       {
-        breakpoint: 768, // Adjust the breakpoint based on your design needs
+        breakpoint: 768, 
         settings: {
-          slidesToShow: 1, // Show 1 slide on mobile devices
+          slidesToShow: 1, 
         },
       },
     ],
@@ -106,7 +106,6 @@ const FrontPage = () => {
 
   //this is for total ptrojects count
   useEffect(() => {
-    // Simulate value changes over time
     const intervalId = setInterval(() => {
       setValue((prevValue) => prevValue + 100);
     }, 2000);
@@ -544,15 +543,15 @@ const FrontPage = () => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024, // Adjust the breakpoint based on your design needs
+        breakpoint: 1024, 
         settings: {
-          slidesToShow: 3, // Show 3 slides on tablets
+          slidesToShow: 3, 
         },
       },
       {
-        breakpoint: 768, // Adjust the breakpoint based on your design needs
+        breakpoint: 768, 
         settings: {
-          slidesToShow: 2, // Show 1 slide on mobile devices
+          slidesToShow: 2, 
         },
       },
     ],

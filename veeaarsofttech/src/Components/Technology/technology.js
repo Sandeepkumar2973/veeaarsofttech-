@@ -2,6 +2,16 @@ import React from "react";
 import "./Technology.css";
 import Navbar from "../Header/Navbar";
 import Footer from "../Footer/Footer";
+import { FaHtml5 } from "react-icons/fa";
+import { IoLogoCss3 } from "react-icons/io5";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaAngular } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa";
+import { SiFlutter, SiMongodb, SiMysql, SiRedux, SiTypescript } from "react-icons/si";
+import { FaJava, FaLaravel, FaNode, FaPhp, FaPython, FaReact, FaVuejs, FaWordpress } from "react-icons/fa6";
+import { DiJqueryLogo } from "react-icons/di";
+import { BsFiletypeSql } from "react-icons/bs";
+
 
 function Technology() {
   return (
@@ -14,76 +24,78 @@ function Technology() {
       <div className="container technology ">
         <div className="row" style={{ textAlign: "center" }}>
           <div className="col-3">
-            <img src="/Icons/html.png" className="icon-png" />
+            <FaHtml5 className="icon-png"/>
           </div>
           <div className="col-3">
-            <img src="/Icons/css.png" className="icon-png" />
+          <IoLogoCss3 className="icon-png" />
           </div>
           <div className="col-3">
-            <img src="/Icons/js.png" className="icon-png" />
+          <IoLogoJavascript className="icon-png"/>
           </div>
           <div className="col-3">
-            <img src="/Icons/angular.png" className="icon-png" />
+          <FaAngular className="icon-png"/>
+
           </div>
         </div>
 
         <div className="row" style={{ textAlign: "center" }}>
           <div className="col-3">
-            <img src="/Icons/figma.png" className="icon-png" />
+          <FaFigma className="icon-png"/>
           </div>
           <div className="col-3">
-            <img src="/Icons/flutter.png" className="icon-png" />
+          <SiFlutter className="icon-png"/>
           </div>
           <div className="col-3">
-            <img src="/Icons/wordpress.png" className="icon-png" />
+          <FaWordpress className="icon-png"/>
           </div>
           <div className="col-3">
-            <img src="/Icons/java.png" className="icon-png" />
-          </div>
-        </div>
-
-        <div className="row" style={{ textAlign: "center" }}>
-          <div className="col-3">
-            <img src="/Icons/jquery.png" className="icon-png" />
-          </div>
-          <div className="col-3">
-            <img src="/Icons/larvel.png" className="icon-png" />
-          </div>
-          <div className="col-3">
-            <img src="/Icons/mongodb.png" className="icon-png" />
-          </div>
-          <div className="col-3">
-            <img src="/Icons/mysql.png" className="icon-png" />
+          <FaJava className="icon-png"/>
           </div>
         </div>
 
         <div className="row" style={{ textAlign: "center" }}>
           <div className="col-3">
-            <img src="/Icons/nodejs.png" className="icon-png" />
+          <DiJqueryLogo className="icon-png"/>
           </div>
           <div className="col-3">
-            <img src="/Icons/php.png" className="icon-png" />
+          <FaLaravel className="icon-png"/>
           </div>
           <div className="col-3">
-            <img src="/Icons/python.png" className="icon-png" />
+          <SiMongodb className="icon-png"/>
           </div>
           <div className="col-3">
-            <img src="/Icons/reactnative.png" className="icon-png" />
+          <SiMysql className="icon-png"/>
+
           </div>
         </div>
 
         <div className="row" style={{ textAlign: "center" }}>
           <div className="col-3">
-            <img src="/Icons/redux.png" className="icon-png" />
+          <FaNode className="icon-png"/>
           </div>
           <div className="col-3">
-            <img src="/Icons/sql.png" className="icon-png" />
+          <FaPhp className="icon-png"/>
           </div>
           <div className="col-3">
-            <img src="/Icons/typescript.png" className="icon-png" />
+          <FaPython className="icon-png"/>
           </div>
           <div className="col-3">
-            <img src="/Icons/vue.png" className="icon-png" />
+          <FaReact className="icon-png"/>
+          </div>
+        </div>
+
+        <div className="row" style={{ textAlign: "center" }}>
+          <div className="col-3">
+          <SiRedux className="icon-png"/>
+          </div>
+          <div className="col-3">
+          <BsFiletypeSql className="icon-png"/>
+          </div>
+          <div className="col-3">
+          <SiTypescript className="icon-png"/>
+          </div>
+          <div className="col-3">
+          <FaVuejs className="icon-png"/>
           </div>
         </div>
 
