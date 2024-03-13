@@ -21,10 +21,9 @@ import "owl.carousel";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaSquareInstagram } from "react-icons/fa6";
-import { CiLinkedin } from "react-icons/ci";
-import { FaFacebookSquare } from "react-icons/fa";
+import teamData from "./team.js";
+import featuresData from "./Featcher.js";
+import cardData from "./../Blog/contents.js";
 
 const FrontPage = () => {
   const [value, setValue] = useState(0);
@@ -37,28 +36,28 @@ const FrontPage = () => {
       role: "Web Developer",
       imgSrc: "assets/img/client-image/1.jpg",
       review:
-      "Vee aar softtech pvt ltd  Software's marketing automation platform has transformed the way we engage with our audience. The level of personalization and the insights it provides have led to a substantial increase in our conversion rates. Their team's responsiveness and expertise have been invaluable.",
+        "Vee aar softtech pvt ltd  Software's marketing automation platform has transformed the way we engage with our audience. The level of personalization and the insights it provides have led to a substantial increase in our conversion rates. Their team's responsiveness and expertise have been invaluable.",
     },
     {
       name: "Jushpreet Singh",
       role: "Web Developer",
       imgSrc: "assets/img/client-image/2.jpg",
       review:
-      "Working with Veeaar softtech pvt ltd has been a game-changer for our company. Their cutting-edge products and exceptional support have streamlined our operations and boosted our productivity. I highly recommend them to any business looking for top-tier software solutions.",
+        "Working with Veeaar softtech pvt ltd has been a game-changer for our company. Their cutting-edge products and exceptional support have streamlined our operations and boosted our productivity. I highly recommend them to any business looking for top-tier software solutions.",
     },
     {
       name: "Jitendra Kumar",
       role: "Web Developer",
       imgSrc: "assets/img/client-image/1.jpg",
       review:
-      "Vee aar softtech pvt ltd has been our trusted partner for years. Their expertise in customizing solutions to fit our specific needs is unparalleled. Their software has significantly improved our efficiency and allowed us to stay ahead in a competitive market",
+        "Vee aar softtech pvt ltd has been our trusted partner for years. Their expertise in customizing solutions to fit our specific needs is unparalleled. Their software has significantly improved our efficiency and allowed us to stay ahead in a competitive market",
     },
     {
       name: "Ravi Singh",
       role: "Web Developer",
       imgSrc: "assets/img/client-image/2.jpg",
       review:
-      "Choosing Vee aar softtech pvt ltd was one of the best decisions we made. Their financial management software has not only saved us time but also optimized our financial processes. The return on investment has been exceptional, and we continue to be impressed with their constant innovation.",
+        "Choosing Vee aar softtech pvt ltd was one of the best decisions we made. Their financial management software has not only saved us time but also optimized our financial processes. The return on investment has been exceptional, and we continue to be impressed with their constant innovation.",
     },
   ];
 
@@ -142,7 +141,7 @@ const FrontPage = () => {
     },
     {
       id: 2,
-            imgSrc: "./../../assets/img/works-image/csf.jpeg",
+      imgSrc: "./../../assets/img/works-image/csf.jpeg",
       title: "CSF",
       description:
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
@@ -187,8 +186,8 @@ const FrontPage = () => {
     nav: false,
     dots: true,
     autoplay: true,
-    autoplayTimeout: 3000, 
-    autoplayHoverPause: true, 
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
     responsive: {
       0: {
         items: 1,
@@ -341,59 +340,58 @@ const FrontPage = () => {
         return null;
     }
   };
-  
-  
-    //this is for boxes-area
-    const featureData = [
-      {
-        icon: "server",
-        bgColor: "",
-        navi: "/website-development-company",
-        title: "Website Development",
-        description:
-          "Website development is the process of creating and designing a website, encompassing tasks like coding, layout design, content creation, and functionality implementation.",
-      },
-      {
-        icon: "code",
-        navi: "/application-development-company",
-        bgColor: "bg-f78acb",
-        title: "Aplication Development",
-        description:
-          "App development involves the creation of software applications for mobile devices like smartphones and tablets. This process includes coding, design, and implementation of features",
-      },
-      {
-        navi: "/digital-marketing-company",
-        icon: "users",
-        bgColor: "bg-c679e3",
-        title: "Digital Marketing",
-        description:
-          "Digital marketing is a broad term that encompasses all marketing efforts that use electronic devices or the internet. Businesses leverage digital channels such as search engines, social media,",
-      },
-      {
-        navi: "/ui-ux-designing-company",
-        icon: "git-branch",
-        bgColor: "bg-eb6b3d",
-        title: "UI/UX Designing",
-        description:
-          "UI/UX design focuses on creating user interfaces and experiences that are intuitive, engaging, and visually appealing for digital products like websites, mobile apps, and software applications.",
-      },
-      {
-        navi: "/graphic-designing-company",
-        icon: "git-branch",
-        bgColor: "bg-eb6b3d",
-        title: "Graphic Designing",
-        description:
-          "UI/UX design focuses on creating user interfaces and experiences that are intuitive, engaging, and visually appealing for digital products like websites, mobile apps, and software applications.",
-      },
-      {
-        navi: "/data-science-consulting",
-        icon: "git-branch",
-        bgColor: "bg-eb6b3d",
-        title: "Data Science Consulting",
-        description:
-          "Data science consulting involves providing expert advice, guidance, and solutions related to data science and analytics to help businesses and organizations make informed decisions and extract value from their data.",
-      },
-    ];
+
+  //this is for boxes-area
+  const featureData = [
+    {
+      icon: "server",
+      bgColor: "",
+      navi: "/website-development-company",
+      title: "Website Development",
+      description:
+        "Website development is the process of creating and designing a website, encompassing tasks like coding, layout design, content creation, and functionality implementation.",
+    },
+    {
+      icon: "code",
+      navi: "/application-development-company",
+      bgColor: "bg-f78acb",
+      title: "Aplication Development",
+      description:
+        "App development involves the creation of software applications for mobile devices like smartphones and tablets. This process includes coding, design, and implementation of features",
+    },
+    {
+      navi: "/digital-marketing-company",
+      icon: "users",
+      bgColor: "bg-c679e3",
+      title: "Digital Marketing",
+      description:
+        "Digital marketing is a broad term that encompasses all marketing efforts that use electronic devices or the internet. Businesses leverage digital channels such as search engines, social media,",
+    },
+    {
+      navi: "/ui-ux-designing-company",
+      icon: "git-branch",
+      bgColor: "bg-eb6b3d",
+      title: "UI/UX Designing",
+      description:
+        "UI/UX design focuses on creating user interfaces and experiences that are intuitive, engaging, and visually appealing for digital products like websites, mobile apps, and software applications.",
+    },
+    {
+      navi: "/graphic-designing-company",
+      icon: "git-branch",
+      bgColor: "bg-eb6b3d",
+      title: "Graphic Designing",
+      description:
+        "UI/UX design focuses on creating user interfaces and experiences that are intuitive, engaging, and visually appealing for digital products like websites, mobile apps, and software applications.",
+    },
+    {
+      navi: "/data-science-consulting",
+      icon: "git-branch",
+      bgColor: "bg-eb6b3d",
+      title: "Data Science Consulting",
+      description:
+        "Data science consulting involves providing expert advice, guidance, and solutions related to data science and analytics to help businesses and organizations make informed decisions and extract value from their data.",
+    },
+  ];
 
   //////////////
 
@@ -666,504 +664,6 @@ const FrontPage = () => {
 
   //////////////
 
-  //this is for  section our featurs
-  const featuresData = [
-    {
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="feather feather-settings"
-        >
-          <circle cx="12" cy="12" r="3"></circle>
-          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-        </svg>
-      ),
-      title: "Incredible Infrastructure",
-      content:
-        "Incredible infrastructure defines a leading IT company, intertwining cutting-edge technology with robust systems. State-of-the-art data centers, high-speed networks, and scalable cloud solutions form the backbone, ensuring seamless operations. The company commitment to security fortifies against cyber threats, while innovative hardware and software empower clients globally. With a focus on reliability, adaptability, and efficiency, this IT powerhouse continually evolves its infrastructure, staying ahead in the dynamic tech landscape. It epitomizes a digital ecosystem where excellence meets ingenuity, propelling businesses into a future marked by unparalleled connectivity and technological prowess.",
-    },
-    {
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          className="feather feather-mail"
-        >
-          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-          <polyline points="22,6 12,13 2,6"></polyline>
-        </svg>
-      ),
-      title: "Email Notifications",
-      content:
-        "Email notifications in an IT company serve as crucial communication tools, alerting users about system updates, security patches, and service interruptions. These notifications streamline workflow, keeping employees informed about project milestones, deadlines, and meeting schedules. Additionally, they enhance cybersecurity by promptly addressing potential threats. Through personalized email alerts, IT professionals can stay abreast of software releases, bug fixes, and network maintenance, ensuring seamless operations. Efficient email notification systems foster collaboration, providing real-time information on support tickets, server statuses, and software deployment. Ultimately, they contribute to a well-orchestrated and responsive IT environment.",
-    },
-    {
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          className="feather feather-grid"
-        >
-          <rect x="3" y="3" width="7" height="7"></rect>
-          <rect x="14" y="3" width="7" height="7"></rect>
-          <rect x="14" y="14" width="7" height="7"></rect>
-          <rect x="3" y="14" width="7" height="7"></rect>
-        </svg>
-      ),
-      title: "Simple Dashboard",
-      content:
-        "A simple dashboard for an IT company serves as a centralized interface, providing real-time insights into key metrics and operations. It streamlines data visualization, displaying project statuses, resource utilization, and financial metrics in an easily understandable format. User-friendly and customizable, the dashboard enhances decision-making by offering a comprehensive overview of IT activities, fostering efficiency and transparency. With features like task tracking, team collaboration tools, and system health monitoring, it empowers management to make informed decisions swiftly. The simplicity of the dashboard ensures accessibility for all stakeholders, promoting seamless communication and alignment within the IT company",
-    },
-    {
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          className="feather feather-info"
-        >
-          <circle cx="12" cy="12" r="10"></circle>
-          <line x1="12" y1="16" x2="12" y2="12"></line>
-          <line x1="12" y1="8" x2="12" y2="8"></line>
-        </svg>
-      ),
-      title: "Information Retrieval",
-      content:
-        "Information Retrieval in IT companies involves the systematic process of obtaining relevant data from vast repositories. Utilizing advanced search algorithms and databases, IT professionals extract valuable information to enhance decision-making and optimize business processes. Effective information retrieval ensures quick access to crucial data, promoting efficiency and innovation within the company. Implementing robust retrieval systems is imperative for IT firms to stay competitive in the dynamic technology landscape, fostering a culture of informed decision-making and strategic planning.",
-    },
-    {
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          className="feather feather-mouse-pointer"
-        >
-          <path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"></path>
-          <path d="M13 13l6 6"></path>
-        </svg>
-      ),
-      title: "Drag and Drop Functionality",
-      content:
-        "In the dynamic landscape of IT companies, drag-and-drop functionality has emerged as a pivotal tool for seamless user interaction. This intuitive method streamlines processes, enhancing efficiency and reducing learning curves. Integrating drag-and-drop features into software interfaces empowers users to effortlessly manipulate data, fostering a more engaging and user-friendly experience. This functionality is particularly beneficial in design applications, project management tools, and collaborative platforms, where simplicity and accessibility are paramount. IT companies continually leverage this innovation to elevate user satisfaction, improve workflow, and stay at the forefront of technological advancements.",
-    },
-    {
-      icon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          className="feather feather-bell"
-        >
-          <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
-          <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-        </svg>
-      ),
-      title: "Deadline Reminders",
-      content:
-        "Deadline reminders are crucial for IT companies to ensure timely project completion and deliverables. These reminders, often integrated into project management systems, help teams stay organized and focused. Meeting deadlines is paramount in the fast-paced tech industry, fostering client satisfaction and maintaining a competitive edge. Automated alerts, calendars, and collaboration tools play key roles in keeping teams informed and on track. Timely completion not only enhances the company reputation but also promotes efficient workflow, allowing for smoother transitions between projects and fostering a culture of accountability and productivity.",
-    },
-  ];
-
-  //////////////
-
-  //this is for  section our team
-  const teamData = [
-    {
-      name: "Chandan Singh",
-      role: "CEO & Founder",
-      image: "assets/img/team-image/1.jpg",
-      twitter: [
-        <Link to="">
-          <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />{" "}
-        </Link>,
-      ],
-      instagrm: [
-        <Link to="">
-          <FaSquareInstagram style={{ color: "pink", fontSize: "20px" }} />
-        </Link>,
-      ],
-      Linkdien: [
-        <Link to="">
-          <CiLinkedin style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      facebook: [
-        <Link to="https://www.facebook.com/chandansingh4you">
-          <FaFacebookSquare style={{ color: "skyblue", fontSize: "20px" }} />
-        </Link>,
-      ],
-    },
-    {
-      name: "Kudan Sign",
-      role: " Manager",
-      image: "assets/img/team-image/2.jpg",
-      twitter: [
-        <Link to="">
-          <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      instagrm: [
-        <Link to="">
-          <FaSquareInstagram style={{ color: "pink", fontSize: "20px" }} />
-        </Link>,
-      ],
-      Linkdien: [
-        <Link to="">
-          <CiLinkedin style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      facebook: [
-        <Link to="">
-          <FaFacebookSquare style={{ color: "skyblue", fontSize: "20px" }} />
-        </Link>,
-      ],
-    },
-    {
-      name: "Punit",
-      role: "HR",
-      image: "assets/img/team-image/3.jpg",
-      twitter: [
-        <Link to="">
-          <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      instagrm: [
-        <Link to="">
-          <FaSquareInstagram style={{ color: "pink", fontSize: "20px" }} />
-        </Link>,
-      ],
-      Linkdien: [
-        <Link to="">
-          <CiLinkedin style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      facebook: [
-        <Link to="">
-          <FaFacebookSquare style={{ color: "skyblue", fontSize: "20px" }} />
-        </Link>,
-      ],
-    },
-    {
-      name: "Samim",
-      role: "CA",
-      image: "assets/img/team-image/4.jpg",
-      twitter: [
-        <Link to="">
-          <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      instagrm: [
-        <Link to="">
-          <FaSquareInstagram style={{ color: "pink", fontSize: "20px" }} />
-        </Link>,
-      ],
-      Linkdien: [
-        <Link to="">
-          <CiLinkedin style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      facebook: [
-        <Link to="">
-          {" "}
-          <FaFacebookSquare style={{ color: "skyblue", fontSize: "20px" }} />
-        </Link>,
-      ],
-    },
-    {
-      name: "Aarti",
-      role: "IT HEAD",
-      image: "assets/img/team-image/5.jpg",
-      twitter: [
-        <Link to="">
-          <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      instagrm: [
-        <Link to="">
-          <FaSquareInstagram style={{ color: "pink", fontSize: "20px" }} />
-        </Link>,
-      ],
-      Linkdien: [
-        <Link to="">
-          <CiLinkedin style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      facebook: [
-        <Link to="">
-          <FaFacebookSquare style={{ color: "skyblue", fontSize: "20px" }} />
-        </Link>,
-      ],
-    },
-    {
-      name: "Manish",
-      role: "Angular Developer",
-      image: "assets/img/team-image/5.jpg",
-      twitter: [
-        <Link to="">
-          <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      instagrm: [
-        <Link to="">
-          <FaSquareInstagram style={{ color: "pink", fontSize: "20px" }} />
-        </Link>,
-      ],
-      Linkdien: [
-        <Link to="">
-          <CiLinkedin style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      facebook: [
-        <Link to="">
-          <FaFacebookSquare style={{ color: "skyblue", fontSize: "20px" }} />
-        </Link>,
-      ],
-    },
-    {
-      name: "Sandeep Kumar",
-      role: "MERN Developer",
-      image: "assets/img/team-image/5.jpg",
-      twitter: [
-        <Link to="">
-          <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      instagrm: [
-        <Link to="">
-          <FaSquareInstagram style={{ color: "pink", fontSize: "20px" }} />
-        </Link>,
-      ],
-      Linkdien: [
-        <Link to="">
-          <CiLinkedin style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      facebook: [
-        <Link to="">
-          <FaFacebookSquare style={{ color: "skyblue", fontSize: "20px" }} />
-        </Link>,
-      ],
-    },
-    {
-      name: "Lalit Kumar",
-      role: "React Developer",
-      image: "assets/img/team-image/5.jpg",
-      twitter: [
-        <Link to="">
-          <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      instagrm: [
-        <Link to="">
-          <FaSquareInstagram style={{ color: "pink", fontSize: "20px" }} />
-        </Link>,
-      ],
-      Linkdien: [
-        <Link to="">
-          <CiLinkedin style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      facebook: [
-        <Link to="">
-          <FaFacebookSquare style={{ color: "skyblue", fontSize: "20px" }} />
-        </Link>,
-      ],
-    },
-    {
-      name: "Kavita",
-      role: "UI/UX",
-      image: "assets/img/team-image/5.jpg",
-      twitter: [
-        <Link to="">
-          <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      instagrm: [
-        <Link to="">
-          <FaSquareInstagram style={{ color: "pink", fontSize: "20px" }} />
-        </Link>,
-      ],
-      Linkdien: [
-        <Link to="">
-          <CiLinkedin style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      facebook: [
-        <Link to="">
-          <FaFacebookSquare style={{ color: "skyblue", fontSize: "20px" }} />
-        </Link>,
-      ],
-    },
-    {
-      name: "Vishal",
-      role: "Graphic/Video Editor",
-      image: "assets/img/team-image/1.jpg",
-      twitter: [
-        <Link to="">
-          <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      instagrm: [
-        <Link to="">
-          <FaSquareInstagram style={{ color: "pink", fontSize: "20px" }} />
-        </Link>,
-      ],
-      Linkdien: [
-        <Link to="">
-          <CiLinkedin style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      facebook: [
-        <Link to="">
-          <FaFacebookSquare style={{ color: "skyblue", fontSize: "20px" }} />
-        </Link>,
-      ],
-    },
-    {
-      name: "Subham",
-      role: "Digital Marketing",
-      image: "assets/img/team-image/1.jpg",
-      twitter: [
-        <Link to="">
-          <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      instagrm: [
-        <Link to="">
-          <FaSquareInstagram style={{ color: "pink", fontSize: "20px" }} />
-        </Link>,
-      ],
-      Linkdien: [
-        <Link to="">
-          <CiLinkedin style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      facebook: [
-        <Link to="">
-          <FaFacebookSquare style={{ color: "skyblue", fontSize: "20px" }} />
-        </Link>,
-      ],
-    },
-    {
-      name: "Megha",
-      role: "Wordpress Developer",
-      image: "assets/img/team-image/5.jpg",
-      twitter: [
-        <Link to="">
-          <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      instagrm: [
-        <Link to="">
-          <FaSquareInstagram style={{ color: "pink", fontSize: "20px" }} />
-        </Link>,
-      ],
-      Linkdien: [
-        <Link to="">
-          <CiLinkedin style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      facebook: [
-        <Link to="">
-          <FaFacebookSquare style={{ color: "skyblue", fontSize: "20px" }} />
-        </Link>,
-      ],
-    },
-    {
-      name: "Poonam",
-      role: "Accountent",
-      image: "assets/img/team-image/5.jpg",
-      twitter: [
-        <Link to="">
-          <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      instagrm: [
-        <Link to="">
-          <FaSquareInstagram style={{ color: "pink", fontSize: "20px" }} />
-        </Link>,
-      ],
-      Linkdien: [
-        <Link to="">
-          <CiLinkedin style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      facebook: [
-        <Link to="">
-          <FaFacebookSquare style={{ color: "skyblue", fontSize: "20px" }} />
-        </Link>,
-      ],
-    },
-    {
-      name: "Rakesh",
-      role: "WordPress Developer",
-      image: "assets/img/team-image/5.jpg",
-      twitter: [
-        <Link to="">
-          <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      instagrm: [
-        <Link to="">
-          <FaSquareInstagram style={{ color: "pink", fontSize: "20px" }} />
-        </Link>,
-      ],
-      Linkdien: [
-        <Link to="">
-          <CiLinkedin style={{ color: "blue", fontSize: "20px" }} />
-        </Link>,
-      ],
-      facebook: [
-        <Link to="">
-          <FaFacebookSquare style={{ color: "skyblue", fontSize: "20px" }} />
-        </Link>,
-      ],
-    },
-  ];
-
-  //////////////
-
   //this is for  section pricing plan
   const pricingPlans = [
     {
@@ -1248,43 +748,6 @@ const FrontPage = () => {
   ];
 
   //////////////
-
-  //this is for blogs
-  const blogPosts = [
-    {
-      id: 1,
-      image: "assets/img/blog-image/1.jpg",
-      date: "March 15, 2019",
-      title: "What to Look for When Hiring a Website Development Company in India ",
-      author: "admin",
-      des: "In today’s digital age, a professionally designed and functional website is the cornerstone of a successful online presence for businesses of all sizes and industries. As businesses increasingly recognize the importance of having a strong online presence, the demand for website development services has surged, leading to the proliferation of.",
-    },
-    {
-      id: 2,
-      image: "assets/img/blog-image/2.jpg",
-      date: "March 17, 2019",
-      title: " From Delhi To Global: Digital Marketing Strategies For International Reach",
-      author: "smith",
-      des: "In today’s interconnected world, businesses are no longer confined by geographical boundaries. Whether you’re a startup in Delhi or an established company, expanding your reach globally requires a well-crafted digital marketing strategy. Let’s explore expert tips to take your brand from Delhi to the global stage.",
-    },
-    {
-      id: 3,
-      image: "assets/img/blog-image/3.jpg",
-      date: "March 19, 2019",
-      title: "Expert Tips For PPC Advertising In Delhi",
-      author: "john",
-      des: "In the competitive landscape of digital marketing, Pay-Per-Click (PPC) advertising has emerged as a powerful tool to drive targeted traffic and generate leads for businesses. In a bustling metropolis like Delhi, where businesses are constantly vying for attention.",
-    },
-    {
-      id: 4,
-      image: "assets/img/blog-image/3.jpg",
-      date: "March 19, 2019",
-      title: "What to Look for When Hiring a Website Development Company in India",
-      author: "john",
-      des: "In today’s digital age, a professionally designed and functional website is the cornerstone of a successful online presence for businesses of all sizes and industries. As businesses increasingly recognize the importance of having a strong online presence, the demand for website development services has surged, leading to the proliferation .",
-    },
-  ];
-
   const settingdddsess = {
     dots: true,
     infinite: true,
@@ -1619,7 +1082,10 @@ const FrontPage = () => {
                 <h2>WHAT KIND OF SERVICES WE ARE OFFERING</h2>
                 <div className="bar" />
                 <p>
-                We provide a diverse range of services tailored to meet your needs, including consulting, software development, digital marketing, content creation, and strategic planning. Explore our comprehensive solutions for success.{" "}
+                  We provide a diverse range of services tailored to meet your
+                  needs, including consulting, software development, digital
+                  marketing, content creation, and strategic planning. Explore
+                  our comprehensive solutions for success.{" "}
                 </p>
               </div>
               <div className="row">
@@ -1745,7 +1211,10 @@ const FrontPage = () => {
             <h2>We always try to understand users expectation</h2>
             <div className="bar" />
             <p className="text-center">
-            We continually strive to comprehend the expectations of our users, valuing their needs and desires. Through active listening and engagement, we enhance our understanding to deliver optimal experiences.
+              We continually strive to comprehend the expectations of our users,
+              valuing their needs and desires. Through active listening and
+              engagement, we enhance our understanding to deliver optimal
+              experiences.
             </p>
           </div>
           <div className="row">
@@ -1759,7 +1228,7 @@ const FrontPage = () => {
                     marginBottom: "7px",
                   }}
                 >
-                500+
+                  500+
                   {/* <Odometer initialValue={550} duration="4000" formate="{d}" /> */}
                 </h2>
                 <p className="text-center">Project</p>
@@ -1775,7 +1244,7 @@ const FrontPage = () => {
                     marginBottom: "7px",
                   }}
                 >
-                50+
+                  50+
                   {/* <Odometer initialValue={20} duration="4000" formate="{d}" /> */}
                 </h2>
                 <p className="text-center">Feedback</p>
@@ -1791,7 +1260,7 @@ const FrontPage = () => {
                     marginBottom: "7px",
                   }}
                 >
-                50+
+                  50+
                   {/* <Odometer initialValue={70} duration="4000" formate="{d}" /> */}
                 </h2>
                 <p className="text-center">Workers</p>
@@ -1868,7 +1337,10 @@ const FrontPage = () => {
             <h2>Our Recent Works</h2>
             <div className="bar" />
             <p className="text-center">
-            "Explore our latest achievements in web and digital marketing, showcasing innovative strategies, impactful campaigns, and successful collaborations. Elevate your online presence with our cutting-edge solutions and results-driven approach."
+              "Explore our latest achievements in web and digital marketing,
+              showcasing innovative strategies, impactful campaigns, and
+              successful collaborations. Elevate your online presence with our
+              cutting-edge solutions and results-driven approach."
             </p>
           </div>
         </div>
@@ -1882,7 +1354,7 @@ const FrontPage = () => {
                 <img
                   src={work.imgSrc}
                   alt="image"
-                  style={{ width: "100%", height: "270px", padding:"10px" }}
+                  style={{ width: "100%", height: "270px", padding: "10px" }}
                 />
                 <Link to="/" className="icon">
                   <svg
@@ -1902,7 +1374,7 @@ const FrontPage = () => {
                   </svg>
                 </Link>
                 <div className="works-content">
-                  <h1 style={{color:"white"}}>{work.title}</h1>
+                  <h1 style={{ color: "white" }}>{work.title}</h1>
                   {/* <p>{work.description}</p> */}
                 </div>
               </div>
@@ -1995,7 +1467,10 @@ const FrontPage = () => {
             <h2 className="text-center">What users are Saying</h2>
             <div className="bar" />
             <p className="text-center">
-            Users commend the web and digital marketing expertise, praising its impact on visibility, lead generation, and brand recognition. Positive feedback emphasizes increased online presence, conversion rates, and business growth.
+              Users commend the web and digital marketing expertise, praising
+              its impact on visibility, lead generation, and brand recognition.
+              Positive feedback emphasizes increased online presence, conversion
+              rates, and business growth.
             </p>
           </div>
 
@@ -2007,11 +1482,10 @@ const FrontPage = () => {
               padding: "20px",
               marginBottom: "10px",
               background: "aliceblue",
-              textAlign:"center",
-             
+              textAlign: "center",
             }}
           >
-            <marquee style={{height:"16px"}}>
+            <marquee style={{ height: "16px" }}>
               <strong>
                 <h6 style={{ color: "green" }}>
                   Click on User Image for Read Users Review
@@ -2019,7 +1493,7 @@ const FrontPage = () => {
               </strong>
             </marquee>
             {selectedReview && (
-              <div className="selected-review" style={{ cursor:"pointer"}}>
+              <div className="selected-review" style={{ cursor: "pointer" }}>
                 <div className="container">
                   <img
                     src={selectedReview.imgSrc}
@@ -2027,7 +1501,7 @@ const FrontPage = () => {
                       borderRadius: "80px",
                       width: "100px",
                       height: "auto",
-                      cursor:"pointer",
+                      cursor: "pointer",
                     }}
                   />
                   <h3 className="text-center">{selectedReview.name}</h3>
@@ -2086,7 +1560,7 @@ const FrontPage = () => {
           </span>
         </div>
       </div>
-     
+
       {/*  End Partner Area */}
 
       {/*  Start Blog Area */}
@@ -2096,11 +1570,13 @@ const FrontPage = () => {
             <h2>Our Blog</h2>
             <div className="bar" />
             <p className="text-center">
-            "Explore the dynamic world of web and digital marketing on our blog. Unlock insights, trends, and strategies that empower your online presence and drive success in the digital landscape."
+              "Explore the dynamic world of web and digital marketing on our
+              blog. Unlock insights, trends, and strategies that empower your
+              online presence and drive success in the digital landscape."
             </p>
           </div>
           <Slider {...settingdddsess} className="row">
-            {blogPosts.map((post) => (
+            {cardData.map((post) => (
               <div key={post.id} className="col-lg-4 col-md-6">
                 <div className="single-blog-post" style={{ padding: "0 5px" }}>
                   <div className="blog-image">
@@ -2117,14 +1593,10 @@ const FrontPage = () => {
                   </div>
                   <div className="blog-post-content">
                     <h3>
-                      <Link to="/">{post.title.slice(0, 25)}</Link>
+                      <Link to="/">{post.title}</Link>
                     </h3>
-                    <p>{post.des.slice(0, 30)}</p>
-                    <Link
-                      to="/blog"
-                      target="_blank"
-                      className="read-more-btn"
-                    >
+                    <p>{post.des}</p>
+                    <Link to="/blog" target="_blank" className="read-more-btn">
                       Read More
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

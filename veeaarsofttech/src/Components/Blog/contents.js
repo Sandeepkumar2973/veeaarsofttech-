@@ -1,4 +1,4 @@
-export const cardData = [
+const cardData = [
   {
     blog: "1",
     date: "05/03/2024",
@@ -94,3 +94,4 @@ export const cardData = [
     text: "Best App Development Company In the fast-paced and ever-evolving digital landscape, mobile applications have become the lifeblood of businesses, providing a direct line of communication with customers and offering unparalleled convenience. Delhi, the bustling capital of India, hosts a multitude of app development companies, each vying",
   },
 ];
+export default cardData;

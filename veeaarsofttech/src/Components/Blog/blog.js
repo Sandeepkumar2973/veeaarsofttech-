@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Header/Navbar";
 import Footer from "../Footer/Footer";
-import { cardData } from "./contents";
+import cardData from "./contents";
 import { Link } from "react-router-dom";
 import "./blog.css";
 const Blog = () => {
