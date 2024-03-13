@@ -662,10 +662,6 @@ const FrontPage = () => {
     },
   ];
 
-  //////////////
-
-  //////////////
-
   //this is for  section pricing plan
   const pricingPlans = [
     {
