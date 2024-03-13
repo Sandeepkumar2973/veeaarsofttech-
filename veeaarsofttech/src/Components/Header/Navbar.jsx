@@ -22,7 +22,7 @@ const Navbar = () => {
         <div>
     <header id="header" Class="headroom">
         <div Class="startp-nav">
-            <div Class="container">
+            <div Class="container total-heigth">
                 <nav Class="navbar navbar-expand-md navbar-light">
                 <button
                 Class="navbar-toggler"
@@ -55,7 +55,7 @@ const Navbar = () => {
                             <Link to='/our-services' Class="nav-link">Our Services <i data-feather="chevron-down"></i></Link>
                                 <ul Class="dropdown_menu">
                                     <li Class="nav-item">
-                                    <Link to='/website-development-company' Class="nav-link">Website Development <i data-feather="chevron-right"></i></Link>
+                                    <Link to='/website-development-company' Class="nav-link">Website Development <i data-feather="chevron-right"></i></Link>   
                                     </li>
                                     <li Class="nav-item">
                                     <Link to='/application-development-company' Class="nav-link">Application Development <i data-feather="chevron-right"></i></Link>
