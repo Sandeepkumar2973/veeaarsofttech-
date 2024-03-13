@@ -24,10 +24,13 @@ import "slick-carousel/slick/slick-theme.css";
 import teamData from "./team.js";
 import featuresData from "./Featcher.js";
 import cardData from "./../Blog/contents.js";
+import Ourservispage from "../Ourservices/ourservispage.js";
 
 const FrontPage = () => {
   const [value, setValue] = useState(0);
   const [selectedReview, setSelectedReview] = useState(null);
+
+  
 
   //this is for feedback
   const feedbackData = [
@@ -715,40 +718,6 @@ const FrontPage = () => {
   ];
 
   //////////////
-
-  //this is for  section clients
-  const partnerLogos = [
-    {
-      imgSrc: "assets/img/partner-img/partner-1.png",
-      hoverImgSrc: "assets/img/partner-img/partner-hover1.png",
-    },
-    {
-      imgSrc: "assets/img/partner-img/partner-2.png",
-      hoverImgSrc: "assets/img/partner-img/partner-hover2.png",
-    },
-    {
-      imgSrc: "assets/img/partner-img/partner-3.png",
-      hoverImgSrc: "assets/img/partner-img/partner-hover3.png",
-    },
-    {
-      imgSrc: "assets/img/partner-img/partner-10.png",
-      hoverImgSrc: "assets/img/partner-img/partner-hover10.png",
-    },
-    {
-      imgSrc: "assets/img/partner-img/partner-5.png",
-      hoverImgSrc: "assets/img/partner-img/partner-hover5.png",
-    },
-    {
-      imgSrc: "assets/img/partner-img/partner-6.png",
-      hoverImgSrc: "assets/img/partner-img/partner-hover6.png",
-    },
-    {
-      imgSrc: "assets/img/partner-img/partner-7.png",
-      hoverImgSrc: "assets/img/partner-img/partner-hover7.png",
-    },
-  ];
-
-  //////////////
   const settingdddsess = {
     dots: true,
     infinite: true,
@@ -780,7 +749,7 @@ const FrontPage = () => {
             <div className="container">
               <div className="row h-100 justify-content-center align-items-center">
               <div className="col-lg-6 hide-image">
-              <img  src="./../../assets/img/01-UIUX.png" style={{margin:"20px auto"}}/>
+              <img  src="./../../assets/img/01-UIUX.png" style={{margin:"0 auto", marginTop:"50px"}}/>
             </div>
                 <div className="col-lg-5">
                   <div className="hero-content">
@@ -837,61 +806,7 @@ const FrontPage = () => {
       {/*end this is section our main banner*/}
 
       {/*start this is section our Boxes Area*/}
-      <div className="boxes-area mt-5">
-        <div className="container">
-          <div className="row m-4">
-            {featureData.map((feature, index) => (
-              <div
-                key={index}
-                className="col-lg-3 col-sm-6"
-                style={{ width: 350, height: 350 }}
-              >
-                <Link
-                  to={feature.navi}
-                  style={{ color: "black", textDecoration: "none" }}
-                >
-                  <div className={`single-box ${feature.bgColor}`}>
-                    <div className="icon">
-                      <i data-feather={feature.icon} />
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        className={`feather feather-${feature.icon}`}
-                      >
-                        {getSvgPath(feature.icon)}
-                      </svg>
-                    </div>
-                    <h3>{feature.title}</h3>
-                    <p>{feature.description.slice(0, 100)}</p>
-                    <h5>Read More......</h5>
-                  </div>
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/*this is animation shaps*/}
-        <div>
-          {shapesData.map((shape, index) => (
-            <div key={index} className={shape.className}>
-              <img
-                className="shape_img"
-                src={shape.imgSrc}
-                alt={shape.alt}
-                style={{ width: "20px", height: "20px" }}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
+      <Ourservispage/>
       {/*end this is section our Boxes Area*/}
 
       {/*Start Cloud Hosting Services*/}
