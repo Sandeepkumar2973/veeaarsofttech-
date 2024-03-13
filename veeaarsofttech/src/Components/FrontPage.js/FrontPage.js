@@ -664,11 +664,13 @@ const FrontPage = () => {
 
   //////////////
 
+  //////////////
+
   //this is for  section pricing plan
   const pricingPlans = [
     {
       title: "Basic Plan",
-      price: 15.0,
+      price: 12999,
       features: [
         "5 GB Bandwidth",
         "Highest Speed",
@@ -683,7 +685,7 @@ const FrontPage = () => {
     },
     {
       title: "Advanced Plan",
-      price: 35.0,
+      price: 19999,
       features: [
         "10 GB Bandwidth",
         "Highest Speed",
@@ -698,7 +700,7 @@ const FrontPage = () => {
     },
     {
       title: "Expert Plan",
-      price: 65.0,
+      price: 35999,
       features: [
         "15 GB Bandwidth",
         "Highest Speed",
@@ -841,7 +843,10 @@ const FrontPage = () => {
                 className="col-lg-3 col-sm-6"
                 style={{ width: 350, height: 350 }}
               >
-                <Link to={feature.navi}>
+                <Link
+                  to={feature.navi}
+                  style={{ color: "black", textDecoration: "none" }}
+                >
                   <div className={`single-box ${feature.bgColor}`}>
                     <div className="icon">
                       <i data-feather={feature.icon} />
@@ -1397,14 +1402,16 @@ const FrontPage = () => {
       {/* End Works Area*/}
 
       {/* Start Pricing Area */}
-      {/* <div className="pricing-area ptb-80 bg-f9f6f6">
+      <div className="pricing-area ptb-80 bg-f9f6f6">
         <div className="container">
           <div className="section-title">
             <h2 className="text-center">Pricing Plans</h2>
             <div className="bar" />
             <p className="text-center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              "Explore our pricing plans for flexible options tailored to your
+              needs. Affordable, transparent, and feature-rich solutions
+              designed to empower your business growth. Choose wisely, thrive
+              effortlessly."
             </p>
           </div>
           <div className="row">
@@ -1419,7 +1426,7 @@ const FrontPage = () => {
                   </div>
                   <div className="price">
                     <span>
-                      <sup>$</sup>
+                      <sup>₹</sup>
                       {plan.price.toFixed(2)} <span>/Mon</span>
                     </span>
                   </div>
@@ -1457,7 +1464,7 @@ const FrontPage = () => {
             </div>
           ))}
         </div>
-      </div> */}
+      </div>
       {/* End Pricing Area*/}
 
       {/* Start Feedback Area*/}

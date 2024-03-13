@@ -11196,6 +11196,11 @@ Terms & Conditions Area CSS
     border-radius: 50%;
 }
 
+.hide-image{
+    display: none;
+    width: 400px;
+    margin: 0 auto;
+}
 
 
 
@@ -11284,6 +11289,12 @@ Terms & Conditions Area CSS
     position: relative;
     z-index: auto;
 }
+.hide-image{
+    display: flex;
+}
+
+
+
 /* .main-banner .hero-content h1 {
     font-size: 30px;
     font-weight: 500;

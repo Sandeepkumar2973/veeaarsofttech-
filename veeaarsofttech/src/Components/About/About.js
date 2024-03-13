@@ -198,6 +198,9 @@ const About = ({ initialValue }) => {
                 alt="main-pic"
               />
             </div>
+            <div className="col-lg-6 col-md-12 hide-image">
+              <img  src="./../../assets/img/01-UIUX.png"/>
+            </div>
             <div className="col-lg-6 col-md-12">
               <div className="ml-about-content">
                 <span className="sub-title text-left">About Us</span>
