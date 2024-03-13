@@ -11293,6 +11293,18 @@ Terms & Conditions Area CSS
     display: flex;
 }
 
+.single-box {
+    border: 1px dashed #cdf1d8;
+    padding: 30px 20px;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(72, 69, 224, 0.1);
+    transition: 0.5s;
+    margin-top: 130px;
+}
+
 
 
 /* .main-banner .hero-content h1 {
