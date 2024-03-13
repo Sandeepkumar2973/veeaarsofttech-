@@ -106,7 +106,7 @@ function Ourservices() {
     <div>
       <Navbar />
       <div className="header-container">
-        <p className="text-data">OUR SERVICES / VEEAARSOFTTECH</p>
+        <p className="text-data">OUR SERVICES</p>
       </div>
       <Ourservispage />
       {/* Start Works Area*/}

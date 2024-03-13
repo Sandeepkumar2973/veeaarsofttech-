@@ -11,7 +11,7 @@ function Website() {
     <div>
       <Navbar />
       <div className="header-container">
-        <p className="text-data">WEBSITE DEVELOPMENT COMPANY</p>
+        <p className="text-data">WEBSITE DEVELOPMENT</p>
       </div>
       <div className="services-details-area ptb-80">
         <div className="container">

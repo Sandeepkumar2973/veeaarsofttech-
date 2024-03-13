@@ -17,7 +17,7 @@ function Graphic() {
       <Navbar />
 
       <div className="header-container">
-        <p className="text-data">GRAPHICS DESIGNING COMPANY</p>
+        <p className="text-data">GRAPHICS DESIGNING</p>
       </div>
 
       <div className="container">

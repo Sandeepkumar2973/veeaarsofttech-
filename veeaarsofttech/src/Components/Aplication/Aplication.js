@@ -17,7 +17,7 @@ function Aplication() {
       <Navbar />
 
       <div className="header-container">
-        <p className="text-data">APP DEVELOPMENT COMPANY</p>
+        <p className="text-data">APP DEVELOPMENT</p>
       </div>
 
       <div className="services-details-area ptb-80">

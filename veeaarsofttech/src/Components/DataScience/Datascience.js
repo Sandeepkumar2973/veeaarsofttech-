@@ -15,7 +15,7 @@ function Datascience() {
     <div>
       <Navbar />
       <div className="header-container">
-        <p className="text-data">DATA SCIENCE COMPANY</p>
+        <p className="text-data">DATA SCIENCE </p>
       </div>
       <div className="container">
         <div className="row align-items-center">

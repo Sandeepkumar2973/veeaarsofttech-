@@ -12,7 +12,7 @@ function Uiux() {
     <div>
       <Navbar />
       <div className="header-container">
-        <p className="text-data">UI/UX DESIGNING COMPANY</p>
+        <p className="text-data">UI/UX DESIGNING</p>
       </div>
 
       <div className="container">

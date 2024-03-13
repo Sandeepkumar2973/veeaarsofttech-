@@ -11,7 +11,7 @@ function Digital() {
     <div>
       <Navbar />
       <div className="header-container">
-        <p className="text-data">DIGITAL MARKETING COMPANY</p>
+        <p className="text-data">DIGITAL MARKETING</p>
       </div>
       <div className="services-details-area ptb-80">
         <div className="container">
