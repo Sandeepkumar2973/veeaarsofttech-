@@ -1,17 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./FrontPage.css";
-import "../../assets/css/dark-color/dark-style.css";
 import "../../assets/css/animate.min.css";
 import "../../assets/css/bootstrap.min.css";
-import "../../assets/css/boxicons.min.css";
-import "../../assets/css/flaticon.css";
-import "../../assets/css/magnific-popup.min.css";
-import "../../assets/css/meanmenu.css";
-import "../../assets/css/odometer.min.css";
-import "../../assets/css/owl.carousel.min.css";
+
 import "../../assets/css/responsive.css";
-import "../../assets/css/slick.min.css";
-import "../../assets/css/style.css";
 import { Link } from "react-router-dom";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
