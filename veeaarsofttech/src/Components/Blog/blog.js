@@ -4,6 +4,9 @@ import Footer from "../Footer/Footer";
 import cardData from "./contents";
 import { Link } from "react-router-dom";
 import "./blog.css";
+import { FaLongArrowAltRight } from "react-icons/fa";
+
+
 const Blog = () => {
   const pageSize = 9;
   const [currentPage, setCurrentPage] = useState(1);
@@ -13,7 +16,6 @@ const Blog = () => {
   const totalPages = Math.ceil(cardData.length / pageSize);
 
   const handlePageChange = (page) => {
-    // showLoader(); // Show loader when changing the page
     setCurrentPage(page);
   };
 
@@ -41,12 +43,11 @@ const Blog = () => {
                           </div>
                         </div>
                         <div className="blog-post-content">
-                          <h3 className="read-more-btn">{card.title}</h3>
-
-                          <p>{card.text}</p>
+                          <h3 className="read-more-btn">{card.title.slice(0, 50)}</h3>
+                          <p>{card.text.slice(0, 300)}</p>
 
                           <p className="read-more-btn">
-                            Read More <i data-feather="arrow-right" />
+                            Read More <FaLongArrowAltRight />
                           </p>
                         </div>
                       </div>

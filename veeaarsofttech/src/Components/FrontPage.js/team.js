@@ -283,7 +283,7 @@ const teamData = [
   },
   {
     name: "Megha",
-    role: "Wordpress Developer",
+    role: "Wordpress",
     image: "assets/img/team-image/5.jpg",
     twitter: [
       <Link to="">
@@ -333,7 +333,7 @@ const teamData = [
   },
   {
     name: "Rakesh",
-    role: "WordPress Developer",
+    role: "WordPress",
     image: "assets/img/team-image/5.jpg",
     twitter: [
       <Link to="">

@@ -1,17 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./FrontPage.css";
-import "../../assets/css/dark-color/dark-style.css";
 import "../../assets/css/animate.min.css";
 import "../../assets/css/bootstrap.min.css";
-import "../../assets/css/boxicons.min.css";
-import "../../assets/css/flaticon.css";
-import "../../assets/css/magnific-popup.min.css";
-import "../../assets/css/meanmenu.css";
-import "../../assets/css/odometer.min.css";
-import "../../assets/css/owl.carousel.min.css";
 import "../../assets/css/responsive.css";
-import "../../assets/css/slick.min.css";
-import "../../assets/css/style.css";
 import { Link } from "react-router-dom";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -62,14 +53,10 @@ const FrontPage = () => {
     },
   ];
 
-  ////////////////
-
   //this is for feedback open new popup
   const handleImageClick = (index) => {
     setSelectedReview(feedbackData[index]);
   };
-
-  ////////////////
 
   //this is for teams
   const settings = {
@@ -117,8 +104,6 @@ const FrontPage = () => {
     ],
   };
 
-  ////////////////
-
   //this is for total ptrojects count
   useEffect(() => {
     // Simulate value changes over time
@@ -128,8 +113,6 @@ const FrontPage = () => {
 
     return () => clearInterval(intervalId);
   }, []);
-
-  ////////////////
 
   //this is for react Works
   const worksData = [
@@ -177,8 +160,6 @@ const FrontPage = () => {
     },
   ];
 
-  ////////////////
-
   //this is for react Works
   const options = {
     items: 1,
@@ -202,8 +183,6 @@ const FrontPage = () => {
     },
   };
 
-  ////////////////
-
   //this is for main-banner animation image
   const getWowAnimation = (index) => {
     const animations = [
@@ -217,8 +196,6 @@ const FrontPage = () => {
     ];
     return animations[index % animations.length];
   };
-
-  ////////////////
 
   //this is for main-banner animation image
   const imageList = [
@@ -282,104 +259,6 @@ const FrontPage = () => {
       alt: "shape",
     },
   ];
-
-  ////////////////
-
-  //this is for boxes-area
-  const getSvgPath = (icon) => {
-    switch (icon) {
-      case "server":
-        return (
-          <>
-            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-            <line x1="6" y1="6" x2="6" y2="6"></line>
-            <line x1="6" y1="18" x2="6" y2="18"></line>
-          </>
-        );
-      case "code":
-        return (
-          <>
-            <polyline points="16 18 22 12 16 6"></polyline>
-            <polyline points="8 6 2 12 8 18"></polyline>
-          </>
-        );
-      case "users":
-        return (
-          <>
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-            <circle cx="9" cy="7" r="4"></circle>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-          </>
-        );
-      case "git-branch":
-        return (
-          <>
-            <line x1="6" y1="3" x2="6" y2="15"></line>
-            <circle cx="18" cy="6" r="3"></circle>
-            <circle cx="6" cy="18" r="3"></circle>
-            <path d="M18 9a9 9 0 0 1-9 9"></path>
-          </>
-        );
-      default:
-        return null;
-    }
-  };
-
-  //this is for boxes-area
-  const featureData = [
-    {
-      icon: "server",
-      bgColor: "",
-      navi: "/website-development-company",
-      title: "Website Development",
-      description:
-        "Website development is the process of creating and designing a website, encompassing tasks like coding, layout design, content creation, and functionality implementation.",
-    },
-    {
-      icon: "code",
-      navi: "/application-development-company",
-      bgColor: "bg-f78acb",
-      title: "Aplication Development",
-      description:
-        "App development involves the creation of software applications for mobile devices like smartphones and tablets. This process includes coding, design, and implementation of features",
-    },
-    {
-      navi: "/digital-marketing-company",
-      icon: "users",
-      bgColor: "bg-c679e3",
-      title: "Digital Marketing",
-      description:
-        "Digital marketing is a broad term that encompasses all marketing efforts that use electronic devices or the internet. Businesses leverage digital channels such as search engines, social media,",
-    },
-    {
-      navi: "/ui-ux-designing-company",
-      icon: "git-branch",
-      bgColor: "bg-eb6b3d",
-      title: "UI/UX Designing",
-      description:
-        "UI/UX design focuses on creating user interfaces and experiences that are intuitive, engaging, and visually appealing for digital products like websites, mobile apps, and software applications.",
-    },
-    {
-      navi: "/graphic-designing-company",
-      icon: "git-branch",
-      bgColor: "bg-eb6b3d",
-      title: "Graphic Designing",
-      description:
-        "UI/UX design focuses on creating user interfaces and experiences that are intuitive, engaging, and visually appealing for digital products like websites, mobile apps, and software applications.",
-    },
-    {
-      navi: "/data-science-consulting",
-      icon: "git-branch",
-      bgColor: "bg-eb6b3d",
-      title: "Data Science Consulting",
-      description:
-        "Data science consulting involves providing expert advice, guidance, and solutions related to data science and analytics to help businesses and organizations make informed decisions and extract value from their data.",
-    },
-  ];
-
-  //////////////
 
   //this is for  Hosting Services
   const getIcon = (icon) => {
@@ -533,6 +412,7 @@ const FrontPage = () => {
         return null;
     }
   };
+
   //this is for  Hosting Services
   const servicesData = [
     {
@@ -561,47 +441,6 @@ const FrontPage = () => {
     },
   ];
 
-  //this is for  Hosting Services
-  const getAnimationEffect = (index) => {
-    const animationEffects = [
-      "Down",
-      "Up",
-      "Left",
-      "In",
-      "Bounce",
-      "Down",
-      "In",
-      "Up",
-      "Rotate",
-      "Up",
-      "In",
-      "In",
-      "Left",
-      "rotateme",
-      "Up",
-    ];
-    return animationEffects[index] || "Up";
-  };
-  //this is for  Hosting Services
-  const imagesData = [
-    "book-self",
-    "box",
-    "chair",
-    "cloud",
-    "cup",
-    "flower-top",
-    "head-phone",
-    "monitor",
-    "mug",
-    "table",
-    "tissue",
-    "water-bottle",
-    "wifi",
-    "cercle-shape",
-    "main-pic",
-  ];
-
-  //////////////
   //this is for  Design & Development Services
   const servicescollection = [
     {
@@ -647,8 +486,6 @@ const FrontPage = () => {
       svgPath: "M22 11.08V12a10 10 0 1 1-5.93-9.14 M22 4 12 14.01 9 11.01",
     },
   ];
-
-  //////////////
 
   //this is for  section pricing plan
   const pricingPlans = [
@@ -699,7 +536,6 @@ const FrontPage = () => {
     },
   ];
 
-  //////////////
   const settingdddsess = {
     dots: true,
     infinite: true,
