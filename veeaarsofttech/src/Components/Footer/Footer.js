@@ -14,7 +14,10 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="">
-              <Link to="/">
+              <Link
+                to="/"
+                onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
+              >
                 <img
                   src="https://veeaarsofttech.com/wp-content/uploads/2024/02/logo-png-veeaar-1.png"
                   alt="logo"

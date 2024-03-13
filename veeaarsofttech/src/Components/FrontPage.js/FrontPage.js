@@ -30,8 +30,6 @@ const FrontPage = () => {
   const [value, setValue] = useState(0);
   const [selectedReview, setSelectedReview] = useState(null);
 
-  
-
   //this is for feedback
   const feedbackData = [
     {
@@ -652,7 +650,6 @@ const FrontPage = () => {
 
   //////////////
 
-
   //this is for  section pricing plan
   const pricingPlans = [
     {
@@ -733,9 +730,12 @@ const FrontPage = () => {
           <div className="d-table-cell">
             <div className="container">
               <div className="row h-100 justify-content-center align-items-center">
-              <div className="col-lg-6 hide-image">
-              <img  src="./../../assets/img/01-UIUX.png" style={{margin:"0 auto", marginTop:"50px"}}/>
-            </div>
+                <div className="col-lg-6 hide-image">
+                  <img
+                    src="./../../assets/img/01-UIUX.png"
+                    style={{ margin: "0 auto", marginTop: "50px" }}
+                  />
+                </div>
                 <div className="col-lg-5">
                   <div className="hero-content">
                     <h1 className="text-left">
@@ -770,7 +770,6 @@ const FrontPage = () => {
                     ))}
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>
@@ -791,7 +790,7 @@ const FrontPage = () => {
       {/*end this is section our main banner*/}
 
       {/*start this is section our Boxes Area*/}
-      <Ourservispage/>
+      <Ourservispage />
       {/*end this is section our Boxes Area*/}
 
       {/*Start Cloud Hosting Services*/}
@@ -824,7 +823,7 @@ const FrontPage = () => {
             </div>
 
             <div className="col-lg-6 hide-image">
-              <img  src="./../../assets/img/01-UIUX.png"/>
+              <img src="./../../assets/img/01-UIUX.png" />
             </div>
 
             <div className="col-lg-6 col-md-12 services-right-image">
@@ -1022,8 +1021,8 @@ const FrontPage = () => {
                   </div>
                 ))}
                 <div className="col-lg-6 col-md-12 hide-image">
-              <img  src="./../../assets/img/01-UIUX.png"/>
-            </div>
+                  <img src="./../../assets/img/01-UIUX.png" />
+                </div>
               </div>
             </div>
           </div>
