@@ -67,15 +67,15 @@ const FrontPage = () => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024, 
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 3, 
+          slidesToShow: 3,
         },
       },
       {
-        breakpoint: 768, 
+        breakpoint: 768,
         settings: {
-          slidesToShow: 3, 
+          slidesToShow: 3,
         },
       },
     ],
@@ -90,15 +90,15 @@ const FrontPage = () => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024, 
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 3, 
+          slidesToShow: 3,
         },
       },
       {
-        breakpoint: 768, 
+        breakpoint: 768,
         settings: {
-          slidesToShow: 1, 
+          slidesToShow: 1,
         },
       },
     ],
@@ -543,15 +543,15 @@ const FrontPage = () => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024, 
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 3, 
+          slidesToShow: 3,
         },
       },
       {
-        breakpoint: 768, 
+        breakpoint: 768,
         settings: {
-          slidesToShow: 2, 
+          slidesToShow: 2,
         },
       },
     ],
@@ -566,18 +566,33 @@ const FrontPage = () => {
             <div className="container">
               <div className="row h-100 justify-content-center align-items-center">
                 <div className="col-lg-6 hide-image">
-                    <div className="video-container">
-                        <video autoPlay loop muted className="video-bg" style={{ margin: "0 auto", marginTop: "50px", maxWidth: "100%" }}> 
-                          <source src="./../../assets/img/1ee73e2f6932bc2a41b42636fbeeaf77.mp4" type="video/mp4" />
-                        </video>
-                        <div className="content">
-                          <h1>TRUST OUR BEST IT SOLUTION FOR YOUR BUSINESS</h1>
-                        </div>
-                      </div>
+                  <div className="video-container">
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      className="video-bg"
+                      style={{
+                        margin: "0 auto",
+                        marginTop: "50px",
+                        maxWidth: "100%",
+                      }}
+                    >
+                      <source
+                        src="./../../assets/img/1ee73e2f6932bc2a41b42636fbeeaf77.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                    <div className="content">
+                      <h1>TRUST OUR BEST IT SOLUTION FOR YOUR BUSINESS</h1>
+                    </div>
+                  </div>
                 </div>
                 <div className="col-lg-5">
                   <div className="hero-content">
-                          <h1 className="text-left hide-text-heading">TRUST OUR BEST IT SOLUTION FOR YOUR BUSINESS</h1>
+                    <h1 className="text-left hide-text-heading">
+                      TRUST OUR BEST IT SOLUTION FOR YOUR BUSINESS
+                    </h1>
                     <p style={{ color: "black" }}>
                       Veeaar Softtech pvt ltd is an IT service provider that
                       holds expertise in website development services, digital
@@ -639,7 +654,15 @@ const FrontPage = () => {
                 <h2 style={{ textAlign: "left" }}>Cloud Hosting Services</h2>
                 <div className="bar" />
                 <p style={{ textAlign: "left" }}>
-                Our company offers top-tier cloud hosting services tailored to meet the dynamic needs of businesses in today's digital landscape. With our robust infrastructure and cutting-edge technology, we ensure seamless scalability, high performance, and unparalleled reliability for our clients' websites and applications. Our cloud hosting solutions empower businesses to efficiently manage their online presence, whether they're startups looking to establish their digital footprint or enterprises seeking to optimize their operations.
+                  Our company offers top-tier cloud hosting services tailored to
+                  meet the dynamic needs of businesses in today's digital
+                  landscape. With our robust infrastructure and cutting-edge
+                  technology, we ensure seamless scalability, high performance,
+                  and unparalleled reliability for our clients' websites and
+                  applications. Our cloud hosting solutions empower businesses
+                  to efficiently manage their online presence, whether they're
+                  startups looking to establish their digital footprint or
+                  enterprises seeking to optimize their operations.
                 </p>
               </div>
               <div className="row">
@@ -825,7 +848,18 @@ const FrontPage = () => {
                 <h2>WHAT KIND OF SERVICES WE ARE OFFERING</h2>
                 <div className="bar" />
                 <p>
-                Our IT company offers a diverse range of services tailored to meet the ever-evolving needs of businesses in today's digital age. From custom software development to strategic IT consulting, cloud solutions, cybersecurity, managed IT services, digital marketing, data analytics, and infrastructure solutions, we are your comprehensive technology partner. Our team of experts is committed to delivering innovative, scalable, and cost-effective solutions that drive business growth and success. Whether you're a small startup or a large enterprise, we have the expertise and resources to help you harness the power of technology and stay ahead of the competition. {" "}
+                  Our IT company offers a diverse range of services tailored to
+                  meet the ever-evolving needs of businesses in today's digital
+                  age. From custom software development to strategic IT
+                  consulting, cloud solutions, cybersecurity, managed IT
+                  services, digital marketing, data analytics, and
+                  infrastructure solutions, we are your comprehensive technology
+                  partner. Our team of experts is committed to delivering
+                  innovative, scalable, and cost-effective solutions that drive
+                  business growth and success. Whether you're a small startup or
+                  a large enterprise, we have the expertise and resources to
+                  help you harness the power of technology and stay ahead of the
+                  competition.{" "}
                 </p>
               </div>
               <div className="row">
@@ -866,7 +900,9 @@ const FrontPage = () => {
             <h2>Our Features</h2>
             <div className="bar"></div>
             <p className="text-center">
-            An IT company offers a myriad of features and services designed to support businesses in their digital endeavors. Here are some key points and a paragraph highlighting these features:
+              An IT company offers a myriad of features and services designed to
+              support businesses in their digital endeavors. Here are some key
+              points and a paragraph highlighting these features:
             </p>
           </div>
 
@@ -892,16 +928,21 @@ const FrontPage = () => {
             <h2 className="text-center">Our Awesome Team</h2>
             <div className="bar"></div>
             <p className="text-center">
-            Our team at the IT company is a diverse and dynamic group of professionals dedicated to delivering excellence in every aspect of our work. Comprised of talented individuals with expertise ranging from software development and IT consulting to cybersecurity, cloud solutions, digital marketing, data analytics, and infrastructure management, we are united by a shared passion for innovation and customer satisfaction. 
+              Our team at the IT company is a diverse and dynamic group of
+              professionals dedicated to delivering excellence in every aspect
+              of our work. Comprised of talented individuals with expertise
+              ranging from software development and IT consulting to
+              cybersecurity, cloud solutions, digital marketing, data analytics,
+              and infrastructure management, we are united by a shared passion
+              for innovation and customer satisfaction.
             </p>
           </div>
           <Slider
             {...settingsss}
             className="team-slides owl-carousel owl-theme"
-            
           >
             {teamData.map((member, index) => (
-              <div key={index} className="single-team" >
+              <div key={index} className="single-team">
                 <div
                   className="card"
                   style={{
@@ -945,10 +986,13 @@ const FrontPage = () => {
             <h2>We always try to understand users expectation</h2>
             <div className="bar" />
             <p className="text-center">
-            At Veeaarsofttech, understanding our users' expectations is at the heart of our mission. Here's how we ensure we always meet and exceed their needs:
-
-            Active Listening: We prioritize listening to our users attentively, whether it's through direct communication channels, feedback forms, or user testing sessions. By actively listening to their concerns, suggestions, and requirements, we gain valuable insights into their expectations.
-
+              At Veeaarsofttech, understanding our users' expectations is at the
+              heart of our mission. Here's how we ensure we always meet and
+              exceed their needs: Active Listening: We prioritize listening to
+              our users attentively, whether it's through direct communication
+              channels, feedback forms, or user testing sessions. By actively
+              listening to their concerns, suggestions, and requirements, we
+              gain valuable insights into their expectations.
             </p>
           </div>
           <div className="row">
