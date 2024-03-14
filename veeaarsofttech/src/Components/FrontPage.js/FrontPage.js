@@ -566,11 +566,9 @@ const FrontPage = () => {
             <div className="container">
               <div className="row h-100 justify-content-center align-items-center">
                 <div className="col-lg-6 hide-image">
-
                     <div className="video-container">
                         <video autoPlay loop muted className="video-bg" style={{ margin: "0 auto", marginTop: "50px", maxWidth: "100%" }}> 
                           <source src="./../../assets/img/1ee73e2f6932bc2a41b42636fbeeaf77.mp4" type="video/mp4" />
-                          Your browser does not support the video tag.
                         </video>
                         <div className="content">
                           <h1>TRUST OUR BEST IT SOLUTION FOR YOUR BUSINESS</h1>
