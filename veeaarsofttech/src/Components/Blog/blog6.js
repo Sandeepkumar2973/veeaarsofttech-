@@ -19,7 +19,7 @@ function Blog6() {
           <div className="row align-items-center">
             <div className="col-lg-6 services-details">
               <div className="services-details-desc">
-                <div className="heading">
+                <div className="heading text-left">
                   <span className="arrow-icon">
                     <MdCollectionsBookmark />
                   </span>
@@ -40,7 +40,7 @@ function Blog6() {
             <div className="col-lg-6 services-details-image animated fadeInUp zoomIn">
               <img
                 src="./../../assets/img/blog6.jpg"
-                className="wow fadeInUp zoomOnHover"
+                className="wow fadeInUp "
                 alt="image"
                 style={{ padding: "15px" }}
               />

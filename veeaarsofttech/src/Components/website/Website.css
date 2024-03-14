@@ -92,14 +92,12 @@
 
   @media only screen and (max-width: 767px) {
     .heading {  
-      text-align: center;
+      text-align: left;
       }
       h2{
         text-align: center;
       }
-      p{
-        text-align: center;
-      }
+    
 
       .fadeInUp {
         animation-name: fadeInUp;

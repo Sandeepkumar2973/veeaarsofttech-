@@ -7,9 +7,7 @@ import { Link } from "react-router-dom";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import Odometer from "./Odometer";
 import "owl.carousel";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import teamData from "./team.js";
@@ -56,52 +54,6 @@ const FrontPage = () => {
   //this is for feedback open new popup
   const handleImageClick = (index) => {
     setSelectedReview(feedbackData[index]);
-  };
-
-  //this is for teams
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-    ],
-  };
-
-  //this is for teams
-  const settingsss = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
   };
 
   //this is for total ptrojects count
@@ -158,9 +110,71 @@ const FrontPage = () => {
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
     },
   ];
-
+  const teamarea = {
+    items: 1,
+    loop: true,
+    margin: 30,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 2000, // Set the autoplay timeout to 2000 milliseconds (2 seconds)
+    autoplayHoverPause: true, // Pause on hover if needed
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  };
   //this is for react Works
-  const options = {
+  const feedback = {
+    items: 1,
+    loop: false,
+    margin: 30,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 3,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  };
+  const blog = {
+    items: 1,
+    loop: false,
+    margin: 30,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  };
+  const recentwork = {
     items: 1,
     loop: false,
     margin: 30,
@@ -534,28 +548,6 @@ const FrontPage = () => {
       ],
     },
   ];
-
-  const settingdddsess = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-    ],
-  };
 
   return (
     <>
@@ -937,9 +929,9 @@ const FrontPage = () => {
               for innovation and customer satisfaction.
             </p>
           </div>
-          <Slider
-            {...settingsss}
-            className="team-slides owl-carousel owl-theme"
+          <OwlCarousel
+            className="works-slides owl-carousel owl-theme"
+            {...teamarea}
           >
             {teamData.map((member, index) => (
               <div key={index} className="single-team">
@@ -974,10 +966,10 @@ const FrontPage = () => {
                 </div>
               </div>
             ))}
-          </Slider>
+          </OwlCarousel>
         </div>
       </div>
-      {/*Start Team Area*/}
+      {/* Start Team Area */}
 
       {/*Start Fun Facts Area  */}
       <div className="funfacts-area ptb-80">
@@ -1125,7 +1117,7 @@ const FrontPage = () => {
         <div className="container-fluid p-0">
           <OwlCarousel
             className="works-slides owl-carousel owl-theme"
-            {...options}
+            {...recentwork}
           >
             {worksData.map((work) => (
               <div key={work.id} className="single-works">
@@ -1285,7 +1277,6 @@ const FrontPage = () => {
                     }}
                   />
                   <h3 className="text-center">{selectedReview.name}</h3>
-                  {/* <span>{selectedReview.role}</span> */}
                   <p>{selectedReview.review}</p>
                   <button
                     className="btn btn-primary"
@@ -1300,7 +1291,10 @@ const FrontPage = () => {
         </div>
 
         <div className="feedback-slides">
-          <Slider {...settings}>
+          <OwlCarousel
+            className="works-slides owl-carousel owl-theme"
+            {...feedback}
+          >
             {feedbackData.map((feedback, index) => (
               <div key={index} className="single-feedback">
                 <div
@@ -1317,10 +1311,9 @@ const FrontPage = () => {
                     }}
                   />
                 </div>
-                {/* Display a preview of the review if needed */}
               </div>
             ))}
-          </Slider>
+          </OwlCarousel>
         </div>
       </div>
       {/*  End Feedback Area*/}
@@ -1355,7 +1348,10 @@ const FrontPage = () => {
               online presence and drive success in the digital landscape."
             </p>
           </div>
-          <Slider {...settingdddsess} className="row">
+          <OwlCarousel
+            className="works-slides owl-carousel owl-theme"
+            {...blog}
+          >
             {cardData.map((post) => (
               <div key={post.id} className="col-lg-4 col-md-6">
                 <div className="single-blog-post" style={{ padding: "0 5px" }}>
@@ -1398,7 +1394,7 @@ const FrontPage = () => {
                 </div>
               </div>
             ))}
-          </Slider>
+          </OwlCarousel>
         </div>
         <div>
           {shapesData.map((shape, index) => (
