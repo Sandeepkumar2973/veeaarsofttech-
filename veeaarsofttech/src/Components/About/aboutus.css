@@ -11291,7 +11291,8 @@ Terms & Conditions Area CSS
     z-index: auto;
 }
 .hide-image{
-    display: flex;
+    display: contents;
+   
 }
 
 .single-box {

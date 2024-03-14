@@ -17,9 +17,9 @@ const featuresData = [
         <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
       </svg>
     ),
-    title: "Incredible Infrastructure",
+    title: "Custom Software Development",
     content:
-      "Incredible infrastructure defines a leading IT company, intertwining cutting-edge technology with robust systems. State-of-the-art data centers, high-speed networks, and scalable cloud solutions form the backbone, ensuring seamless operations. The company commitment to security fortifies against cyber threats, while innovative hardware and software empower clients globally. With a focus on reliability, adaptability, and efficiency, this IT powerhouse continually evolves its infrastructure, staying ahead in the dynamic tech landscape. It epitomizes a digital ecosystem where excellence meets ingenuity, propelling businesses into a future marked by unparalleled connectivity and technological prowess.",
+      "Tailored solutions to address specific business needs and challenges.",
   },
   {
     icon: (
@@ -39,9 +39,9 @@ const featuresData = [
         <polyline points="22,6 12,13 2,6"></polyline>
       </svg>
     ),
-    title: "Email Notifications",
+    title: "IT Consulting and Strategy",
     content:
-      "Email notifications in an IT company serve as crucial communication tools, alerting users about system updates, security patches, and service interruptions. These notifications streamline workflow, keeping employees informed about project milestones, deadlines, and meeting schedules. Additionally, they enhance cybersecurity by promptly addressing potential threats. Through personalized email alerts, IT professionals can stay abreast of software releases, bug fixes, and network maintenance, ensuring seamless operations. Efficient email notification systems foster collaboration, providing real-time information on support tickets, server statuses, and software deployment. Ultimately, they contribute to a well-orchestrated and responsive IT environment.",
+      "Expert guidance to align technology initiatives with business objectives.",
   },
   {
     icon: (
@@ -63,9 +63,9 @@ const featuresData = [
         <rect x="3" y="14" width="7" height="7"></rect>
       </svg>
     ),
-    title: "Simple Dashboard",
+    title: "Cloud Solutions",
     content:
-      "A simple dashboard for an IT company serves as a centralized interface, providing real-time insights into key metrics and operations. It streamlines data visualization, displaying project statuses, resource utilization, and financial metrics in an easily understandable format. User-friendly and customizable, the dashboard enhances decision-making by offering a comprehensive overview of IT activities, fostering efficiency and transparency. With features like task tracking, team collaboration tools, and system health monitoring, it empowers management to make informed decisions swiftly. The simplicity of the dashboard ensures accessibility for all stakeholders, promoting seamless communication and alignment within the IT company",
+      "Scalable, flexible, and cost-effective cloud computing services for enhanced agility.",
   },
   {
     icon: (
@@ -86,9 +86,9 @@ const featuresData = [
         <line x1="12" y1="8" x2="12" y2="8"></line>
       </svg>
     ),
-    title: "Information Retrieval",
+    title: "Cybersecurity Solutions",
     content:
-      "Information Retrieval in IT companies involves the systematic process of obtaining relevant data from vast repositories. Utilizing advanced search algorithms and databases, IT professionals extract valuable information to enhance decision-making and optimize business processes. Effective information retrieval ensures quick access to crucial data, promoting efficiency and innovation within the company. Implementing robust retrieval systems is imperative for IT firms to stay competitive in the dynamic technology landscape, fostering a culture of informed decision-making and strategic planning.",
+      "Comprehensive protection against cyber threats to safeguard data and assets.",
   },
   {
     icon: (
@@ -108,9 +108,9 @@ const featuresData = [
         <path d="M13 13l6 6"></path>
       </svg>
     ),
-    title: "Drag and Drop Functionality",
+    title: "Managed IT Services",
     content:
-      "In the dynamic landscape of IT companies, drag-and-drop functionality has emerged as a pivotal tool for seamless user interaction. This intuitive method streamlines processes, enhancing efficiency and reducing learning curves. Integrating drag-and-drop features into software interfaces empowers users to effortlessly manipulate data, fostering a more engaging and user-friendly experience. This functionality is particularly beneficial in design applications, project management tools, and collaborative platforms, where simplicity and accessibility are paramount. IT companies continually leverage this innovation to elevate user satisfaction, improve workflow, and stay at the forefront of technological advancements.",
+      "Proactive management and support to ensure optimal performance and reliability.",
   },
   {
     icon: (
@@ -130,9 +130,53 @@ const featuresData = [
         <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
       </svg>
     ),
-    title: "Deadline Reminders",
+    title: "Digital Marketing Services",
     content:
-      "Deadline reminders are crucial for IT companies to ensure timely project completion and deliverables. These reminders, often integrated into project management systems, help teams stay organized and focused. Meeting deadlines is paramount in the fast-paced tech industry, fostering client satisfaction and maintaining a competitive edge. Automated alerts, calendars, and collaboration tools play key roles in keeping teams informed and on track. Timely completion not only enhances the company reputation but also promotes efficient workflow, allowing for smoother transitions between projects and fostering a culture of accountability and productivity.",
+      "Strategies to enhance online visibility, customer engagement, and brand awareness.",
+  },
+  {
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        className="feather feather-bell"
+      >
+        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+      </svg>
+    ),
+    title: "Data Analytics and Business Intelligence",
+    content:
+      "Insights-driven decision-making through advanced data analysis.",
+  },
+  {
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        className="feather feather-bell"
+      >
+        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+      </svg>
+    ),
+    title: "Infrastructure Solutions",
+    content:
+      "Design and implementation of robust IT infrastructure to support business operations.",
   },
 ];
 export default featuresData;
