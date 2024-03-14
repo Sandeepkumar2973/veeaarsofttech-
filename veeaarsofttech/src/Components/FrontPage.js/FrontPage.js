@@ -575,9 +575,9 @@ const FrontPage = () => {
                         type="video/mp4"
                       />
                     </video>
-                    <div className="content">
+                    {/* <div className="content">
                       <h1>TRUST OUR BEST IT SOLUTION FOR YOUR BUSINESS</h1>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="col-lg-5">
