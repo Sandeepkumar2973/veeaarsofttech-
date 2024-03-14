@@ -567,7 +567,7 @@ const FrontPage = () => {
               <div className="row h-100 justify-content-center align-items-center">
                 <div className="col-lg-6 hide-image">
                   <img
-                    src="./../../assets/img/01-UIUX.png"
+                    src="./../../assets/img/gif website.gif"
                     style={{ margin: "0 auto", marginTop: "50px" }}
                   />
                 </div>
@@ -658,7 +658,7 @@ const FrontPage = () => {
             </div>
 
             <div className="col-lg-6 hide-image">
-              <img src="./../../assets/img/01-UIUX.png" />
+              <img src="./../../assets/img/cloud-server.png" />
             </div>
 
             <div className="col-lg-6 col-md-12 services-right-image">
@@ -856,7 +856,7 @@ const FrontPage = () => {
                   </div>
                 ))}
                 <div className="col-lg-6 col-md-12 hide-image">
-                  <img src="./../../assets/img/01-UIUX.png" />
+                  <img src="./../../assets/img/WHAT-KIND-OF-SERVICES-WE-ARE-OFFERING.png" />
                 </div>
               </div>
             </div>

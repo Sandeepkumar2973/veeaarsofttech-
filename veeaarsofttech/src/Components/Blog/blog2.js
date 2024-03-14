@@ -19,7 +19,7 @@ function Blog2() {
       <div className="services-details-area ptb-80">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-6 services-details">
+            <div className="col-lg-12 services-details">
               <div className="services-details-desc">
                 <div className="heading">
                   <span className="arrow-icon">
@@ -163,7 +163,7 @@ function Blog2() {
               </div>
               <br />
             </div>
-            <div className="col-lg-6 services-details-image animated fadeInUp zoomIn">
+            <div className="col-lg-12 services-details-image animated fadeInUp zoomIn">
               <img
                 src="./../../assets/img/deigitalmarketing.png"
                 className="wow fadeInUp zoomOnHover"

@@ -28,6 +28,7 @@ import Blog8 from "./Components/Blog/blog8.js";
 import Blog9 from "./Components/Blog/blog9.js";
 import Blog10 from "./Components/Blog/blog10.js";
 import Blog11 from "./Components/Blog/blog11.js";
+import Packages from "./Components/Packages/Packages.js";
 
 function App() {
   const { loading, showLoader, hideLoader } = useLoader();
@@ -90,6 +91,7 @@ function App() {
                 <Route path="/our-services" element={<Ourservices />} exact />
                 <Route path="/technologies" element={<Technology />} exact />
                 <Route path="/blog" element={<Blog />} exact />
+                <Route path="/packages" element={<Packages />} exact />
                 <Route
                   path="/what-to-look-for-when-hiring-a-website-development-company-in-india"
                   element={<Blog1 />}

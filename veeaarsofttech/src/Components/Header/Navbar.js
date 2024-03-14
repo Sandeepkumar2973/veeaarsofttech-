@@ -196,7 +196,7 @@ const Navbar = () => {
                   </span>
                   <li Class="others-option">
                     <Link
-                      to="/"
+                      to="/packages"
                       Class="btn btn-primary"
                       onClick={() =>
                         window.scrollTo({ top: 0, behavior: "auto" })
