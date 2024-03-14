@@ -914,9 +914,10 @@ const FrontPage = () => {
           <Slider
             {...settingsss}
             className="team-slides owl-carousel owl-theme"
+            
           >
             {teamData.map((member, index) => (
-              <div key={index} className="single-team">
+              <div key={index} className="single-team" >
                 <div
                   className="card"
                   style={{
