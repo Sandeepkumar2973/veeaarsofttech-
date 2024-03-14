@@ -43,10 +43,10 @@ const Blog = () => {
                           </div>
                         </div>
                         <div className="blog-post-content">
-                          <h3 className="read-more-btn">{card.title.slice(0, 50)}</h3>
+                          <h3 className="read-more-btn text-left">{card.title.slice(0, 50)}</h3>
                           <p>{card.text.slice(0, 300)}</p>
 
-                          <p className="read-more-btn">
+                          <p className="read-more-btn text-left">
                             Read More <FaLongArrowAltRight />
                           </p>
                         </div>

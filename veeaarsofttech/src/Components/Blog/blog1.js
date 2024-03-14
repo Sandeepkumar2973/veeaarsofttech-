@@ -3,6 +3,7 @@ import Navbar from "../Header/Navbar";
 import Footer from "../Footer/Footer";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { MdCollectionsBookmark } from "react-icons/md";
+import "./blog.css"
 
 function Blog1() {
 
@@ -22,7 +23,7 @@ function Blog1() {
           <div className="row align-items-center">
             <div className="col-lg-6 services-details">
               <div className="services-details-desc">
-                <div className="heading">
+                <div className="heading text-left">
                   <span className="arrow-icon">
                     <MdCollectionsBookmark />
                   </span>
@@ -55,8 +56,8 @@ function Blog1() {
             </div>
             <div className="col-lg-6 services-details-image animated fadeInUp zoomIn">
               <img
-                src="./../../assets/img/deigitalmarketing.png"
-                className="wow fadeInUp zoomOnHover"
+                src="./../../assets/img/blog-image/1.jpg"
+                className="wow fadeInUp "
                 alt="image"
                 style={{ padding: "15px" }}
               />

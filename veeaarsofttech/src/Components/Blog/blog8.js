@@ -32,8 +32,8 @@ function Blog8() {
             </div>
             <div className="col-lg-6 services-details-image animated fadeInUp zoomIn">
               <img
-                src="./../../assets/img/deigitalmarketing.png"
-                className="wow fadeInUp zoomOnHover"
+                src="./../../assets/img/blog10.jpg"
+                className="wow fadeInUp "
                 alt="image"
                 style={{ padding: "15px" }}
               />
