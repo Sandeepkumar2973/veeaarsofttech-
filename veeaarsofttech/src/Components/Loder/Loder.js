@@ -2,21 +2,14 @@ import React from "react";
 import { useLoader } from "./LoderContecxt.js";
 import { Vortex } from "react-loader-spinner";
 import "./Loader.css";
+import HashLoader from 'react-spinners/HashLoader';
 
 const Loader = () => {
   const { loading } = useLoader();
 
   return loading ? (
     <div className="container loder">
-      <Vortex
-        visible={true}
-        height="100"
-        width="100"
-        ariaLabel="vortex-loading"
-        wrapperStyle={{}}
-        wrapperClass="vortex-wrapper"
-        colors={["red", "green", "blue", "yellow", "orange", "purple"]}
-      />
+      <HashLoader color="#36d7b7"  className="loder"/>
     </div>
   ) : null;
 };

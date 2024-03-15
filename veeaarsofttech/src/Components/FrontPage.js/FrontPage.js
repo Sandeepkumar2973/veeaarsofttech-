@@ -154,13 +154,13 @@ const FrontPage = () => {
     },
   };
   const blog = {
-    items: 1,
+    items: 3,
     loop: false,
     margin: 30,
     nav: false,
     dots: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
+    autoplay: false,
+    autoplayTimeout: 300000,
     autoplayHoverPause: true,
     responsive: {
       0: {
@@ -170,7 +170,7 @@ const FrontPage = () => {
         items: 2,
       },
       1000: {
-        items: 3,
+        items: 4,
       },
     },
   };
@@ -1352,7 +1352,7 @@ const FrontPage = () => {
             className="works-slides owl-carousel owl-theme"
             {...blog}
           >
-            {cardData.map((post) => (
+            {cardData.slice(0, 4).map((post) => (
               <div key={post.id} className="col-lg-4 col-md-6">
                 <div className="single-blog-post" style={{ padding: "0 5px" }}>
                   <div className="blog-image">
@@ -1415,3 +1415,5 @@ const FrontPage = () => {
 };
 
 export default FrontPage;
+
+
