@@ -12,8 +12,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import teamData from "./team.js";
 import featuresData from "./Featcher.js";
-import cardData from "./../Blog/contents.js";
 import Ourservispage from "../Ourservices/ourservispage.js";
+import Blogss from "./Blogss.js";
 
 const FrontPage = () => {
   const [value, setValue] = useState(0);
@@ -153,27 +153,7 @@ const FrontPage = () => {
       },
     },
   };
-  const blog = {
-    items: 3,
-    loop: false,
-    margin: 30,
-    nav: false,
-    dots: true,
-    autoplay: false,
-    autoplayTimeout: 300000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 2,
-      },
-      1000: {
-        items: 4,
-      },
-    },
-  };
+
   const recentwork = {
     items: 1,
     loop: false,
@@ -1337,78 +1317,7 @@ const FrontPage = () => {
       {/*  End Partner Area */}
 
       {/*  Start Blog Area */}
-      <div className="blog-area ptb-80">
-        <div className="container">
-          <div className="section-title">
-            <h2>Our Blog</h2>
-            <div className="bar" />
-            <p className="text-center">
-              "Explore the dynamic world of web and digital marketing on our
-              blog. Unlock insights, trends, and strategies that empower your
-              online presence and drive success in the digital landscape."
-            </p>
-          </div>
-          <OwlCarousel
-            className="works-slides owl-carousel owl-theme"
-            {...blog}
-          >
-            {cardData.slice(0, 4).map((post) => (
-              <div key={post.id} className="col-lg-4 col-md-6">
-                <div className="single-blog-post" style={{ padding: "0 5px" }}>
-                  <div className="blog-image">
-                    <Link to="/blog">
-                      <img
-                        src={post.imgSrc}
-                        alt="image"
-                        style={{ width: "100%", height: "auto" }}
-                      />
-                    </Link>
-                    <div className="date">
-                      <i data-feather="calendar" /> {post.date}
-                    </div>
-                  </div>
-                  <div className="blog-post-content">
-                    <h3>
-                      <Link to="/">{post.title.slice(0, 30)}</Link>
-                    </h3>
-                    <p>{post.text.slice(0, 100)}...</p>
-                    <Link to="/blog" target="_blank" className="read-more-btn">
-                      Read More
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        className="feather feather-arrow-right"
-                      >
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="12 5 19 12 12 19"></polyline>
-                      </svg>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </OwlCarousel>
-        </div>
-        <div>
-          {shapesData.map((shape, index) => (
-            <div key={index} className={shape.className}>
-              <img
-                className="shape_img"
-                src={shape.imgSrc}
-                alt={shape.alt}
-                style={{ width: "20px", height: "20px" }}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
+      <Blogss/>
       {/*  End Blog Area */}
     </>
   );
