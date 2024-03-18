@@ -15,13 +15,59 @@ import teamData from "./team.js";
 import featuresData from "./Featcher.js";
 import Ourservispage from "../Ourservices/ourservispage.js";
 import Blogss from "./Blogss.js";
+import Odometer from 'react-odometerjs';
 
 
 
 const FrontPage = () => {
   const [value, setValue] = useState(0);
   const [selectedReview, setSelectedReview] = useState(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
+  const [projectsCount, setProjectsCount] = useState(500); 
+  const [feedbackCount, setFeedbackCount] = useState(300); 
+  const [workerCount, setWorkerCount] = useState(70); 
+  const [contributors, setContributors] = useState(500); 
+
  
+
+  useEffect(() => {
+    // Simulated fetch of projects count from an API
+    const fetchProjectsCount = async () => {
+      // Here you can make an actual API call to fetch the projects count
+      // For demonstration, let's assume we fetch it from an API endpoint
+      try {
+        const response = await fetch('https://api.example.com/projects');
+        const data = await response.json();
+        setProjectsCount(data.projectsCount); // Update the projects count state
+      } catch (error) {
+        console.error('Error fetching projects count:', error);
+      }
+    };
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      { rootMargin: '0px', threshold: 0.5 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+      fetchProjectsCount(); // Fetch projects count when the component becomes visible
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
+
+
 
   //this is for feedback
   const feedbackData = [
@@ -551,7 +597,6 @@ const FrontPage = () => {
   return (
     <>
    
-      {/*start this is section our main banner*/}
       <div className="main-banner">
         <div className="d-table">
           <div className="d-table-cell">
@@ -566,7 +611,7 @@ const FrontPage = () => {
                       className="video-bg"
                       style={{
                         margin: "0 auto",
-                        marginTop: "50px",
+                        marginTop: "90px",
                         maxWidth: "100%",
                       }}
                     >
@@ -972,9 +1017,9 @@ const FrontPage = () => {
       {/* Start Team Area */}
 
       {/*Start Fun Facts Area  */}
-      <div className="funfacts-area ptb-80">
-        <div className="container">
-          <div className="section-title">
+<div ref={ref} className="funfacts-area ptb-80">
+<div className='container'>
+<div className="section-title">
             <h2>We always try to understand users expectation</h2>
             <div className="bar" />
             <p className="text-center">
@@ -987,73 +1032,41 @@ const FrontPage = () => {
               gain valuable insights into their expectations.
             </p>
           </div>
-          <div className="row">
-            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-              <div className="funfact">
-                <h2
-                  className="text-center"
-                  style={{
-                    color: "#44ce6f",
-                    fontSize: "35px",
-                    marginBottom: "7px",
-                  }}
-                >
-                  500+
-                  {/* <Odometer initialValue={550} duration="4000" formate="{d}" /> */}
-                </h2>
-                <p className="text-center">Project</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-              <div className="funfact">
-                <h2
-                  className="text-center"
-                  style={{
-                    color: "#44ce6f",
-                    fontSize: "35px",
-                    marginBottom: "7px",
-                  }}
-                >
-                  50+
-                  {/* <Odometer initialValue={20} duration="4000" formate="{d}" /> */}
-                </h2>
-                <p className="text-center">Feedback</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-              <div className="funfact">
-                <h2
-                  className="text-center"
-                  style={{
-                    color: "#44ce6f",
-                    fontSize: "35px",
-                    marginBottom: "7px",
-                  }}
-                >
-                  50+
-                  {/* <Odometer initialValue={70} duration="4000" formate="{d}" /> */}
-                </h2>
-                <p className="text-center">Workers</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-              <div className="funfact">
-                <h2
-                  className="text-center"
-                  style={{
-                    color: "#44ce6f",
-                    fontSize: "35px",
-                    marginBottom: "7px",
-                  }}
-                >
-                  {/* <Odometer initialValue={500} duration="4000" formate="{d}" /> */}
-                  200+
-                </h2>
-                <p className="text-center">Contributors</p>
-              </div>
-            </div>
           </div>
-          <div className="contact-cta-box">
+      <div className="row">
+        <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+          <div className="funfact">
+            <h2 className="text-center" style={{ color: "#44ce6f", fontSize: "35px", marginBottom: "7px" }}>
+              {isVisible && <Odometer value={projectsCount} format="(,ddd)" />}+
+            </h2>
+            <p className="text-center">Projects</p>
+          </div>
+        </div>
+        <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+          <div className="funfact">
+            <h2 className="text-center" style={{ color: "#44ce6f", fontSize: "35px", marginBottom: "7px" }}>
+              {isVisible && <Odometer value={feedbackCount} format="(,ddd)" />}+
+            </h2>
+            <p className="text-center">Feedback</p>
+          </div>
+        </div>
+        <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+          <div className="funfact">
+            <h2 className="text-center" style={{ color: "#44ce6f", fontSize: "35px", marginBottom: "7px" }}>
+              {isVisible && <Odometer value={workerCount} format="(,ddd)" />}+
+            </h2>
+            <p className="text-center">Workers</p>
+          </div>
+        </div>
+        <div className="col-lg-3 col-md-3 col-6 col-sm-3">
+          <div className="funfact">
+            <h2 className="text-center" style={{ color: "#44ce6f", fontSize: "35px", marginBottom: "7px" }}>
+              {isVisible && <Odometer value={contributors} format="(,ddd)" />}+
+            </h2>
+            <p className="text-center">Contributors</p>
+          </div>
+        </div>
+        <div className="contact-cta-box">
             <h3>Have any question about us?</h3>
             <p>Don't hesitate to contact us</p>
             <Link to="/contact-us" className="btn btn-primary">
@@ -1068,36 +1081,11 @@ const FrontPage = () => {
               style={{ width: "100%", height: "390px" }}
             />
           </div>
-        </div>
-        <div className="shape8 rotateme">
-          <img
-            src="assets/img/shape2.svg"
-            alt="shape"
-            style={{ width: "20px", height: "20px" }}
-          />
-        </div>
-        <div className="shape2 rotateme">
-          <img
-            src="assets/img/shape2.svg"
-            alt="shape"
-            style={{ width: "20px", height: "20px" }}
-          />
-        </div>
-        <div classclassName="shape7">
-          <img
-            src="assets/img/shape4.svg"
-            alt="shape"
-            style={{ width: "20px", height: "20px" }}
-          />
-        </div>
-        <div className="shape4">
-          <img
-            src="assets/img/shape4.svg"
-            alt="shape"
-            style={{ width: "20px", height: "20px" }}
-          />
-        </div>
+        
+        {/* Add more fun facts here */}
       </div>
+    </div>
+
       {/* End Fun Facts Area*/}
 
       {/* Start Works Area*/}

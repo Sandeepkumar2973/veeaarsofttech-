@@ -270,68 +270,6 @@ const About = ({ initialValue }) => {
             <h2>We always try to understand users expectation</h2>
             <div className="bar" />
           </div>
-          <div className="row">
-            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-              <div className="funfact">
-                <h2
-                  className="text-center"
-                  style={{
-                    color: "#44ce6f",
-                    fontSize: "35px",
-                    marginBottom: "7px",
-                  }}
-                >
-                  <Odometer initialValue={550} duration="4000" formate="{d}" />
-                </h2>
-                <p className="text-center">Project</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-              <div className="funfact">
-                <h2
-                  className="text-center"
-                  style={{
-                    color: "#44ce6f",
-                    fontSize: "35px",
-                    marginBottom: "7px",
-                  }}
-                >
-                  <Odometer initialValue={20} duration="4000" formate="{d}" />
-                </h2>
-                <p className="text-center">Feedback</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-              <div className="funfact">
-                <h2
-                  className="text-center"
-                  style={{
-                    color: "#44ce6f",
-                    fontSize: "35px",
-                    marginBottom: "7px",
-                  }}
-                >
-                  <Odometer initialValue={70} duration="4000" formate="{d}" />
-                </h2>
-                <p className="text-center">Workers</p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-3 col-6 col-sm-3">
-              <div className="funfact">
-                <h2
-                  className="text-center"
-                  style={{
-                    color: "#44ce6f",
-                    fontSize: "35px",
-                    marginBottom: "7px",
-                  }}
-                >
-                  <Odometer initialValue={500} duration="4000" formate="{d}" />
-                </h2>
-                <p className="text-center">Contributors</p>
-              </div>
-            </div>
-          </div>
           <div className="contact-cta-box">
             <h3>Have any question about us?</h3>
             <p>Don't hesitate to contact us</p>
