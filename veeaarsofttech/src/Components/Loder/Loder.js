@@ -8,7 +8,7 @@ const Loader = () => {
 
   return loading ? (
     <div className="container loder">
-      <HashLoader height="100px" width="100px" color="#36d7b7" />
+      <HashLoader height="300px" width="300px" color="#36d7b7" />
     </div>
   ) : null;
 };

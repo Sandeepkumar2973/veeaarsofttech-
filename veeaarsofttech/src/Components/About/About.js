@@ -100,7 +100,7 @@ const About = ({ initialValue }) => {
       <div>
         <Navbar />
       </div>
-      <div className="header-container">
+      <div className="about-container">
         <p className="text-data">ABOUT US</p>
       </div>
       {/* nextline */}

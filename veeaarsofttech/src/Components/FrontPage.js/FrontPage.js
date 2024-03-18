@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useCallback, useRef, useEffect } from 'react';
 import "./FrontPage.css";
 import "../../assets/css/animate.min.css";
 import "../../assets/css/bootstrap.min.css";
@@ -8,6 +8,7 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "owl.carousel";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import teamData from "./team.js";
@@ -15,9 +16,12 @@ import featuresData from "./Featcher.js";
 import Ourservispage from "../Ourservices/ourservispage.js";
 import Blogss from "./Blogss.js";
 
+
+
 const FrontPage = () => {
   const [value, setValue] = useState(0);
   const [selectedReview, setSelectedReview] = useState(null);
+ 
 
   //this is for feedback
   const feedbackData = [
@@ -110,15 +114,16 @@ const FrontPage = () => {
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
     },
   ];
-  const teamarea = {
+   //this is for react Works
+   const recentwork = {
     items: 1,
-    loop: true,
+    loop: false,
     margin: 30,
     nav: false,
     dots: true,
     autoplay: true,
-    autoplayTimeout: 2000, // Set the autoplay timeout to 2000 milliseconds (2 seconds)
-    autoplayHoverPause: true, // Pause on hover if needed
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
     responsive: {
       0: {
         items: 1,
@@ -131,7 +136,38 @@ const FrontPage = () => {
       },
     },
   };
-  //this is for react Works
+
+ //this is for  teams
+ const team = {
+    dots: true,
+     nav: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      }
+    ]
+  };
+
+  //this is for feedbacks
   const feedback = {
     items: 1,
     loop: false,
@@ -154,27 +190,7 @@ const FrontPage = () => {
     },
   };
 
-  const recentwork = {
-    items: 1,
-    loop: false,
-    margin: 30,
-    nav: false,
-    dots: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 2,
-      },
-      1000: {
-        items: 3,
-      },
-    },
-  };
+
 
   //this is for main-banner animation image
   const getWowAnimation = (index) => {
@@ -529,8 +545,12 @@ const FrontPage = () => {
     },
   ];
 
+
+
+
   return (
     <>
+   
       {/*start this is section our main banner*/}
       <div className="main-banner">
         <div className="d-table">
@@ -565,6 +585,7 @@ const FrontPage = () => {
                     <h1 className="text-left hide-text-heading">
                       TRUST OUR BEST IT SOLUTION FOR YOUR BUSINESS
                     </h1>
+
                     <p style={{ color: "black" }}>
                       Veeaar Softtech pvt ltd is an IT service provider that
                       holds expertise in website development services, digital
@@ -909,10 +930,7 @@ const FrontPage = () => {
               for innovation and customer satisfaction.
             </p>
           </div>
-          <OwlCarousel
-            className="works-slides owl-carousel owl-theme"
-            {...teamarea}
-          >
+          <Slider className="works-slides" {...team}>
             {teamData.map((member, index) => (
               <div key={index} className="single-team">
                 <div
@@ -921,12 +939,14 @@ const FrontPage = () => {
                     border: "none",
                     marginRight: "10px",
                     marginLeft: "10px",
+                    alignItems:"center",
                   }}
                 >
-                  <div className="team-image">
+                  <div className="team-image" style={{width:"200px"}}>
                     <img
                       src={member.image}
                       alt={member.name}
+                      className="team-photo"
                       style={{ width: "30px", height: "auto" }}
                     />
                   </div>
@@ -946,7 +966,7 @@ const FrontPage = () => {
                 </div>
               </div>
             ))}
-          </OwlCarousel>
+          </Slider>
         </div>
       </div>
       {/* Start Team Area */}
@@ -1313,12 +1333,12 @@ const FrontPage = () => {
           </span>
         </div>
       </div>
-
       {/*  End Partner Area */}
 
       {/*  Start Blog Area */}
       <Blogss />
       {/*  End Blog Area */}
+
     </>
   );
 };

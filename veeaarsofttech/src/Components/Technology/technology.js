@@ -17,7 +17,7 @@ function Technology() {
   return (
     <>
       <Navbar />
-      <div className="header-container">
+      <div className="contact-container">
         <p className="text-data">WE USE THIS TECHNOLOGIES</p>
       </div>
       <h2 className=" heading text-center">Technologies We Use</h2>
