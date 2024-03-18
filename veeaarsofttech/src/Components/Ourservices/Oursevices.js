@@ -105,7 +105,7 @@ function Ourservices() {
   return (
     <div>
       <Navbar />
-      <div className="header-container">
+      <div className="contact-container">
         <p className="text-data">OUR SERVICES</p>
       </div>
       <Ourservispage />

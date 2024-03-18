@@ -8,7 +8,7 @@ const teamData = [
   {
     name: "Chandan Singh",
     role: "CEO & Founder",
-    image: "assets/img/team-image/1.jpg",
+    image: "./../../assets/img/chandan-sir.png",
     twitter: [
       <Link to="">
         <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />{" "}
@@ -33,7 +33,32 @@ const teamData = [
   {
     name: "Kudan Sign",
     role: " Manager",
-    image: "assets/img/team-image/2.jpg",
+    image: "./../../assets/img/lalit-sir.png",
+    twitter: [
+      <Link to="">
+        <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
+      </Link>,
+    ],
+    instagrm: [
+      <Link to="">
+        <FaSquareInstagram style={{ color: "pink", fontSize: "20px" }} />
+      </Link>,
+    ],
+    Linkdien: [
+      <Link to="">
+        <CiLinkedin style={{ color: "blue", fontSize: "20px" }} />
+      </Link>,
+    ],
+    facebook: [
+      <Link to="">
+        <FaFacebookSquare style={{ color: "skyblue", fontSize: "20px" }} />
+      </Link>,
+    ],
+  },
+  {
+    name: "Vivek",
+    role: "Data Science",
+    image: "./../../assets/img/punit-sir.png",
     twitter: [
       <Link to="">
         <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
@@ -58,7 +83,7 @@ const teamData = [
   {
     name: "Punit",
     role: "HR",
-    image: "assets/img/team-image/3.jpg",
+    image: "./../../assets/img/punit-sir.png",
     twitter: [
       <Link to="">
         <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
@@ -83,7 +108,7 @@ const teamData = [
   {
     name: "Samim",
     role: "CA",
-    image: "assets/img/team-image/4.jpg",
+    image: "./../../assets/img/manish-sir.png",
     twitter: [
       <Link to="">
         <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
@@ -109,7 +134,7 @@ const teamData = [
   {
     name: "Aarti",
     role: "IT HEAD",
-    image: "assets/img/team-image/5.jpg",
+    image: "./../../assets/img/manish-sir.png",
     twitter: [
       <Link to="">
         <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
@@ -134,7 +159,7 @@ const teamData = [
   {
     name: "Manish",
     role: "Angular Developer",
-    image: "assets/img/team-image/5.jpg",
+    image: "./../../assets/img/manish-sir.png",
     twitter: [
       <Link to="">
         <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
@@ -159,7 +184,7 @@ const teamData = [
   {
     name: "Sandeep Kumar",
     role: "MERN Developer",
-    image: "assets/img/team-image/5.jpg",
+    image: "./../../assets/img/sandeep.png",
     twitter: [
       <Link to="">
         <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
@@ -184,7 +209,7 @@ const teamData = [
   {
     name: "Lalit Kumar",
     role: "React Developer",
-    image: "assets/img/team-image/5.jpg",
+    image: "./../../assets/img/lalit-sir.png",
     twitter: [
       <Link to="">
         <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
@@ -209,7 +234,7 @@ const teamData = [
   {
     name: "Kavita",
     role: "UI/UX",
-    image: "assets/img/team-image/5.jpg",
+    image: "./../../assets/img/kavita-yadav.png",
     twitter: [
       <Link to="">
         <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
@@ -234,7 +259,7 @@ const teamData = [
   {
     name: "Vishal",
     role: "Graphic/Video Editor",
-    image: "assets/img/team-image/1.jpg",
+    image: "./../../assets/img/vishal-sir.png",
     twitter: [
       <Link to="">
         <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
@@ -259,7 +284,7 @@ const teamData = [
   {
     name: "Subham",
     role: "Digital Marketing",
-    image: "assets/img/team-image/1.jpg",
+    image: "./../../assets/img/manish-sir.png",
     twitter: [
       <Link to="">
         <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
@@ -284,7 +309,7 @@ const teamData = [
   {
     name: "Megha",
     role: "Wordpress",
-    image: "assets/img/team-image/5.jpg",
+    image: "./../../assets/img/megha.png",
     twitter: [
       <Link to="">
         <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
@@ -309,7 +334,7 @@ const teamData = [
   {
     name: "Poonam",
     role: "Accountent",
-    image: "assets/img/team-image/5.jpg",
+    image: "./../../assets/img/manish-sir.png",
     twitter: [
       <Link to="">
         <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
@@ -334,7 +359,7 @@ const teamData = [
   {
     name: "Rakesh",
     role: "WordPress",
-    image: "assets/img/team-image/5.jpg",
+    image: "./../../assets/img/rakesh.png",
     twitter: [
       <Link to="">
         <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />

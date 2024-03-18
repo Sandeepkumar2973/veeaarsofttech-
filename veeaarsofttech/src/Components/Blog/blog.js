@@ -23,7 +23,7 @@ const Blog = () => {
     <>
       <Navbar />
       <div>
-        <div className="header-container">
+        <div className="contact-container">
           <p className="text-data">Blogs</p>
         </div>
 

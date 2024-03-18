@@ -98,7 +98,7 @@ const Packages = () => {
     return (
        <>
        <Navbar />
-       <div className="header-container">
+       <div className="about-container">
         <p className="text-data">Service Price</p>
       </div>
           {/* Start Pricing Area */}
