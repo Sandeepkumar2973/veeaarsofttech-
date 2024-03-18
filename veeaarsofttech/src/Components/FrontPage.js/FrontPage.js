@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useRef, useEffect } from 'react';
+import React, { useState, useCallback, useRef, useEffect } from "react";
 import "./FrontPage.css";
 import "../../assets/css/animate.min.css";
 import "../../assets/css/bootstrap.min.css";
@@ -11,17 +11,15 @@ import "owl.carousel";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import teamData from "./team.js";
 import featuresData from "./Featcher.js";
 import Ourservispage from "../Ourservices/ourservispage.js";
 import Blogss from "./Blogss.js";
-
-
+import Ourteam from "./outTeam.js";
+import { Ourwork } from "./Ourwork.js";
 
 const FrontPage = () => {
   const [value, setValue] = useState(0);
   const [selectedReview, setSelectedReview] = useState(null);
- 
 
   //this is for feedback
   const feedbackData = [
@@ -114,8 +112,8 @@ const FrontPage = () => {
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
     },
   ];
-   //this is for react Works
-   const recentwork = {
+  //this is for react Works
+  const recentwork = {
     items: 1,
     loop: false,
     margin: 30,
@@ -137,10 +135,10 @@ const FrontPage = () => {
     },
   };
 
- //this is for  teams
- const team = {
+  //this is for  teams
+  const team = {
     dots: true,
-     nav: false,
+    nav: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -152,8 +150,8 @@ const FrontPage = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 1000,
@@ -161,10 +159,10 @@ const FrontPage = () => {
           slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
-        }
-      }
-    ]
+          dots: true,
+        },
+      },
+    ],
   };
 
   //this is for feedbacks
@@ -189,8 +187,6 @@ const FrontPage = () => {
       },
     },
   };
-
-
 
   //this is for main-banner animation image
   const getWowAnimation = (index) => {
@@ -545,12 +541,8 @@ const FrontPage = () => {
     },
   ];
 
-
-
-
   return (
     <>
-   
       {/*start this is section our main banner*/}
       <div className="main-banner">
         <div className="d-table">
@@ -915,60 +907,8 @@ const FrontPage = () => {
       {/*end this is section our featurs*/}
 
       {/*Start Team Area*/}
-      <div className="team-area ptb-80 bg-f9f6f6">
-        <div className="container">
-          <div className="section-title">
-            <h2 className="text-center">Our Awesome Team</h2>
-            <div className="bar"></div>
-            <p className="text-center">
-              Our team at the IT company is a diverse and dynamic group of
-              professionals dedicated to delivering excellence in every aspect
-              of our work. Comprised of talented individuals with expertise
-              ranging from software development and IT consulting to
-              cybersecurity, cloud solutions, digital marketing, data analytics,
-              and infrastructure management, we are united by a shared passion
-              for innovation and customer satisfaction.
-            </p>
-          </div>
-          <Slider className="works-slides" {...team}>
-            {teamData.map((member, index) => (
-              <div key={index} className="single-team">
-                <div
-                  className="card"
-                  style={{
-                    border: "none",
-                    marginRight: "10px",
-                    marginLeft: "10px",
-                    alignItems:"center",
-                  }}
-                >
-                  <div className="team-image" style={{width:"200px"}}>
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="team-photo"
-                      style={{ width: "30px", height: "auto" }}
-                    />
-                  </div>
-                  <div className="team-content">
-                    <div className="team-info">
-                      <h3 className="text-center" style={{ fontSize: "12px" }}>
-                        {member.name}
-                      </h3>
-                      <span>{member.role}</span>
-                    </div>
-                    <span style={{ padding: "5px" }}>{member.twitter}</span>
-                    <span style={{ padding: "5px" }}>{member.instagrm}</span>
-                    <span style={{ padding: "5px" }}>{member.facebook}</span>
-                    <span style={{ padding: "5px" }}>{member.Linkdien}</span>
-                    <p>{member.des}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </div>
+      <Ourteam />
+
       {/* Start Team Area */}
 
       {/*Start Fun Facts Area  */}
@@ -1101,7 +1041,7 @@ const FrontPage = () => {
       {/* End Fun Facts Area*/}
 
       {/* Start Works Area*/}
-      <div className="works-area ptb-80 bg-f7fafd">
+      {/* <div className="works-area ptb-80 bg-f7fafd">
         <div className="container">
           <div className="section-title">
             <h2>Our Recent Works</h2>
@@ -1145,7 +1085,7 @@ const FrontPage = () => {
                 </Link>
                 <div className="works-content">
                   <h1 style={{ color: "white" }}>{work.title}</h1>
-                  {/* <p>{work.description}</p> */}
+                
                 </div>
               </div>
             ))}
@@ -1163,7 +1103,8 @@ const FrontPage = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
+      <Ourwork />
       {/* End Works Area*/}
 
       {/* Start Pricing Area */}
@@ -1338,7 +1279,6 @@ const FrontPage = () => {
       {/*  Start Blog Area */}
       <Blogss />
       {/*  End Blog Area */}
-
     </>
   );
 };
