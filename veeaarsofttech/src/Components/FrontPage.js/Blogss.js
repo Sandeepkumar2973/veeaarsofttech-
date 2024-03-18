@@ -21,10 +21,6 @@ const Blogss = () => {
     return (
         <>
         <div>
-      <div className="header-container">
-        <p className="text-data">Blogs</p>
-      </div>
-
       {/* Start Blog Area */}
       <div className="blog-area ptb-80">
         <div className="container">

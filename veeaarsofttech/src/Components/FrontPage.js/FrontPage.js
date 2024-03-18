@@ -1336,7 +1336,7 @@ const FrontPage = () => {
       {/*  End Partner Area */}
 
       {/*  Start Blog Area */}
-      <Blogss/>
+      <Blogss />
       {/*  End Blog Area */}
 
     </>
