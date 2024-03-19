@@ -138,7 +138,13 @@ export const Ourwork = () => {
         </div>
         <div className="container-fluid p-0 ourwork">
           <div className="slick-list" style={{ padding: "0 autos" }}>
-            <Slider responsive={responsiveSettings}>
+            <Slider responsive={responsiveSettings} 
+                        autoplay={true}
+  autoplaySpeed={2000}
+  dots={true} 
+  infinite={true}
+  style={{ width: "100%" }}
+  arrows={true}>
               {worksData.map((work) => (
                 <div key={work.id} className="single-works">
                   <img

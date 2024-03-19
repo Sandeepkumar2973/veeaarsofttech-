@@ -158,7 +158,7 @@ const teamData = [
   // },
   {
     name: "Manish",
-    role: "Angular Developer",
+    role: "Full Stack",
     image: "./../../assets/img/manish-sir.png",
     twitter: [
       <Link to="">
@@ -281,31 +281,31 @@ const teamData = [
       </Link>,
     ],
   },
-  // {
-  //   name: "Subham",
-  //   role: "Digital Marketing",
-  //   image: "./../../assets/img/manish-sir.png",
-  //   twitter: [
-  //     <Link to="">
-  //       <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
-  //     </Link>,
-  //   ],
-  //   instagrm: [
-  //     <Link to="">
-  //       <FaSquareInstagram style={{ color: "pink", fontSize: "20px" }} />
-  //     </Link>,
-  //   ],
-  //   Linkdien: [
-  //     <Link to="">
-  //       <CiLinkedin style={{ color: "blue", fontSize: "20px" }} />
-  //     </Link>,
-  //   ],
-  //   facebook: [
-  //     <Link to="">
-  //       <FaFacebookSquare style={{ color: "skyblue", fontSize: "20px" }} />
-  //     </Link>,
-  //   ],
-  // },
+  {
+    name: "Subham",
+    role: "Digital Marketing",
+    image: "./../../assets/img/shubham.png",
+    twitter: [
+      <Link to="">
+        <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
+      </Link>,
+    ],
+    instagrm: [
+      <Link to="">
+        <FaSquareInstagram style={{ color: "pink", fontSize: "20px" }} />
+      </Link>,
+    ],
+    Linkdien: [
+      <Link to="">
+        <CiLinkedin style={{ color: "blue", fontSize: "20px" }} />
+      </Link>,
+    ],
+    facebook: [
+      <Link to="">
+        <FaFacebookSquare style={{ color: "skyblue", fontSize: "20px" }} />
+      </Link>,
+    ],
+  },
   {
     name: "Megha",
     role: "Wordpress",
@@ -331,31 +331,31 @@ const teamData = [
       </Link>,
     ],
   },
-  // {
-  //   name: "Poonam",
-  //   role: "Accountent",
-  //   image: "./../../assets/img/manish-sir.png",
-  //   twitter: [
-  //     <Link to="">
-  //       <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
-  //     </Link>,
-  //   ],
-  //   instagrm: [
-  //     <Link to="">
-  //       <FaSquareInstagram style={{ color: "pink", fontSize: "20px" }} />
-  //     </Link>,
-  //   ],
-  //   Linkdien: [
-  //     <Link to="">
-  //       <CiLinkedin style={{ color: "blue", fontSize: "20px" }} />
-  //     </Link>,
-  //   ],
-  //   facebook: [
-  //     <Link to="">
-  //       <FaFacebookSquare style={{ color: "skyblue", fontSize: "20px" }} />
-  //     </Link>,
-  //   ],
-  // },
+  {
+    name: "Poonam",
+    role: "Accountant",
+    image: "./../../assets/img/poonam-mata.png",
+    twitter: [
+      <Link to="">
+        <FaXTwitter style={{ color: "blue", fontSize: "20px" }} />
+      </Link>,
+    ],
+    instagrm: [
+      <Link to="">
+        <FaSquareInstagram style={{ color: "pink", fontSize: "20px" }} />
+      </Link>,
+    ],
+    Linkdien: [
+      <Link to="">
+        <CiLinkedin style={{ color: "blue", fontSize: "20px" }} />
+      </Link>,
+    ],
+    facebook: [
+      <Link to="">
+        <FaFacebookSquare style={{ color: "skyblue", fontSize: "20px" }} />
+      </Link>,
+    ],
+  },
   {
     name: "Rakesh",
     role: "WordPress",

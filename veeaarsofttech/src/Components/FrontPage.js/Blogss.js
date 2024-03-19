@@ -52,7 +52,6 @@ const Blogss = () => {
           </div>
         </div>
       </div>
-      <div></div>
       {/* End Blog Area */}
     </div>
     </>
