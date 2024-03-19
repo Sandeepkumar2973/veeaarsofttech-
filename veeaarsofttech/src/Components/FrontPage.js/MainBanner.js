@@ -95,7 +95,7 @@ const MainBanner = () => {
                       className="video-bg"
                       style={{
                         margin: "0 auto",
-                        marginTop: "80px",
+                        marginTop: "100px",
                         maxWidth: "100%",
                       }}
                     >

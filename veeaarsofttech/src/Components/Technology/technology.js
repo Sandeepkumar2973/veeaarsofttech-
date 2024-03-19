@@ -21,8 +21,8 @@ function Technology() {
         <p className="text-data">WE USE THIS TECHNOLOGIES</p>
       </div>
       <h2 className=" heading text-center">Technologies We Use</h2>
-      <div className="col-10">
-      <div className="container technology ">
+      <div className="col-10 for-center">
+      <div className="container technology">
         <div className="row" style={{ textAlign: "center" }}>
           <div className="col-3">
             <FaHtml5 className="icon-png"/>

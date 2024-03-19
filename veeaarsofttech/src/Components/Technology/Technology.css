@@ -108,5 +108,13 @@
         color: #fff; 
         margin-top: 120px;
     }
+    .for-center{
+        margin: 1px;
+    }
 
+}
+
+
+.for-center{
+    margin: 0 auto;
 }
