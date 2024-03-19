@@ -9,6 +9,7 @@ export const Ourwork = () => {
     {
       id: 1,
       imgSrc: "./../../assets/img/works-image/Ananta.jpeg",
+      urlto:"https://csf.care/",
       title: "ANANTA",
       description:
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
@@ -16,20 +17,23 @@ export const Ourwork = () => {
     {
       id: 2,
       imgSrc: "./../../assets/img/works-image/csf.jpeg",
+      urlto:"https://csf.care/",
       title: "CSF",
       description:
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
     },
     {
       id: 3,
-      imgSrc: "./../../assets/img/works-image/cynrotix.jpeg",
-      title: "CYNROTIX",
+      imgSrc: "./../../assets/img/works-image/mindgloble.PNG",
+      urlto:"https://www.mindglobal.ae/",
+      title: "MINDSTORM",
       description:
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
     },
     {
       id: 4,
       imgSrc: "./../../assets/img/works-image/esport.jpeg",
+      urlto:"https://csf.care/",
       title: "ESPORT",
       description:
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
@@ -37,6 +41,7 @@ export const Ourwork = () => {
     {
       id: 5,
       imgSrc: "./../../assets/img/works-image/sanandsons.jpeg",
+      urlto:"https://csf.care/",
       title: "SANANDSONS",
       description:
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
@@ -44,6 +49,7 @@ export const Ourwork = () => {
     {
       id: 6,
       imgSrc: "./../../assets/img/works-image/neeve.png",
+      urlto:"https://neeve.io/",
       title: "NEEVE",
       description:
         "Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.",
@@ -147,12 +153,14 @@ export const Ourwork = () => {
   arrows={true}>
               {worksData.map((work) => (
                 <div key={work.id} className="single-works">
+                <Link to={work.urlto}>
                   <img
                     src={work.imgSrc}
                     alt="image"
                     style={{ width: "100%", height: "270px", padding: "10px" }}
                   />
-                  <Link to="/" className="icon">
+                  
+                  <Link to={work.urlto} className="icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width={24}
@@ -168,11 +176,14 @@ export const Ourwork = () => {
                       <circle cx={12} cy={12} r={3} />
                       <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
                     </svg>
+                  
                   </Link>
                   <div className="works-content">
                     <h1 style={{ color: "white" }}>{work.title}</h1>
                   </div>
+                  </Link>
                 </div>
+                
               ))}
             </Slider>
           </div>
