@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import "./CloudHosting.css";
 
 const CloudHosting = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
-      //this is for  Hosting Services
+  //this is for  Hosting Services
   const servicesData = [
     {
       icon: "database",
@@ -30,7 +33,6 @@ const CloudHosting = () => {
     },
   ];
 
-  
   //this is for  Hosting Services
   const getIcon = (icon) => {
     switch (icon) {
@@ -183,17 +185,79 @@ const CloudHosting = () => {
         return null;
     }
   };
-  
-    return (
-       <>
-        <div className="services-area ptb-80 bg-f7fafd">
+
+  useEffect(() => {
+    // Function to check if the heading is in the viewport
+    const isInViewport = (element) => {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <=
+          (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <=
+          (window.innerWidth || document.documentElement.clientWidth)
+      );
+    };
+
+    const handleScroll = () => {
+      const heading = document.querySelector(".hide-text-heading");
+      if (isInViewport(heading)) {
+        setIsVisible(true);
+        window.removeEventListener("scroll", handleScroll); // Remove the event listener once the heading is visible
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll); // Clean up event listener on component unmount
+    };
+  }, []);
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY || window.pageYOffset;
+      setIsVisible(scrollY > 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY || window.pageYOffset;
+      setIsVisible(scrollY > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
+  return (
+    <>
+      <div className="services-area ptb-80 bg-f7fafd">
         <div className="container">
           <div className="row h-100 justify-content-center align-items-center">
             <div className="col-lg-6 col-md-12 services-content">
               <div className="section-title">
-                <h2 style={{ textAlign: "left" }}>Cloud Hosting Services</h2>
+                <h1
+                  className={`text-left hide-text-heading ${
+                    isHovered ? "glow" : "slide-in-left"
+                  }`}
+                  onMouseEnter={() => setIsHovered(true)}
+                  onMouseLeave={() => setIsHovered(false)}
+                >
+                  Cloud Hosting Services
+                </h1>
                 <div className="bar" />
-                <p style={{ textAlign: "left" }}>
+                <p
+                  className={`text-left ${isVisible ? "" : "slide-in-left"}`}
+                  style={{ color: "black" }}
+                >
                   Our company offers top-tier cloud hosting services tailored to
                   meet the dynamic needs of businesses in today's digital
                   landscape. With our robust infrastructure and cutting-edge
@@ -207,7 +271,12 @@ const CloudHosting = () => {
               </div>
               <div className="row">
                 {servicesData.map((service, index) => (
-                  <div key={index} className="col-lg-6 col-md-6 col-sm-6">
+                  <div
+                    key={index}
+                    className={`col-lg-6 col-md-6 col-sm-6 ${
+                      isVisible ? "animate" : ""
+                    }`}
+                  >
                     <div className="box">
                       {getIcon(service.icon)}
                       {service.text}
@@ -221,7 +290,7 @@ const CloudHosting = () => {
               <img src="./../../assets/img/cloud-server.png" />
             </div>
 
-            <div className="col-lg-6 col-md-12 services-right-image">
+            <div className={`col-lg-6 col-md-12 services-right-image ${isVisible ? 'animate' : ''}`}>
               <img
                 src="assets/img/services-right-image/book-self.png"
                 className="wow fadeInDown"
@@ -315,8 +384,8 @@ const CloudHosting = () => {
           </div>
         </div>
       </div>
-       </>
-    )
-}
+    </>
+  );
+};
 
-export default CloudHosting
+export default CloudHosting;

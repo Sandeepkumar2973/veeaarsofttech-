@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "./Ourservispage.css";
 
 const Ourservispage = () => {
+  const [isVisible, setIsVisible] = useState(false);
   const featureData = [
     {
       icon: "server",
@@ -134,12 +136,40 @@ const Ourservispage = () => {
         return null;
     }
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if the scroll position is more than 100px from the top
+      const scrollY = window.scrollY || window.pageYOffset;
+      setIsVisible(scrollY > 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if the scroll position is more than 100px from the top
+      const scrollY = window.scrollY || window.pageYOffset;
+      setIsVisible(scrollY > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
   return (
     <div>
       <div className="works-area ptb-80 bg-f7fafd">
         <div className="container">
           <div className="section-title">
-            <h2>OUR LATEST SERVICES</h2>
+            <h2
+              className={`scroll-heading ${isVisible ? "" : "drop-from-above"}`}
+            >
+              OUR LATEST SERVICES
+            </h2>
             <div className="bar" />
             <h3 className="text-center">
               WHAT KIND OF SERVICES WE ARE OFFERING
@@ -162,7 +192,7 @@ const Ourservispage = () => {
       {/*start this is section our Boxes Area*/}
       <div className="boxes-area mt-5">
         <div className="container">
-          <div className="row m-4">
+          <div className="row m-4" >
             {featureData.map((feature, index) => (
               <div
                 key={index}
@@ -170,7 +200,7 @@ const Ourservispage = () => {
                 style={{ width: 350, height: 350 }}
               >
                 <Link to={feature.navi}>
-                  <div className={`single-box ${feature.bgColor}`}>
+                  <div  className={`single-box ${isVisible ? 'scroll-in-right' : 'scroll-in-right'} ${feature.bgColor} `}>
                     <div className="icon">
                       <i data-feather={feature.icon} />
                       <svg

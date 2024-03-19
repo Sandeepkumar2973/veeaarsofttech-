@@ -1,8 +1,12 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "./MainBanner.css";
 
 const MainBanner = () => {
-      //this is for main-banner animation image
+  const [isVisible, setIsVisible] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+
+  //this is for main-banner animation image
   const imageList = [
     "man",
     "code",
@@ -21,21 +25,21 @@ const MainBanner = () => {
     "main-pic",
   ];
 
-    //this is for main-banner animation image
-    const getWowAnimation = (index) => {
-        const animations = [
-          "fadeInDown",
-          "fadeInUp",
-          "fadeInLeft",
-          "zoomIn",
-          "bounceIn",
-          "rotateIn",
-          "rollIn",
-        ];
-        return animations[index % animations.length];
-      };
+  //this is for main-banner animation image
+  const getWowAnimation = (index) => {
+    const animations = [
+      "fadeInDown",
+      "fadeInUp",
+      "fadeInLeft",
+      "zoomIn",
+      "bounceIn",
+      "rotateIn",
+      "rollIn",
+    ];
+    return animations[index % animations.length];
+  };
 
-        //this is for main-banner animation shapes
+  //this is for main-banner animation shapes
   const shapesData = [
     {
       className: "shape1",
@@ -78,10 +82,71 @@ const MainBanner = () => {
       alt: "shape",
     },
   ];
-  
-    return (
-       <>
-              <div className="main-banner">
+
+  useEffect(() => {
+    // Function to check if the heading is in the viewport
+    const isInViewport = (element) => {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <=
+          (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <=
+          (window.innerWidth || document.documentElement.clientWidth)
+      );
+    };
+
+    const handleScroll = () => {
+      const heading = document.querySelector(".hide-text-heading");
+      if (isInViewport(heading)) {
+        setIsVisible(true);
+        window.removeEventListener("scroll", handleScroll); // Remove the event listener once the heading is visible
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll); // Clean up event listener on component unmount
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Calculate how far down the user has scrolled
+      const scrollY = window.scrollY || window.pageYOffset;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+
+      // You can adjust the value here to control when the button appears
+      const triggerHeight = documentHeight - windowHeight * 1.2;
+
+      setIsVisible(scrollY > triggerHeight);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Check if the scroll position is more than 100px from the top
+      const scrollY = window.scrollY || window.pageYOffset;
+      setIsVisible(scrollY > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
+
+
+  return (
+    <>
+      <div className="main-banner">
         <div className="d-table">
           <div className="d-table-cell">
             <div className="container">
@@ -104,18 +169,26 @@ const MainBanner = () => {
                         type="video/mp4"
                       />
                     </video>
-                    {/* <div className="content">
-                      <h1>TRUST OUR BEST IT SOLUTION FOR YOUR BUSINESS</h1>
-                    </div> */}
                   </div>
                 </div>
                 <div className="col-lg-5">
                   <div className="hero-content">
-                    <h1 className="text-left hide-text-heading">
+                    <h1
+                      className={`text-left hide-text-heading ${
+                        isHovered ? "glow" : "slide-in-left"
+                      }`}
+                      onMouseEnter={() => setIsHovered(true)}
+                      onMouseLeave={() => setIsHovered(false)}
+                    >
                       TRUST OUR BEST IT SOLUTION FOR YOUR BUSINESS
                     </h1>
 
-                    <p style={{ color: "black" }}>
+                    <p
+                      className={`text-left ${
+                        isVisible ? "" : "slide-in-left"
+                      }`}
+                      style={{ color: "black" }}
+                    >
                       Veeaar Softtech pvt ltd is an IT service provider that
                       holds expertise in website development services, digital
                       marketing services, web designing and application
@@ -124,7 +197,9 @@ const MainBanner = () => {
                       swiftness to stand up to our client’s requirements and
                       deliver what is expected out of us.
                     </p>
-                    <div className="get-stated-btn">
+                    <div
+                      className={`get-stated-btn ${isVisible ? "" : "show"}`}
+                    >
                       <Link to="/about-us" className="btn btn-primary">
                         ABOUT US
                       </Link>
@@ -132,7 +207,7 @@ const MainBanner = () => {
                   </div>
                 </div>
                 <div className="col-lg-6 offset-lg-1">
-                  <div className="banner-image">
+                  <div className={`banner-image ${isVisible ? '' : 'scroll-in-right'}`}>
                     {imageList.map((imageName, index) => (
                       <img
                         key={index}
@@ -161,8 +236,8 @@ const MainBanner = () => {
           ))}
         </div>
       </div>
-       </>
-    )
-}
+    </>
+  );
+};
 
-export default MainBanner
+export default MainBanner;

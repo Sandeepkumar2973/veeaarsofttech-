@@ -7,12 +7,9 @@ const Loader = () => {
   const { loading } = useLoader();
 
   return loading ? (
-    <div className="col-10">
-          <div className="container loder">
+    <div className="container loder">
       <HashLoader height="300px" width="300px" color="#36d7b7" />
     </div>
-    </div>
-
   ) : null;
 };
 

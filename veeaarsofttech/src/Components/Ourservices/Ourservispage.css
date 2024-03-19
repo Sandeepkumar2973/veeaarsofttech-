@@ -1,0 +1,38 @@
+.scroll-heading {
+    /* Your existing styles */
+  }
+  
+  .drop-from-above {
+    animation: dropFromAbove 0.5s ease-out forwards;
+  }
+  
+  @keyframes dropFromAbove {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .banner-image {
+    /* Your existing styles */
+  }
+  
+  .scroll-in-right {
+    animation: scrollFromRight 0.5s ease-out forwards;
+  }
+  
+  @keyframes scrollFromRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
