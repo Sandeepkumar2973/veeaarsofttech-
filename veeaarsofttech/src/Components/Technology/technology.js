@@ -21,7 +21,7 @@ function Technology() {
         <p className="text-data">WE USE THIS TECHNOLOGIES</p>
       </div>
       <h2 className=" heading text-center">Technologies We Use</h2>
-      <div className="col-11" style={{margin:"0 auto"}}>
+      <div className="col-10">
       <div className="container technology ">
         <div className="row" style={{ textAlign: "center" }}>
           <div className="col-3">
