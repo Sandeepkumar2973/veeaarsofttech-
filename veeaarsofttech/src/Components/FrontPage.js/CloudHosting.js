@@ -186,55 +186,7 @@ const CloudHosting = () => {
     }
   };
 
-  useEffect(() => {
-    // Function to check if the heading is in the viewport
-    const isInViewport = (element) => {
-      const rect = element.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <=
-          (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <=
-          (window.innerWidth || document.documentElement.clientWidth)
-      );
-    };
 
-    const handleScroll = () => {
-      const heading = document.querySelector(".hide-text-heading");
-      if (isInViewport(heading)) {
-        setIsVisible(true);
-        window.removeEventListener("scroll", handleScroll); // Remove the event listener once the heading is visible
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll); // Clean up event listener on component unmount
-    };
-  }, []);
-
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY || window.pageYOffset;
-      setIsVisible(scrollY > 100);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY || window.pageYOffset;
-      setIsVisible(scrollY > 100);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
 
   return (
@@ -245,12 +197,7 @@ const CloudHosting = () => {
             <div className="col-lg-6 col-md-12 services-content">
               <div className="section-title">
                 <h1
-                  className={`text-left hide-text-heading ${
-                    isHovered ? "glow" : "slide-in-left"
-                  }`}
-                  onMouseEnter={() => setIsHovered(true)}
-                  onMouseLeave={() => setIsHovered(false)}
-                >
+                  className="text-left hide-text-heading">
                   Cloud Hosting Services
                 </h1>
                 <div className="bar" />
@@ -290,7 +237,7 @@ const CloudHosting = () => {
               <img src="./../../assets/img/cloud-server.png" />
             </div>
 
-            <div className={`col-lg-6 col-md-12 services-right-image ${isVisible ? 'animate' : ''}`}>
+            <div className="col-lg-6 col-md-12 services-right-image" >
               <img
                 src="assets/img/services-right-image/book-self.png"
                 className="wow fadeInDown"
